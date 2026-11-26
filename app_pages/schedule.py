@@ -217,4 +217,11 @@ else:
         recent10 = ser[ser["team"].isin(names)].tail(10)
         col.metric(f"{short(team)} 최근 10매치", f"{int(recent10['win'].sum())}승 {int((~recent10['win']).sum())}패",
                    border=True)
-    st.caption("승부 예측 페이지의 모델이 완성되면 예상 승률이 여기에 함께 표시됩니다.")
+    from utils.model import predict, series_prob
+    p, _ = predict(match["team1"], match["team2"], a_blue=True)
+    p = (p + 1 - predict(match["team2"], match["team1"], a_blue=True)[0]) / 2   # 진영 미정 → 양쪽 평균
+    bo = int(match["best_of"]) if pd.notna(match["best_of"]) else 1
+    st.metric(f"예상 승률 ({short(match['team1'])} 기준, 승부 예측 모델)",
+              f"{(series_prob(p, bo) if bo > 1 else p):.0%}",
+              f"세트 승률 {p:.0%} · {bo}판 기준" if bo > 1 else None, delta_color="off", delta_arrow="off",
+              border=True)
