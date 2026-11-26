@@ -4,7 +4,8 @@ import plotly.express as px
 import streamlit as st
 
 from utils import champions as champ
-from utils.data_loader import has_data, load_players, load_rosters, load_tournaments
+from utils.data_loader import has_data, load_players, load_rosters, load_schedule, load_tournaments
+from utils.tournaments import standings_from_series, team_year_summary
 from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_of, season_aliases,
                          player_photo, rename_history, team_games, team_info, team_series)
 
@@ -57,21 +58,17 @@ for raw, shown in alias.items():
     season_names.setdefault(shown, []).append(raw)
 
 
-def standings(ser: pd.DataFrame) -> pd.DataFrame:
-    """정규 시즌 시리즈 결과로 순위표를 만든다 (매치 승수 → 세트 득실 순)."""
-    reg = ser[ser["stage"] == "regular"]
-    if reg.empty:
-        return pd.DataFrame()
-    t = reg.groupby("team").agg(매치승=("win", "sum"), 경기수=("win", "size"),
-                                세트승=("score", "sum"), 세트패=("opp_score", "sum"))
-    t["매치패"] = t["경기수"] - t["매치승"]
-    t["세트득실"] = t["세트승"] - t["세트패"]
-    t = t.sort_values(["매치승", "세트득실"], ascending=False)
-    t.insert(0, "순위", range(1, len(t) + 1))
-    return t[["순위", "매치승", "매치패", "세트승", "세트패", "세트득실"]]
+def standings(pages_sel) -> pd.DataFrame:
+    """정규 시즌 순위표 (매치 승수 → 세트 득실 → 동률 팀 간 맞대결 → 세트 승수). 기간 중 바뀐 팀 이름은 합친다."""
+    sch = load_schedule()
+    sch = sch[sch["page"].isin(list(pages_sel)) & (sch["stage"] == "regular")].copy()
+    for col in ("team1", "team2"):
+        sch[col] = sch[col].map(lambda t: alias.get(t, t))
+    t = standings_from_series(sch)
+    return t[["순위", "매치승", "매치패", "세트승", "세트패", "세트득실"]] if not t.empty else t
 
 
-table = standings(sel_series)
+table = standings(pages)
 team_list = list(table.index) + sorted(set(sel_games["team"]) - set(table.index))
 team = c3.selectbox("팀", team_list, index=None, placeholder="팀을 선택하세요",
                     help="정규 시즌 순위 순서로 정렬되어 있습니다.")
@@ -107,41 +104,36 @@ tab_overview, tab_roster, tab_matches, tab_champs, tab_intl, tab_history = st.ta
 
 # ------------------------------------------------------------------ 개요
 with tab_overview:
-    def playoff_results() -> list[tuple[str, str]]:
-        """스플릿별 (스플릿, 플레이오프 결과)."""
-        po = sel_series[sel_series["stage"] == "playoffs"]
-        out = []
-        for page in [p for p in pages if p in set(po["page"])]:
-            pp = po[po["page"] == page]
-            mine = pp[pp["team"] == team]
-            sp = pp["split"].iloc[0] or "플레이오프"
-            if mine.empty:
-                out.append((sp, "진출 못함"))
-                continue
-            last = mine.iloc[-1]
-            if last["match_id"] == pp.iloc[-1]["match_id"]:
-                out.append((sp, "🏆 우승" if last["win"] else "🥈 준우승"))
-            else:
-                out.append((sp, f"{tab_ko(last['tab'])} 탈락"))
-        return out
-
     sets_w, sets_n = int(tg["win"].sum()), len(tg)
     note = dict(delta_color="off", delta_arrow="off", border=True)   # 보조 설명은 화살표 없이 회색으로
     m = st.columns(3)
     m[0].metric("매치 전적 (승-패)", f"{int(ts['win'].sum())}-{int((~ts['win']).sum())}", border=True)
     m[1].metric("세트 승률", f"{sets_w / sets_n:.0%}" if sets_n else "-",
                 f"{sets_w}승 {sets_n - sets_w}패", **note)
-    if not table.empty and team in table.index:
-        m[2].metric("정규 시즌 순위", f"{table.at[team, '순위']}위", f"{len(table)}팀 중", **note)
-    else:
-        m[2].metric("정규 시즌 순위", "-", border=True)
-    po_results = playoff_results()
-    m = st.columns(2)
-    m[0].metric("플레이오프", po_results[-1][1] if po_results else "-",
-                f"{po_results[-1][0]} 스플릿" if len(po_results) > 1 else None, **note)
-    m[1].metric("평균 경기 시간", f"{tg['gamelength'].mean():.1f}분" if sets_n else "-", border=True)
-    if len(po_results) > 1:
-        st.caption("스플릿별 플레이오프: " + " · ".join(f"{s} {r}" for s, r in po_results))
+    m[2].metric("평균 경기 시간", f"{tg['gamelength'].mean():.1f}분" if sets_n else "-", border=True)
+
+    ranks, results = team_year_summary(team, int(year))
+    picked = None if split == "시즌 전체" else (split if split.startswith("LCK") else f"LCK {split}")
+
+    def box(title: str, lines: list[str]) -> str:
+        body = "".join(lines) or "<div style='opacity:0.6'>기록 없음</div>"
+        return (f"<div style='border:1px solid rgba(128,128,128,0.22);border-radius:10px;padding:10px 14px;"
+                f"height:100%'><div style='font-size:0.8rem;opacity:0.7;margin-bottom:6px'>{title}</div>{body}</div>")
+
+    def line(label: str, value: str, strong: bool, icon: str = "") -> str:
+        return (f"<div style='display:flex;justify-content:space-between;gap:12px;padding:3px 0;"
+                f"{'' if strong else 'opacity:0.55;'}'><span>{label}</span>"
+                f"<b>{icon}{value}</b></div>")
+
+    rank_lines = [line(lbl.replace("LCK ", "") if lbl.startswith("LCK ") else lbl, f"{r}위 / {n}팀",
+                       picked in (None, lbl)) for lbl, r, n in ranks]
+    medal = {"우승": "🏆 ", "준우승": "🥈 ", "3위": "🥉 "}
+    result_lines = [line(lbl, res, picked in (None, lbl), medal.get(res, "")) for lbl, res in results]
+    b1, b2 = st.columns([2, 3])
+    b1.markdown(box("정규 시즌 순위", rank_lines), unsafe_allow_html=True)
+    b2.markdown(box(f"{year}년 대회별 성적", result_lines), unsafe_allow_html=True)
+    st.caption("대회별 성적은 고른 스플릿과 상관없이 그 해 전체(LCK·LCK Cup·First Stand·MSI·EWC·Worlds)를 "
+               "시간 순으로 보여줍니다. 스플릿을 고르면 해당 줄이 강조됩니다.")
 
     left, right = st.columns(2)
     with left:
@@ -173,7 +165,7 @@ with tab_overview:
         st.dataframe(table.style.apply(
             lambda r: ["background-color: rgba(200,155,60,0.25)" if r.name == team else "" for _ in r],
             axis=1), width="stretch")
-        st.caption("정규 시즌 시리즈 결과 기준 (매치 승수 → 세트 득실 순). 실제 리그 순위 규정과 다를 수 있습니다.")
+        st.caption("정규 시즌 시리즈 결과 기준 (매치 승수 → 세트 득실 → 동률 팀 간 맞대결 → 세트 승수).")
 
 # ------------------------------------------------------------------ 로스터
 with tab_roster:
