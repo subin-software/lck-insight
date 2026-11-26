@@ -109,7 +109,7 @@ with tab_overview:
     sets_w, sets_n = int(tg["win"].sum()), len(tg)
     note = dict(delta_color="off", delta_arrow="off", border=True)   # 보조 설명은 화살표 없이 회색으로
     m = st.columns(3)
-    m[0].metric("매치 전적", f"{int(ts['win'].sum())}승 {int((~ts['win']).sum())}패", border=True)
+    m[0].metric("매치 전적 (승-패)", f"{int(ts['win'].sum())}-{int((~ts['win']).sum())}", border=True)
     m[1].metric("세트 승률", f"{sets_w / sets_n:.0%}" if sets_n else "-",
                 f"{sets_w}승 {sets_n - sets_w}패", **note)
     if not table.empty and team in table.index:
@@ -184,10 +184,10 @@ with tab_roster:
                 else:
                     st.markdown("<div style='font-size:64px;text-align:center'>👤</div>",
                                 unsafe_allow_html=True)
-                st.caption(ROLE_KO.get(p["role"], p["role"]))
-                st.markdown(f"### {display_name(p['player'])}")
-                st.write(f"{p['경기']}경기 · KDA {p['KDA']:.2f}")
-                st.write(f"승률 {p['승률']:.0%}")
+                st.markdown(f"**{display_name(p['player'])}**  \n"
+                            f"<small>{ROLE_KO.get(p['role'], p['role'])}</small>",
+                            unsafe_allow_html=True)
+                st.caption(f"{p['경기']}경기 · KDA {p['KDA']:.2f} · 승률 {p['승률']:.0%}")
 
         subs = stat[~stat.index.isin(starters.index)]
         if not subs.empty:
