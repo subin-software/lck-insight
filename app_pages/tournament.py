@@ -218,7 +218,7 @@ if tab_bracket is not None:
                                       lambda t: f"정규 {rank[t]}위" if t in rank else "",
                                       f"{event['name']} {pick} 대진표")
                 st.markdown(html, unsafe_allow_html=True)
-                st.caption("초록 칸이 이긴 팀, 결승 우승팀은 금색입니다. 팀 이름 아래는 정규 시즌 순위입니다. "
+                st.caption("금색으로 표시된 쪽이 이긴 팀입니다. 팀 이름 아래는 정규 시즌 순위입니다. "
                            "승자조·패자조는 '그 경기 전에 이미 진 적이 있는지'로 구분했습니다.")
 
 # ------------------------------------------------------------------ 결승 · MVP

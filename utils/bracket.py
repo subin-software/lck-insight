@@ -11,9 +11,6 @@ from __future__ import annotations
 
 import pandas as pd
 
-HEADER_BG = "linear-gradient(90deg,#1E1B4B,#4C1D95 55%,#1E1B4B)"
-WIN_BG = "#DCFCE7"
-GOLD_BG = "#FDE68A"
 
 
 def classify(series: pd.DataFrame) -> pd.DataFrame:
@@ -70,45 +67,52 @@ def classify(series: pd.DataFrame) -> pd.DataFrame:
     return s
 
 
+GOLD = "#C89B3C"
+LINE = "rgba(128,128,128,0.22)"          # 앱 다른 화면과 같은 옅은 회색 테두리
+WIN_TINT = "rgba(200,155,60,0.12)"       # 이긴 팀: 앱 공통 금색을 옅게
+
+
 def _card(r, short, logo, seed, final: bool = False) -> str:
+    """경기 카드: 작은 경기 이름 + 두 팀 줄 (이긴 팀은 옅은 금색 배경·금색 점수, 진 팀은 흐리게)."""
     rows = ""
     for side in (1, 2):
         team, score = r[f"team{side}"], r[f"team{side}_score"]
         won = pd.notna(r["winner"]) and r["winner"] == side
-        bg = (GOLD_BG if final else WIN_BG) if won else "#FFFFFF"
         url = logo(team)
-        img = f"<img src='{url}' style='width:46px;height:46px;object-fit:contain'>" if url else ""
+        img = f"<img src='{url}' style='width:26px;height:26px;object-fit:contain'>" if url else ""
         sd = seed(team)
-        rows += (f"<div style='display:grid;grid-template-columns:56px 1fr 38px;border-top:1px solid #E5E7EB'>"
-                 f"<div style='padding:6px 4px;text-align:center;background:#fff'>"
-                 f"<div style='font-weight:800;color:#2563EB;font-size:0.95rem'>{short(team)}</div>"
-                 f"<div style='font-size:0.68rem;color:#6B7280'>{sd}</div></div>"
-                 f"<div style='display:flex;align-items:center;justify-content:center;background:{bg}'>{img}</div>"
-                 f"<div style='display:flex;align-items:center;justify-content:center;font-size:1.35rem;"
-                 f"font-weight:{800 if won else 500};color:#111827;background:#fff'>"
-                 f"{'' if pd.isna(score) else int(score)}</div></div>")
-    return (f"<div style='border:2px solid #1E1B4B;border-radius:6px;overflow:hidden;margin:6px 4px;"
-            f"background:#fff;min-width:165px'>"
-            f"<div style='background:{HEADER_BG};color:#fff;text-align:center;font-size:0.8rem;font-weight:700;"
-            f"padding:5px 4px'>{r['label']}</div>{rows}</div>")
+        rows += (f"<div style='display:flex;align-items:center;gap:8px;padding:6px 10px;"
+                 f"background:{WIN_TINT if won else 'transparent'};opacity:{1 if won else 0.6}'>"
+                 f"{img}<div style='flex:1;line-height:1.15'><div style='font-weight:700'>{short(team)}</div>"
+                 f"<div style='font-size:0.7rem;opacity:0.7'>{sd}</div></div>"
+                 f"<div style='font-size:1.15rem;font-weight:{800 if won else 500};"
+                 f"color:{GOLD if won else 'inherit'}'>{'' if pd.isna(score) else int(score)}</div></div>")
+    border = f"1px solid {GOLD}" if final else f"1px solid {LINE}"
+    return (f"<div style='border:{border};border-radius:10px;overflow:hidden;margin:6px 4px;min-width:150px'>"
+            f"<div style='font-size:0.72rem;opacity:0.65;padding:5px 10px;border-bottom:1px solid {LINE}'>"
+            f"{'🏆 ' if final else ''}{r['label']}</div>{rows}</div>")
 
 
 def render(series: pd.DataFrame, short, logo, seed, title: str) -> str:
     """대진표 HTML. short/logo/seed: 팀 이름 → 약칭 / 로고 주소 / 아래 작은 글씨(시드·순위)."""
     s = classify(series)
-    th = ("background:#1E1B4B;color:#fff;font-weight:700;font-size:0.85rem;padding:8px;text-align:center;"
-          "border:1px solid #312E81")
-    td = "vertical-align:middle;padding:2px;border:1px solid #E5E7EB;background:#FAFAFA"
+    th = (f"font-weight:600;font-size:0.8rem;opacity:0.7;padding:6px 4px;text-align:center;"
+          f"border-bottom:1px solid {LINE}")
+    td = "vertical-align:middle;padding:2px;border:none"
 
-    def column_cells(part: pd.DataFrame, ncol: int, final_cell: str = "") -> str:
+    def column_cells(part: pd.DataFrame, ncol: int) -> str:
         cells = ""
         for c in range(ncol):
             cards = "".join(_card(r, short, logo, seed) for _, r in part[part["col"] == c].iterrows())
-            cells += f"<td style='{td}'>{cards or '<div style=\"text-align:center;opacity:0.4\">→</div>'}</td>"
-        return cells + final_cell
+            cells += f"<td style='{td}'>{cards or '<div style=\"text-align:center;opacity:0.3\">→</div>'}</td>"
+        return cells
 
-    head = (f"<div style='background:{HEADER_BG};color:#fff;padding:14px 18px;border-radius:8px 8px 0 0'>"
-            f"<div style='font-size:1.3rem;font-weight:800'>{title}</div></div>")
+    def section(label: str, ncol: int) -> str:
+        return (f"<tr><td colspan='{ncol}' style='padding:10px 4px 2px'>"
+                f"<span style='font-size:0.8rem;font-weight:700;border-left:3px solid {GOLD};padding-left:8px'>"
+                f"{label}</span></td></tr>")
+
+    head = f"<div style='font-weight:700;font-size:1.05rem;margin-bottom:6px'>{title}</div>"
     if (s["bracket"] == "round").all():
         ncol = int(s["col"].max()) + 1
         names = [("결승" if str(t).lower().startswith("final") else str(t).replace("Round ", "") + "라운드")
@@ -120,12 +124,10 @@ def render(series: pd.DataFrame, short, logo, seed, title: str) -> str:
         ncol = int(max(up["col"].max() if not up.empty else 0, low["col"].max() if not low.empty else 0)) + 1
         header = "".join(f"<th style='{th}'>{i + 1}라운드</th>" for i in range(ncol)) + f"<th style='{th}'>결승</th>"
         final_cards = "".join(_card(r, short, logo, seed, final=True) for _, r in fin.iterrows())
-        sec = "text-align:center;font-weight:700;padding:6px;font-size:0.9rem"
-        body = (f"<tr><td colspan='{ncol}' style='{sec};background:#C7D2FE'>승자조 대진표 (Upper Bracket)</td>"
-                f"<td rowspan='4' style='{td};background:#fff'>{final_cards}</td></tr>"
-                f"<tr>{column_cells(up, ncol)}</tr>"
-                f"<tr><td colspan='{ncol}' style='{sec};background:#FECACA'>패자조 대진표 (Lower Bracket)</td></tr>"
-                f"<tr>{column_cells(low, ncol)}</tr>")
-    return (f"<div style='overflow-x:auto;border:2px solid #1E1B4B;border-radius:10px'>{head}"
-            f"<table style='border-collapse:collapse;width:100%;table-layout:fixed;min-width:{185 * (ncol + 1)}px'>"
+        body = (section("승자조 (Upper Bracket)", ncol).replace("</tr>", f"<td rowspan='4' style='{td}'>{final_cards}</td></tr>", 1)
+                + f"<tr>{column_cells(up, ncol)}</tr>"
+                + section("패자조 (Lower Bracket)", ncol)
+                + f"<tr>{column_cells(low, ncol)}</tr>")
+    return (f"<div style='border:1px solid {LINE};border-radius:12px;padding:14px 16px;overflow-x:auto'>{head}"
+            f"<table style='border-collapse:collapse;width:100%;table-layout:fixed;min-width:{165 * (ncol + 1)}px'>"
             f"<tr>{header}</tr>{body}</table></div>")
