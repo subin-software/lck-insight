@@ -39,7 +39,13 @@ c1, c2, c3 = st.columns([2, 1, 2])
 leagues = ["LCK"] + INTL_ORDER
 league = c1.pills("대회 종류", leagues, default="LCK", selection_mode="single") or "LCK"
 sub = ev[ev["league"] == league]
-year = c2.selectbox("연도", sorted(sub["year"].unique(), reverse=True), format_func=lambda y: f"{y}년")
+this_year = pd.Timestamp.now(tz="Asia/Seoul").year
+year_options = sorted(sub["year"].unique(), reverse=True)
+# 기본값: 올해(없으면 올해 이전 가장 최근 연도). Leaguepedia에 미리 만들어진 다음 연도 대회는 '(예정)'으로 표시
+past = [y for y in year_options if y <= this_year]
+year = c2.selectbox("연도", year_options, index=year_options.index(past[0]) if past else 0,
+                    format_func=lambda y: f"{y}년" + (" (예정)" if y > this_year else ""),
+                    key=f"tour_year_{league}")
 sub = sub[sub["year"] == year]
 key = c3.selectbox("대회", list(sub["event_key"]), format_func=lambda k: sub.set_index("event_key").at[k, "name"],
                    disabled=len(sub) == 1)
