@@ -40,11 +40,16 @@ idx = player_index()
 c1, c2 = st.columns([1, 3])
 role_filter = c1.selectbox("포지션", ["전체"] + list(ROLE_ORDER), format_func=lambda r: ROLE_KO.get(r, r))
 options = idx if role_filter == "전체" else idx[idx["role"] == role_filter]
-default = list(options.index).index("Faker") if "Faker" in options.index else 0
 player = c2.selectbox(
-    "선수 (이름을 입력해 검색할 수 있습니다)", list(options.index), index=default,
+    "선수 (이름을 입력해 검색할 수 있습니다)", list(options.index), index=None,
+    placeholder="선수를 선택하거나 이름을 입력하세요",
     format_func=lambda p: f"{display_name(p)} · {ROLE_KO.get(idx.at[p, 'role'], idx.at[p, 'role'])} · "
                           f"{idx.at[p, 'team']} ({idx.at[p, 'games']}경기)")
+
+if player is None:
+    st.info("👆 **선수**를 선택하면 커리어, 챔피언, 선수 비교, 플레이 유형 분석이 나타납니다. "
+            "포지션을 먼저 고르면 목록을 좁힐 수 있습니다.")
+    st.stop()
 
 mine = pg[pg["player"] == player].sort_values("datetime_kst")
 role = idx.at[player, "role"]

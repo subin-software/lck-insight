@@ -64,7 +64,12 @@ def standings(ser: pd.DataFrame) -> pd.DataFrame:
 
 table = standings(sel_series)
 team_list = list(table.index) + sorted(set(sel_games["team"]) - set(table.index))
-team = c3.selectbox("팀", team_list, help="정규 시즌 순위 순서로 정렬되어 있습니다.")
+team = c3.selectbox("팀", team_list, index=None, placeholder="팀을 선택하세요",
+                    help="정규 시즌 순위 순서로 정렬되어 있습니다.")
+
+if team is None:
+    st.info("👆 연도와 스플릿을 고른 뒤 **팀**을 선택하면 분석 결과가 나타납니다.")
+    st.stop()
 
 tg = sel_games[sel_games["team"] == team]
 ts = sel_series[sel_series["team"] == team]
