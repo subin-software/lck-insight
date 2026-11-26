@@ -24,7 +24,10 @@ def events() -> pd.DataFrame:
     rows = []
     for key, g in t.groupby("event_key"):
         year, league, split = key.split("|")
-        name = f"{year} {league}" + (f" {split}" if split else "")
+        if split.startswith("LCK"):          # 2025년~ 'LCK' / 'LCK Cup' (이름이 겹치지 않게)
+            name = f"{year} {split}"
+        else:
+            name = f"{year} {league}" + (f" {split}" if split else "")
         rows.append({"event_key": key, "name": name, "year": int(year), "league": league, "split": split,
                      "scope": g["scope"].iloc[0], "pages": list(g.sort_values("date_start")["page"]),
                      "start": g["date_start"].min(), "end": pd.to_datetime(g["date_end"], errors="coerce").max()})

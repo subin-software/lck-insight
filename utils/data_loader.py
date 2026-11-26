@@ -41,6 +41,10 @@ def load_tournaments() -> pd.DataFrame:
     df["year"] = pd.to_numeric(df["year"], errors="coerce").astype("Int64")
     df["date_start"] = pd.to_datetime(df["date_start"], errors="coerce")
     df["split"] = df["split"].fillna("")
+    # 2025년부터 LCK는 한 시즌제: Leaguepedia가 'Rounds 1-2', 'Rounds 3-5'처럼 나눈 정규 라운드와
+    # Road to MSI·플레이인·플레이오프를 하나의 'LCK' 시즌으로 묶고, LCK Cup만 따로 둔다
+    new_format = (df["scope"] == "LCK") & (df["year"] >= 2025)
+    df.loc[new_format, "split"] = df.loc[new_format, "split"].map(lambda s: "LCK Cup" if s == "Cup" else "LCK")
     df["stage"] = df["page"].map(_stage_of)
     return df
 
