@@ -86,12 +86,17 @@ with tab_career:
     for y, df in mine.groupby("year"):
         url = player_photo(player, list(df["page"].unique()), int(y), df["team"].mode().iat[0])
         if url and url not in [u for u, _ in yearly_photos]:
-            yearly_photos.append((url, f"{int(y)} {df['team'].mode().iat[0]}"))
+            yearly_photos.append((url, f"<b>{int(y)}</b><br>{df['team'].mode().iat[0]}"))
     if yearly_photos:
         st.markdown("**연도별 프로필 사진**")
-        cols = st.columns(min(len(yearly_photos), 8))
-        for i, (url, cap) in enumerate(yearly_photos[-8:]):
-            cols[i].image(url, caption=cap, width="stretch")
+        # 원본 사진마다 비율이 달라서, 같은 크기 틀에 맞춰 잘라(object-fit: cover) 보여준다
+        cards = "".join(
+            f"<div style='width:96px;text-align:center'>"
+            f"<img src='{url}' style='width:96px;height:120px;object-fit:cover;object-position:top;"
+            f"border-radius:8px;border:1px solid rgba(128,128,128,0.25)'>"
+            f"<div style='font-size:0.75rem;line-height:1.2;margin-top:4px;opacity:0.8'>{cap}</div></div>"
+            for url, cap in yearly_photos)
+        st.markdown(f"<div style='display:flex;flex-wrap:wrap;gap:10px'>{cards}</div>", unsafe_allow_html=True)
 
     rows = []
     for (y, scope, league, team), df in mine.groupby(["year", "scope", "league_short", "team"]):

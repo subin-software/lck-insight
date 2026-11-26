@@ -5,7 +5,7 @@ import streamlit as st
 
 from utils import champions as champ
 from utils.data_loader import has_data, load_players, load_rosters, load_tournaments
-from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_of,
+from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_groups, lineage_of,
                          player_photo, rename_history, team_games, team_info, team_series)
 
 TAB_KO = {"Finals": "결승", "Semifinals": "준결승", "Quarterfinals": "8강",
@@ -44,8 +44,30 @@ split = c2.selectbox("스플릿", ["시즌 전체"] + splits)
 pages = year_tours["page"] if split == "시즌 전체" else \
     year_tours.loc[year_tours["split"].replace("", "기타") == split, "page"]
 
-sel_games = lck_games[lck_games["page"].isin(pages)]
-sel_series = series[series["page"].isin(pages)]
+sel_games = lck_games[lck_games["page"].isin(pages)].copy()
+sel_series = series[series["page"].isin(pages)].copy()
+
+
+def season_aliases(games: pd.DataFrame) -> dict[str, str]:
+    """시즌 중 이름이 바뀐 팀(예: DRX → Kiwoom DRX)을 하나로 합친다.
+
+    같은 계보에 속한 이름들은 그 기간에 '가장 마지막으로 쓴 이름' 하나로 표시한다.
+    """
+    groups = lineage_groups()
+    last_used = games.groupby("team")["datetime_kst"].max()
+    by_root: dict[str, list[str]] = {}
+    for name in last_used.index:
+        by_root.setdefault(groups.get(name, [name])[0], []).append(name)
+    return {n: max(members, key=lambda m: last_used[m]) for members in by_root.values() for n in members}
+
+
+alias = season_aliases(sel_games)
+for df in (sel_games, sel_series):
+    df["team"] = df["team"].map(lambda t: alias.get(t, t))
+    df["opponent"] = df["opponent"].map(lambda t: alias.get(t, t))
+season_names = {}           # 표시 이름 → 그 기간에 실제로 쓰인 이름들
+for raw, shown in alias.items():
+    season_names.setdefault(shown, []).append(raw)
 
 
 def standings(ser: pd.DataFrame) -> pd.DataFrame:
@@ -81,6 +103,11 @@ h1, h2 = st.columns([1, 8])
 if team in info.index and isinstance(info.at[team, "logo"], str):
     h1.image(info.at[team, "logo"], width=72)
 sub = f"{year}년 {split}"
+used = season_names.get(team, [team])
+if len(used) > 1:
+    raw = lck_games[lck_games["page"].isin(pages)]
+    first = {n: raw.loc[raw["team"] == n, "datetime_kst"].min() for n in used}
+    sub += f" · 이 기간 중 이름 변경: {' → '.join(sorted(used, key=first.get))}"
 latest, disbanded = current_status(team)
 if latest != team:
     sub += f" · 현재 팀 이름: **{latest}**"
@@ -164,9 +191,9 @@ with tab_overview:
 # ------------------------------------------------------------------ 로스터
 with tab_roster:
     rosters = load_rosters()
-    roster = rosters[rosters["page"].isin(pages) & (rosters["team"] == team)]
+    roster = rosters[rosters["page"].isin(pages) & rosters["team"].isin(used)]
     players = load_players()
-    played = players[players["page"].isin(pages) & (players["team"] == team)]
+    played = players[players["page"].isin(pages) & players["team"].isin(used)]
     stat = played.groupby(["player", "role"]).agg(
         경기=("game_id", "nunique"), 승=("win", "sum"), 킬=("kills", "sum"),
         데스=("deaths", "sum"), 어시=("assists", "sum")).reset_index()
@@ -307,13 +334,33 @@ with tab_intl:
 
 # ------------------------------------------------------------------ 팀 역사
 with tab_history:
+    # 이름별 시작 날짜: 이름 변경 기록의 날짜, 없으면 그 이름으로 치른 첫 경기 날짜
     hist = rename_history(team)
-    if len(names) > 1:
-        st.markdown("**팀 이름 변경 이력**")
-        st.dataframe(hist.assign(날짜=hist["date"].dt.strftime("%Y-%m-%d"))
-                     [["날짜", "original_name", "new_name"]]
-                     .rename(columns={"original_name": "이전 이름", "new_name": "새 이름"}),
-                     hide_index=True, width="stretch")
+    lineage_games = games[games["team"].isin(names)]
+    starts = {}
+    for n in names:
+        renamed = hist.loc[hist["new_name"] == n, "date"].dropna()
+        played = lineage_games.loc[lineage_games["team"] == n, "datetime_kst"]
+        candidates = [d for d in [renamed.min() if not renamed.empty else None,
+                                  played.min() if not played.empty else None] if d is not None]
+        if candidates:
+            starts[n] = min(candidates)
+    flow = sorted(starts.items(), key=lambda kv: kv[1])
+    st.markdown("**팀 이름 변화**")
+    if len(flow) > 1:
+        chips = []
+        for i, (n, d) in enumerate(flow):
+            last = i == len(flow) - 1
+            chips.append(
+                f"<div style='display:inline-flex;flex-direction:column;align-items:center;padding:8px 14px;"
+                f"border-radius:10px;border:1px solid {'#C89B3C' if last else 'rgba(128,128,128,0.35)'};"
+                f"background:{'rgba(200,155,60,0.12)' if last else 'transparent'}'>"
+                f"<span style='font-weight:700'>{n}</span>"
+                f"<span style='font-size:0.78rem;opacity:0.7'>{d:%Y.%m.%d}~</span></div>")
+        arrow = "<span style='font-size:1.3rem;opacity:0.5;margin:0 6px'>→</span>"
+        st.markdown(f"<div style='display:flex;flex-wrap:wrap;align-items:center;gap:4px'>"
+                    f"{arrow.join(chips)}</div>", unsafe_allow_html=True)
+        st.caption("날짜는 Leaguepedia 이름 변경 기록 기준이며, 기록이 없으면 그 이름으로 치른 첫 경기 날짜입니다.")
     else:
         st.caption("이 팀은 기록된 이름 변경 이력이 없습니다.")
 
