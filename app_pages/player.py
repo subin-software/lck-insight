@@ -64,13 +64,13 @@ with h2:
     years = mine["year"].dropna().astype(int)
     st.caption(f"{ROLE_KO.get(role, role)} · 최근 소속 {last['team']} · "
                f"{years.min()}~{years.max()}년 활동 · 기록된 전체 경기 {total['games']}경기")
-    m = st.columns(4)
-    note = dict(delta_color="off", delta_arrow="off", border=True)
-    m[0].metric("통산 승률", f"{total['win_rate']:.0%}", f"{total['wins']}승 {total['games'] - total['wins']}패", **note)
-    m[1].metric("통산 KDA", f"{total['kda']:.2f}", border=True)
-    m[2].metric("킬 관여율", f"{total['kp']:.0%}", border=True)
-    intl_n = int((mine["scope"] == "INTL").sum())
-    m[3].metric("국제전", f"{intl_n}경기", border=True)
+
+m = st.columns(4)
+note = dict(delta_color="off", delta_arrow="off", border=True)
+m[0].metric("통산 승률", f"{total['win_rate']:.0%}", f"{total['wins']}승 {total['games'] - total['wins']}패", **note)
+m[1].metric("통산 KDA", f"{total['kda']:.2f}", border=True)
+m[2].metric("킬 관여율", f"{total['kp']:.0%}", border=True)
+m[3].metric("국제전", f"{int((mine['scope'] == 'INTL').sum())}경기", border=True)
 
 tab_career, tab_champ, tab_compare, tab_style = st.tabs(
     ["📈 커리어", "🏆 챔피언", "⚔️ 선수 비교", "🧬 플레이 유형"])
