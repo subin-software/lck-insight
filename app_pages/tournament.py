@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 from utils import champions as champ
-from utils.bracket import render as render_bracket
+from utils.bracket import render_stage, split_stages
 from utils.data_loader import has_data, load_players, load_tournaments
 from utils.meta import champion_table
 from utils.teams import display_name, season_aliases, team_games, team_info
@@ -95,8 +95,8 @@ if is_lck:
     tab_rank, tab_bracket, tab_final, tab_stats, tab_matches = st.tabs(
         ["🥇 최종 순위", "🔥 포스트시즌", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
 else:
-    tab_rank, tab_final, tab_stats, tab_matches = st.tabs(["🥇 최종 순위", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
-    tab_bracket = None
+    tab_rank, tab_bracket, tab_final, tab_stats, tab_matches = st.tabs(
+        ["🥇 최종 순위", "🗺️ 스테이지", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
 
 # LCK 정규 시즌 순위 (매치 승수 → 세트 득실)
 reg = played[played["page"].isin([p for p in pages if p in set(tours_stage.loc[tours_stage["stage"] == "regular", "page"])])]
@@ -190,36 +190,44 @@ with tab_rank:
                          "상금($)": st.column_config.NumberColumn(format="$%d")})
         st.caption("순위·상금은 Leaguepedia 공식 대회 결과 기준입니다 (공동 순위는 '5-8'처럼 표시).")
 
-# ------------------------------------------------------------------ 포스트시즌 대진표 (LCK)
-if tab_bracket is not None:
-    with tab_bracket:
-        stage_names = {"road-to-msi": "Road to MSI", "play-in": "플레이인", "playoffs": "플레이오프"}
+# ------------------------------------------------------------------ 단계별 대진표 (LCK 포스트시즌 / 국제 대회 스테이지)
+def short_name(t: str) -> str:
+    return info.at[t, "short"] if t in info.index and isinstance(info.at[t, "short"], str) else display_name(t)
+
+
+def logo_url(t: str):
+    return info.at[t, "logo"] if t in info.index else None
+
+
+with tab_bracket:
+    if is_lck:
+        # LCK: 정규 시즌 뒤 단계를 페이지(Road to MSI / 플레이인 / 플레이오프) 단위로 나눈다
+        stage_names = {"road-to-msi": "Road to MSI", "play-in": "Play-in", "playoffs": "Play-off"}
         stage_of = dict(zip(tours_stage["page"], tours_stage["stage"]))
-        stage_pages = {stage_names[stage_of[p]]: p for p in pages if stage_of.get(p) in stage_names}
-        order = [n for n in ["Road to MSI", "플레이인", "플레이오프"] if n in stage_pages]
-        if not order:
-            st.info("이 대회에는 Road to MSI·플레이인·플레이오프 단계가 따로 없습니다.")
-        else:
-            pick = st.pills("단계", order, default=order[-1], selection_mode="single",
-                            key=f"bracket_stage_{key}") or order[-1]
-            stage_series = sched[sched["page"] == stage_pages[pick]]
-            if stage_series.empty:
-                st.info("이 단계의 경기 기록이 없습니다.")
-            else:
-                rank = {t: int(r["순위"]) for t, r in standing.iterrows()} if not standing.empty else {}
-
-                def short(t: str) -> str:
-                    return info.at[t, "short"] if t in info.index and isinstance(info.at[t, "short"], str) else t
-
-                def logo_url(t: str):
-                    return info.at[t, "logo"] if t in info.index else None
-
-                html = render_bracket(stage_series, short, logo_url,
-                                      lambda t: f"정규 {rank[t]}위" if t in rank else "",
-                                      f"{event['name']} {pick} 대진표")
-                st.markdown(html, unsafe_allow_html=True)
-                st.caption("금색으로 표시된 쪽이 이긴 팀입니다. 팀 이름 아래는 정규 시즌 순위입니다. "
-                           "승자조·패자조는 '그 경기 전에 이미 진 적이 있는지'로 구분했습니다.")
+        stages = {}
+        for p in pages:
+            if stage_of.get(p) in stage_names:
+                stages[stage_names[stage_of[p]]] = sched[sched["page"] == p]
+        rank = {t: int(r["순위"]) for t, r in standing.iterrows()} if not standing.empty else {}
+        seed = lambda t: f"정규 {rank[t]}위" if t in rank else ""  # noqa: E731
+        empty_msg = "이 대회에는 Road to MSI·Play-in·Play-off 단계가 따로 없습니다."
+        note = "팀 이름 아래는 정규 시즌 순위입니다."
+    else:
+        # 국제 대회: 그 해 실제 포맷의 단계로 나눈다 (예: 2026 Worlds = Play-in / Swiss / Knock-out)
+        stages = split_stages(sched, event["league"], int(event["year"]))
+        seed = lambda t: info.at[t, "region"] if t in info.index and isinstance(info.at[t, "region"], str) else ""  # noqa: E731
+        empty_msg = "이 대회의 단계별 경기 기록이 없습니다."
+        note = "팀 이름 아래는 소속 지역(스위스 스테이지는 그 경기 전 전적)입니다."
+    order = [n for n in stages if not stages[n].empty]
+    if not order:
+        st.info(empty_msg)
+    else:
+        pick = st.pills("단계", order, default=order[-1], selection_mode="single",
+                        key=f"bracket_stage_{key}") or order[-1]
+        html = render_stage(stages[pick], pick, short_name, logo_url, seed, f"{event['name']} {pick}")
+        st.markdown(html, unsafe_allow_html=True)
+        st.caption(f"금색으로 표시된 쪽이 이긴 팀입니다. {note} 승자조·패자조는 '그 경기 전에 이미 진 적이 "
+                   "있는지'로, 조별 리그의 조는 '서로 경기한 팀끼리'로 구분했습니다.")
 
 # ------------------------------------------------------------------ 결승 · MVP
 with tab_final:
