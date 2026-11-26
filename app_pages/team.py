@@ -125,8 +125,13 @@ with tab_overview:
                 f"{'' if strong else 'opacity:0.55;'}'><span>{label}</span>"
                 f"<b>{icon}{value}</b></div>")
 
-    rank_lines = [line(lbl.replace("LCK ", "") if lbl.startswith("LCK ") else lbl, f"{r}위 / {n}팀",
-                       picked in (None, lbl)) for lbl, r, n in ranks]
+    def short_label(lbl: str) -> str:            # 'LCK Spring' → 'Spring', 'LCK Cup 그룹 배틀'·'LCK'는 그대로
+        return lbl.replace("LCK ", "", 1) if lbl in ("LCK Spring", "LCK Summer") else lbl
+
+    def is_picked(lbl: str) -> bool:
+        return picked is None or lbl == picked or (picked == "LCK Cup" and lbl.startswith("LCK Cup"))
+
+    rank_lines = [line(short_label(lbl), txt, is_picked(lbl)) for lbl, txt in ranks]
     medal = {"우승": "🏆 ", "준우승": "🥈 ", "3위": "🥉 "}
     result_lines = [line(lbl, res, picked in (None, lbl), medal.get(res, "")) for lbl, res in results]
     b1, b2 = st.columns([2, 3])

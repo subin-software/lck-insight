@@ -7,7 +7,8 @@ from utils.bracket import render_stage, split_stages
 from utils.data_loader import has_data, load_players, load_tournaments
 from utils.meta import champion_table
 from utils.teams import display_name, season_aliases, team_games, team_info
-from utils.tournaments import INTL_ORDER, event_schedule, events, official_results
+from utils.tournaments import (INTL_ORDER, cup_group_table, event_schedule, events, official_results,
+                               standings_from_series)
 
 GOLD, SILVER, BRONZE = "#C89B3C", "#9CA3AF", "#B45309"
 TAB_KO = {"Finals": "결승", "Semifinals": "준결승", "Quarterfinals": "8강"}
@@ -38,9 +39,14 @@ def tab_ko(tab: str) -> str:
 
 # ------------------------------------------------------------------ 선택
 c1, c2, c3 = st.columns([2, 1, 2])
-leagues = ["LCK"] + INTL_ORDER
+leagues = ["LCK", "LCK Cup"] + INTL_ORDER
 league = c1.pills("대회 종류", leagues, default="LCK", selection_mode="single") or "LCK"
-sub = ev[ev["league"] == league]
+if league == "LCK Cup":
+    sub = ev[ev["split"] == "LCK Cup"]
+elif league == "LCK":
+    sub = ev[(ev["league"] == "LCK") & (ev["split"] != "LCK Cup")]
+else:
+    sub = ev[ev["league"] == league]
 this_year = pd.Timestamp.now(tz="Asia/Seoul").year
 year_options = sorted(sub["year"].unique(), reverse=True)
 # 기본값: 올해(없으면 올해 이전 가장 최근 연도). Leaguepedia에 미리 만들어진 다음 연도 대회는 '(예정)'으로 표시
@@ -58,6 +64,7 @@ sched = event_schedule(pages).copy()
 tg = team_games()
 eg = tg[tg["page"].isin(pages)].copy()
 is_lck = event["scope"] == "LCK"
+is_cup = event["split"] == "LCK Cup"
 if is_lck:                                   # 시즌 중 이름이 바뀐 팀은 하나로 (예: DRX → Kiwoom DRX)
     alias = season_aliases(eg)
     for col in ("team1", "team2"):
@@ -98,38 +105,38 @@ else:
     tab_rank, tab_bracket, tab_final, tab_stats, tab_matches = st.tabs(
         ["🥇 최종 순위", "🗺️ 스테이지", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
 
-# LCK 정규 시즌 순위 (매치 승수 → 세트 득실)
-reg = played[played["page"].isin([p for p in pages if p in set(tours_stage.loc[tours_stage["stage"] == "regular", "page"])])]
-standing = pd.DataFrame()
-if is_lck and not reg.empty:
-    rows = []
-    for _, r in reg.iterrows():
-        for side, opp in ((1, 2), (2, 1)):
-            rows.append({"team": r[f"team{side}"], "win": r["winner"] == side,
-                         "sw": r[f"team{side}_score"], "sl": r[f"team{opp}_score"]})
-    rr = pd.DataFrame(rows)
-    standing = rr.groupby("team").agg(매치승=("win", "sum"), 매치=("win", "size"), 세트승=("sw", "sum"), 세트패=("sl", "sum"))
-    standing["매치패"] = standing["매치"] - standing["매치승"]
-    standing["세트득실"] = standing["세트승"] - standing["세트패"]
-
-    def head_to_head(group: list[str]) -> dict[str, int]:
-        """동률 팀끼리 맞대결에서 이긴 매치 수."""
-        g = reg[reg["team1"].isin(group) & reg["team2"].isin(group)]
-        wins = pd.concat([g.loc[g["winner"] == 1, "team1"], g.loc[g["winner"] == 2, "team2"]]).value_counts()
-        return {t: int(wins.get(t, 0)) for t in group}
-
-    # 순위 결정: 매치 승수 → 세트 득실 → (동률이면) 동률 팀 간 맞대결 승수 → 세트 승수
-    standing["_h2h"] = 0
-    for _, grp in standing.groupby(["매치승", "세트득실"]):
-        if len(grp) > 1:
-            for t, w in head_to_head(list(grp.index)).items():
-                standing.at[t, "_h2h"] = w
-    standing = standing.sort_values(["매치승", "세트득실", "_h2h", "세트승"], ascending=False).drop(columns="_h2h")
-    standing.insert(0, "순위", range(1, len(standing) + 1))
+# LCK 정규 시즌 순위 / LCK Cup 그룹 배틀 순위
+standing, cup_table = pd.DataFrame(), pd.DataFrame()
+if is_cup:
+    cup_table = cup_group_table(played)
+elif is_lck:
+    regular_pages = set(tours_stage.loc[tours_stage["stage"] == "regular", "page"])
+    standing = standings_from_series(played[played["page"].isin(regular_pages)])
 
 # ------------------------------------------------------------------ 최종 순위
 with tab_rank:
-    if is_lck and not standing.empty:
+    if is_cup and not cup_table.empty:
+        cols = st.columns(2)
+        for col, grp in zip(cols, ["승자 그룹", "패자 그룹"]):
+            part = cup_table[cup_table["그룹"] == grp]
+            rows = "".join(
+                f"<div style='display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:6px;"
+                f"background:{'rgba(200,155,60,0.12)' if r['그룹 순위'] == 1 else 'transparent'}'>"
+                f"<span style='width:18px;opacity:0.6'>{int(r['그룹 순위'])}</span>{logo(t, 26)}"
+                f"<span style='flex:1;font-weight:700'>{t}</span>"
+                f"<span>{int(r['매치승'])}승 {int(r['매치패'])}패</span>"
+                f"<span style='width:40px;text-align:right;opacity:0.6;font-size:0.85rem'>{int(r['세트득실']):+d}</span></div>"
+                for t, r in part.iterrows())
+            total = int(part["그룹 승수"].iloc[0]) if not part.empty else 0
+            col.markdown(
+                f"<div style='border:1px solid rgba(128,128,128,0.22);border-radius:10px;padding:10px 12px'>"
+                f"<div style='font-weight:700;border-left:3px solid {GOLD};padding-left:8px;margin-bottom:6px'>"
+                f"{'🏆 ' if grp == '승자 그룹' else ''}{grp} <span style='opacity:0.6;font-weight:400'>"
+                f"· 그룹 합계 {total}승</span></div>{rows}</div>", unsafe_allow_html=True)
+        st.caption("그룹 배틀은 다른 그룹 팀과만 경기하며, 두 그룹 중 매치 승수 합이 많은 쪽이 승자 그룹입니다. "
+                   "그룹 안 순위는 매치 승수 → 세트 득실 → 세트 승수 순입니다. "
+                   "Play-in·Play-off 결과는 🔥 포스트시즌 탭에서 볼 수 있습니다.")
+    elif is_lck and not standing.empty:
         medal = {1: ("🥇", GOLD), 2: ("🥈", SILVER), 3: ("🥉", BRONZE)}
         top4 = standing.head(4)
         cols = st.columns(len(top4))
@@ -205,13 +212,20 @@ with tab_bracket:
         stage_names = {"road-to-msi": "Road to MSI", "play-in": "Play-in", "playoffs": "Play-off"}
         stage_of = dict(zip(tours_stage["page"], tours_stage["stage"]))
         stages = {}
-        for p in pages:
-            if stage_of.get(p) in stage_names:
-                stages[stage_names[stage_of[p]]] = sched[sched["page"] == p]
-        rank = {t: int(r["순위"]) for t, r in standing.iterrows()} if not standing.empty else {}
-        seed = lambda t: f"정규 {rank[t]}위" if t in rank else ""  # noqa: E731
+        if is_cup:
+            tabs = sched["tab"].astype(str)
+            stages["Play-in"] = sched[tabs.str.startswith("Play-In")]
+            stages["Play-off"] = sched[tabs.str.startswith("Playoffs") | (tabs == "Finals")]
+            cup_rank = {t: f"{r['그룹'][:2]} {int(r['그룹 순위'])}위" for t, r in cup_table.iterrows()}
+            seed = lambda t: cup_rank.get(t, "")  # noqa: E731
+        else:
+            for p in pages:
+                if stage_of.get(p) in stage_names:
+                    stages[stage_names[stage_of[p]]] = sched[sched["page"] == p]
+            rank = {t: int(r["순위"]) for t, r in standing.iterrows()} if not standing.empty else {}
+            seed = lambda t: f"정규 {rank[t]}위" if t in rank else ""  # noqa: E731
         empty_msg = "이 대회에는 Road to MSI·Play-in·Play-off 단계가 따로 없습니다."
-        note = "팀 이름 아래는 정규 시즌 순위입니다."
+        note = "팀 이름 아래는 그룹 배틀 순위입니다." if is_cup else "팀 이름 아래는 정규 시즌 순위입니다."
     else:
         # 국제 대회: 그 해 실제 포맷의 단계로 나눈다 (예: 2026 Worlds = Play-in / Swiss / Knock-out)
         stages = split_stages(sched, event["league"], int(event["year"]))

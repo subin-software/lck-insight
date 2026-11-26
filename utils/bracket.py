@@ -29,7 +29,7 @@ def round_name(tab: str) -> str:
     tab = str(tab)
     if tab in ROUND_KO:
         return ROUND_KO[tab]
-    m = re.match(r"^(?:Bracket )?Round (\d+)$", tab)
+    m = re.match(r"^(?:Bracket |Playoffs |Play-In )?Round (\d+)$", tab)
     if m:
         return f"{m.group(1)}라운드"
     m = re.match(r"^(?:Play-In |Groups |Rumble )?Day (\d+)$", tab)

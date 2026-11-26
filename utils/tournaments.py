@@ -88,6 +88,44 @@ def standings_from_series(series: pd.DataFrame) -> pd.DataFrame:
     return t
 
 
+def is_cup_group_battle(tab) -> bool:
+    return str(tab).startswith("Week")
+
+
+def cup_group_table(series: pd.DataFrame) -> pd.DataFrame:
+    """LCK Cup 그룹 배틀 순위.
+
+    그룹 배틀은 다른 그룹 팀하고만 경기하므로, 경기 관계를 두 편으로 나누면(이분 그래프 색칠) 그룹이 된다.
+    두 그룹 중 매치 승수 합이 많은 쪽이 '승자 그룹'. 그룹 안 순위는 매치 승수 → 세트 득실 → 세트 승수.
+    반환: index=팀, 열 = 그룹, 그룹 순위, 그룹 팀 수, 매치승, 매치패, 세트득실
+    """
+    gb = series[series["tab"].map(is_cup_group_battle) & series["winner"].isin([1, 2])]
+    if gb.empty:
+        return pd.DataFrame()
+    side: dict[str, int] = {}
+    edges = list(zip(gb["team1"], gb["team2"]))
+    side[edges[0][0]] = 0
+    for _ in range(len(edges)):
+        changed = False
+        for a, b in edges:
+            if a in side and b not in side:
+                side[b], changed = 1 - side[a], True
+            elif b in side and a not in side:
+                side[a], changed = 1 - side[b], True
+        if not changed:
+            break
+    table = standings_from_series(gb)
+    table["side"] = table.index.map(side)
+    group_wins = table.groupby("side")["매치승"].sum()
+    winner_side = group_wins.idxmax()
+    table["그룹"] = table["side"].map(lambda k: "승자 그룹" if k == winner_side else "패자 그룹")
+    table = table.sort_values(["그룹", "매치승", "세트득실", "세트승"], ascending=[True, False, False, False])
+    table["그룹 순위"] = table.groupby("그룹").cumcount() + 1
+    table["그룹 팀 수"] = table.groupby("그룹")["그룹"].transform("size")
+    table["그룹 승수"] = table["side"].map(group_wins)
+    return table[["그룹", "그룹 순위", "그룹 팀 수", "매치승", "매치패", "세트득실", "그룹 승수"]]
+
+
 def _merge_names(series: pd.DataFrame) -> pd.DataFrame:
     """같은 계보의 팀 이름(예: DRX/Kiwoom DRX)을 하나로 바꾼 일정 표."""
     from utils.teams import lineage_groups
@@ -98,8 +136,11 @@ def _merge_names(series: pd.DataFrame) -> pd.DataFrame:
     return s
 
 
-def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, int, int]], list[tuple[str, str]]]:
-    """(정규 시즌 순위 목록 [(시즌, 순위, 팀 수)], 대회별 성적 [(대회, 결과)]) — 그 해 전체, 시간 순."""
+def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
+    """(정규 시즌 순위 목록 [(시즌, '2위 / 10팀')], 대회별 성적 [(대회, 결과)]) — 그 해 전체, 시간 순.
+
+    LCK Cup은 정규 시즌 대신 그룹 배틀 순위('승자 그룹 1위 / 5팀')를 넣는다.
+    """
     from utils.bracket import round_name, split_stages
     from utils.teams import lineage_groups
     key = lineage_groups().get(team, [team])[0]
@@ -113,12 +154,17 @@ def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, int, int]],
             continue
         lck = ev.scope == "LCK"
         label = (ev.split if str(ev.split).startswith("LCK") else f"LCK {ev.split}") if lck else ev.league
-        # 정규 시즌 순위 (LCK, Cup 제외)
-        if lck and ev.split != "LCK Cup":
+        # 정규 시즌 순위 (LCK Cup은 그룹 배틀 순위)
+        if lck and ev.split == "LCK Cup":
+            cup = cup_group_table(s)
+            if key in cup.index:
+                r = cup.loc[key]
+                ranks.append(("LCK Cup 그룹 배틀", f"{r['그룹']} {int(r['그룹 순위'])}위 / {int(r['그룹 팀 수'])}팀"))
+        elif lck:
             reg = s[s["page"].map(stage_of) == "regular"]
             table = standings_from_series(reg)
             if key in table.index:
-                ranks.append((label, int(table.at[key, "순위"]), len(table)))
+                ranks.append((label, f"{int(table.at[key, '순위'])}위 / {len(table)}팀"))
         # 대회 최종 성적
         final = s.iloc[-1]
         if key in (final["team1"], final["team2"]):
@@ -126,16 +172,21 @@ def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, int, int]],
             results.append((label, "우승" if won else "준우승"))
             continue
         last = mine.iloc[-1]
-        if lck:
+        if lck and ev.split == "LCK Cup":            # Cup은 한 페이지 안에서 탭 이름으로 단계 구분
+            tabs = mine["tab"].astype(str)
+            if tabs.str.startswith("Playoffs").any():
+                results.append((label, f"Play-off {round_name(tabs[tabs.str.startswith('Playoffs')].iloc[-1])} 탈락"))
+            elif tabs.str.startswith("Play-In").any():
+                results.append((label, "Play-in 탈락"))
+            else:
+                results.append((label, "그룹 배틀 탈락"))
+        elif lck:
             stage = stage_of.get(last["page"], "regular")
             po = mine[mine["page"].map(stage_of) == "playoffs"]
             if not po.empty:
                 results.append((label, f"Play-off {round_name(po.iloc[-1]['tab'])} 탈락"))
             elif stage == "play-in" or (mine["page"].map(stage_of) == "play-in").any():
                 results.append((label, "Play-in 탈락"))
-            elif ev.split == "LCK Cup" and stage == "regular" and str(last["tab"]) in (
-                    "Quarterfinals", "Semifinals", "Third-Place Match"):
-                results.append((label, round_name(last["tab"])))
             else:
                 results.append((label, "플레이오프 진출 실패"))
         else:
