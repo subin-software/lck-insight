@@ -93,7 +93,7 @@ st.markdown(
 
 if is_lck:
     tab_rank, tab_bracket, tab_final, tab_stats, tab_matches = st.tabs(
-        ["🥇 최종 순위", "🏟️ 대진표", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
+        ["🥇 최종 순위", "🔥 포스트시즌", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
 else:
     tab_rank, tab_final, tab_stats, tab_matches = st.tabs(["🥇 최종 순위", "🎯 결승 · MVP", "📊 대회 기록", "📋 경기 결과"])
     tab_bracket = None
@@ -152,7 +152,7 @@ with tab_rank:
                          "세트득실": st.column_config.NumberColumn(format="%+d"),
                          "세트 승률": st.column_config.ProgressColumn(format="percent", min_value=0, max_value=1)})
         st.caption("정규 시즌(모든 라운드) 매치 승수 → 세트 득실 순입니다. Road to MSI·플레이인·플레이오프 결과는 "
-                   "🏟️ 대진표 탭에서 볼 수 있습니다.")
+                   "🔥 포스트시즌 탭에서 볼 수 있습니다.")
     else:
         if results.empty:
             # 공식 순위가 없으면 결승 결과로 1·2위만 표시
@@ -190,7 +190,7 @@ with tab_rank:
                          "상금($)": st.column_config.NumberColumn(format="$%d")})
         st.caption("순위·상금은 Leaguepedia 공식 대회 결과 기준입니다 (공동 순위는 '5-8'처럼 표시).")
 
-# ------------------------------------------------------------------ 대진표 (LCK)
+# ------------------------------------------------------------------ 포스트시즌 대진표 (LCK)
 if tab_bracket is not None:
     with tab_bracket:
         stage_names = {"road-to-msi": "Road to MSI", "play-in": "플레이인", "playoffs": "플레이오프"}
