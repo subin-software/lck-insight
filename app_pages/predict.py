@@ -6,9 +6,10 @@ import streamlit as st
 
 from utils import champions as champ
 from utils.data_loader import has_data, load_champions
-from utils.model import (FEATURES, TEST_FROM, champ_pool, champ_rate, contributions, evaluate,
-                         final_model, importances, predict, series_prob, team_state)
-from utils.teams import team_games, team_info
+from utils.model import (FEATURES, TEST_FROM, champ_pool, contributions, current_roster, evaluate,
+                         final_model, importances, player_champ, predict, series_prob,
+                         signature_champs, team_state)
+from utils.teams import ROLE_KO, ROLE_ORDER, display_name, team_games, team_info
 
 A_COLOR, B_COLOR = "#C89B3C", "#3B82F6"
 
@@ -49,19 +50,45 @@ with tab_predict:
     champs = load_champions().sort_values("name_ko")
     champ_options = list(champs["champion"])
     champ_label = dict(zip(champs["champion"], champs["name_ko"]))
-    with st.expander("🧩 챔피언 조합 넣기 (선택)", expanded=False):
-        d1, d2 = st.columns(2)
-        picks_a = d1.multiselect("A팀 챔피언 (최대 5개)", champ_options, max_selections=5,
-                                 format_func=lambda c: champ_label.get(c, c))
-        picks_b = d2.multiselect("B팀 챔피언 (최대 5개)", [c for c in champ_options if c not in picks_a],
-                                 max_selections=5, format_func=lambda c: champ_label.get(c, c))
-        st.caption("챔피언을 넣지 않으면 조합 요인은 중립(50%)으로 계산됩니다.")
 
-    if team_a is None or team_b is None:
-        st.info("👆 **A팀과 B팀**을 선택하면 예측 결과가 나타납니다.")
-    else:
+    def pick_lineup(col, team: str, roster: dict, key: str, taken: set) -> list[tuple[str, str]]:
+        """포지션별 챔피언 선택. 선수가 최근 많이 쓴 챔피언을 ★로 목록 위에 보여준다."""
+        lineup = []
+        for role in ROLE_ORDER:
+            player = roster.get(role)
+            sig = [c for c, _, _ in signature_champs(player, 6)] if player else []
+            opts = sig + [c for c in champ_options if c not in sig]
+
+            def fmt(c, s=frozenset(sig), pl=player):
+                if c in s:
+                    return f"★ {champ_label.get(c, c)} ({player_champ(pl, c)['games']:.0f}판)"
+                return champ_label.get(c, c)
+
+            choice = col.selectbox(f"{ROLE_KO[role]} · {display_name(player) if player else '?'}",
+                                   [c for c in opts if c not in taken], index=None,
+                                   placeholder="챔피언 (선택)", format_func=fmt, key=f"{key}_{team}_{role}")
+            if choice:
+                lineup.append((player, choice))
+                taken.add(choice)
+        return lineup
+
+    def render_prediction():
+        if team_a is None or team_b is None:
+            st.info("👆 **A팀과 B팀**을 선택하면 예측 결과가 나타납니다.")
+            return
+
+        with st.expander("🧩 포지션별 챔피언 넣기 (선택)", expanded=False):
+            st.caption("각 팀의 **가장 최근 경기 출전 선수** 기준입니다. ★는 그 선수가 최근 많이 쓴 챔피언이고, "
+                       "괄호 안은 시간 가중 경기 수입니다. 비워 둔 포지션은 '보통 선수' 값으로 계산됩니다.")
+            d1, d2 = st.columns(2)
+            d1.markdown(f"**{team_a}**")
+            d2.markdown(f"**{team_b}**")
+            taken: set = set()
+            lineup_a = pick_lineup(d1, team_a, current_roster(team_a), "la", taken)
+            lineup_b = pick_lineup(d2, team_b, current_roster(team_b), "lb", taken)
+
         a_blue = side == "블루"
-        p, feats = predict(team_a, team_b, a_blue, picks_a, picks_b)
+        p, feats = predict(team_a, team_b, a_blue, lineup_a, lineup_b)
 
         fig = go.Figure()
         fig.add_bar(y=[""], x=[p], orientation="h", marker_color=A_COLOR, name=team_a,
@@ -89,7 +116,7 @@ with tab_predict:
                 cdf["유리한 팀"] = cdf["기여도"].map(lambda v: team_a if v >= 0 else team_b)
                 fig = px.bar(cdf, x="기여도", y="요인", orientation="h", color="유리한 팀",
                              color_discrete_map={team_a: A_COLOR, team_b: B_COLOR})
-                fig.update_layout(height=280, margin=dict(t=10, b=10), legend_title=None, yaxis_title=None,
+                fig.update_layout(height=320, margin=dict(t=10, b=10), legend_title=None, yaxis_title=None,
                                   xaxis_title="기여도 (로그 오즈)")
                 st.plotly_chart(fig, width="stretch")
         with right:
@@ -98,40 +125,52 @@ with tab_predict:
                     ("최근 10세트 승률", f"{sa['form']:.0%}", f"{sb['form']:.0%}"),
                     ("상대 전적 (최근 20세트)", f"{feats['h2h']:.0%}", f"{1 - feats['h2h']:.0%}"),
                     ("진영", side, "레드" if a_blue else "블루")]
-            if picks_a or picks_b:
-                ca = sum(champ_rate(c) for c in picks_a) / len(picks_a) if picks_a else 0.5
-                cb = sum(champ_rate(c) for c in picks_b) / len(picks_b) if picks_b else 0.5
-                rows.append(("챔피언 최근 승률 평균", f"{ca:.1%}", f"{cb:.1%}"))
+
+            def avg_mastery(lineup):
+                if not lineup:
+                    return "-"
+                return f"{sum(player_champ(pl, c)['mastery'] for pl, c in lineup) / len(lineup):.0%}"
+
+            if lineup_a or lineup_b:
+                rows.append(("입력한 챔피언 숙련도 평균", avg_mastery(lineup_a), avg_mastery(lineup_b)))
             st.markdown("**입력된 특성 값**")
             st.dataframe(pd.DataFrame(rows, columns=["항목", team_a, team_b]), hide_index=True, width="stretch")
 
         # ---------------------------------------------------- 조합 비교
         st.markdown("#### 🔄 챔피언을 바꾸면?")
-        if not picks_a:
-            st.caption("A팀 챔피언을 1개 이상 넣으면, 한 챔피언을 다른 챔피언으로 바꿨을 때 "
+        if not lineup_a:
+            st.caption("위에서 A팀 챔피언을 1개 이상 넣으면, 그 포지션 선수가 다른 챔피언을 골랐을 때 "
                        "예상 승률이 어떻게 달라지는지 비교할 수 있습니다.")
-        else:
-            slot = st.selectbox("바꿔 볼 A팀 챔피언", picks_a, format_func=lambda c: champ_label.get(c, c))
-            candidates = [c for c in champ_pool() if c not in picks_a and c not in picks_b]
-            rows = []
-            for c in candidates:
-                new = [c if x == slot else x for x in picks_a]
-                q, _ = predict(team_a, team_b, a_blue, new, picks_b)
-                rows.append({"아이콘": champ.icon(c), "챔피언": champ_label.get(c, c), "예상 승률": q, "변화": (q - p) * 100,
-                             "최근 승률": champ_rate(c)})
-            alt = pd.DataFrame(rows).sort_values("예상 승률", ascending=False)
-            best, worst = alt.head(8), alt.tail(5).iloc[::-1]
-            l2, r2 = st.columns(2)
-            cfg = {"아이콘": st.column_config.ImageColumn(width="small"),
-                   "예상 승률": st.column_config.NumberColumn(format="percent"),
-                   "변화": st.column_config.NumberColumn(format="%+.1f%%p", help="현재 조합 대비 예상 승률 변화 (%p)"),
-                   "최근 승률": st.column_config.NumberColumn(format="percent")}
-            l2.markdown(f"**{champ_label.get(slot, slot)} 대신 쓰면 좋은 챔피언**")
-            l2.dataframe(best, hide_index=True, width="stretch", column_config=cfg)
-            r2.markdown("**바꾸면 불리해지는 챔피언**")
-            r2.dataframe(worst, hide_index=True, width="stretch", column_config=cfg)
-            st.caption(f"후보: 최근 경기에서 충분히 쓰인 챔피언 {len(candidates)}개. "
-                       "챔피언 요인은 팀 실력(Elo)보다 영향이 작아 변화 폭이 크지 않습니다.")
+            return
+        slot = st.selectbox("바꿔 볼 A팀 포지션", range(len(lineup_a)),
+                            format_func=lambda i: f"{display_name(lineup_a[i][0])} · "
+                                                  f"{champ_label.get(lineup_a[i][1], lineup_a[i][1])}")
+        player = lineup_a[slot][0]
+        used = {c for _, c in lineup_a} | {c for _, c in lineup_b}
+        candidates = sorted((set(champ_pool()) | {c for c, _, _ in signature_champs(player, 15)}) - used)
+        rows = []
+        for c in candidates:
+            new = [(pl, c) if i == slot else (pl, ch) for i, (pl, ch) in enumerate(lineup_a)]
+            q, _ = predict(team_a, team_b, a_blue, new, lineup_b)
+            pc = player_champ(player, c)
+            rows.append({"아이콘": champ.icon(c), "챔피언": champ_label.get(c, c), "예상 승률": q,
+                         "변화": (q - p) * 100, "선수 경험": pc["games"], "선수 숙련도": pc["mastery"]})
+        alt = pd.DataFrame(rows).sort_values("예상 승률", ascending=False)
+        best, worst = alt.head(8), alt.tail(5).iloc[::-1]
+        l2, r2 = st.columns(2)
+        cfg = {"아이콘": st.column_config.ImageColumn(width="small"),
+               "예상 승률": st.column_config.NumberColumn(format="percent"),
+               "변화": st.column_config.NumberColumn(format="%+.1f%%p", help="현재 조합 대비 예상 승률 변화 (%p)"),
+               "선수 경험": st.column_config.NumberColumn(format="%.0f판", help="시간 가중 경기 수 (1년 지나면 절반)"),
+               "선수 숙련도": st.column_config.NumberColumn(format="percent", help="그 챔피언으로 거둔 보정 승률")}
+        l2.markdown(f"**{display_name(player)}에게 추천하는 챔피언**")
+        l2.dataframe(best, hide_index=True, width="stretch", column_config=cfg)
+        r2.markdown("**바꾸면 불리해지는 챔피언**")
+        r2.dataframe(worst, hide_index=True, width="stretch", column_config=cfg)
+        st.caption("선수가 많이 써 봤고 잘했던 챔피언일수록 예상 승률이 올라갑니다. "
+                   "팀 실력(Elo) 차이가 더 큰 요인이라 변화 폭은 몇 %p 수준입니다.")
+
+    render_prediction()
 
 # ------------------------------------------------------------------ 모델 성능
 with tab_perf:
@@ -139,6 +178,7 @@ with tab_perf:
                 f"{TEST_FROM.year}년 이후 {report['n_test']:,}세트로 평가했습니다 (미래 경기로 평가하는 시간 순 분할).")
     rows = [{"방법": name, "정확도": v["정확도"], "로그 손실": v["로그 손실"], "AUC": v["AUC"]}
             for name, v in report["models"].items()]
+    rows.append({"방법": "개선 전: 로지스틱 회귀 (선수 챔피언 숙련도 제외)", **report["before"]})
     rows += [{"방법": f"기준선: {k}", "정확도": v} for k, v in report["baseline"].items()]
     perf = pd.DataFrame(rows)
     st.dataframe(perf, hide_index=True, width="stretch", column_config={
@@ -146,6 +186,9 @@ with tab_perf:
         "로그 손실": st.column_config.NumberColumn(format="%.3f", help="낮을수록 확률 예측이 정확합니다."),
         "AUC": st.column_config.NumberColumn(format="%.3f", help="1에 가까울수록 승패를 잘 구분합니다.")})
     st.success(f"최종 모델: **{best_name}** (확률의 질을 나타내는 로그 손실이 가장 낮은 모델)")
+    st.caption("**챔피언 요인 개선**: 처음에는 챔피언의 전체 메타 승률만 썼는데, 프로 경기에서는 대부분 50% 근처라 "
+               "예측에 거의 도움이 되지 않았습니다. 그래서 '그 선수가 그 챔피언을 얼마나 잘 다루는가'(숙련도·경험)를 "
+               "추가했습니다. 정확도는 비슷하지만 로그 손실과 AUC가 좋아졌고, 챔피언 선택이 예측에 의미 있게 반영됩니다.")
 
     left, right = st.columns(2)
     with left:
@@ -180,6 +223,9 @@ with tab_how:
             "A팀이 블루 진영이면 1 (블루 진영 승률이 약간 높음)",
             "고른 챔피언들의 최근 승률 평균 차이. 120일마다 가중치가 절반으로 줄고, 표본이 적으면 50% 쪽으로 보정",
             "두 팀의 최근 20세트 상대 전적 승률",
+            "출전 선수 5명이 '그 챔피언으로' 거둔 승률 평균의 차이. 1년마다 가중치 절반, 경기가 적으면 50% 쪽으로 보정. "
+            "LCK 출신 선수의 해외 리그 경기도 반영",
+            "출전 선수 5명이 그 챔피언을 써 본 경기 수(로그) 평균의 차이 — 손에 익은 챔피언인지",
         ]}))
     st.markdown("""
 **2. 모델 학습** — 로지스틱 회귀와 랜덤 포레스트를 학습합니다. 같은 경기를 반대 팀 시점으로 뒤집은 데이터도 넣어
