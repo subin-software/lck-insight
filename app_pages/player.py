@@ -6,9 +6,10 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from utils import champions as champ
-from utils.data_loader import has_data
-from utils.players import (ARCHETYPES, MIN_GAMES, RADAR_FEATURES, STYLE_FEATURES, percentiles,
-                           player_games, season_table, similar_players, style_clusters, summarize)
+from utils.data_loader import has_data, load_player_info
+from utils.players import (ARCHETYPES, MIN_GAMES, RADAR_FEATURES, ROLE_METRICS, STYLE_FEATURES, UNAVAILABLE,
+                           percentiles, player_games, position_percentiles, position_table, season_table,
+                           similar_players, style_clusters, summarize)
 from utils.teams import ROLE_KO, ROLE_ORDER, display_name, player_photo
 
 SCOPE_KO = {"LCK": "LCK", "INTL": "국제전", "FOREIGN": "해외 리그"}
@@ -65,10 +66,25 @@ with h1:
     else:
         st.markdown("<div style='font-size:96px;text-align:center'>👤</div>", unsafe_allow_html=True)
 with h2:
-    st.markdown(f"## {display_name(player)}")
+    pinfo = load_player_info()
+    prof = pinfo.loc[player] if not pinfo.empty and player in pinfo.index else None
+    native = prof["native_name"] if prof is not None and isinstance(prof["native_name"], str) else ""
+    st.markdown(f"## {display_name(player)}" + (f" <span style='font-size:1.3rem;opacity:0.7'>{native}</span>"
+                                                 if native else ""), unsafe_allow_html=True)
     years = mine["year"].dropna().astype(int)
-    st.caption(f"{ROLE_KO.get(role, role)} · 최근 소속 {last['team']} · "
-               f"{years.min()}~{years.max()}년 활동 · 기록된 전체 경기 {total['games']}경기")
+    extra = []
+    if prof is not None:
+        if isinstance(prof["name"], str):
+            extra.append(prof["name"])
+        if isinstance(prof["country"], str):
+            extra.append(prof["country"])
+        birth = pd.to_datetime(prof["birthdate"], errors="coerce")
+        if pd.notna(birth):
+            today = pd.Timestamp.today()
+            age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))
+            extra.append(f"{birth:%Y.%m.%d}생 (만 {age}세)")
+    st.caption(" · ".join(extra + [f"{ROLE_KO.get(role, role)}", f"최근 소속 {last['team']}",
+                                   f"{years.min()}~{years.max()}년 활동", f"기록된 전체 경기 {total['games']}경기"]))
 
 m = st.columns(4)
 note = dict(delta_color="off", delta_arrow="off", border=True)
@@ -77,8 +93,8 @@ m[1].metric("통산 KDA", f"{total['kda']:.2f}", border=True)
 m[2].metric("킬 관여율", f"{total['kp']:.0%}", border=True)
 m[3].metric("국제전 경기", f"{int((mine['scope'] == 'INTL').sum())}", border=True)
 
-tab_career, tab_champ, tab_compare, tab_style = st.tabs(
-    ["📈 커리어", "🏆 챔피언", "⚔️ 선수 비교", "🧬 플레이 유형"])
+tab_career, tab_position, tab_champ, tab_compare, tab_style = st.tabs(
+    ["📈 커리어", "🎯 포지션 지표", "🏆 챔피언", "⚔️ 선수 비교", "🧬 플레이 유형"])
 
 # ------------------------------------------------------------------ 커리어
 with tab_career:
@@ -130,6 +146,74 @@ with tab_career:
         if fmt:
             fig.update_yaxes(tickformat=fmt, range=[0, 1])
         col.plotly_chart(fig, width="stretch")
+
+# ------------------------------------------------------------------ 포지션 지표
+with tab_position:
+    seasons_pos = position_table()
+    own_pos = seasons_pos[(seasons_pos["player"] == player)].sort_values("year")
+    if own_pos.empty:
+        st.info(f"이 선수는 LCK에서 한 시즌 {MIN_GAMES}경기 이상 뛴 기록이 없어 포지션 지표를 계산하지 않습니다.")
+    else:
+        p1, p2 = st.columns([1, 3])
+        pos_year = p1.selectbox("시즌", own_pos["year"].tolist()[::-1], format_func=lambda y: f"{y}년",
+                                key=f"pos_year_{player}")
+        pos_role = own_pos.loc[own_pos["year"] == pos_year, "role"].iloc[0]
+        p2.markdown(f"**{ROLE_KO.get(pos_role, pos_role)}** — {ROLE_METRICS[pos_role]['desc']}")
+
+        table = position_percentiles(player, pos_year, pos_role)
+        shown = table[table["값"].notna()]
+        pending = table[table["값"].isna() & (table["출처"] == "oe")]
+        missing = table[table["값"].isna() & (table["출처"] == "base")]
+
+        def card(r) -> str:
+            pct = r["백분위"]
+            color = "#10B981" if pct >= 70 else ("#C89B3C" if pct >= 40 else "#EF4444")
+            top = f"상위 {100 - pct:.0f}%" if pct >= 50 else f"하위 {pct:.0f}%"
+            return (f"<div style='border:1px solid rgba(128,128,128,0.22);border-radius:10px;padding:10px 12px'>"
+                    f"<div style='font-size:0.75rem;opacity:0.7'>{r['지표']}</div>"
+                    f"<div style='font-size:1.35rem;font-weight:800'>{r['형식'].format(r['값'])}</div>"
+                    f"<div style='height:6px;background:rgba(128,128,128,0.18);border-radius:3px;margin:6px 0 4px'>"
+                    f"<div style='width:{pct:.0f}%;height:6px;background:{color};border-radius:3px'></div></div>"
+                    f"<div style='font-size:0.72rem;opacity:0.75'>{top} · 평균 {r['형식'].format(r['포지션 평균'])}"
+                    f"</div></div>")
+
+        for title, part in [("공통 지표", shown[shown["공통"]]), (f"{ROLE_KO.get(pos_role)} 핵심 지표", shown[~shown["공통"]])]:
+            if part.empty:
+                continue
+            st.markdown(f"**{title}**")
+            st.markdown("<div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px'>"
+                        + "".join(card(r) for _, r in part.iterrows()) + "</div>", unsafe_allow_html=True)
+        st.caption(f"백분위: {pos_year}년 LCK {ROLE_KO.get(pos_role)} 선수(한 시즌 {MIN_GAMES}경기 이상) 사이에서의 위치입니다. "
+                   "데스처럼 낮을수록 좋은 지표는 낮을수록 높은 백분위가 됩니다.")
+
+        notes = []
+        if not pending.empty:
+            notes.append("**15분 지표 등 준비 중**: " + ", ".join(pending["지표"]) +
+                         " — Oracle's Elixir 경기 데이터가 필요한 지표로, 데이터를 추가하면 자동으로 표시됩니다.")
+        if not missing.empty:
+            notes.append("**이 시즌 기록 없음**: " + ", ".join(missing["지표"]) +
+                         " (딜량은 2020년, 시야 점수는 2019년부터 기록됨)")
+        if pos_role in UNAVAILABLE:
+            notes.append(f"**공개 데이터에 없는 지표**: {UNAVAILABLE[pos_role]}")
+        for n in notes:
+            st.caption(n)
+
+        role_keys = [r for r in table.itertuples() if not r.공통 and r.출처 == "base"]
+        if role_keys and len(own_pos) > 1:
+            st.markdown("**시즌별 변화**")
+            pick = st.selectbox("지표", [r.key for r in role_keys], key=f"pos_metric_{player}",
+                                format_func=lambda k: table.set_index("key").at[k, "지표"])
+            fmt = table.set_index("key").at[pick, "형식"]
+            pool_avg = seasons_pos[seasons_pos["role"] == pos_role].groupby("year")[pick].mean()
+            trend = pd.DataFrame({"연도": own_pos["year"], display_name(player): own_pos[pick].values})
+            trend["포지션 평균"] = trend["연도"].map(pool_avg)
+            long = trend.melt("연도", var_name="구분", value_name="값").dropna()
+            fig = px.line(long, x="연도", y="값", color="구분", markers=True,
+                          color_discrete_sequence=["#C89B3C", "#9CA3AF"])
+            fig.update_layout(height=320, margin=dict(t=10, b=10), legend_title=None, yaxis_title=None,
+                              yaxis_tickformat=".0%" if "%" in fmt else None)
+            fig.update_xaxes(dtick=1)
+            st.plotly_chart(fig, width="stretch")
 
 # ------------------------------------------------------------------ 챔피언
 with tab_champ:

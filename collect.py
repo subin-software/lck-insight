@@ -123,7 +123,15 @@ SCHEDULE_FIELDS = {
     "MS.MatchId": "match_id", "MS.OverviewPage": "page", "MS.DateTime_UTC": "datetime_utc",
     "MS.Team1": "team1", "MS.Team2": "team2", "MS.Team1Score": "team1_score",
     "MS.Team2Score": "team2_score", "MS.Winner": "winner", "MS.BestOf": "best_of",
-    "MS.Tab": "tab", "MS.Round": "round",
+    "MS.Tab": "tab", "MS.Round": "round", "MS.MVP": "mvp",
+}
+PLAYER_INFO_FIELDS = {
+    "P.OverviewPage": "player", "P.ID": "id", "P.Name": "name", "P.NativeName": "native_name",
+    "P.Country": "country", "P.Birthdate": "birthdate", "P.IsRetired": "is_retired",
+}
+RESULT_FIELDS = {
+    "TR.OverviewPage": "page", "TR.Event": "event", "TR.Place": "place", "TR.Place_Number": "place_number",
+    "TR.Team": "team", "TR.Prize": "prize",
 }
 ROSTER_FIELDS = {
     "TP.OverviewPage": "page", "TP.Team": "team", "TP.Link": "player", "TP.Role": "role",
@@ -280,6 +288,28 @@ def fetch_team_info(team_names: list[str]) -> tuple[pd.DataFrame, pd.DataFrame, 
     return teams, redirects, renames
 
 
+def fetch_player_info(player_names) -> pd.DataFrame:
+    """선수 프로필: 한글 본명, 영문 이름, 국적, 생년월일, 은퇴 여부 (선수 페이지 이름 기준)."""
+    frames = [cargo_query("Players=P", PLAYER_INFO_FIELDS, where=f"P.OverviewPage IN {_in(names)}",
+                          label=f"선수 프로필 {i}번째 묶음")
+              for i, names in enumerate(batched(player_names), 1)]
+    return pd.concat(frames, ignore_index=True).drop_duplicates("player") if frames \
+        else pd.DataFrame(columns=PLAYER_INFO_FIELDS.values())
+
+
+def fetch_tournament_results(pages) -> pd.DataFrame:
+    """대회 공식 최종 순위·상금. 결과는 대회 상위 페이지(예: '…World Championship')에 기록되기도 해서 둘 다 찾는다."""
+    candidates = set()
+    for p in pages:
+        parts = p.split("/")
+        candidates.update("/".join(parts[:i]) for i in range(1, len(parts) + 1))
+    frames = [cargo_query("TournamentResults=TR", RESULT_FIELDS, where=f"TR.OverviewPage IN {_in(names)}",
+                          label=f"대회 결과 {i}번째 묶음")
+              for i, names in enumerate(batched(candidates), 1)]
+    return pd.concat(frames, ignore_index=True).drop_duplicates() if frames \
+        else pd.DataFrame(columns=RESULT_FIELDS.values())
+
+
 def image_url(file_name: str) -> str:
     """위키 파일 이름 → 실제 이미지 주소 (MD5 해시 폴더 규칙, API 호출 불필요)."""
     name = file_name.replace(" ", "_")
@@ -425,11 +455,21 @@ def main(full: bool = False) -> None:
 
     champions = fetch_champions()
 
+    # 선수 프로필(한글 본명 등)은 새 경기에 나온 선수만, 대회 결과는 올해·작년 대회만 다시 받는다
+    player_info = upsert(pd.DataFrame() if full else read("player_info"),
+                         fetch_player_info(photo_targets), ["player"])
+    scoped = tournaments[tournaments["scope"].isin(["LCK", "INTL"])]
+    if incremental:
+        scoped = scoped[pd.to_numeric(scoped["year"], errors="coerce") >= datetime.now(KST).year - 1]
+    results = upsert(pd.DataFrame() if full else read("tournament_results"),
+                     fetch_tournament_results(scoped["page"]), ["page", "team", "place"])
+
     for name, df in [("tournaments", tournaments), ("games", games), ("players", players),
                      ("players_foreign", foreign), ("player_images", images),
                      ("schedule", schedule), ("rosters", rosters),
                      ("teams", teams), ("team_redirects", redirects), ("team_renames", renames),
-                     ("champions", champions)]:
+                     ("champions", champions), ("player_info", player_info),
+                     ("tournament_results", results)]:
         write(name, df)
         print(f"  저장: {name}.csv ({len(df)}행)", flush=True)
 
@@ -445,21 +485,36 @@ def collect_all_images() -> None:
     print(f"  저장: player_images.csv ({len(images)}행, 선수 {images['player'].nunique()}명)", flush=True)
 
 
+def collect_extras() -> None:
+    """나중에 추가한 항목(경기 MVP, 선수 프로필, 대회 결과)을 기존 데이터 전체에 대해 한 번 받는다."""
+    schedule = fetch_schedule(None)                      # MVP 열을 채우기 위해 일정 전체를 다시 받는다
+    names = set(read("players").get("player", [])) | set(read("players_foreign").get("player", []))
+    info = fetch_player_info(names)
+    tours = read("tournaments")
+    results = fetch_tournament_results(tours.loc[tours["scope"].isin(["LCK", "INTL"]), "page"])
+    for name, df in [("schedule", schedule), ("player_info", info), ("tournament_results", results)]:
+        write(name, df)
+        print(f"  저장: {name}.csv ({len(df)}행)", flush=True)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--full", action="store_true", help="처음부터 전체 다시 수집")
     parser.add_argument("--probe", action="store_true", help="필드 확인용으로 2행씩만 조회")
     parser.add_argument("--images", action="store_true", help="기존 선수 전체의 사진 목록만 수집")
+    parser.add_argument("--extras", action="store_true", help="경기 MVP·선수 프로필·대회 결과만 전체 수집")
     args = parser.parse_args()
     try:
         if args.probe:
             probe()
         elif args.images:
             collect_all_images()
+        elif args.extras:
+            collect_extras()
         else:
             main(full=args.full)
     except Exception as exc:  # 실패해도 기존 CSV는 그대로 둔다
         print(f"[실패] {exc}", file=sys.stderr)
-        if not (args.probe or args.images):
+        if not (args.probe or args.images or args.extras):
             append_update_log(0, f"수집 실패: {str(exc)[:80]}")
         sys.exit(1)

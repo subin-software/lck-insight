@@ -21,6 +21,7 @@ pages = {
         st.Page("app_pages/player.py", title="선수 분석", icon="👤"),
         st.Page("app_pages/meta.py", title="메타 분석", icon="📊"),
         st.Page("app_pages/international.py", title="국제전", icon="🌏"),
+        st.Page("app_pages/tournament.py", title="대회 정보", icon="🏆"),
     ],
     "도구": [
         st.Page("app_pages/predict.py", title="승부 예측", icon="🔮"),

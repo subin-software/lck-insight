@@ -132,6 +132,13 @@ def load_champions() -> pd.DataFrame:
 
 
 @st.cache_data
+def load_player_info() -> pd.DataFrame:
+    """선수 프로필 (한글 본명, 영문 이름, 국적, 생년월일). index = 선수 페이지 이름."""
+    df = load_csv("player_info")
+    return df.drop_duplicates("player").set_index("player") if not df.empty else df
+
+
+@st.cache_data
 def load_player_images() -> pd.DataFrame:
     """선수 사진 목록에 대회 연도·시작일을 붙인다 (시즌에 맞는 사진을 고르기 위해)."""
     df = load_csv("player_images").copy()

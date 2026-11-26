@@ -204,6 +204,8 @@ chips = [f"{match['datetime_kst']:%Y.%m.%d} ({weekday}) {match['datetime_kst']:%
          match["tournament"], tab_ko(match["tab"])]
 if bo:
     chips.append(f"{bo}판 {bo // 2 + 1}선승")
+if isinstance(match.get("mvp"), str) and match["mvp"]:
+    chips.append(f"🏅 MVP {display_name(match['mvp'])}")
 chip_html = "".join(f"<span style='font-size:0.75rem;padding:2px 8px;border-radius:999px;"
                     f"background:rgba(128,128,128,0.12);margin:0 3px'>{c}</span>" for c in chips)
 st.markdown(

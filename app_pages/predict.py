@@ -41,11 +41,21 @@ with tab_predict:
         region = info.at[t, "region"] if t in info.index else ""
         return f"{t} · {region} · Elo {team_state(t)['elo']:.0f}"
 
-    c1, c2, c3 = st.columns([5, 2, 5])
+    def logo_html(team, size=56):
+        """선택한 팀 로고 (아직 안 골랐으면 빈 틀)."""
+        url = info.at[team, "logo"] if team and team in info.index else None
+        inner = (f"<img src='{url}' style='width:{size}px;height:{size}px;object-fit:contain'>" if url
+                 else f"<span style='font-size:{size // 2}px;opacity:0.3'>🛡️</span>")
+        return (f"<div style='height:{size + 18}px;display:flex;align-items:flex-end;justify-content:center'>"
+                f"{inner}</div>")
+
+    l1, c1, c2, c3, l3 = st.columns([1, 4, 2, 4, 1], vertical_alignment="bottom")
     team_a = c1.selectbox("A팀", teams, index=None, placeholder="A팀을 선택하세요", format_func=label)
     side = c2.radio("A팀 진영", ["블루", "레드"], horizontal=False)
     team_b = c3.selectbox("B팀", [t for t in teams if t != team_a], index=None,
                           placeholder="B팀을 선택하세요", format_func=label)
+    l1.markdown(logo_html(team_a), unsafe_allow_html=True)
+    l3.markdown(logo_html(team_b), unsafe_allow_html=True)
 
     champs = load_champions().sort_values("name_ko")
     champ_options = list(champs["champion"])
@@ -98,7 +108,10 @@ with tab_predict:
         fig.update_layout(barmode="stack", height=110, showlegend=False, margin=dict(t=5, b=5, l=5, r=5),
                           xaxis=dict(visible=False, range=[0, 1]), yaxis=dict(visible=False),
                           font=dict(size=16, color="white"))
-        st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
+        b1, b2, b3 = st.columns([1, 10, 1], vertical_alignment="center")
+        b1.markdown(logo_html(team_a, 44), unsafe_allow_html=True)
+        b2.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
+        b3.markdown(logo_html(team_b, 44), unsafe_allow_html=True)
 
         m = st.columns(3)
         m[0].metric(f"{team_a} 세트 승리 확률", f"{p:.1%}", border=True)
