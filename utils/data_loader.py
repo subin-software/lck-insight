@@ -17,7 +17,8 @@ def load_csv(name: str) -> pd.DataFrame:
     path = DATA_DIR / f"{name}.csv"
     if not path.exists():
         return pd.DataFrame()
-    return pd.read_csv(path, encoding="utf-8-sig", low_memory=False)
+    # 패치 번호는 문자열로 읽는다 (숫자로 읽으면 '26.10'이 26.1이 되어 '26.1'과 섞인다)
+    return pd.read_csv(path, encoding="utf-8-sig", low_memory=False, dtype={"patch": str})
 
 
 def has_data() -> bool:
