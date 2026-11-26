@@ -107,18 +107,20 @@ with tab_overview:
         return out
 
     sets_w, sets_n = int(tg["win"].sum()), len(tg)
-    m = st.columns(5)
-    m[0].metric("매치 전적", f"{int(ts['win'].sum())}승 {int((~ts['win']).sum())}패")
-    m[1].metric("세트 승률", f"{sets_w / sets_n:.0%}" if sets_n else "-", f"{sets_w}승 {sets_n - sets_w}패",
-                delta_color="off")
+    note = dict(delta_color="off", delta_arrow="off", border=True)   # 보조 설명은 화살표 없이 회색으로
+    m = st.columns(3)
+    m[0].metric("매치 전적", f"{int(ts['win'].sum())}승 {int((~ts['win']).sum())}패", border=True)
+    m[1].metric("세트 승률", f"{sets_w / sets_n:.0%}" if sets_n else "-",
+                f"{sets_w}승 {sets_n - sets_w}패", **note)
     if not table.empty and team in table.index:
-        m[2].metric("정규 시즌 순위", f"{table.at[team, '순위']}위", f"{len(table)}팀 중", delta_color="off")
+        m[2].metric("정규 시즌 순위", f"{table.at[team, '순위']}위", f"{len(table)}팀 중", **note)
     else:
-        m[2].metric("정규 시즌 순위", "-")
+        m[2].metric("정규 시즌 순위", "-", border=True)
     po_results = playoff_results()
-    m[3].metric("플레이오프" + (f" ({po_results[-1][0]})" if len(po_results) > 1 else ""),
-                po_results[-1][1] if po_results else "-")
-    m[4].metric("평균 경기 시간", f"{tg['gamelength'].mean():.1f}분" if sets_n else "-")
+    m = st.columns(2)
+    m[0].metric("플레이오프", po_results[-1][1] if po_results else "-",
+                f"{po_results[-1][0]} 스플릿" if len(po_results) > 1 else None, **note)
+    m[1].metric("평균 경기 시간", f"{tg['gamelength'].mean():.1f}분" if sets_n else "-", border=True)
     if len(po_results) > 1:
         st.caption("스플릿별 플레이오프: " + " · ".join(f"{s} {r}" for s, r in po_results))
 
