@@ -12,7 +12,7 @@ import streamlit as st
 # 서버는 한 번 불러온 utils 모듈을 메모리에 계속 들고 있어서, GitHub에 새 코드를 올려도 옛 코드가 남아
 # ImportError가 날 수 있다. 이 파일은 페이지를 열 때마다 다시 실행되므로, 여기서 utils 파일이 바뀌었는지
 # 확인하고 바뀌었으면 의존 순서대로 다시 불러온다 (앱 재시작 없이 새 코드 반영).
-UTILS_ORDER = ["data_loader", "champions", "teams", "players", "model", "meta", "international",
+UTILS_ORDER = ["data_loader", "champions", "teams", "players", "model", "meta", "international", "bracket",
                "tournaments", "report", "placeholder"]
 
 
