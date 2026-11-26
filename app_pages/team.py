@@ -5,7 +5,7 @@ import streamlit as st
 
 from utils import champions as champ
 from utils.data_loader import has_data, load_players, load_rosters, load_tournaments
-from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_groups, lineage_of,
+from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_of, season_aliases,
                          player_photo, rename_history, team_games, team_info, team_series)
 
 TAB_KO = {"Finals": "결승", "Semifinals": "준결승", "Quarterfinals": "8강",
@@ -46,19 +46,6 @@ pages = year_tours["page"] if split == "시즌 전체" else \
 
 sel_games = lck_games[lck_games["page"].isin(pages)].copy()
 sel_series = series[series["page"].isin(pages)].copy()
-
-
-def season_aliases(games: pd.DataFrame) -> dict[str, str]:
-    """시즌 중 이름이 바뀐 팀(예: DRX → Kiwoom DRX)을 하나로 합친다.
-
-    같은 계보에 속한 이름들은 그 기간에 '가장 마지막으로 쓴 이름' 하나로 표시한다.
-    """
-    groups = lineage_groups()
-    last_used = games.groupby("team")["datetime_kst"].max()
-    by_root: dict[str, list[str]] = {}
-    for name in last_used.index:
-        by_root.setdefault(groups.get(name, [name])[0], []).append(name)
-    return {n: max(members, key=lambda m: last_used[m]) for members in by_root.values() for n in members}
 
 
 alias = season_aliases(sel_games)

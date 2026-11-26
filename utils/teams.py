@@ -162,6 +162,20 @@ def lineage_of(team: str) -> list[str]:
     return lineage_groups().get(team, [team])
 
 
+def season_aliases(games: pd.DataFrame) -> dict[str, str]:
+    """기간 중 이름이 바뀐 팀(예: DRX → Kiwoom DRX)을 하나로 합친다.
+
+    같은 계보에 속한 이름들은 그 기간에 '가장 마지막으로 쓴 이름' 하나로 표시한다.
+    games: team, datetime_kst 열이 있는 팀 시점 경기 데이터
+    """
+    groups = lineage_groups()
+    last_used = games.groupby("team")["datetime_kst"].max()
+    by_root: dict[str, list[str]] = {}
+    for name in last_used.index:
+        by_root.setdefault(groups.get(name, [name])[0], []).append(name)
+    return {n: max(members, key=lambda m: last_used[m]) for members in by_root.values() for n in members}
+
+
 def current_status(team: str) -> tuple[str, bool]:
     """(계보에서 가장 최근에 경기한 이름, 해체 여부). 이름이 바뀌어 이어진 팀은 해체로 보지 않는다."""
     g = team_games()
