@@ -1,0 +1,615 @@
+page,name,league,year,split,date_start,date_end,is_qualifier,league_short,scope
+2020 Mid-Season Invitational,MSI 2020,Mid-Season Invitational,2020,,,,0,MSI,INTL
+LCL/2022 Season/Spring Playoffs,LCL 2022 Spring Playoffs,LoL Continental League,2022,Spring,,,0,LCL,FOREIGN
+LCL/2022 Season/Summer Playoffs,LCL 2022 Summer Playoffs,LoL Continental League,2022,Summer,,,0,LCL,FOREIGN
+LCL/2022 Season/Summer Season,LCL 2022 Summer,LoL Continental League,2022,Summer,,,0,LCL,FOREIGN
+2027 Mid-Season Invitational,MSI 2027,Mid-Season Invitational,2027,,,,0,MSI,INTL
+2028 First Stand,First Stand 2028,First Stand,2028,,,,0,First Stand,INTL
+2027 First Stand: All In,First Stand: All In 2027,First Stand,2027,,,,0,First Stand,INTL
+LEC/2027 Season/Winter Playoffs,LEC 2027 Winter Playoffs,LoL EMEA Championship,2027,Winter,,,0,LEC,FOREIGN
+LEC/2027 Season/Summer Playoffs,LEC 2027 Summer Playoffs,LoL EMEA Championship,2027,Summer,,,0,LEC,FOREIGN
+LEC/2027 Season/Summer Season,LEC 2027 Summer,LoL EMEA Championship,2027,Summer,,,0,LEC,FOREIGN
+LEC/2027 Season/Spring Playoffs,LEC 2027 Spring Playoffs,LoL EMEA Championship,2027,Spring,,,0,LEC,FOREIGN
+LEC/2027 Season/Spring Season,LEC 2027 Spring,LoL EMEA Championship,2027,Spring,,,0,LEC,FOREIGN
+Season 1 World Championship,Worlds Season 1,World Championship,2011,,2011-06-18,2011-06-20,0,Worlds,INTL
+Season 2 World Championship,Worlds Season 2,World Championship,2012,,2012-10-04,2012-10-13,0,Worlds,INTL
+NA LCS/Season 3/Spring Season,NA LCS 2013 Spring,North America League Championship Series,2013,Spring,2013-02-07,2013-04-19,0,NA LCS,FOREIGN
+EU LCS/Season 3/Spring Season,EU LCS 2013 Spring,Europe League Championship Series,2013,Spring,2013-02-09,2013-04-14,0,EU LCS,FOREIGN
+LPL/2013 Season/Spring Season,LPL 2013 Spring,Tencent LoL Pro League,2013,Spring,2013-03-16,2013-05-18,0,LPL,FOREIGN
+NA LCS/Season 3/Spring Playoffs,NA LCS 2013 Spring Playoffs,North America League Championship Series,2013,Spring,2013-04-26,2013-04-28,0,NA LCS,FOREIGN
+EU LCS/Season 3/Spring Playoffs,EU LCS 2013 Spring Playoffs,Europe League Championship Series,2013,Spring,2013-04-26,2013-04-28,0,EU LCS,FOREIGN
+NA LCS/Season 3/Summer Season,NA LCS 2013 Summer,North America League Championship Series,2013,Summer,2013-06-12,2013-08-16,0,NA LCS,FOREIGN
+EU LCS/Season 3/Summer Season,EU LCS 2013 Summer,Europe League Championship Series,2013,Summer,2013-06-15,2013-08-17,0,EU LCS,FOREIGN
+LPL/2013 Season/Spring Playoffs,LPL 2013 Spring Playoffs,Tencent LoL Pro League,2013,Spring,2013-06-16,2013-06-23,0,LPL,FOREIGN
+LPL/2013 Season/Summer Season,LPL 2013 Summer,Tencent LoL Pro League,2013,Summer,2013-07-12,2013-09-01,0,LPL,FOREIGN
+EU LCS/Season 3/Summer Playoffs,EU LCS 2013 Summer Playoffs,Europe League Championship Series,2013,Summer,2013-08-23,2013-08-25,0,EU LCS,FOREIGN
+NA LCS/Season 3/Summer Playoffs,NA LCS 2013 Summer Playoffs,North America League Championship Series,2013,Summer,2013-08-30,2013-09-01,0,NA LCS,FOREIGN
+Season 3 World Championship,Worlds Season 3,World Championship,2013,,2013-09-15,2013-10-04,0,Worlds,INTL
+2014 GPL Winter,GPL 2014 Winter,Garena Premier League,2014,Winter,2013-10-30,2014-01-11,0,GPL,FOREIGN
+LPL/2013 Season/Summer Playoffs,LPL 2013 Summer Playoffs,Tencent LoL Pro League,2013,Summer,2013-11-20,2013-11-24,0,LPL,FOREIGN
+TCL/2014 Season/Winter/Regular Season,TCL 2014 Winter,Turkish Championship League,2014,,2013-12-01,2014-01-12,0,TCL,FOREIGN
+EU LCS/2014 Season/Spring Season,EU LCS 2014 Spring,Europe League Championship Series,2014,Spring,2014-01-14,2014-04-03,0,EU LCS,FOREIGN
+NA LCS/2014 Season/Spring Season,NA LCS 2014 Spring,North America League Championship Series,2014,Spring,2014-01-16,2014-04-06,0,NA LCS,FOREIGN
+TCL/2014 Season/Winter/Finals,TCL 2014 Winter Playoffs,Turkish Championship League,2014,,2014-02-01,2014-02-02,0,TCL,FOREIGN
+TCL/2014 Season/Spring/Regular Season,TCL 2014 Spring,Turkish Championship League,2014,Spring,2014-02-08,2014-03-27,0,TCL,FOREIGN
+LJL/2014 Season/Winter Season,LJL 2014 Winter,LoL Japan League,2014,Winter,2014-02-09,2014-03-30,0,LJL,FOREIGN
+2014 GPL Spring,GPL 2014 Spring,Garena Premier League,2014,Spring,2014-02-12,2014-04-06,0,GPL,FOREIGN
+LPL/2014 Season/Spring Season,LPL 2014 Spring,Tencent LoL Pro League,2014,Spring,2014-02-22,2014-04-26,0,LPL,FOREIGN
+TCL/2014 Season/Spring/Finals,TCL 2014 Spring Playoffs,Turkish Championship League,2014,Spring,2014-04-04,2014-04-06,0,TCL,FOREIGN
+LJL/2014 Season/Spring Season,LJL 2014 Spring,LoL Japan League,2014,Spring,2014-04-13,2014-06-01,0,LJL,FOREIGN
+EU LCS/2014 Season/Spring Playoffs,EU LCS 2014 Spring Playoffs,Europe League Championship Series,2014,Spring,2014-04-15,2014-04-17,0,EU LCS,FOREIGN
+NA LCS/2014 Season/Spring Playoffs,NA LCS 2014 Spring Playoffs,North America League Championship Series,2014,Spring,2014-04-18,2014-04-20,0,NA LCS,FOREIGN
+TCL/2014 Season/Summer/Regular Season,TCL 2014 Summer,Turkish Championship League,2014,Summer,2014-04-25,2014-05-27,0,TCL,FOREIGN
+CBLOL/2014 Season/Champions Series,Brazilian Champions Series 2014,Circuit Brazilian League of Legends,2014,,2014-04-26,2014-05-28,0,CBLOL,FOREIGN
+EU LCS/2014 Season/Summer Season,EU LCS 2014 Summer,Europe League Championship Series,2014,Summer,2014-05-20,2014-07-31,0,EU LCS,FOREIGN
+NA LCS/2014 Season/Summer Season,NA LCS 2014 Summer,North America League Championship Series,2014,Summer,2014-05-23,2014-08-03,0,NA LCS,FOREIGN
+LPL/2014 Season/Spring Playoffs,LPL 2014 Spring Playoffs,Tencent LoL Pro League,2014,Spring,2014-05-24,2014-05-25,0,LPL,FOREIGN
+CBLOL/2014 Season/Champions Series/Playoffs,CBLOL 2014 Champions Series Playoffs,Circuit Brazilian League of Legends,2014,,2014-06-07,2014-06-08,0,CBLOL,FOREIGN
+TCL/2014 Season/Summer/Finals,TCL 2014 Summer Playoffs,Turkish Championship League,2015,Summer,2014-06-07,2014-06-08,0,TCL,FOREIGN
+2014 GPL Summer,GPL 2014 Summer,Garena Premier League,2014,Summer,2014-06-11,2014-08-16,0,GPL,FOREIGN
+LPL/2014 Season/Summer Season,LPL 2014 Summer,Tencent LoL Pro League,2014,Summer,2014-06-14,2014-08-16,0,LPL,FOREIGN
+LJL/2014 Season/Summer Season,LJL 2014 Summer,LoL Japan League,2014,Summer,2014-06-22,2014-08-17,0,LJL,FOREIGN
+EU LCS/2014 Season/Summer Playoffs,EU LCS 2014 Summer Playoffs,Europe League Championship Series,2014,Summer,2014-08-07,2014-08-17,0,EU LCS,FOREIGN
+LPL/2014 Season/Summer Playoffs,LPL 2014 Summer Playoffs,Tencent LoL Pro League,2014,Summer,2014-08-19,2014-08-24,0,LPL,FOREIGN
+NA LCS/2014 Season/Summer Playoffs,NA LCS 2014 Summer Playoffs,North America League Championship Series,2014,Summer,2014-08-23,2014-09-01,0,NA LCS,FOREIGN
+2014 Season World Championship,Worlds 2014,World Championship,2014,,2014-09-18,2014-10-19,0,Worlds,INTL
+LJL/2014 Season/Grand Finals,LJL 2014 Grand Finals,LoL Japan League,2014,Grand Finals,2014-09-21,2014-09-21,0,LJL,FOREIGN
+2015 GPL Spring,GPL 2015 Spring,Garena Premier League,2015,Spring,2014-12-10,2015-04-12,0,GPL,FOREIGN
+LMS/2015 Season/Spring Season,LMS 2015 Spring,LoL Master Series,2015,Spring,2015-01-08,2015-03-22,0,LMS,FOREIGN
+LPL/2015 Season/Spring Season,LPL 2015 Spring,Tencent LoL Pro League,2015,Spring,2015-01-16,2015-04-12,0,LPL,FOREIGN
+CBLOL/2015 Season/Split 1,CBLOL 2015 Split 1,Circuit Brazilian League of Legends,2015,Split 1,2015-01-17,2015-03-01,0,CBLOL,FOREIGN
+EU LCS/2015 Season/Spring Season,EU LCS 2015 Spring,Europe League Championship Series,2015,Spring,2015-01-22,2015-03-27,0,EU LCS,FOREIGN
+NA LCS/2015 Season/Spring Season,NA LCS 2015 Spring,North America League Championship Series,2015,Spring,2015-01-24,2015-03-29,0,NA LCS,FOREIGN
+LJL/2015 Season/Season 1,LJL 2015 Season 1,LoL Japan League,2015,,2015-01-24,2015-03-29,0,LJL,FOREIGN
+TCL/2015 Season/Winter Season,TCL 2015 Winter,Turkish Championship League,2015,Winter,2015-01-24,2015-03-08,0,TCL,FOREIGN
+OPL/2015 Season/Split 1,OPL 2015 Split 1,Oceanic Pro League,2015,Split 1,2015-02-05,2015-03-30,0,OPL,FOREIGN
+TCL/2015 Season/Winter Playoffs,TCL 2015 Winter Playoffs,Turkish Championship League,2015,,2015-03-21,2015-04-04,0,TCL,FOREIGN
+CBLOL/2015 Season/Split 1 Playoffs,CBLOL 2015 Split 1 Playoffs,Circuit Brazilian League of Legends,2015,,2015-03-21,2015-04-18,0,CBLOL,FOREIGN
+OPL/2015 Season/Split 1 Playoffs,OPL 2015 Split 1 Playoffs,Oceanic Pro League,2015,,2015-04-01,2015-04-09,0,OPL,FOREIGN
+EU LCS/2015 Season/Spring Playoffs,EU LCS 2015 Spring Playoffs,Europe League Championship Series,2015,Spring,2015-04-04,2015-04-19,0,EU LCS,FOREIGN
+NA LCS/2015 Season/Spring Playoffs,NA LCS 2015 Spring Playoffs,North America League Championship Series,2015,Spring,2015-04-04,2015-04-19,0,NA LCS,FOREIGN
+LMS/2015 Season/Spring Playoffs,LMS 2015 Spring Playoffs,LoL Master Series,2015,Spring,2015-04-10,2015-04-12,0,LMS,FOREIGN
+2015 GPL Spring Playoffs,GPL 2015 Spring Playoffs,Garena Premier League,2015,,2015-04-11,2015-04-12,0,GPL,FOREIGN
+LPL/2015 Season/Spring Playoffs,LPL 2015 Spring Playoffs,Tencent LoL Pro League,2015,Spring,2015-04-14,2015-04-26,0,LPL,FOREIGN
+2015 Mid-Season Invitational,MSI 2015,Mid-Season Invitational,2015,,2015-05-07,2015-05-10,0,MSI,INTL
+TCL/2015 Season/Summer Season,TCL 2015 Summer,Turkish Championship League,2015,Summer,2015-05-16,2015-07-12,0,TCL,FOREIGN
+LMS/2015 Season/Summer Season,LMS 2015 Summer,LoL Master Series,2015,Summer,2015-05-20,2015-07-12,0,LMS,FOREIGN
+LPL/2015 Season/Summer Season,LPL 2015 Summer,Tencent LoL Pro League,2015,Summer,2015-05-22,2015-08-09,0,LPL,FOREIGN
+LJL/2015 Season/Season 2,LJL 2015 Season 2,LoL Japan League,2015,,2015-05-23,2015-07-25,0,LJL,FOREIGN
+CBLOL/2015 Season/Split 2,CBLOL 2015 Split 2,Circuit Brazilian League of Legends,2015,Split 2,2015-05-23,2015-07-05,0,CBLOL,FOREIGN
+OPL/2015 Season/Split 2,OPL 2015 Split 2,Oceanic Pro League,2015,Split 2,2015-05-25,2015-07-09,0,OPL,FOREIGN
+EU LCS/2015 Season/Summer Season,EU LCS 2015 Summer,Europe League Championship Series,2015,Summer,2015-05-28,2015-07-24,0,EU LCS,FOREIGN
+NA LCS/2015 Season/Summer Season,NA LCS 2015 Summer,North America League Championship Series,2015,Summer,2015-05-30,2015-07-26,0,NA LCS,FOREIGN
+2015 GPL Summer,GPL 2015 Summer,Garena Premier League,2015,Summer,2015-06-24,2015-08-07,0,GPL,FOREIGN
+CBLOL/2015 Season/Split 2 Playoffs,CBLOL 2015 Split 2 Playoffs,Circuit Brazilian League of Legends,2015,,2015-07-11,2015-08-08,0,CBLOL,FOREIGN
+OPL/2015 Season/Split 2 Playoffs,OPL 2015 Split 2 Playoffs,Oceanic Pro League,2015,,2015-07-20,2015-08-08,0,OPL,FOREIGN
+LMS/2015 Season/Summer Playoffs,LMS 2015 Summer Playoffs,LoL Master Series,2015,Summer,2015-07-24,2015-07-26,0,LMS,FOREIGN
+TCL/2015 Season/Summer Playoffs,TCL 2015 Summer Playoffs,Turkish Championship League,2015,Summer,2015-07-25,2015-08-08,0,TCL,FOREIGN
+2015 GPL Summer Playoffs,GPL 2015 Summer Playoffs,Garena Premier League,2015,Summer,2015-08-08,2015-08-09,0,GPL,FOREIGN
+LJL/2015 Season/Grand Finals,LJL 2015 Grand Finals,LoL Japan League,2015,,2015-08-08,2015-08-08,0,LJL,FOREIGN
+EU LCS/2015 Season/Summer Playoffs,EU LCS 2015 Summer Playoffs,Europe League Championship Series,2015,Summer,2015-08-08,2015-08-23,0,EU LCS,FOREIGN
+NA LCS/2015 Season/Summer Playoffs,NA LCS 2015 Summer Playoffs,North America League Championship Series,2015,Summer,2015-08-08,2015-08-23,0,NA LCS,FOREIGN
+LPL/2015 Season/Summer Playoffs,LPL 2015 Summer Playoffs,Tencent LoL Pro League,2015,Summer,2015-08-11,2015-08-23,0,LPL,FOREIGN
+2015 Season World Championship,Worlds 2015,World Championship,2015,,2015-10-01,2015-10-31,0,Worlds,INTL
+CBLOL/2015 Season/Post-Season,CBLOL 2015 Post-Season,Circuit Brazilian League of Legends,2015,Post,2015-11-12,2015-11-15,0,CBLOL,FOREIGN
+LCK/2016 Season/Spring Season,LCK 2016 Spring,LoL Champions Korea,2016,Spring,2016-01-13,2016-04-09,0,LCK,LCK
+LMS/2016 Season/Spring Season,LMS 2016 Spring,LoL Master Series,2016,Spring,2016-01-14,2016-03-28,0,LMS,FOREIGN
+EU LCS/2016 Season/Spring Season,EU LCS 2016 Spring,Europe League Championship Series,2016,Spring,2016-01-14,2016-03-18,0,EU LCS,FOREIGN
+LPL/2016 Season/Spring Season,LPL 2016 Spring,Tencent LoL Pro League,2016,Spring,2016-01-14,2016-04-10,0,LPL,FOREIGN
+LCL/2016 Season/Spring Season,LCL 2016 Spring,LoL Continental League,2016,Spring,2016-01-16,2016-02-28,0,LCL,FOREIGN
+NA LCS/2016 Season/Spring Season,NA LCS 2016 Spring,North America League Championship Series,2016,Spring,2016-01-16,2016-03-20,0,NA LCS,FOREIGN
+CBLOL/2016 Season/Split 1,CBLOL 2016 Split 1,Circuit Brazilian League of Legends,2016,Split 1,2016-01-16,2016-02-28,0,CBLOL,FOREIGN
+TCL/2016 Season/Winter Season,TCL 2016 Winter,Turkish Championship League,2016,Winter,2016-01-16,2016-02-28,0,TCL,FOREIGN
+LJL/2016 Season/Spring Season,LJL 2016 Spring,LoL Japan League,2016,Spring,2016-01-17,2016-03-26,0,LJL,FOREIGN
+OPL/2016 Season/Split 1,OPL 2016 Split 1,Oceanic Pro League,2016,Split 1,2016-01-18,2016-03-22,0,OPL,FOREIGN
+CBLOL/2016 Season/Split 1 Playoffs,CBLOL 2016 Split 1 Playoffs,Circuit Brazilian League of Legends,2016,,2016-03-12,2016-04-02,0,CBLOL,FOREIGN
+TCL/2016 Season/Winter Playoffs,TCL 2016 Winter Playoffs,Turkish Championship League,2016,,2016-03-19,2016-04-03,0,TCL,FOREIGN
+LCL/2016 Season/Spring Playoffs,LCL 2016 Spring Playoffs,LoL Continental League,2016,Spring,2016-03-26,2016-04-03,0,LCL,FOREIGN
+OPL/2016 Season/Split 1 Playoffs,OPL 2016 Split 1 Playoffs,Oceanic Pro League,2016,,2016-03-29,2016-04-05,0,OPL,FOREIGN
+LJL/2016 Season/Spring Playoffs,LJL 2016 Spring Playoffs,LoL Japan League,2016,Spring,2016-04-02,2016-04-10,0,LJL,FOREIGN
+EU LCS/2016 Season/Spring Playoffs,EU LCS 2016 Spring Playoffs,Europe League Championship Series,2016,Spring,2016-04-02,2016-04-17,0,EU LCS,FOREIGN
+NA LCS/2016 Season/Spring Playoffs,NA LCS 2016 Spring Playoffs,North America League Championship Series,2016,Spring,2016-04-02,2016-04-17,0,NA LCS,FOREIGN
+GPL/2016 Season/Spring,GPL 2016 Spring,Garena Premier League,2016,Spring,2016-04-06,2016-04-10,0,GPL,FOREIGN
+LCK/2016 Season/Spring Playoffs,LCK 2016 Spring Playoffs,LoL Champions Korea,2016,Spring,2016-04-13,2016-04-23,0,LCK,LCK
+LPL/2016 Season/Spring Playoffs,LPL 2016 Spring Playoffs,Tencent LoL Pro League,2016,Spring,2016-04-13,2016-04-23,0,LPL,FOREIGN
+LMS/2016 Season/Spring Playoffs,LMS 2016 Spring Playoffs,LoL Master Series,2016,Spring,2016-04-15,2016-04-17,0,LMS,FOREIGN
+2016 Mid-Season Invitational,MSI 2016,Mid-Season Invitational,2016,,2016-05-04,2016-05-15,0,MSI,INTL
+CBLOL/2016 Season/Split 2,CBLOL 2016 Split 2,Circuit Brazilian League of Legends,2016,Split 2,2016-05-19,2016-06-19,0,CBLOL,FOREIGN
+OPL/2016 Season/Split 2,OPL 2016 Split 2,Oceanic Pro League,2016,Split 2,2016-05-23,2016-07-26,0,OPL,FOREIGN
+LJL/2016 Season/Summer Season,LJL 2016 Summer,LoL Japan League,2016,Summer,2016-05-25,2016-07-30,0,LJL,FOREIGN
+LCK/2016 Season/Summer Season,LCK 2016 Summer,LoL Champions Korea,2016,Summer,2016-05-25,2016-08-06,0,LCK,LCK
+LPL/2016 Season/Summer Season,LPL 2016 Summer,Tencent LoL Pro League,2016,Summer,2016-05-26,2016-08-07,0,LPL,FOREIGN
+LCL/2016 Season/Summer Season,LCL 2016 Summer,LoL Continental League,2016,Summer,2016-05-28,2016-07-10,0,LCL,FOREIGN
+EU LCS/2016 Season/Summer Season,EU LCS 2016 Summer,Europe League Championship Series,2016,Summer,2016-06-02,2016-07-31,0,EU LCS,FOREIGN
+NA LCS/2016 Season/Summer Season,NA LCS 2016 Summer,North America League Championship Series,2016,Summer,2016-06-03,2016-07-31,0,NA LCS,FOREIGN
+LMS/2016 Season/Summer Season,LMS 2016 Summer,LoL Master Series,2016,Summer,2016-06-09,2016-08-07,0,LMS,FOREIGN
+TCL/2016 Season/Summer Season,TCL 2016 Summer,Turkish Championship League,2016,Summer,2016-06-11,2016-07-20,0,TCL,FOREIGN
+CBLOL/2016 Season/Split 2 Playoffs,CBLOL 2016 Split 2 Playoffs,Circuit Brazilian League of Legends,2016,,2016-06-24,2016-07-09,0,CBLOL,FOREIGN
+OPL/2016 Season/Split 2 Playoffs,OPL 2016 Split 2 Playoffs,Oceanic Pro League,2016,,2016-08-01,2016-08-13,0,OPL,FOREIGN
+LJL/2016 Season/Summer Playoffs,LJL 2016 Summer Playoffs,LoL Japan League,2016,Summer,2016-08-03,2016-08-07,0,LJL,FOREIGN
+TCL/2016 Season/Summer Playoffs,TCL 2016 Summer Playoffs,Turkish Championship League,2016,Summer,2016-08-04,2016-08-13,0,TCL,FOREIGN
+GPL/2016 Season/Summer,GPL 2016 Summer,Garena Premier League,2016,Summer,2016-08-08,2016-08-14,0,GPL,FOREIGN
+LCK/2016 Season/Summer Playoffs,LCK 2016 Summer Playoffs,LoL Champions Korea,2016,Summer,2016-08-08,2016-08-20,0,LCK,LCK
+LPL/2016 Season/Summer Playoffs,LPL 2016 Summer Playoffs,Tencent LoL Pro League,2016,Summer,2016-08-10,2016-08-26,0,LPL,FOREIGN
+LCL/2016 Season/Summer Playoffs,LCL 2016 Summer Playoffs,LoL Continental League,2016,Summer,2016-08-13,2016-08-14,0,LCL,FOREIGN
+EU LCS/2016 Season/Summer Playoffs,EU LCS 2016 Summer Playoffs,Europe League Championship Series,2016,Summer,2016-08-13,2016-08-28,0,EU LCS,FOREIGN
+NA LCS/2016 Season/Summer Playoffs,NA LCS 2016 Summer Playoffs,North America League Championship Series,2016,Summer,2016-08-13,2016-08-28,0,NA LCS,FOREIGN
+LMS/2016 Season/Summer Playoffs,LMS 2016 Summer Playoffs,LoL Master Series,2016,Summer,2016-08-17,2016-08-21,0,LMS,FOREIGN
+2016 Season World Championship,Worlds 2016,World Championship,2016,,2016-09-29,2016-10-29,0,Worlds,INTL
+LCK/2017 Season/Spring Season,LCK 2017 Spring,LoL Champions Korea,2017,Spring,2017-01-17,2017-04-02,0,LCK,LCK
+LPL/2017 Season/Spring Season,LPL 2017 Spring,Tencent LoL Pro League,2017,Spring,2017-01-19,2017-04-16,0,LPL,FOREIGN
+EU LCS/2017 Season/Spring Season,EU LCS 2017 Spring,Europe League Championship Series,2017,Spring,2017-01-19,2017-04-02,0,EU LCS,FOREIGN
+NA LCS/2017 Season/Spring Season,NA LCS 2017 Spring,North America League Championship Series,2017,Spring,2017-01-20,2017-03-26,0,NA LCS,FOREIGN
+LJL/2017 Season/Spring Season,LJL 2017 Spring,LoL Japan League,2017,Spring,2017-01-20,2017-03-25,0,LJL,FOREIGN
+LMS/2017 Season/Spring Season,LMS 2017 Spring,LoL Master Series,2017,Spring,2017-01-21,2017-04-09,0,LMS,FOREIGN
+OPL/2017 Season/Split 1,OPL 2017 Split 1,Oceanic Pro League,2017,Split 1,2017-01-21,2017-04-02,0,OPL,FOREIGN
+CBLOL/2017 Season/Split 1,CBLOL 2017 Split 1,Circuit Brazilian League of Legends,2017,Split 1,2017-01-21,2017-03-12,0,CBLOL,FOREIGN
+TCL/2017 Season/Winter Season,TCL 2017 Winter,Turkish Championship League,2017,Winter,2017-01-21,2017-03-13,0,TCL,FOREIGN
+LCL/2017 Season/Spring Season,LCL 2017 Spring,LoL Continental League,2017,Spring,2017-01-28,2017-03-20,0,LCL,FOREIGN
+CBLOL/2017 Season/Split 1 Playoffs,CBLOL 2017 Split 1 Playoffs,Circuit Brazilian League of Legends,2017,,2017-03-25,2017-04-08,0,CBLOL,FOREIGN
+LJL/2017 Season/Spring Playoffs,LJL 2017 Spring Playoffs,LoL Japan League,2017,Spring,2017-03-29,2017-04-01,0,LJL,FOREIGN
+LCL/2017 Season/Spring Playoffs,LCL 2017 Spring Playoffs,LoL Continental League,2017,Spring,2017-04-01,2017-04-09,0,LCL,FOREIGN
+TCL/2017 Season/Winter Playoffs,TCL 2017 Winter Playoffs,Turkish Championship League,2017,,2017-04-01,2017-04-22,0,TCL,FOREIGN
+OPL/2017 Season/Split 1 Playoffs,OPL 2017 Split 1 Playoffs,Oceanic Pro League,2017,,2017-04-07,2017-04-16,0,OPL,FOREIGN
+LCK/2017 Season/Spring Playoffs,LCK 2017 Spring Playoffs,LoL Champions Korea,2017,Spring,2017-04-07,2017-04-22,0,LCK,LCK
+EU LCS/2017 Season/Spring Playoffs,EU LCS 2017 Spring Playoffs,Europe League Championship Series,2017,Spring,2017-04-08,2017-04-23,0,EU LCS,FOREIGN
+NA LCS/2017 Season/Spring Playoffs,NA LCS 2017 Spring Playoffs,North America League Championship Series,2017,Spring,2017-04-08,2017-04-23,0,NA LCS,FOREIGN
+GPL/2017 Season/Spring,GPL 2017 Spring,Garena Premier League,2017,Spring,2017-04-12,2017-04-16,0,GPL,FOREIGN
+LPL/2017 Season/Spring Playoffs,LPL 2017 Spring Playoffs,Tencent LoL Pro League,2017,Spring,2017-04-18,2017-04-29,0,LPL,FOREIGN
+LMS/2017 Season/Spring Playoffs,LMS 2017 Spring Playoffs,LoL Master Series,2017,Spring,2017-04-21,2017-04-23,0,LMS,FOREIGN
+2017 Mid-Season Invitational/Play-In,MSI 2017 Play-In,Mid-Season Invitational,2017,,2017-04-28,2017-05-06,1,MSI,INTL
+2017 Mid-Season Invitational,MSI 2017,Mid-Season Invitational,2017,,2017-04-28,2017-05-21,0,MSI,INTL
+2017 Mid-Season Invitational/Main Event,MSI 2017 Main Event,Mid-Season Invitational,2017,,2017-05-10,2017-05-21,0,MSI,INTL
+LCK/2017 Season/Summer Season,LCK 2017 Summer,LoL Champions Korea,2017,Summer,2017-05-30,2017-08-06,0,LCK,LCK
+EU LCS/2017 Season/Summer Season,EU LCS 2017 Summer,Europe League Championship Series,2017,Summer,2017-06-01,2017-08-13,0,EU LCS,FOREIGN
+LJL/2017 Season/Summer Season,LJL 2017 Summer,LoL Japan League,2017,Summer,2017-06-02,2017-08-14,0,LJL,FOREIGN
+NA LCS/2017 Season/Summer Season,NA LCS 2017 Summer,North America League Championship Series,2017,Summer,2017-06-02,2017-08-06,0,NA LCS,FOREIGN
+LMS/2017 Season/Summer Season,LMS 2017 Summer,LoL Master Series,2017,Summer,2017-06-03,2017-08-06,0,LMS,FOREIGN
+CBLOL/2017 Season/Split 2,CBLOL 2017 Split 2,Circuit Brazilian League of Legends,2017,Split 2,2017-06-03,2017-07-23,0,CBLOL,FOREIGN
+TCL/2017 Season/Summer Season,TCL 2017 Summer,Turkish Championship League,2017,Summer,2017-06-03,2017-07-31,0,TCL,FOREIGN
+LPL/2017 Season/Summer Season,LPL 2017 Summer,Tencent LoL Pro League,2017,Summer,2017-06-08,2017-08-20,0,LPL,FOREIGN
+OPL/2017 Season/Split 2,OPL 2017 Split 2,Oceanic Pro League,2017,Split 2,2017-06-10,2017-08-20,0,OPL,FOREIGN
+LCL/2017 Season/Summer Season,LCL 2017 Summer,LoL Continental League,2017,Summer,2017-06-24,2017-08-06,0,LCL,FOREIGN
+TCL/2017 Season/Summer Playoffs,TCL 2017 Summer Playoffs,Turkish Championship League,2017,Summer,2017-08-05,2017-08-19,0,TCL,FOREIGN
+LCK/2017 Season/Summer Playoffs,LCK 2017 Summer Playoffs,LoL Champions Korea,2017,Summer,2017-08-12,2017-08-26,0,LCK,LCK
+LJL/2017 Season/Summer Playoffs,LJL 2017 Summer Playoffs,LoL Japan League,2017,Summer,2017-08-16,2017-08-26,0,LJL,FOREIGN
+LMS/2017 Season/Summer Playoffs,LMS 2017 Summer Playoffs,LoL Master Series,2017,Summer,2017-08-18,2017-08-25,0,LMS,FOREIGN
+LCL/2017 Season/Summer Playoffs,LCL 2017 Summer Playoffs,LoL Continental League,2017,Summer,2017-08-19,2017-09-03,0,LCL,FOREIGN
+NA LCS/2017 Season/Summer Playoffs,NA LCS 2017 Summer Playoffs,North America League Championship Series,2017,Summer,2017-08-19,2017-09-03,0,NA LCS,FOREIGN
+CBLOL/2017 Season/Split 2 Playoffs,CBLOL 2017 Split 2 Playoffs,Circuit Brazilian League of Legends,2017,,2017-08-19,2017-09-02,0,CBLOL,FOREIGN
+EU LCS/2017 Season/Summer Playoffs,EU LCS 2017 Summer Playoffs,Europe League Championship Series,2017,Summer,2017-08-19,2017-09-03,0,EU LCS,FOREIGN
+GPL/2017 Season/Summer,GPL 2017 Summer,Garena Premier League,2017,Summer,2017-08-21,2017-08-27,0,GPL,FOREIGN
+LPL/2017 Season/Summer Playoffs,LPL 2017 Summer Playoffs,Tencent LoL Pro League,2017,Summer,2017-08-22,2017-09-01,0,LPL,FOREIGN
+OPL/2017 Season/Split 2 Playoffs,OPL 2017 Split 2 Playoffs,Oceanic Pro League,2017,,2017-08-25,2017-09-02,0,OPL,FOREIGN
+2017 Season World Championship/Play-In,Worlds 2017 Play-In,World Championship,2017,,2017-09-23,2017-09-29,1,Worlds,INTL
+2017 Season World Championship/Main Event,Worlds 2017 Main Event,World Championship,2017,,2017-10-05,2017-11-04,0,Worlds,INTL
+LPL/2018 Season/Spring Season,LPL 2018 Spring,Tencent LoL Pro League,2018,Spring,2018-01-15,2018-04-08,0,LPL,FOREIGN
+LCK/2018 Season/Spring Season,LCK 2018 Spring,LoL Champions Korea,2018,Spring,2018-01-16,2018-03-25,0,LCK,LCK
+VCS/2018 Season/Spring Season,VCS 2018 Spring,Vietnam Championship Series,2018,Spring,2018-01-18,2018-03-18,0,VCS,FOREIGN
+EU LCS/2018 Season/Spring Season,EU LCS 2018 Spring,Europe League Championship Series,2018,Spring,2018-01-19,2018-03-17,0,EU LCS,FOREIGN
+CBLOL/2018 Season/Split 1,CBLOL 2018 Split 1,Circuit Brazilian League of Legends,2018,Split 1,2018-01-20,2018-03-11,0,CBLOL,FOREIGN
+NA LCS/2018 Season/Spring Season,NA LCS 2018 Spring,North America League Championship Series,2018,Spring,2018-01-20,2018-03-18,0,NA LCS,FOREIGN
+OPL/2018 Season/Split 1,OPL 2018 Split 1,Oceanic Pro League,2018,Split 1,2018-01-20,2018-03-18,0,OPL,FOREIGN
+TCL/2018 Season/Winter Season,TCL 2018 Winter,Turkish Championship League,2018,Winter,2018-01-20,2018-03-26,0,TCL,FOREIGN
+LMS/2018 Season/Spring Season,LMS 2018 Spring,LoL Master Series,2018,Spring,2018-01-20,2018-04-01,0,LMS,FOREIGN
+LJL/2018 Season/Spring Season,LJL 2018 Spring,LoL Japan League,2018,Spring,2018-02-09,2018-03-31,0,LJL,FOREIGN
+LCL/2018 Season/Spring Season,LCL 2018 Spring,LoL Continental League,2018,Spring,2018-02-10,2018-03-11,0,LCL,FOREIGN
+CBLOL/2018 Season/Split 1 Playoffs,CBLOL 2018 Split 1 Playoffs,Circuit Brazilian League of Legends,2018,,2018-03-17,2018-04-07,0,CBLOL,FOREIGN
+LCL/2018 Season/Spring Playoffs,LCL 2018 Spring Playoffs,LoL Continental League,2018,Spring,2018-03-17,2018-04-01,0,LCL,FOREIGN
+EU LCS/2018 Season/Spring Playoffs,EU LCS 2018 Spring Playoffs,Europe League Championship Series,2018,Spring,2018-03-23,2018-04-08,0,EU LCS,FOREIGN
+OPL/2018 Season/Split 1 Playoffs,OPL 2018 Split 1 Playoffs,Oceanic Pro League,2018,,2018-03-23,2018-03-31,0,OPL,FOREIGN
+NA LCS/2018 Season/Spring Playoffs,NA LCS 2018 Spring Playoffs,North America League Championship Series,2018,Spring,2018-03-24,2018-04-08,0,NA LCS,FOREIGN
+GPL/2018 Season/Spring,GPL 2018 Spring,Garena Premier League,2018,Spring,2018-03-28,2018-04-01,0,GPL,FOREIGN
+VCS/2018 Season/Spring Playoffs,VCS 2018 Spring Playoffs,Vietnam Championship Series,2018,Spring,2018-03-30,2018-04-07,0,VCS,FOREIGN
+LCK/2018 Season/Spring Playoffs,LCK 2018 Spring Playoffs,LoL Champions Korea,2018,Spring,2018-03-31,2018-04-14,0,LCK,LCK
+TCL/2018 Season/Winter Playoffs,TCL 2018 Winter Playoffs,Turkish Championship League,2018,,2018-04-07,2018-04-22,0,TCL,FOREIGN
+LJL/2018 Season/Spring Playoffs,LJL 2018 Spring Playoffs,LoL Japan League,2018,Spring,2018-04-07,2018-04-14,0,LJL,FOREIGN
+LPL/2018 Season/Spring Playoffs,LPL 2018 Spring Playoffs,Tencent LoL Pro League,2018,Spring,2018-04-12,2018-04-28,0,LPL,FOREIGN
+LMS/2018 Season/Spring Playoffs,LMS 2018 Spring Playoffs,LoL Master Series,2018,Spring,2018-04-14,2018-04-22,0,LMS,FOREIGN
+2018 Mid-Season Invitational,MSI 2018,Mid-Season Invitational,2018,,2018-05-03,2018-05-20,0,MSI,INTL
+2018 Mid-Season Invitational/Play-In,MSI 2018 Play-In,Mid-Season Invitational,2018,,2018-05-03,2018-05-09,1,MSI,INTL
+2018 Mid-Season Invitational/Main Event,MSI 2018 Main Event,Mid-Season Invitational,2018,,2018-05-11,2018-05-20,0,MSI,INTL
+OPL/2018 Season/Split 2,OPL 2018 Split 2,Oceanic Pro League,2018,Split 2,2018-06-08,2018-08-18,0,OPL,FOREIGN
+CBLOL/2018 Season/Split 2,CBLOL 2018 Split 2,Circuit Brazilian League of Legends,2018,Split 2,2018-06-09,2018-08-05,0,CBLOL,FOREIGN
+LPL/2018 Season/Summer Season,LPL 2018 Summer,Tencent LoL Pro League,2018,Summer,2018-06-11,2018-09-02,0,LPL,FOREIGN
+LCK/2018 Season/Summer Season,LCK 2018 Summer,LoL Champions Korea,2018,Summer,2018-06-12,2018-08-09,0,LCK,LCK
+EU LCS/2018 Season/Summer Season,EU LCS 2018 Summer,Europe League Championship Series,2018,Summer,2018-06-15,2018-08-19,0,EU LCS,FOREIGN
+NA LCS/2018 Season/Summer Season,NA LCS 2018 Summer,North America League Championship Series,2018,Summer,2018-06-16,2018-08-20,0,NA LCS,FOREIGN
+TCL/2018 Season/Summer Season,TCL 2018 Summer,Turkish Championship League,2018,Summer,2018-06-16,2018-08-20,0,TCL,FOREIGN
+VCS/2018 Season/Summer Season,VCS 2018 Summer,Vietnam Championship Series,2018,Summer,2018-06-21,2018-08-19,0,VCS,FOREIGN
+LJL/2018 Season/Summer Season,LJL 2018 Summer,LoL Japan League,2018,Summer,2018-06-22,2018-08-11,0,LJL,FOREIGN
+LMS/2018 Season/Summer Season,LMS 2018 Summer,LoL Master Series,2018,Summer,2018-06-23,2018-08-17,0,LMS,FOREIGN
+LCL/2018 Season/Summer Season,LCL 2018 Summer,LoL Continental League,2018,Summer,2018-07-21,2018-08-19,0,LCL,FOREIGN
+CBLOL/2018 Season/Split 2 Playoffs,CBLOL 2018 Split 2 Playoffs,Circuit Brazilian League of Legends,2018,,2018-08-11,2018-09-08,0,CBLOL,FOREIGN
+LCK/2018 Season/Summer Playoffs,LCK 2018 Summer Playoffs,LoL Champions Korea,2018,Summer,2018-08-12,2018-09-08,0,LCK,LCK
+OPL/2018 Season/Split 2 Playoffs,OPL 2018 Split 2 Playoffs,Oceanic Pro League,2018,,2018-08-24,2018-09-02,0,OPL,FOREIGN
+EU LCS/2018 Season/Summer Playoffs,EU LCS 2018 Summer Playoffs,Europe League Championship Series,2018,Summer,2018-08-24,2018-09-09,0,EU LCS,FOREIGN
+NA LCS/2018 Season/Summer Playoffs,NA LCS 2018 Summer Playoffs,North America League Championship Series,2018,Summer,2018-08-25,2018-09-09,0,NA LCS,FOREIGN
+LCL/2018 Season/Summer Playoffs,LCL 2018 Summer Playoffs,LoL Continental League,2018,Summer,2018-08-25,2018-09-02,0,LCL,FOREIGN
+TCL/2018 Season/Summer Playoffs,TCL 2018 Summer Playoffs,Turkish Championship League,2018,Summer,2018-08-25,2018-09-16,0,TCL,FOREIGN
+LPL/2018 Season/Summer Playoffs,LPL 2018 Summer Playoffs,Tencent LoL Pro League,2018,Summer,2018-09-05,2018-09-14,0,LPL,FOREIGN
+LMS/2018 Season/Summer Playoffs,LMS 2018 Summer Playoffs,LoL Master Series,2018,Summer,2018-09-07,2018-09-15,0,LMS,FOREIGN
+VCS/2018 Season/Summer Playoffs,VCS 2018 Summer Playoffs,Vietnam Championship Series,2018,Summer,2018-09-07,2018-09-22,0,VCS,FOREIGN
+LJL/2018 Season/Summer Playoffs,LJL 2018 Summer Playoffs,LoL Japan League,2018,Summer,2018-09-08,2018-09-15,0,LJL,FOREIGN
+2018 Season World Championship/Play-In,Worlds 2018 Play-In,World Championship,2018,,2018-10-01,2018-10-07,1,Worlds,INTL
+2018 Season World Championship/Main Event,Worlds 2018 Main Event,World Championship,2018,,2018-10-10,2018-11-03,0,Worlds,INTL
+CBLOL/2019 Season/Split 1,CBLOL 2019 Split 1,Circuit Brazilian League of Legends,2019,Split 1,2019-01-12,2019-03-24,0,CBLOL,FOREIGN
+LPL/2019 Season/Spring Season,LPL 2019 Spring,Tencent LoL Pro League,2019,Spring,2019-01-14,2019-03-31,0,LPL,FOREIGN
+LCK/2019 Season/Spring Season,LCK 2019 Spring,LoL Champions Korea,2019,Spring,2019-01-16,2019-03-31,0,LCK,LCK
+VCS/2019 Season/Spring Season,VCS 2019 Spring,Vietnam Championship Series,2019,Spring,2019-01-17,2019-03-24,0,VCS,FOREIGN
+LMS/2019 Season/Spring Season,LMS 2019 Spring,LoL Master Series,2019,Spring,2019-01-17,2019-03-31,0,LMS,FOREIGN
+OPL/2019 Season/Split 1,OPL 2019 Split 1,Oceanic Pro League,2019,Split 1,2019-01-18,2019-03-23,0,OPL,FOREIGN
+LEC/2019 Season/Spring Season,LEC 2019 Spring,LoL EMEA Championship,2019,Spring,2019-01-18,2019-03-16,0,LEC,FOREIGN
+LLA/2019 Season/Opening Season,LLA 2019 Opening,Liga Latinoamerica,2019,Opening,2019-01-19,2019-03-25,0,LLA,FOREIGN
+LJL/2019 Season/Spring Season,LJL 2019 Spring,LoL Japan League,2019,Spring,2019-01-19,2019-03-22,0,LJL,FOREIGN
+TCL/2019 Season/Winter Season,TCL 2019 Winter,Turkish Championship League,2019,Winter,2019-01-19,2019-03-17,0,TCL,FOREIGN
+LCS/2019 Season/Spring Season,LCS 2019 Spring,League of Legends Championship Series,2019,Spring,2019-01-26,2019-03-24,0,LCS,FOREIGN
+LCL/2019 Season/Spring Season,LCL 2019 Spring,LoL Continental League,2019,Spring,2019-02-16,2019-03-24,0,LCL,FOREIGN
+OPL/2019 Season/Split 1 Playoffs,OPL 2019 Split 1 Playoffs,Oceanic Pro League,2019,,2019-03-28,2019-04-06,0,OPL,FOREIGN
+LEC/2019 Season/Spring Playoffs,LEC 2019 Spring Playoffs,LoL EMEA Championship,2019,Spring,2019-03-29,2019-04-14,0,LEC,FOREIGN
+TCL/2019 Season/Winter Playoffs,TCL 2019 Winter Playoffs,Turkish Championship League,2019,,2019-03-29,2019-04-13,0,TCL,FOREIGN
+LCS/2019 Season/Spring Playoffs,LCS 2019 Spring Playoffs,League of Legends Championship Series,2019,Spring,2019-03-30,2019-04-13,0,LCS,FOREIGN
+VCS/2019 Season/Spring Playoffs,VCS 2019 Spring Playoffs,Vietnam Championship Series,2019,Spring,2019-03-30,2019-04-13,0,VCS,FOREIGN
+LLA/2019 Season/Opening Playoffs,LLA 2019 Opening Playoffs,Liga Latinoamerica,2019,Opening,2019-03-30,2019-04-20,0,LLA,FOREIGN
+LCL/2019 Season/Spring Playoffs,LCL 2019 Spring Playoffs,LoL Continental League,2019,Spring,2019-03-30,2019-04-14,0,LCL,FOREIGN
+LCK/2019 Season/Spring Playoffs,LCK 2019 Spring Playoffs,LoL Champions Korea,2019,Spring,2019-04-03,2019-04-13,0,LCK,LCK
+LPL/2019 Season/Spring Playoffs,LPL 2019 Spring Playoffs,Tencent LoL Pro League,2019,Spring,2019-04-04,2019-04-21,0,LPL,FOREIGN
+CBLOL/2019 Season/Split 1 Playoffs,CBLOL 2019 Split 1 Playoffs,Circuit Brazilian League of Legends,2019,,2019-04-06,2019-04-13,0,CBLOL,FOREIGN
+LJL/2019 Season/Spring Playoffs,LJL 2019 Spring Playoffs,LoL Japan League,2019,Spring,2019-04-06,2019-04-13,0,LJL,FOREIGN
+LMS/2019 Season/Spring Playoffs,LMS 2019 Spring Playoffs,LoL Master Series,2019,Spring,2019-04-12,2019-04-20,0,LMS,FOREIGN
+2019 Mid-Season Invitational,MSI 2019,Mid-Season Invitational,2019,,2019-05-01,2019-05-19,0,MSI,INTL
+2019 Mid-Season Invitational/Play-In,MSI 2019 Play-In,Mid-Season Invitational,2019,,2019-05-01,2019-05-07,1,MSI,INTL
+2019 Mid-Season Invitational/Main Event,MSI 2019 Main Event,Mid-Season Invitational,2019,,2019-05-10,2019-05-19,0,MSI,INTL
+LCS/2019 Season/Summer Season,LCS 2019 Summer,League of Legends Championship Series,2019,Summer,2019-06-01,2019-08-04,0,LCS,FOREIGN
+CBLOL/2019 Season/Split 2,CBLOL 2019 Split 2,Circuit Brazilian League of Legends,2019,Split 2,2019-06-01,2019-08-10,0,CBLOL,FOREIGN
+LPL/2019 Season/Summer Season,LPL 2019 Summer,Tencent LoL Pro League,2019,Summer,2019-06-01,2019-08-18,0,LPL,FOREIGN
+LCK/2019 Season/Summer Season,LCK 2019 Summer,LoL Champions Korea,2019,Summer,2019-06-05,2019-08-18,0,LCK,LCK
+OPL/2019 Season/Split 2,OPL 2019 Split 2,Oceanic Pro League,2019,Split 2,2019-06-07,2019-08-17,0,OPL,FOREIGN
+LEC/2019 Season/Summer Season,LEC 2019 Summer,LoL EMEA Championship,2019,Summer,2019-06-07,2019-08-17,0,LEC,FOREIGN
+TCL/2019 Season/Summer Season,TCL 2019 Summer,Turkish Championship League,2019,Summer,2019-06-08,2019-08-04,0,TCL,FOREIGN
+LLA/2019 Season/Closing Season,LLA 2019 Closing,Liga Latinoamerica,2019,Closing,2019-06-08,2019-08-04,0,LLA,FOREIGN
+LMS/2019 Season/Summer Season,LMS 2019 Summer,LoL Master Series,2019,Summer,2019-06-13,2019-08-04,0,LMS,FOREIGN
+LJL/2019 Season/Summer Season,LJL 2019 Summer,LoL Japan League,2019,Summer,2019-06-15,2019-08-18,0,LJL,FOREIGN
+VCS/2019 Season/Summer Season,VCS 2019 Summer,Vietnam Championship Series,2019,Summer,2019-06-20,2019-08-11,0,VCS,FOREIGN
+LCL/2019 Season/Summer Season,LCL 2019 Summer,LoL Continental League,2019,Summer,2019-07-20,2019-08-25,0,LCL,FOREIGN
+LCS/2019 Season/Summer Playoffs,LCS 2019 Summer Playoffs,League of Legends Championship Series,2019,Summer,2019-08-10,2019-08-25,0,LCS,FOREIGN
+LLA/2019 Season/Closing Playoffs,LLA 2019 Closing Playoffs,Liga Latinoamerica,2019,Closing,2019-08-10,2019-08-31,0,LLA,FOREIGN
+TCL/2019 Season/Summer Playoffs,TCL 2019 Summer Playoffs,Turkish Championship League,2019,Summer,2019-08-17,2019-08-31,0,TCL,FOREIGN
+LCK/2019 Season/Summer Playoffs,LCK 2019 Summer Playoffs,LoL Champions Korea,2019,Summer,2019-08-21,2019-08-31,0,LCK,LCK
+OPL/2019 Season/Split 2 Playoffs,OPL 2019 Split 2 Playoffs,Oceanic Pro League,2019,,2019-08-22,2019-08-30,0,OPL,FOREIGN
+LPL/2019 Season/Summer Playoffs,LPL 2019 Summer Playoffs,Tencent LoL Pro League,2019,Summer,2019-08-22,2019-09-06,0,LPL,FOREIGN
+LEC/2019 Season/Summer Playoffs,LEC 2019 Summer Playoffs,LoL EMEA Championship,2019,Summer,2019-08-23,2019-09-08,0,LEC,FOREIGN
+LMS/2019 Season/Summer Playoffs,LMS 2019 Summer Playoffs,LoL Master Series,2019,Summer,2019-08-23,2019-08-31,0,LMS,FOREIGN
+VCS/2019 Season/Summer Playoffs,VCS 2019 Summer Playoffs,Vietnam Championship Series,2019,Summer,2019-08-24,2019-09-15,0,VCS,FOREIGN
+CBLOL/2019 Season/Split 2 Playoffs,CBLOL 2019 Split 2 Playoffs,Circuit Brazilian League of Legends,2019,,2019-08-24,2019-09-07,0,CBLOL,FOREIGN
+LCL/2019 Season/Summer Playoffs,LCL 2019 Summer Playoffs,LoL Continental League,2019,Summer,2019-08-31,2019-09-15,0,LCL,FOREIGN
+LJL/2019 Season/Summer Playoffs,LJL 2019 Summer Playoffs,LoL Japan League,2019,Summer,2019-09-01,2019-09-16,0,LJL,FOREIGN
+2019 Season World Championship/Play-In,Worlds 2019 Play-In,World Championship,2019,,2019-10-02,2019-10-08,1,Worlds,INTL
+2019 Season World Championship/Main Event,Worlds 2019 Main Event,World Championship,2019,,2019-10-12,2019-11-10,0,Worlds,INTL
+LPL/2020 Season/Spring Season,LPL 2020 Spring,Tencent LoL Pro League,2020,Spring,2020-01-13,2020-04-20,0,LPL,FOREIGN
+LEC/2020 Season/Spring Season,LEC 2020 Spring,LoL EMEA Championship,2020,Spring,2020-01-24,2020-03-28,0,LEC,FOREIGN
+LCS/2020 Season/Spring Season,LCS 2020 Spring,League of Legends Championship Series,2020,Spring,2020-01-25,2020-03-29,0,LCS,FOREIGN
+CBLOL/2020 Season/Split 1,CBLOL 2020 Split 1,Circuit Brazilian League of Legends,2020,Split 1,2020-01-25,2020-04-26,0,CBLOL,FOREIGN
+VCS/2020 Season/Spring Season,VCS 2020 Spring,Vietnam Championship Series,2020,Spring,2020-01-31,2020-04-05,0,VCS,FOREIGN
+OPL/2020 Season/Split 1,OPL 2020 Split 1,Oceanic Pro League,2020,Split 1,2020-01-31,2020-04-04,0,OPL,FOREIGN
+TCL/2020 Season/Winter Season,TCL 2020 Winter,Turkish Championship League,2020,Winter,2020-02-01,2020-04-14,0,TCL,FOREIGN
+LCK/2020 Season/Spring Season,LCK 2020 Spring,LoL Champions Korea,2020,Spring,2020-02-05,2020-04-16,0,LCK,LCK
+LJL/2020 Season/Spring Season,LJL 2020 Spring,LoL Japan League,2020,Spring,2020-02-08,2020-03-12,0,LJL,FOREIGN
+LLA/2020 Season/Opening Season,LLA 2020 Opening,Liga Latinoamerica,2020,Opening,2020-02-15,2020-04-19,0,LLA,FOREIGN
+LCL/2020 Season/Spring Season,LCL 2020 Spring,LoL Continental League,2020,Spring,2020-02-22,2020-04-12,0,LCL,FOREIGN
+PCS/2020 Season/Spring Season,PCS 2020 Spring,Pacific Championship Series,2020,Spring,2020-02-29,2020-04-05,0,PCS,FOREIGN
+LJL/2020 Season/Spring Playoffs,LJL 2020 Spring Playoffs,LoL Japan League,2020,Spring,2020-03-21,2020-05-04,0,LJL,FOREIGN
+LEC/2020 Season/Spring Playoffs,LEC 2020 Spring Playoffs,LoL EMEA Championship,2020,Spring,2020-04-03,2020-04-19,0,LEC,FOREIGN
+LCS/2020 Season/Spring Playoffs,LCS 2020 Spring Playoffs,League of Legends Championship Series,2020,Spring,2020-04-04,2020-04-19,0,LCS,FOREIGN
+VCS/2020 Season/Spring Playoffs,VCS 2020 Spring Playoffs,Vietnam Championship Series,2020,Spring,2020-04-10,2020-04-18,0,VCS,FOREIGN
+PCS/2020 Season/Spring Playoffs,PCS 2020 Spring Playoffs,Pacific Championship Series,2020,Spring,2020-04-10,2020-05-03,0,PCS,FOREIGN
+OPL/2020 Season/Split 1 Playoffs,OPL 2020 Split 1 Playoffs,Oceanic Pro League,2020,Split 1,2020-04-10,2020-04-24,0,OPL,FOREIGN
+LCL/2020 Season/Spring Playoffs,LCL 2020 Spring Playoffs,LoL Continental League,2020,Spring,2020-04-18,2020-04-26,0,LCL,FOREIGN
+LCK/2020 Season/Spring Playoffs,LCK 2020 Spring Playoffs,LoL Champions Korea,2020,Spring,2020-04-18,2020-04-25,0,LCK,LCK
+LPL/2020 Season/Spring Playoffs,LPL 2020 Spring Playoffs,Tencent LoL Pro League,2020,Spring,2020-04-22,2020-05-02,0,LPL,FOREIGN
+LLA/2020 Season/Opening Playoffs,LLA 2020 Opening Playoffs,Liga Latinoamerica,2020,Opening,2020-04-25,2020-05-02,0,LLA,FOREIGN
+TCL/2020 Season/Winter Playoffs,TCL 2020 Winter Playoffs,Turkish Championship League,2020,Winter,2020-04-27,2020-05-11,0,TCL,FOREIGN
+CBLOL/2020 Season/Split 1 Playoffs,CBLOL 2020 Split 1 Playoffs,Circuit Brazilian League of Legends,2020,Split 1,2020-05-02,2020-05-09,0,CBLOL,FOREIGN
+OPL/2020 Season/Split 2,OPL 2020 Split 2,Oceanic Pro League,2020,Split 2,2020-06-05,2020-08-08,0,OPL,FOREIGN
+LPL/2020 Season/Summer Season,LPL 2020 Summer,Tencent LoL Pro League,2020,Summer,2020-06-05,2020-08-09,0,LPL,FOREIGN
+CBLOL/2020 Season/Split 2,CBLOL 2020 Split 2,Circuit Brazilian League of Legends,2020,Split 2,2020-06-06,2020-08-09,0,CBLOL,FOREIGN
+TCL/2020 Season/Summer Season,TCL 2020 Summer,Turkish Championship League,2020,Summer,2020-06-06,2020-08-02,0,TCL,FOREIGN
+LCS/2020 Season/Summer Season,LCS 2020 Summer,League of Legends Championship Series,2020,Summer,2020-06-12,2020-08-09,0,LCS,FOREIGN
+LEC/2020 Season/Summer Season,LEC 2020 Summer,LoL EMEA Championship,2020,Summer,2020-06-12,2020-08-09,0,LEC,FOREIGN
+LJL/2020 Season/Summer Season,LJL 2020 Summer,LoL Japan League,2020,Summer,2020-06-13,2020-08-05,0,LJL,FOREIGN
+LCK/2020 Season/Summer Season,LCK 2020 Summer,LoL Champions Korea,2020,Summer,2020-06-17,2020-08-23,0,LCK,LCK
+VCS/2020 Season/Summer Season,VCS 2020 Summer,Vietnam Championship Series,2020,Summer,2020-06-19,2020-08-16,0,VCS,FOREIGN
+LLA/2020 Season/Closing Season,LLA 2020 Closing,Liga Latinoamerica,2020,Closing,2020-06-20,2020-08-09,0,LLA,FOREIGN
+PCS/2020 Season/Summer Season,PCS 2020 Summer,Pacific Championship Series,2020,Summer,2020-06-20,2020-08-02,0,PCS,FOREIGN
+LCL/2020 Season/Summer Season,LCL 2020 Summer,LoL Continental League,2020,Summer,2020-06-20,2020-08-09,0,LCL,FOREIGN
+LCS/2020 Season/Summer Playoffs,LCS 2020 Summer Playoffs,League of Legends Championship Series,2020,Summer,2020-08-13,2020-09-06,0,LCS,FOREIGN
+PCS/2020 Season/Summer Playoffs,PCS 2020 Summer Playoffs,Pacific Championship Series,2020,Summer,2020-08-13,2020-08-30,0,PCS,FOREIGN
+LPL/2020 Season/Summer Playoffs,LPL 2020 Summer Playoffs,Tencent LoL Pro League,2020,Summer,2020-08-13,2020-08-27,0,LPL,FOREIGN
+OPL/2020 Season/Split 2 Playoffs,OPL 2020 Split 2 Playoffs,Oceanic Pro League,2020,Split 2,2020-08-14,2020-08-28,0,OPL,FOREIGN
+LLA/2020 Season/Closing Playoffs,LLA 2020 Closing Playoffs,Liga Latinoamerica,2020,Closing,2020-08-15,2020-08-29,0,LLA,FOREIGN
+LCL/2020 Season/Summer Playoffs,LCL 2020 Summer Playoffs,LoL Continental League,2020,Summer,2020-08-15,2020-08-30,0,LCL,FOREIGN
+TCL/2020 Season/Summer Playoffs,TCL 2020 Summer Playoffs,Turkish Championship League,2020,Summer,2020-08-15,2020-09-05,0,TCL,FOREIGN
+LJL/2020 Season/Summer Playoffs,LJL 2020 Summer Playoffs,LoL Japan League,2020,Summer,2020-08-16,2020-09-06,0,LJL,FOREIGN
+VCS/2020 Season/Summer Playoffs,VCS 2020 Summer Playoffs,Vietnam Championship Series,2020,Summer,2020-08-19,2020-09-05,0,VCS,FOREIGN
+LEC/2020 Season/Summer Playoffs,LEC 2020 Summer Playoffs,LoL EMEA Championship,2020,Summer,2020-08-21,2020-09-06,0,LEC,FOREIGN
+CBLOL/2020 Season/Split 2 Playoffs,CBLOL 2020 Split 2 Playoffs,Circuit Brazilian League of Legends,2020,Split 2,2020-08-22,2020-09-05,0,CBLOL,FOREIGN
+LCK/2020 Season/Summer Playoffs,LCK 2020 Summer Playoffs,LoL Champions Korea,2020,Summer,2020-08-26,2020-09-05,0,LCK,LCK
+2020 Season World Championship/Play-In,Worlds 2020 Play-In,World Championship,2020,,2020-09-25,2020-09-30,1,Worlds,INTL
+2020 Season World Championship/Main Event,Worlds 2020 Main Event,World Championship,2020,,2020-10-03,2020-10-31,0,Worlds,INTL
+LPL/2021 Season/Spring Season,LPL 2021 Spring,Tencent LoL Pro League,2021,Spring,2021-01-09,2021-03-28,0,LPL,FOREIGN
+LCK/2021 Season/Spring Season,LCK 2021 Spring,LoL Champions Korea,2021,Spring,2021-01-13,2021-03-28,0,LCK,LCK
+LCS/2021 Season/Lock In,LCS 2021 Lock In,League of Legends Championship Series,2021,Spring,2021-01-15,2021-01-31,0,LCS,FOREIGN
+CBLOL/2021 Season/Split 1,CBLOL 2021 Split 1,Circuit Brazilian League of Legends,2021,Split 1,2021-01-16,2021-03-14,0,CBLOL,FOREIGN
+LEC/2021 Season/Spring Season,LEC 2021 Spring,LoL EMEA Championship,2021,Spring,2021-01-22,2021-03-14,0,LEC,FOREIGN
+VCS/2021 Season/Spring Season,VCS 2021 Spring,Vietnam Championship Series,2021,Spring,2021-01-22,2021-04-04,0,VCS,FOREIGN
+TCL/2021 Season/Winter Season,TCL 2021 Winter,Turkish Championship League,2021,Winter,2021-01-23,2021-03-21,0,TCL,FOREIGN
+LJL/2021 Season/Spring Season,LJL 2021 Spring,LoL Japan League,2021,Spring,2021-01-23,2021-03-11,0,LJL,FOREIGN
+LLA/2021 Season/Opening Season,LLA 2021 Opening,Liga Latinoamerica,2021,Opening,2021-01-30,2021-03-21,0,LLA,FOREIGN
+LCS/2021 Season/Spring Season,LCS 2021 Spring,League of Legends Championship Series,2021,Spring,2021-02-05,2021-03-14,0,LCS,FOREIGN
+LCL/2021 Season/Spring Season,LCL 2021 Spring,LoL Continental League,2021,Spring,2021-02-13,2021-03-28,0,LCL,FOREIGN
+PCS/2021 Season/Spring Season,PCS 2021 Spring,Pacific Championship Series,2021,Spring,2021-02-19,2021-03-21,0,PCS,FOREIGN
+LCO/2021 Season/Split 1,LCO 2021 Split 1,LoL Circuit Oceania,2021,Split 1,2021-02-23,2021-03-26,0,LCO,FOREIGN
+LJL/2021 Season/Spring Playoffs,LJL 2021 Spring Playoffs,LoL Japan League,2021,,2021-03-14,2021-04-11,0,LJL,FOREIGN
+LCS/2021 Season/Mid-Season Showdown,LCS 2021 Mid-Season Showdown,League of Legends Championship Series,2021,Spring,2021-03-20,2021-04-11,0,LCS,FOREIGN
+LEC/2021 Season/Spring Playoffs,LEC 2021 Spring Playoffs,LoL EMEA Championship,2021,Spring,2021-03-26,2021-04-11,0,LEC,FOREIGN
+LLA/2021 Season/Opening Playoffs,LLA 2021 Opening Playoffs,Liga Latinoamerica,2021,Opening,2021-03-27,2021-04-10,0,LLA,FOREIGN
+CBLOL/2021 Season/Split 1 Playoffs,CBLOL 2021 Split 1 Playoffs,Circuit Brazilian League of Legends,2021,Split 1,2021-03-27,2021-04-18,0,CBLOL,FOREIGN
+LCO/2021 Season/Split 1 Playoffs,LCO 2021 Split 1 Playoffs,LoL Circuit Oceania,2021,Split 1,2021-03-30,2021-04-10,0,LCO,FOREIGN
+LCK/2021 Season/Spring Playoffs,LCK 2021 Spring Playoffs,LoL Champions Korea,2021,Spring,2021-03-31,2021-04-10,0,LCK,LCK
+LPL/2021 Season/Spring Playoffs,LPL 2021 Spring Playoffs,Tencent LoL Pro League,2021,Spring,2021-04-01,2021-04-18,0,LPL,FOREIGN
+PCS/2021 Season/Spring Playoffs,PCS 2021 Spring Playoffs,Pacific Championship Series,2021,Spring,2021-04-01,2021-04-18,0,PCS,FOREIGN
+LCL/2021 Season/Spring Playoffs,LCL 2021 Spring Playoffs,LoL Continental League,2021,Spring,2021-04-03,2021-04-17,0,LCL,FOREIGN
+TCL/2021 Season/Winter Playoffs,TCL 2021 Winter Playoffs,Turkish Championship League,2021,Winter,2021-04-03,2021-04-17,0,TCL,FOREIGN
+VCS/2021 Season/Spring Playoffs,VCS 2021 Spring Playoffs,Vietnam Championship Series,2021,Spring,2021-04-10,2021-04-18,0,VCS,FOREIGN
+2021 Mid-Season Invitational,MSI 2021,Mid-Season Invitational,2021,,2021-05-06,2021-05-23,0,MSI,INTL
+LCS/2021 Season/Summer Season,LCS 2021 Summer,League of Legends Championship Series,2021,Summer,2021-06-04,2021-08-01,0,LCS,FOREIGN
+CBLOL/2021 Season/Split 2,CBLOL 2021 Split 2,Circuit Brazilian League of Legends,2021,Split 2,2021-06-05,2021-08-01,0,CBLOL,FOREIGN
+LPL/2021 Season/Summer Season,LPL 2021 Summer,Tencent LoL Pro League,2021,Summer,2021-06-07,2021-08-08,0,LPL,FOREIGN
+LCK/2021 Season/Summer Season,LCK 2021 Summer,LoL Champions Korea,2021,Summer,2021-06-09,2021-08-15,0,LCK,LCK
+LEC/2021 Season/Summer Season,LEC 2021 Summer,LoL EMEA Championship,2021,Summer,2021-06-11,2021-08-01,0,LEC,FOREIGN
+TCL/2021 Season/Summer Season,TCL 2021 Summer,Turkish Championship League,2021,Summer,2021-06-12,2021-08-08,0,TCL,FOREIGN
+LCO/2021 Season/Split 2,LCO 2021 Split 2,LoL Circuit Oceania,2021,Split 2,2021-06-15,2021-08-11,0,LCO,FOREIGN
+LJL/2021 Season/Summer Season,LJL 2021 Summer,LoL Japan League,2021,Summer,2021-06-19,2021-08-04,0,LJL,FOREIGN
+LLA/2021 Season/Closing Season,LLA 2021 Closing,Liga Latinoamerica,2021,Closing,2021-06-19,2021-08-08,0,LLA,FOREIGN
+LCL/2021 Season/Summer Season,LCL 2021 Summer,LoL Continental League,2021,Summer,2021-06-26,2021-08-08,0,LCL,FOREIGN
+PCS/2021 Season/Summer Season,PCS 2021 Summer,Pacific Championship Series,2021,Summer,2021-07-09,2021-08-08,0,PCS,FOREIGN
+CBLOL/2021 Season/Split 2 Playoffs,CBLOL 2021 Split 2 Playoffs,Circuit Brazilian League of Legends,2021,Split 2,2021-08-07,2021-09-04,0,CBLOL,FOREIGN
+LCS/2021 Season/Championship,LCS 2021 Championship,League of Legends Championship Series,2021,Summer,2021-08-07,2021-08-29,0,LCS,FOREIGN
+LJL/2021 Season/Summer Playoffs,LJL 2021 Summer Playoffs,LoL Japan League,2021,,2021-08-08,2021-09-05,0,LJL,FOREIGN
+LPL/2021 Season/Summer Playoffs,LPL 2021 Summer Playoffs,Tencent LoL Pro League,2021,Summer,2021-08-12,2021-09-02,0,LPL,FOREIGN
+PCS/2021 Season/Summer Playoffs,PCS 2021 Summer Playoffs,Pacific Championship Series,2021,Summer,2021-08-12,2021-08-29,0,PCS,FOREIGN
+LEC/2021 Season/Summer Playoffs,LEC 2021 Summer Playoffs,LoL EMEA Championship,2021,Summer,2021-08-13,2021-08-29,0,LEC,FOREIGN
+LCL/2021 Season/Summer Playoffs,LCL 2021 Summer Playoffs,LoL Continental League,2021,Summer,2021-08-13,2021-09-04,0,LCL,FOREIGN
+TCL/2021 Season/Summer Playoffs,TCL 2021 Summer Playoffs,Turkish Championship League,2021,Summer,2021-08-14,2021-09-04,0,TCL,FOREIGN
+LLA/2021 Season/Closing Playoffs,LLA 2021 Closing Playoffs,Liga Latinoamerica,2021,Closing,2021-08-14,2021-08-28,0,LLA,FOREIGN
+LCO/2021 Season/Split 2 Playoffs,LCO 2021 Split 2 Playoffs,LoL Circuit Oceania,2021,Split 2,2021-08-17,2021-08-31,0,LCO,FOREIGN
+LCK/2021 Season/Summer Playoffs,LCK 2021 Summer Playoffs,LoL Champions Korea,2021,Summer,2021-08-18,2021-08-28,0,LCK,LCK
+2021 Season World Championship/Play-In,Worlds 2021 Play-In,World Championship,2021,,2021-10-05,2021-10-09,1,Worlds,INTL
+2021 Season World Championship/Main Event,Worlds 2021 Main Event,World Championship,2021,,2021-10-11,2021-11-06,0,Worlds,INTL
+VCS/2021 Season/Winter Season,VCS 2021 Winter,Vietnam Championship Series,2021,Winter,2021-11-16,2021-12-17,0,VCS,FOREIGN
+VCS/2021 Season/Winter Playoffs,VCS 2021 Winter Playoffs,Vietnam Championship Series,2021,Winter,2021-12-22,2021-12-26,0,VCS,FOREIGN
+LPL/2022 Season/Spring Season,LPL 2022 Spring,Tencent LoL Pro League,2022,Spring,2022-01-10,2022-03-25,0,LPL,FOREIGN
+LCK/2022 Season/Spring Season,LCK 2022 Spring,LoL Champions Korea,2022,Spring,2022-01-12,2022-03-20,0,LCK,LCK
+LEC/2022 Season/Spring Season,LEC 2022 Spring,LoL EMEA Championship,2022,Spring,2022-01-14,2022-03-06,0,LEC,FOREIGN
+LCS/2022 Season/Lock In,LCS 2022 Lock In,League of Legends Championship Series,2022,Spring,2022-01-14,2022-01-30,0,LCS,FOREIGN
+CBLOL/2022 Season/Split 1,CBLOL 2022 Split 1,Circuit Brazilian League of Legends,2022,Split 1,2022-01-22,2022-03-20,0,CBLOL,FOREIGN
+TCL/2022 Season/Winter Season,TCL 2022 Winter,Turkish Championship League,2022,Winter,2022-01-22,2022-03-20,0,TCL,FOREIGN
+LCO/2022 Season/Split 1,LCO 2022 Split 1,LoL Circuit Oceania,2022,Split 1,2022-01-24,2022-03-22,0,LCO,FOREIGN
+LLA/2022 Season/Opening Season,LLA 2022 Opening,Liga Latinoamerica,2022,Opening,2022-01-29,2022-03-13,0,LLA,FOREIGN
+LCS/2022 Season/Spring Season,LCS 2022 Spring,League of Legends Championship Series,2022,Spring,2022-02-05,2022-03-27,0,LCS,FOREIGN
+LJL/2022 Season/Spring Season,LJL 2022 Spring,LoL Japan League,2022,Spring,2022-02-11,2022-03-25,0,LJL,FOREIGN
+PCS/2022 Season/Spring Season,PCS 2022 Spring,Pacific Championship Series,2022,Spring,2022-02-11,2022-03-20,0,PCS,FOREIGN
+VCS/2022 Season/Spring Season,VCS 2022 Spring,Vietnam Championship Series,2022,Spring,2022-02-11,2022-04-13,0,VCS,FOREIGN
+LCL/2022 Season/Spring Season,LCL 2022 Spring,LoL Continental League,2022,Spring,2022-02-12,2022-02-20,0,LCL,FOREIGN
+LLA/2022 Season/Opening Playoffs,LLA 2022 Opening Playoffs,Liga Latinoamerica,2022,Opening,2022-03-18,2022-04-16,0,LLA,FOREIGN
+LCK/2022 Season/Spring Playoffs,LCK 2022 Spring Playoffs,LoL Champions Korea,2022,Spring,2022-03-23,2022-04-02,0,LCK,LCK
+CBLOL/2022 Season/Split 1 Playoffs,CBLOL 2022 Split 1 Playoffs,Circuit Brazilian League of Legends,2022,Split 1,2022-03-25,2022-04-23,0,CBLOL,FOREIGN
+LEC/2022 Season/Spring Playoffs,LEC 2022 Spring Playoffs,LoL EMEA Championship,2022,Spring,2022-03-25,2022-04-10,0,LEC,FOREIGN
+TCL/2022 Season/Winter Playoffs,TCL 2022 Winter Playoffs,Turkish Championship League,2022,Winter,2022-03-26,2022-04-09,0,TCL,FOREIGN
+LPL/2022 Season/Spring Playoffs,LPL 2022 Spring Playoffs,Tencent LoL Pro League,2022,Spring,2022-03-26,2022-04-23,0,LPL,FOREIGN
+LCO/2022 Season/Split 1 Playoffs,LCO 2022 Split 1 Playoffs,LoL Circuit Oceania,2022,Split 1,2022-03-28,2022-04-11,0,LCO,FOREIGN
+LJL/2022 Season/Spring Playoffs,LJL 2022 Spring Playoffs,LoL Japan League,2022,,2022-03-30,2022-04-10,0,LJL,FOREIGN
+PCS/2022 Season/Spring Playoffs,PCS 2022 Spring Playoffs,Pacific Championship Series,2022,Spring,2022-03-31,2022-04-17,0,PCS,FOREIGN
+LCS/2022 Season/Spring Playoffs,LCS 2022 Spring Playoffs,League of Legends Championship Series,2022,,2022-04-02,2022-04-24,0,LCS,FOREIGN
+VCS/2022 Season/Spring Playoffs,VCS 2022 Spring Playoffs,Vietnam Championship Series,2022,Spring,2022-04-16,2022-04-24,0,VCS,FOREIGN
+2022 Mid-Season Invitational,MSI 2022,Mid-Season Invitational,2022,,2022-05-10,2022-05-29,0,MSI,INTL
+LCO/2022 Season/Split 2,LCO 2022 Split 2,LoL Circuit Oceania,2022,Split 2,2022-06-06,2022-08-09,0,LCO,FOREIGN
+LPL/2022 Season/Summer Season,LPL 2022 Summer,Tencent LoL Pro League,2022,Summer,2022-06-10,2022-08-14,0,LPL,FOREIGN
+CBLOL/2022 Season/Split 2,CBLOL 2022 Split 2,Circuit Brazilian League of Legends,2022,Split 2,2022-06-11,2022-08-07,0,CBLOL,FOREIGN
+TCL/2022 Season/Summer Season,TCL 2022 Summer,Turkish Championship League,2022,Summer,2022-06-11,2022-08-14,0,TCL,FOREIGN
+LLA/2022 Season/Closing Season,LLA 2022 Closing,Liga Latinoamerica,2022,Closing,2022-06-11,2022-07-31,0,LLA,FOREIGN
+LCK/2022 Season/Summer Season,LCK 2022 Summer,LoL Champions Korea,2022,Summer,2022-06-15,2022-08-14,0,LCK,LCK
+LEC/2022 Season/Summer Season,LEC 2022 Summer,LoL EMEA Championship,2022,Summer,2022-06-17,2022-08-14,0,LEC,FOREIGN
+LCS/2022 Season/Summer Season,LCS 2022 Summer,League of Legends Championship Series,2022,Summer,2022-06-17,2022-08-14,0,LCS,FOREIGN
+LJL/2022 Season/Summer Season,LJL 2022 Summer,LoL Japan League,2022,Summer,2022-06-24,2022-08-17,0,LJL,FOREIGN
+PCS/2022 Season/Summer Season,PCS 2022 Summer,Pacific Championship Series,2022,Summer,2022-07-01,2022-08-07,0,PCS,FOREIGN
+VCS/2022 Season/Summer Season,VCS 2022 Summer,Vietnam Championship Series,2022,Summer,2022-07-07,2022-08-21,0,VCS,FOREIGN
+LLA/2022 Season/Closing Playoffs,LLA 2022 Closing Playoffs,Liga Latinoamerica,2022,Closing,2022-08-05,2022-08-27,0,LLA,FOREIGN
+CBLOL/2022 Season/Split 2 Playoffs,CBLOL 2022 Split 2 Playoffs,Circuit Brazilian League of Legends,2022,Split 2,2022-08-12,2022-09-03,0,CBLOL,FOREIGN
+LCO/2022 Season/Split 2 Playoffs,LCO 2022 Split 2 Playoffs,LoL Circuit Oceania,2022,Split 2,2022-08-15,2022-09-04,0,LCO,FOREIGN
+LPL/2022 Season/Summer Playoffs,LPL 2022 Summer Playoffs,Tencent LoL Pro League,2022,Summer,2022-08-16,2022-09-01,0,LPL,FOREIGN
+LCK/2022 Season/Summer Playoffs,LCK 2022 Summer Playoffs,LoL Champions Korea,2022,Summer,2022-08-17,2022-08-28,0,LCK,LCK
+PCS/2022 Season/Summer Playoffs,PCS 2022 Summer Playoffs,Pacific Championship Series,2022,Summer,2022-08-18,2022-09-04,0,PCS,FOREIGN
+TCL/2022 Season/Summer Playoffs,TCL 2022 Summer Playoffs,Turkish Championship League,2022,Summer,2022-08-20,2022-09-10,0,TCL,FOREIGN
+LCS/2022 Season/Championship,LCS 2022 Championship,League of Legends Championship Series,2022,Summer,2022-08-20,2022-09-11,0,LCS,FOREIGN
+LJL/2022 Season/Summer Playoffs,LJL 2022 Summer Playoffs,LoL Japan League,2022,,2022-08-24,2022-09-04,0,LJL,FOREIGN
+VCS/2022 Season/Summer Playoffs,VCS 2022 Summer Playoffs,Vietnam Championship Series,2022,Summer,2022-08-24,2022-09-04,0,VCS,FOREIGN
+LEC/2022 Season/Summer Playoffs,LEC 2022 Summer Playoffs,LoL EMEA Championship,2022,Summer,2022-08-26,2022-09-11,0,LEC,FOREIGN
+2022 Season World Championship/Play-In,Worlds 2022 Play-In,World Championship,2022,,2022-09-29,2022-10-04,1,Worlds,INTL
+2022 Season World Championship/Main Event,Worlds 2022 Main Event,World Championship,2022,,2022-10-07,2022-11-05,0,Worlds,INTL
+LPL/2023 Season/Spring Season,LPL 2023 Spring,Tencent LoL Pro League,2023,Spring,2023-01-14,2023-03-26,0,LPL,FOREIGN
+LCK/2023 Season/Spring Season,LCK 2023 Spring,LoL Champions Korea,2023,Spring,2023-01-18,2023-03-19,0,LCK,LCK
+CBLOL/2023 Season/Split 1,CBLOL 2023 Split 1,Circuit Brazilian League of Legends,2023,Split 1,2023-01-21,2023-03-19,0,CBLOL,FOREIGN
+LEC/2023 Season/Winter Season,LEC 2023 Winter Season,LoL EMEA Championship,2023,Winter,2023-01-21,2023-02-06,0,LEC,FOREIGN
+LCO/2023 Season/Split 1,LCO 2023 Split 1,LoL Circuit Oceania,2023,Split 1,2023-01-23,2023-02-07,0,LCO,FOREIGN
+LLA/2023 Season/Opening Season,LLA 2023 Opening,Liga Latinoamerica,2023,Opening,2023-01-24,2023-03-08,0,LLA,FOREIGN
+LCS/2023 Season/Spring Season,LCS 2023 Spring,League of Legends Championship Series,2023,Spring,2023-01-26,2023-03-17,0,LCS,FOREIGN
+LJL/2023 Season/Spring Season,LJL 2023 Spring,LoL Japan League,2023,Spring,2023-01-28,2023-03-26,0,LJL,FOREIGN
+PCS/2023 Season/Spring Season,PCS 2023 Spring,Pacific Championship Series,2023,Spring,2023-02-03,2023-03-12,0,PCS,FOREIGN
+LEC/2023 Season/Winter Groups,LEC 2023 Winter Groups,LoL EMEA Championship,2023,Winter,2023-02-11,2023-02-19,0,LEC,FOREIGN
+LEC/2023 Season/Winter Playoffs,LEC 2023 Winter Playoffs,LoL EMEA Championship,2023,Winter,2023-02-20,2023-02-26,0,LEC,FOREIGN
+VCS/2023 Season/Spring Season,VCS 2023 Spring,Vietnam Championship Series,2023,Spring,2023-02-24,2023-04-10,0,VCS,FOREIGN
+LCO/2023 Season/Split 1 Playoffs,LCO 2023 Split 1 Playoffs,LoL Circuit Oceania,2023,Split 1,2023-02-27,2023-04-29,0,LCO,FOREIGN
+LEC/2023 Season/Spring Season,LEC 2023 Spring Season,LoL EMEA Championship,2023,Spring,2023-03-11,2023-03-27,0,LEC,FOREIGN
+LLA/2023 Season/Opening Playoffs,LLA 2023 Opening Playoffs,Liga Latinoamerica,2023,Opening,2023-03-14,2023-04-14,0,LLA,FOREIGN
+LCK/2023 Season/Spring Playoffs,LCK 2023 Spring Playoffs,LoL Champions Korea,2023,Spring,2023-03-22,2023-04-09,0,LCK,LCK
+PCS/2023 Season/Spring Playoffs,PCS 2023 Spring Playoffs,Pacific Championship Series,2023,Spring,2023-03-23,2023-04-09,0,PCS,FOREIGN
+LCS/2023 Season/Spring Playoffs,LCS 2023 Spring Playoffs,League of Legends Championship Series,2023,Spring,2023-03-23,2023-04-09,0,LCS,FOREIGN
+CBLOL/2023 Season/Split 1 Playoffs,CBLOL 2023 Split 1 Playoffs,Circuit Brazilian League of Legends,2023,Split 1,2023-03-24,2023-04-15,0,CBLOL,FOREIGN
+LPL/2023 Season/Spring Playoffs,LPL 2023 Spring Playoffs,Tencent LoL Pro League,2023,Spring,2023-03-30,2023-04-15,0,LPL,FOREIGN
+LJL/2023 Season/Spring Playoffs,LJL 2023 Spring Playoffs,LoL Japan League,2023,,2023-04-01,2023-04-15,0,LJL,FOREIGN
+LEC/2023 Season/Spring Groups,LEC 2023 Spring Groups,LoL EMEA Championship,2023,Spring,2023-04-08,2023-04-16,0,LEC,FOREIGN
+VCS/2023 Season/Spring Playoffs,VCS 2023 Spring Playoffs,Vietnam Championship Series,2023,Spring,2023-04-14,2023-04-23,0,VCS,FOREIGN
+LEC/2023 Season/Spring Playoffs,LEC 2023 Spring Playoffs,LoL EMEA Championship,2023,Spring,2023-04-17,2023-04-23,0,LEC,FOREIGN
+2023 Mid-Season Invitational,MSI 2023,Mid-Season Invitational,2023,,2023-05-02,2023-05-21,0,MSI,INTL
+LPL/2023 Season/Summer Season,LPL 2023 Summer,Tencent LoL Pro League,2023,Summer,2023-05-29,2023-07-17,0,LPL,FOREIGN
+LCO/2023 Season/Split 2,LCO 2023 Split 2,LoL Circuit Oceania,2023,Split 2,2023-06-05,2023-07-12,0,LCO,FOREIGN
+LLA/2023 Season/Closing Season,LLA 2023 Closing,Liga Latinoamerica,2023,Closing,2023-06-06,2023-07-19,0,LLA,FOREIGN
+LCK/2023 Season/Summer Season,LCK 2023 Summer,LoL Champions Korea,2023,Summer,2023-06-07,2023-08-06,0,LCK,LCK
+CBLOL/2023 Season/Split 2,CBLOL 2023 Split 2,Circuit Brazilian League of Legends,2023,Split 2,2023-06-10,2023-08-06,0,CBLOL,FOREIGN
+LJL/2023 Season/Summer Season,LJL 2023 Summer,LoL Japan League,2023,Summer,2023-06-10,2023-07-16,0,LJL,FOREIGN
+LCS/2023 Season/Summer Season,LCS 2023 Summer,League of Legends Championship Series,2023,Summer,2023-06-14,2023-07-21,0,LCS,FOREIGN
+LEC/2023 Season/Summer Season,LEC 2023 Summer Season,LoL EMEA Championship,2023,Summer,2023-06-17,2023-07-03,0,LEC,FOREIGN
+VCS/2023 Season/Summer Season,VCS 2023 Summer,Vietnam Championship Series,2023,Summer,2023-06-23,2023-08-06,0,VCS,FOREIGN
+PCS/2023 Season/Summer Season,PCS 2023 Summer,Pacific Championship Series,2023,Summer,2023-06-30,2023-08-07,0,PCS,FOREIGN
+LEC/2023 Season/Summer Groups,LEC 2023 Summer Groups,LoL EMEA Championship,2023,Summer,2023-07-15,2023-07-23,0,LEC,FOREIGN
+LCO/2023 Season/Split 2 Playoffs,LCO 2023 Split 2 Playoffs,LoL Circuit Oceania,2023,Split 2,2023-07-17,2023-07-30,0,LCO,FOREIGN
+LPL/2023 Season/Summer Playoffs,LPL 2023 Summer Playoffs,Tencent LoL Pro League,2023,Summer,2023-07-20,2023-08-05,0,LPL,FOREIGN
+LJL/2023 Season/Summer Playoffs,LJL 2023 Summer Playoffs,LoL Japan League,2023,Summer,2023-07-22,2023-08-20,0,LJL,FOREIGN
+LEC/2023 Season/Summer Playoffs,LEC 2023 Summer Playoffs,LoL EMEA Championship,2023,Summer,2023-07-24,2023-07-30,0,LEC,FOREIGN
+LLA/2023 Season/Closing Playoffs,LLA 2023 Closing Playoffs,Liga Latinoamerica,2023,Closing,2023-07-25,2023-08-26,0,LLA,FOREIGN
+LCS/2023 Season/Championship,LCS 2023 Championship,League of Legends Championship Series,2023,Summer,2023-07-27,2023-08-20,0,LCS,FOREIGN
+LCK/2023 Season/Summer Playoffs,LCK 2023 Summer Playoffs,LoL Champions Korea,2023,Summer,2023-08-08,2023-08-20,0,LCK,LCK
+PCS/2023 Season/Summer Playoffs,PCS 2023 Summer Playoffs,Pacific Championship Series,2023,Summer,2023-08-11,2023-09-09,0,PCS,FOREIGN
+CBLOL/2023 Season/Split 2 Playoffs,CBLOL 2023 Split 2 Playoffs,Circuit Brazilian League of Legends,2023,Split 2,2023-08-11,2023-09-09,0,CBLOL,FOREIGN
+VCS/2023 Season/Summer Playoffs,VCS 2023 Summer Playoffs,Vietnam Championship Series,2023,Summer,2023-08-12,2023-09-09,0,VCS,FOREIGN
+LEC/2023 Season/Season Finals,LEC 2023 Season Finals,LoL EMEA Championship,2023,Finals,2023-08-19,2023-09-10,0,LEC,FOREIGN
+2023 Season World Championship/Play-In,Worlds 2023 Play-In,World Championship,2023,,2023-10-10,2023-10-15,1,Worlds,INTL
+2023 Season World Championship/Main Event,Worlds 2023 Main Event,World Championship,2023,,2023-10-19,2023-11-19,0,Worlds,INTL
+LEC/2024 Season/Winter Season,LEC 2024 Winter,LoL EMEA Championship,2024,Winter,2024-01-13,2024-01-29,0,LEC,FOREIGN
+LCO/2024 Season/Split 1,LCO 2024 Split 1,LoL Circuit Oceania,2024,Split 1,2024-01-15,2024-02-21,0,LCO,FOREIGN
+LLA/2024 Season/Opening Season,LLA 2024 Opening,Liga Latinoamerica,2024,Opening,2024-01-16,2024-02-29,0,LLA,FOREIGN
+LCK/2024 Season/Spring Season,LCK 2024 Spring,LoL Champions Korea,2024,Spring,2024-01-17,2024-03-24,0,LCK,LCK
+PCS/2024 Season/Spring Season,PCS 2024 Spring,Pacific Championship Series,2024,Spring,2024-01-19,2024-03-03,0,PCS,FOREIGN
+LJL/2024 Season/Spring Season,LJL 2024 Spring,LoL Japan League,2024,Spring,2024-01-20,2024-02-18,0,LJL,FOREIGN
+CBLOL/2024 Season/Split 1,CBLOL 2024 Split 1,Circuit Brazilian League of Legends,2024,Split 1,2024-01-20,2024-03-17,0,CBLOL,FOREIGN
+VCS/2024 Season/Spring Season,VCS 2024 Spring,Vietnam Championship Series,2024,Spring,2024-01-20,2024-03-10,0,VCS,FOREIGN
+LCS/2024 Season/Spring Season,LCS 2024 Spring,League of Legends Championship Series,2024,Spring,2024-01-20,2024-03-10,0,LCS,FOREIGN
+LPL/2024 Season/Spring Season,LPL 2024 Spring,Tencent LoL Pro League,2024,Spring,2024-01-22,2024-03-27,0,LPL,FOREIGN
+LEC/2024 Season/Winter Playoffs,LEC 2024 Winter Playoffs,LoL EMEA Championship,2024,Winter,2024-02-03,2024-02-18,0,LEC,FOREIGN
+LJL/2024 Season/Spring Playoffs,LJL 2024 Spring Playoffs,LoL Japan League,2024,Spring,2024-02-24,2024-03-03,0,LJL,FOREIGN
+LCO/2024 Season/Split 1 Playoffs,LCO 2024 Split 1 Playoffs,LoL Circuit Oceania,2024,Split 1,2024-02-26,2024-04-28,0,LCO,FOREIGN
+LLA/2024 Season/Opening Playoffs,LLA 2024 Opening Playoffs,Liga Latinoamerica,2024,Opening,2024-03-05,2024-04-06,0,LLA,FOREIGN
+LEC/2024 Season/Spring Season,LEC 2024 Spring,LoL EMEA Championship,2024,Spring,2024-03-09,2024-03-25,0,LEC,FOREIGN
+PCS/2024 Season/Spring Playoffs,PCS 2024 Spring Playoffs,Pacific Championship Series,2024,Spring,2024-03-11,2024-04-07,0,PCS,FOREIGN
+LCS/2024 Season/Spring Playoffs,LCS 2024 Spring Playoffs,League of Legends Championship Series,2024,Spring,2024-03-14,2024-03-31,0,LCS,FOREIGN
+CBLOL/2024 Season/Split 1 Playoffs,CBLOL 2024 Split 1 Playoffs,Circuit Brazilian League of Legends,2024,Split 1,2024-03-22,2024-04-20,0,CBLOL,FOREIGN
+LEC/2024 Season/Spring Playoffs,LEC 2024 Spring Playoffs,LoL EMEA Championship,2024,Spring,2024-03-30,2024-04-14,0,LEC,FOREIGN
+LCK/2024 Season/Spring Playoffs,LCK 2024 Spring Playoffs,LoL Champions Korea,2024,Spring,2024-03-30,2024-04-14,0,LCK,LCK
+LPL/2024 Season/Spring Playoffs,LPL 2024 Spring Playoffs,Tencent LoL Pro League,2024,Spring,2024-03-31,2024-04-20,0,LPL,FOREIGN
+VCS/2024 Season/Spring Playoffs,VCS 2024 Spring Playoffs,Vietnam Championship Series,2024,Spring,2024-04-03,2024-04-07,0,VCS,FOREIGN
+2024 Mid-Season Invitational,MSI 2024,Mid-Season Invitational,2024,,2024-05-01,2024-05-19,0,MSI,INTL
+LCO/2024 Season/Split 2,LCO 2024 Split 2,LoL Circuit Oceania,2024,Split 2,2024-05-27,2024-07-09,0,LCO,FOREIGN
+CBLOL/2024 Season/Split 2,CBLOL 2024 Split 2,Circuit Brazilian League of Legends,2024,Split 2,2024-06-01,2024-07-29,0,CBLOL,FOREIGN
+LPL/2024 Season/Summer Placements,LPL 2024 Summer Placements,Tencent LoL Pro League,2024,Summer Placements,2024-06-01,2024-06-29,0,LPL,FOREIGN
+LJL/2024 Season/Summer Season,LJL 2024 Summer,LoL Japan League,2024,Summer,2024-06-07,2024-07-14,0,LJL,FOREIGN
+PCS/2024 Season/Summer Season,PCS 2024 Summer,Pacific Championship Series,2024,Summer,2024-06-08,2024-07-28,0,PCS,FOREIGN
+LEC/2024 Season/Summer Season,LEC 2024 Summer,LoL EMEA Championship,2024,Summer,2024-06-08,2024-06-30,0,LEC,FOREIGN
+LLA/2024 Season/Closing Season,LLA 2024 Closing,Liga Latinoamerica,2024,Closing,2024-06-11,2024-07-24,0,LLA,FOREIGN
+LCK/2024 Season/Summer Season,LCK 2024 Summer,LoL Champions Korea,2024,Summer,2024-06-12,2024-08-18,0,LCK,LCK
+LCS/2024 Season/Summer Season,LCS 2024 Summer,League of Legends Championship Series,2024,Summer,2024-06-15,2024-08-11,0,LCS,FOREIGN
+VCS/2024 Season/Summer Season,VCS 2024 Summer,Vietnam Championship Series,2024,Summer,2024-06-21,2024-08-04,0,VCS,FOREIGN
+Esports World Cup 2024,Esports World Cup 2024,Esports World Cup,2024,,2024-07-04,2024-07-07,0,EWC,INTL
+LPL/2024 Season/Summer Season,LPL 2024 Summer,Tencent LoL Pro League,2024,Summer,2024-07-05,2024-07-31,0,LPL,FOREIGN
+LEC/2024 Season/Summer Playoffs,LEC 2024 Summer Playoffs,LoL EMEA Championship,2024,Summer,2024-07-12,2024-07-28,0,LEC,FOREIGN
+LCO/2024 Season/Split 2 Playoffs,LCO 2024 Split 2 Playoffs,LoL Circuit Oceania,2024,Split 2,2024-07-15,2024-07-22,0,LCO,FOREIGN
+LJL/2024 Season/Summer Playoffs,LJL 2024 Summer Playoffs,LoL Japan League,2024,Summer,2024-07-20,2024-07-28,0,LJL,FOREIGN
+LLA/2024 Season/Closing Playoffs,LLA 2024 Closing Playoffs,Liga Latinoamerica,2024,Closing,2024-07-30,2024-08-24,0,LLA,FOREIGN
+CBLOL/2024 Season/Split 2 Playoffs,CBLOL 2024 Split 2 Playoffs,Circuit Brazilian League of Legends,2024,Split 2,2024-08-03,2024-09-07,0,CBLOL,FOREIGN
+LPL/2024 Season/Summer Playoffs,LPL 2024 Summer Playoffs,Tencent LoL Pro League,2024,Summer,2024-08-03,2024-08-30,0,LPL,FOREIGN
+PCS/2024 Season/Summer Playoffs,PCS 2024 Summer Playoffs,Pacific Championship Series,2024,Summer,2024-08-05,2024-09-01,0,PCS,FOREIGN
+VCS/2024 Season/Summer Playoffs,VCS 2024 Summer Playoffs,Vietnam Championship Series,2024,Summer,2024-08-07,2024-08-18,0,VCS,FOREIGN
+LEC/2024 Season/Season Finals,LEC 2024 Season Finals,LoL EMEA Championship,2024,Finals,2024-08-10,2024-09-01,0,LEC,FOREIGN
+LCS/2024 Season/Championship,LCS 2024 Championship,League of Legends Championship Series,2024,Summer,2024-08-17,2024-09-07,0,LCS,FOREIGN
+LCK/2024 Season/Summer Playoffs,LCK 2024 Summer Playoffs,LoL Champions Korea,2024,Summer,2024-08-23,2024-09-08,0,LCK,LCK
+2024 Season World Championship/Play-In,Worlds 2024 Play-In,World Championship,2024,,2024-09-25,2024-09-29,1,Worlds,INTL
+2024 Season World Championship/Main Event,Worlds 2024 Main Event,World Championship,2024,,2024-10-03,2024-11-02,0,Worlds,INTL
+LPL/2025 Season/Split 1,LPL 2025 Split 1,Tencent LoL Pro League,2025,Split 1,2025-01-12,2025-02-16,0,LPL,FOREIGN
+LCK/2025 Season/Cup,LCK Cup 2025,LoL Champions Korea,2025,Cup,2025-01-15,2025-02-23,0,LCK,LCK
+LCP/2025 Season/Season Kickoff,LCP 2025 Season Kickoff,League of Legends Championship Pacific,2025,Split 1,2025-01-17,2025-02-16,0,LCP,FOREIGN
+LEC/2025 Season/Winter Season,LEC 2025 Winter,LoL EMEA Championship,2025,Winter,2025-01-18,2025-02-03,0,LEC,FOREIGN
+LTA South/2025 Season/Split 1,LTA South 2025 Split 1,League of Legends Championship of The Americas South,2025,Split 1,2025-01-25,2025-02-09,0,LTA South,FOREIGN
+LTA North/2025 Season/Split 1,LTA North 2025 Split 1,League of Legends Championship of The Americas North,2025,Split 1,2025-01-25,2025-02-09,0,LTA North,FOREIGN
+LEC/2025 Season/Winter Playoffs,LEC 2025 Winter Playoffs,LoL EMEA Championship,2025,Winter,2025-02-15,2025-03-02,0,LEC,FOREIGN
+LTA/2025 Season/Split 1 Playoffs,LTA 2025 Split 1 Playoffs,League of Legends Championship of The Americas,2025,,2025-02-15,2025-02-23,0,LTA,FOREIGN
+LCP/2025 Season/Season Kickoff Qualifying Series,LCP 2025 Season Kickoff Qualifying Series,League of Legends Championship Pacific,2025,Split 1,2025-02-18,2025-02-23,0,LCP,FOREIGN
+LPL/2025 Season/Split 1 Playoffs,LPL 2025 Split 1 Playoffs,Tencent LoL Pro League,2025,Split 1,2025-02-22,2025-03-01,0,LPL,FOREIGN
+2025 First Stand,First Stand 2025,First Stand,2025,,2025-03-10,2025-03-16,0,First Stand,INTL
+LPL/2025 Season/Split 2 Placements,LPL 2025 Split 2 Placements,Tencent LoL Pro League,2025,Split 2 Placements,2025-03-22,2025-03-31,0,LPL,FOREIGN
+LEC/2025 Season/Spring Season,LEC 2025 Spring,LoL EMEA Championship,2025,Spring,2025-03-29,2025-05-13,0,LEC,FOREIGN
+LCK/2025 Season/Rounds 1-2,LCK 2025 Rounds 1-2,LoL Champions Korea,2025,Rounds 1-2,2025-04-02,2025-06-04,0,LCK,LCK
+LTA North/2025 Season/Split 2,LTA North 2025 Split 2,League of Legends Championship of The Americas North,2025,Split 2,2025-04-05,2025-05-18,0,LTA North,FOREIGN
+LPL/2025 Season/Split 2,LPL 2025 Split 2,Tencent LoL Pro League,2025,Split 2,2025-04-05,2025-05-22,0,LPL,FOREIGN
+LTA South/2025 Season/Split 2,LTA South 2025 Split 2,League of Legends Championship of The Americas South,2025,Split 2,2025-04-05,2025-05-18,0,LTA South,FOREIGN
+LCP/2025 Season/Mid Season,LCP 2025 Mid Season,League of Legends Championship Pacific,2025,Split 2,2025-04-19,2025-05-25,0,LCP,FOREIGN
+LTA South/2025 Season/Split 2 Playoffs,LTA South 2025 Split 2 Playoffs,League of Legends Championship of The Americas South,2025,Split 2,2025-05-24,2025-06-15,0,LTA South,FOREIGN
+LEC/2025 Season/Spring Playoffs,LEC 2025 Spring Playoffs,LoL EMEA Championship,2025,Spring,2025-05-24,2025-06-08,0,LEC,FOREIGN
+LPL/2025 Season/Split 2 Playoffs,LPL 2025 Split 2 Playoffs,Tencent LoL Pro League,2025,Split 2,2025-05-24,2025-06-14,0,LPL,FOREIGN
+LTA North/2025 Season/Split 2 Playoffs,LTA North 2025 Split 2 Playoffs,League of Legends Championship of The Americas North,2025,Split 2,2025-05-24,2025-06-15,0,LTA North,FOREIGN
+LCP/2025 Season/Mid Season Qualifying Series,LCP 2025 Mid Season Qualifying Series,League of Legends Championship Pacific,2025,Split 2,2025-05-30,2025-06-08,0,LCP,FOREIGN
+LCK/2025 Season/Road to MSI,LCK 2025 Road to MSI,LoL Champions Korea,2025,Rounds 1-2,2025-06-07,2025-06-15,0,LCK,LCK
+2025 Mid-Season Invitational,MSI 2025,Mid-Season Invitational,2025,,2025-06-27,2025-07-12,0,MSI,INTL
+Esports World Cup 2025,Esports World Cup 2025,Esports World Cup,2025,,2025-07-16,2025-07-20,0,EWC,INTL
+LPL/2025 Season/Split 3,LPL 2025 Split 3,Tencent LoL Pro League,2025,Split 3,2025-07-19,2025-08-28,0,LPL,FOREIGN
+LCK/2025 Season/Rounds 3-5,LCK 2025 Rounds 3-5,LoL Champions Korea,2025,Rounds 3-5,2025-07-23,2025-08-31,0,LCK,LCK
+LTA South/2025 Season/Split 3,LTA South 2025 Split 3,League of Legends Championship of The Americas South,2025,Split 3,2025-07-26,2025-09-07,0,LTA South,FOREIGN
+LTA North/2025 Season/Split 3,LTA North 2025 Split 3,League of Legends Championship of The Americas North,2025,Split 3,2025-07-26,2025-09-07,0,LTA North,FOREIGN
+LCP/2025 Season/Season Finals,LCP 2025 Season Finals,League of Legends Championship Pacific,2025,Split 3,2025-07-26,2025-08-24,0,LCP,FOREIGN
+LEC/2025 Season/Summer Season,LEC 2025 Summer,LoL EMEA Championship,2025,Summer,2025-08-02,2025-08-26,0,LEC,FOREIGN
+LPL/2025 Season/Grand Finals,LPL 2025 Grand Finals,Tencent LoL Pro League,2025,Split 3,2025-08-30,2025-09-21,0,LPL,FOREIGN
+LCK/2025 Season/Season Play-In,LCK 2025 Season Play-In,LoL Champions Korea,2025,Rounds 3-5,2025-09-03,2025-09-07,0,LCK,LCK
+LEC/2025 Season/Summer Playoffs,LEC 2025 Summer Playoffs,LoL EMEA Championship,2025,Summer,2025-09-05,2025-09-28,0,LEC,FOREIGN
+LCP/2025 Season/Season Finals Playoffs,LCP 2025 Season Finals Playoffs,League of Legends Championship Pacific,2025,Split 3,2025-09-05,2025-09-21,0,LCP,FOREIGN
+LCK/2025 Season/Season Playoffs,LCK 2025 Season Playoffs,LoL Champions Korea,2025,Rounds 3-5,2025-09-10,2025-09-28,0,LCK,LCK
+LTA/2025 Season/Regional Championship,LTA 2025 Championship,League of Legends Championship of The Americas,2025,,2025-09-13,2025-09-28,0,LTA,FOREIGN
+2025 Season World Championship/Play-In,Worlds 2025 Play-In,World Championship,2025,,2025-10-14,2025-10-14,1,Worlds,INTL
+2025 Season World Championship/Main Event,Worlds 2025 Main Event,World Championship,2025,,2025-10-15,2025-11-09,0,Worlds,INTL
+LPL/2026 Season/Split 1,LPL 2026 Split 1,Tencent LoL Pro League,2026,Split 1,2026-01-14,2026-02-07,0,LPL,FOREIGN
+LCK/2026 Season/Cup,LCK Cup 2026,LoL Champions Korea,2026,Cup,2026-01-14,2026-03-01,0,LCK,LCK
+LCP/2026 Season/Split 1,LCP 2026 Split 1,League of Legends Championship Pacific,2026,Split 1,2026-01-16,2026-02-08,0,LCP,FOREIGN
+LEC/2026 Season/Versus Season,LEC 2026 Versus,LoL EMEA Championship,2026,Versus,2026-01-17,2026-02-08,0,LEC,FOREIGN
+CBLOL/2026 Season/Cup,CBLOL Cup 2026,Circuit Brazilian League of Legends,2026,Cup,2026-01-17,2026-03-01,0,CBLOL,FOREIGN
+LCS/2026 Season/Lock-In,LCS 2026 Lock-In,League of Legends Championship Series,2026,Lock-In,2026-01-24,2026-03-01,0,LCS,FOREIGN
+LPL/2026 Season/Split 1 Playoffs,LPL 2026 Split 1 Playoffs,Tencent LoL Pro League,2026,Split 1,2026-02-09,2026-03-08,0,LPL,FOREIGN
+LCP/2026 Season/Split 1 Playoffs,LCP 2026 Split 1 Playoffs,League of Legends Championship Pacific,2026,Split 1,2026-02-12,2026-03-01,0,LCP,FOREIGN
+LEC/2026 Season/Versus Playoffs,LEC 2026 Versus Playoffs,LoL EMEA Championship,2026,Versus,2026-02-16,2026-03-01,0,LEC,FOREIGN
+2026 First Stand,First Stand 2026,First Stand,2026,,2026-03-16,2026-03-22,0,First Stand,INTL
+LEC/2026 Season/Spring Season,LEC 2026 Spring,LoL EMEA Championship,2026,Spring,2026-03-28,2026-05-10,0,LEC,FOREIGN
+CBLOL/2026 Season/Split 1,CBLOL 2026 Split 1,Circuit Brazilian League of Legends,2026,Split 1,2026-03-28,2026-05-03,0,CBLOL,FOREIGN
+LCK/2026 Season/Rounds 1-2,LCK 2026 Rounds 1-2,LoL Champions Korea,2026,Rounds 1-2,2026-04-01,2026-05-31,0,LCK,LCK
+LCP/2026 Season/Split 2,LCP 2026 Split 2,League of Legends Championship Pacific,2026,Split 2,2026-04-04,2026-05-17,0,LCP,FOREIGN
+LPL/2026 Season/Split 2,LPL 2026 Split 2,Tencent LoL Pro League,2026,Split 2,2026-04-04,2026-05-17,0,LPL,FOREIGN
+LCS/2026 Season/Spring Season,LCS 2026 Spring,League of Legends Championship Series,2026,Spring,2026-04-04,2026-05-17,0,LCS,FOREIGN
+CBLOL/2026 Season/Split 1 Playoffs,CBLOL 2026 Split 1 Playoffs,Circuit Brazilian League of Legends,2026,Split 1,2026-05-09,2026-06-06,0,CBLOL,FOREIGN
+LEC/2026 Season/Spring Playoffs,LEC 2026 Spring Playoffs,LoL EMEA Championship,2026,Spring,2026-05-23,2026-06-07,0,LEC,FOREIGN
+LCP/2026 Season/Split 2 Playoffs,LCP 2026 Split 2 Playoffs,League of Legends Championship Pacific,2026,Split 2,2026-05-23,2026-06-07,0,LCP,FOREIGN
+LPL/2026 Season/Split 2 Playoffs,LPL 2026 Split 2 Playoffs,Tencent LoL Pro League,2026,Split 2,2026-05-23,2026-06-14,0,LPL,FOREIGN
+LCS/2026 Season/Spring Playoffs,LCS 2026 Spring Playoffs,League of Legends Championship Series,2026,Spring,2026-05-23,2026-06-14,0,LCS,FOREIGN
+LCK/2026 Season/Road to MSI,LCK 2026 Road to MSI,LoL Champions Korea,2026,Rounds 1-2,2026-06-06,2026-06-14,0,LCK,LCK
+2026 Mid-Season Invitational,MSI 2026,Mid-Season Invitational,2026,,2026-06-28,2026-07-12,0,MSI,INTL
+Esports World Cup 2026,Esports World Cup 2026,Esports World Cup,2026,,2026-07-15,2026-07-19,0,EWC,INTL
+LPL/2026 Season/Split 3,LPL 2026 Split 3,Tencent LoL Pro League,2026,Split 3,2026-07-22,2026-08-23,0,LPL,FOREIGN
+LEC/2026 Season/Summer Season,LEC 2026 Summer,LoL EMEA Championship,2026,Summer,2026-07-24,2026-08-30,0,LEC,FOREIGN
+LCS/2026 Season/Summer Season,LCS 2026 Summer,League of Legends Championship Series,2026,Summer,2026-07-25,2026-09-06,0,LCS,FOREIGN
+CBLOL/2026 Season/Split 2,CBLOL 2026 Split 2,Circuit Brazilian League of Legends,2026,Split 2,2026-07-25,2026-08-30,0,CBLOL,FOREIGN
+LCP/2026 Season/Split 3,LCP 2026 Split 3,League of Legends Championship Pacific,2026,Split 3,2026-07-25,2026-08-30,0,LCP,FOREIGN
+LCK/2026 Season/Rounds 3-4,LCK 2026 Rounds 3-4,LoL Champions Korea,2026,Rounds 3-4,2026-07-29,2026-08-23,0,LCK,LCK
+LCK/2026 Season/Season Play-In,LCK 2026 Season Play-In,LoL Champions Korea,2026,Rounds 3-4,2026-08-26,2026-08-28,0,LCK,LCK
+LPL/2026 Season/Grand Finals,LPL 2026 Grand Finals,Tencent LoL Pro League,2026,Split 3,2026-08-28,2026-09-13,0,LPL,FOREIGN
+LCK/2026 Season/Season Playoffs,LCK 2026 Season Playoffs,LoL Champions Korea,2026,Rounds 3-4,2026-08-29,2026-09-13,0,LCK,LCK
+LEC/2026 Season/Summer Playoffs,LEC 2026 Summer Playoffs,LoL EMEA Championship,2026,Summer,2026-09-05,2026-09-20,0,LEC,FOREIGN
+CBLOL/2026 Season/Split 2 Playoffs,CBLOL 2026 Split 2 Playoffs,Circuit Brazilian League of Legends,2026,Split 2,2026-09-05,2026-10-10,0,CBLOL,FOREIGN
+LCS/2026 Season/Summer Playoffs,LCS 2026 Summer Playoffs,League of Legends Championship Series,2026,Summer,2026-09-12,2026-10-04,0,LCS,FOREIGN
+2026 Season World Championship/Play-In,Worlds 2026 Play-In,World Championship,2026,,2026-10-15,2026-10-18,1,Worlds,INTL
+2026 Season World Championship/Main Event,Worlds 2026 Main Event,World Championship,2026,,2026-10-23,2026-11-14,0,Worlds,INTL
+LEC/2027 Season/Winter Season,LEC 2027 Winter,LoL EMEA Championship,2027,Winter,2027-01-15,,0,LEC,FOREIGN

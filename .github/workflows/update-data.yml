@@ -11,6 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -22,6 +23,8 @@ jobs:
         run: pip install pandas requests
 
       - name: Collect new data
+        id: collect
+        continue-on-error: true   # 실패해도 기존 CSV는 그대로 두고, 실패 기록만 커밋한다
         run: python collect.py
 
       - name: Commit changes
