@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+from pathlib import Path
 from urllib.parse import quote
 
 import pandas as pd
@@ -71,7 +72,39 @@ def team_info() -> pd.DataFrame:
             out.at[name, "logo"] = logo_url(file)
         else:
             out.loc[name, ["logo", "current"]] = [logo_url(file), name]
+    # Leaguepedia에 아예 없는 로고: 직접 받은 이미지 파일(assets/logos)
+    for name, rel in LOCAL_LOGOS.items():
+        if name not in out.index:
+            out.loc[name, "current"] = name
+        out.at[name, "logo"] = asset_uri(rel)
+    # 팀 정보에 약칭이 없는 팀 (직접 받은 값)
+    for name, short in SHORT_OVERRIDES.items():
+        if name not in out.index:
+            out.loc[name, "current"] = name
+        out.at[name, "short"] = short
     return out
+
+
+ASSETS = Path(__file__).resolve().parent.parent / "assets"
+LOCAL_LOGOS = {
+    "Unicorns of Love.CIS": "logos/unicorns_of_love_cis.png",
+    "GIGABYTE Marines": "logos/gigabyte_marines.png",
+}
+LOCAL_PHOTOS = {"Cry": "players/cry.png", "Hipo": "players/hipo.png"}
+SHORT_OVERRIDES = {
+    "DAMWON Gaming": "DWG", "Flamengo Esports": "FLA", "GIGABYTE Marines": "GAM",
+    "MAD Lions": "MAD", "SANDBOX Gaming": "SB", "SuperMassive Esports": "SUP",
+}
+
+
+@st.cache_data
+def asset_uri(rel: str) -> str | None:
+    """assets 폴더의 이미지를 data URI로 (서버·브라우저 어디서나 별도 주소 없이 표시됨)."""
+    import base64
+    path = ASSETS / rel
+    if not path.exists():
+        return None
+    return "data:image/png;base64," + base64.b64encode(path.read_bytes()).decode()
 
 
 # 팀 정보에 적힌 로고 파일이 없을 때 쓰는 실제 파일 이름 (직접 확인함)
@@ -170,11 +203,9 @@ def lineage_groups() -> dict[str, list[str]]:
 def player_photo(player: str, pages=(), year: int | None = None, team: str | None = None) -> str | None:
     """선수 사진 고르기: ① 그 대회 사진 → ② 같은 해·같은 팀 → ③ 같은 해 → ④ 가장 가까운 해."""
     imgs = load_player_images()
-    if imgs.empty:
-        return None
-    mine = imgs[imgs["player"] == player]
-    if mine.empty:
-        return None
+    mine = imgs[imgs["player"] == player] if not imgs.empty else imgs
+    if mine.empty:                                     # Leaguepedia에 사진이 없으면 직접 받은 사진
+        return asset_uri(LOCAL_PHOTOS[player]) if player in LOCAL_PHOTOS else None
     for cond in [mine["page"].isin(list(pages)),
                  (mine["year"] == year) & (mine["team"] == team),
                  mine["year"] == year]:
