@@ -7,10 +7,12 @@ import streamlit as st
 
 from utils import champions as champ
 from utils.data_loader import has_data, load_player_info
+from utils.tournaments import HONORS, finals_mvps, team_year_summary
 from utils.players import (ARCHETYPES, MIN_GAMES, RADAR_FEATURES, ROLE_METRICS, STYLE_FEATURES, UNAVAILABLE,
                            percentiles, player_games, position_percentiles, position_table, season_table,
                            similar_players, style_clusters, summarize)
-from utils.teams import ROLE_KO, ROLE_ORDER, display_name, player_photo
+from utils.teams import ROLE_KO, ROLE_ORDER, display_name, player_photo, team_label, team_logo
+from utils.teams import with_logos
 
 SCOPE_KO = {"LCK": "LCK", "INTL": "국제전", "FOREIGN": "해외 리그"}
 SCOPE_COLOR = {"LCK": "#C89B3C", "국제전": "#3B82F6", "해외 리그": "#10B981"}
@@ -39,13 +41,29 @@ def player_index() -> pd.DataFrame:
 
 idx = player_index()
 c1, c2 = st.columns([1, 3])
-role_filter = c1.selectbox("포지션", ["전체"] + list(ROLE_ORDER), format_func=lambda r: ROLE_KO.get(r, r))
+# 팀 분석 로스터에서 넘어온 경우: 그 선수를 미리 선택해 둔다
+if "player_pick" in st.session_state:
+    st.session_state["player_role"] = "전체"
+    st.session_state["player_select"] = st.session_state.pop("player_pick")
+
+role_filter = c1.selectbox("포지션", ["전체"] + list(ROLE_ORDER), format_func=lambda r: ROLE_KO.get(r, r),
+                           key="player_role")
 options = idx if role_filter == "전체" else idx[idx["role"] == role_filter]
+if st.session_state.get("player_select") not in options.index:
+    st.session_state["player_select"] = None
+_native = load_player_info()
+
+
+def _player_label(p: str) -> str:
+    kr = _native.at[p, "native_name"] if not _native.empty and p in _native.index else None
+    kr = f" ({kr})" if isinstance(kr, str) and kr else ""
+    return (f"{display_name(p)}{kr} · {ROLE_KO.get(idx.at[p, 'role'], idx.at[p, 'role'])} · "
+            f"{team_label(idx.at[p, 'team'])} ({idx.at[p, 'games']}경기)")
+
+
 player = c2.selectbox(
-    "선수 (이름을 입력해 검색할 수 있습니다)", list(options.index), index=None,
-    placeholder="선수를 선택하거나 이름을 입력하세요",
-    format_func=lambda p: f"{display_name(p)} · {ROLE_KO.get(idx.at[p, 'role'], idx.at[p, 'role'])} · "
-                          f"{idx.at[p, 'team']} ({idx.at[p, 'games']}경기)")
+    "선수 (영문·한글 이름으로 검색할 수 있습니다)", list(options.index), key="player_select",
+    placeholder="선수를 선택하거나 이름을 입력하세요", format_func=_player_label)
 
 if player is None:
     st.info("👆 **선수**를 선택하면 커리어, 챔피언, 선수 비교, 플레이 유형 분석이 나타납니다. "
@@ -114,15 +132,57 @@ with tab_career:
             for url, cap in yearly_photos)
         st.markdown(f"<div style='display:flex;flex-wrap:wrap;gap:10px'>{cards}</div>", unsafe_allow_html=True)
 
+    # 대회 단위로 묶기: LCK는 스플릿(Spring/Summer, LCK Cup/LCK)별, 국제전·해외 리그는 대회별
+    def comp_label(r) -> str:
+        if r["scope"] == "LCK":
+            sp = str(r["split"]) if pd.notna(r["split"]) else ""
+            return sp if sp.startswith("LCK") else f"LCK {sp}".strip()
+        return r["league_short"]
+
+    mine_c = mine.assign(대회=mine.apply(comp_label, axis=1))
     rows = []
-    for (y, scope, league, team), df in mine.groupby(["year", "scope", "league_short", "team"]):
+    for (y, comp, team), df in mine_c.groupby(["year", "대회", "team"]):
         s = summarize(df)
-        rows.append({"연도": int(y), "구분": SCOPE_KO[scope], "리그·대회": league, "팀": team,
-                     "경기": s["games"], "승률": s["win_rate"], "KDA": s["kda"], "킬 관여율": s["kp"],
-                     "분당 CS": s["cs_min"], "분당 딜량": s["dpm"]})
-    career = pd.DataFrame(rows).sort_values(["연도", "구분"])
+        scope = df["scope"].iloc[0]
+        result = dict(team_year_summary(team, int(y))[1]).get(comp, "-") if scope in ("LCK", "INTL") else "-"
+        rows.append({"_first": df["datetime_kst"].min(), "연도": int(y), "대회": comp, "로고": team_logo(team),
+                     "팀": team_label(team), "최종 순위": result, "경기": s["games"], "승률": s["win_rate"],
+                     "KDA": s["kda"], "킬 관여율": s["kp"], "분당 CS": s["cs_min"], "분당 딜량": s["dpm"],
+                     "_team": team})
+    career = pd.DataFrame(rows).sort_values("_first")
+
+    # ---- 수상·경력 (우승 / 준우승 / 파이널 MVP / 명예의 전당)
+    wins = career[career["최종 순위"] == "우승"]
+    seconds = career[career["최종 순위"] == "준우승"]
+    finals_mvp = finals_mvps(player)
+    honors = HONORS.get(player, [])
+    if len(wins) or len(seconds) or finals_mvp or honors:
+        def honor_line(icon: str, title: str, items: list[str]) -> str:
+            chips = "".join(f"<span style='display:inline-block;padding:2px 9px;margin:2px;border-radius:999px;"
+                            f"border:1px solid rgba(128,128,128,0.25);font-size:0.8rem'>{x}</span>" for x in items)
+            return (f"<div style='display:flex;gap:10px;align-items:flex-start;padding:6px 0'>"
+                    f"<div style='min-width:120px;font-weight:700'>{icon} {title}</div><div>{chips}</div></div>")
+
+        lines = ""
+        if honors:
+            lines += honor_line("🌟", "명예의 전당", honors)
+        if len(wins):
+            lines += honor_line("🏆", f"우승 {len(wins)}회", [f"{r.연도} {r.대회}" for r in wins.itertuples()])
+        if len(seconds):
+            lines += honor_line("🥈", f"준우승 {len(seconds)}회", [f"{r.연도} {r.대회}" for r in seconds.itertuples()])
+        if finals_mvp:
+            lines += honor_line("🏅", f"파이널 MVP {len(finals_mvp)}회", finals_mvp)
+        st.markdown("**수상 · 경력**")
+        st.markdown(f"<div style='border:1px solid rgba(200,155,60,0.45);border-radius:10px;padding:8px 14px;"
+                    f"background:rgba(200,155,60,0.06);margin-bottom:10px'>{lines}</div>", unsafe_allow_html=True)
+        st.caption("우승·준우승은 LCK(스플릿)·LCK Cup·First Stand·MSI·EWC·Worlds 기준입니다. "
+                   "파이널 MVP는 Leaguepedia에 결승 MVP가 기록된 대회만 집계됩니다 (2025년 이전은 기록이 드뭄).")
+
     st.markdown("**시즌별 기록**")
-    st.dataframe(career.iloc[::-1], hide_index=True, width="stretch", column_config={
+    medal = {"우승": "🏆 ", "준우승": "🥈 ", "3위": "🥉 "}
+    career["최종 순위"] = career["최종 순위"].map(lambda r: medal.get(r, "") + r)
+    st.dataframe(career.drop(columns=["_first", "_team"]).iloc[::-1], hide_index=True, width="stretch", column_config={
+        "로고": st.column_config.ImageColumn(width="small"),
         "연도": st.column_config.NumberColumn(format="%d"),
         "승률": st.column_config.ProgressColumn(format="percent", min_value=0, max_value=1),
         "KDA": st.column_config.NumberColumn(format="%.2f"),
@@ -130,8 +190,8 @@ with tab_career:
         "분당 CS": st.column_config.NumberColumn(format="%.1f"),
         "분당 딜량": st.column_config.NumberColumn(format="%.0f"),
     })
-    st.caption("해외 리그 기록은 경기 시간이 수집되지 않아 분당 지표가 비어 있습니다. "
-               "딜량은 2020년 이후 기록만 있습니다.")
+    st.caption("최종 순위는 그 대회에서 팀이 거둔 최종 성적입니다 (해외 리그는 '-'). 해외 리그 기록은 경기 시간이 "
+               "수집되지 않아 분당 지표가 비어 있습니다. 딜량은 2020년 이후 기록만 있습니다.")
 
     trend = mine.assign(구분=mine["scope"].map(SCOPE_KO)).groupby(["year", "구분"]).apply(
         lambda d: pd.Series({"KDA": summarize(d)["kda"], "승률": d["win"].mean(), "경기": len(d)}),
@@ -265,12 +325,15 @@ with tab_compare:
         same_role = idx[(idx["role"] == role) & (idx.index != player)]
         other = st.selectbox("B 선수", list(same_role.index) + [p for p in idx.index if p not in same_role.index
                                                                 and p != player],
+                             index=None, placeholder="비교할 선수를 선택하세요",
                              format_func=display_name, key=f"pb_{player}")
-        period_b = pick("B 기간", other, "pbp")
+        period_b = pick("B 기간", other, "pbp") if other else None
 
     va, ra = values_for(player, period_a)
-    vb, rb = values_for(other, period_b)
-    if va["games"] == 0 or vb["games"] == 0:
+    vb, rb = values_for(other, period_b) if other else ({"games": 0}, role)
+    if other is None:
+        st.info("👆 **B 선수**를 선택하면 두 선수를 비교한 레이더 차트와 지표가 나타납니다.")
+    elif va["games"] == 0 or vb["games"] == 0:
         st.info("선택한 기간에 LCK 기록이 없습니다.")
     else:
         pa, pb = percentiles(va, ra), percentiles(vb, rb)
@@ -350,8 +413,10 @@ with tab_style:
         st.markdown("**비슷한 플레이 스타일의 선수**")
         target = st.selectbox("기준 시즌", own["year"].tolist()[::-1], format_func=lambda y: f"{y}년")
         sim = similar_players(player, target, role)
-        st.dataframe(sim.assign(선수=sim["player"].map(display_name))[["선수", "year", "team", "style", "distance"]]
-                     .rename(columns={"year": "시즌", "team": "팀", "style": "유형", "distance": "거리"}),
-                     hide_index=True, width="stretch", column_config={
+        sv, logo_cfg = with_logos(sim.assign(선수=sim["player"].map(display_name))
+                                  [["선수", "year", "team", "style", "distance"]]
+                                  .rename(columns={"year": "시즌", "team": "팀", "style": "유형", "distance": "거리"}))
+        st.dataframe(sv, hide_index=True, width="stretch", column_config={
+                         **logo_cfg,
                          "시즌": st.column_config.NumberColumn(format="%d"),
                          "거리": st.column_config.NumberColumn(format="%.2f", help="작을수록 비슷합니다.")})

@@ -7,6 +7,7 @@ import streamlit as st
 from utils import champions as champ
 from utils.data_loader import has_data, load_games, load_players, load_schedule
 from utils.teams import display_name, lineage_of, team_info, team_series
+from utils.teams import with_logos
 
 LEAGUE_COLOR = {"LCK": "#C89B3C", "Worlds": "#2563EB", "MSI": "#7C3AED",
                 "First Stand": "#0891B2", "EWC": "#16A34A"}
@@ -263,11 +264,11 @@ if played and not sets.empty:
             ps["선수"] = ps["player"].map(display_name)
             ps["챔피언"] = ps["champion"].map(champ.name_ko)
             ps["K/D/A"] = ps[["kills", "deaths", "assists"]].astype("Int64").astype(str).agg("/".join, axis=1)
-            st.dataframe(ps[["team", "role", "선수", "아이콘", "챔피언", "K/D/A", "cs", "gold", "damage"]]
-                         .rename(columns={"team": "팀", "role": "포지션", "cs": "CS", "gold": "골드",
-                                          "damage": "딜량"}),
-                         hide_index=True, width="stretch",
-                         column_config={"아이콘": st.column_config.ImageColumn(width="small")})
+            pv, logo_cfg = with_logos(ps[["team", "role", "선수", "아이콘", "챔피언", "K/D/A", "cs", "gold", "damage"]]
+                                      .rename(columns={"team": "팀", "role": "포지션", "cs": "CS", "gold": "골드",
+                                                       "damage": "딜량"}))
+            st.dataframe(pv, hide_index=True, width="stretch",
+                         column_config={"아이콘": st.column_config.ImageColumn(width="small"), **logo_cfg})
 elif played:
     st.info("이 경기의 세트별 기록은 수집되지 않았습니다.")
 else:

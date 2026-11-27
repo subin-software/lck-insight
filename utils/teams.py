@@ -64,7 +64,33 @@ def team_info() -> pd.DataFrame:
         row = base.loc[page].to_dict()
         row.update(team=alias, current=page)
         rows.append(row)
-    return pd.DataFrame(rows).set_index("team")
+    out = pd.DataFrame(rows).set_index("team")
+    # Leaguepedia 팀 정보의 로고 파일이 없거나(404) 비어 있는 팀: 실제로 있는 다른 파일 이름으로 보완
+    for name, file in LOGO_OVERRIDES.items():
+        if name in out.index:
+            out.at[name, "logo"] = logo_url(file)
+        else:
+            out.loc[name, ["logo", "current"]] = [logo_url(file), name]
+    return out
+
+
+# 팀 정보에 적힌 로고 파일이 없을 때 쓰는 실제 파일 이름 (직접 확인함)
+LOGO_OVERRIDES = {
+    "Vikings Esports": "Vikings Esportslogo square.png",
+    "Vikings Esports (2023 Vietnamese Team)": "Vikings Esports (2023 Vietnamese Team)logo square.png",
+    "MAD Lions": "MAD Lionslogo profile.png",
+    "DAMWON Gaming": "DAMWON Gaminglogo square.png",
+    "DWG KIA": "DWG KIAlogo square.png",
+    "LGD Gaming": "LGD Gaminglogo square.png",
+    "SANDBOX Gaming": "SANDBOX Gaminglogo square.png",
+    "Liiv SANDBOX": "Liiv SANDBOXlogo square.png",
+    "Suning": "Suninglogo square.png",
+    "Flamengo Esports": "Flamengo Esportslogo square.png",
+    "SuperMassive Esports": "SuperMassive Esportslogo profile.png",
+    "MVP": "MVPlogo square.png",
+    "Virtus.pro": "Virtus.prologo square.png",
+    "Young Generation": "Young Generationlogo std.png",
+}
 
 
 @st.cache_data
@@ -131,6 +157,8 @@ def lineage_groups() -> dict[str, list[str]]:
 
     pairs = list(renames[["original_name", "new_name"]].dropna().itertuples(index=False))
     pairs += list(resolve_map().items())     # 옛 이름 → 현재 팀 페이지 연결도 계보로 본다
+    for key, h in curated_history().items():  # 직접 정리한 팀 변천사(data/team_history.json)도 연결
+        pairs += [(alias, key) for alias in h.get("aliases", [])]
     for a, b in pairs:
         parent[find(a)] = find(b)
     groups: dict[str, list[str]] = {}
@@ -198,3 +226,84 @@ def rename_history(team: str) -> pd.DataFrame:
     r = load_team_renames()
     r = r[r["original_name"].isin(names) | r["new_name"].isin(names)]
     return r.sort_values("date")
+
+
+def team_logo(team: str) -> str | None:
+    """팀 이름(옛 이름 포함) → 로고 주소."""
+    info = team_info()
+    return info.at[team, "logo"] if isinstance(team, str) and team in info.index else None
+
+
+def team_label(team: str) -> str:
+    """화면 표시용 팀 이름: Leaguepedia 구분용 괄호를 뗀다 (예: 'Griffin (Korean Team)' → 'Griffin')."""
+    return team.split(" (")[0] if isinstance(team, str) else team
+
+
+# ================================================================== 직접 정리한 팀 변천사
+@st.cache_data
+def curated_history() -> dict:
+    """data/team_history.json — Leaguepedia 기록이 부족한 팀 이름 변천사를 직접 정리한 자료."""
+    import json
+    from utils.data_loader import DATA_DIR
+    path = DATA_DIR / "team_history.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def history_for(team: str) -> dict | None:
+    """팀(옛 이름 포함)에 해당하는 직접 정리한 변천사."""
+    names = set(lineage_of(team)) | {team}
+    for key, h in curated_history().items():
+        if key in names or names & set(h.get("aliases", [])):
+            return h
+    return None
+
+
+def history_html(h: dict) -> str:
+    """변천사 HTML: 이름 상자를 화살표로 잇고, 갈래가 여러 개면 두 줄이 하나로 모이게 그린다."""
+    gold, line = "#C89B3C", "rgba(128,128,128,0.35)"
+
+    def chip(name, start, end, current=False):
+        period = f"{start}&#126;{end}" if end else f"{start}&#126;"   # '~'는 마크다운 취소선이 되므로 엔티티로
+        return (f"<div style='display:inline-flex;flex-direction:column;align-items:center;padding:7px 12px;"
+                f"border-radius:10px;border:1px solid {gold if current else line};white-space:nowrap;"
+                f"background:{'rgba(200,155,60,0.12)' if current else 'transparent'}'>"
+                f"<span style='font-weight:700'>{name}</span>"
+                f"<span style='font-size:0.75rem;opacity:0.7'>{period}</span></div>")
+
+    arrow = "<span style='font-size:1.2rem;opacity:0.5;margin:0 4px'>→</span>"
+
+    def chain(items, last_current=False):
+        return arrow.join(chip(*it, current=last_current and i == len(items) - 1) for i, it in enumerate(items))
+
+    main = chain(h["main"], last_current=True)
+    if not h.get("branches"):
+        return f"<div style='display:flex;flex-wrap:wrap;align-items:center;gap:4px'>{main}</div>"
+    rows = "".join(f"<div style='display:flex;align-items:center;gap:4px;margin:4px 0'>{chain(b)}</div>"
+                   for b in h["branches"])
+    n = len(h["branches"])
+    # 갈래 수만큼 선이 왼쪽에서 출발해 오른쪽 가운데로 모이는 연결선
+    lines = "".join(f"<line x1='0' y1='{(i + 0.5) * 100 / n}' x2='100' y2='50' stroke='{line}' stroke-width='3'/>"
+                    for i in range(n))
+    connector = (f"<svg viewBox='0 0 100 100' preserveAspectRatio='none' style='width:44px;height:{60 * n}px'>"
+                 f"{lines}</svg>")
+    return (f"<div style='display:flex;align-items:center;gap:6px;overflow-x:auto;padding-bottom:4px'>"
+            f"<div>{rows}</div>{connector}{arrow}"
+            f"<div style='display:flex;align-items:center;gap:4px'>{main}</div></div>")
+
+
+TEAM_COLUMNS = ("팀", "상대", "우승", "준우승", "팀 1", "팀 2", "승리")
+
+
+def with_logos(df: pd.DataFrame, columns=TEAM_COLUMNS) -> tuple[pd.DataFrame, dict]:
+    """표의 팀 이름 열 앞에 로고 열을 넣고 이름을 정리한다. (표, st.dataframe용 column_config)를 돌려준다."""
+    out = df.copy()
+    config = {}
+    for col in [c for c in columns if c in out.columns]:
+        logo_col = "로고" if col in ("팀", "상대") and "로고" not in out.columns else f"{col} 로고"
+        out.insert(list(out.columns).index(col), logo_col, out[col].map(team_logo))
+        out[col] = out[col].map(team_label)
+        config[logo_col] = st.column_config.ImageColumn(" ", width="small")
+    return out, config

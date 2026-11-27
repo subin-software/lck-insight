@@ -136,6 +136,7 @@ def _merge_names(series: pd.DataFrame) -> pd.DataFrame:
     return s
 
 
+@st.cache_data
 def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
     """(정규 시즌 순위 목록 [(시즌, '2위 / 10팀')], 대회별 성적 [(대회, 결과)]) — 그 해 전체, 시간 순.
 
@@ -200,3 +201,24 @@ def team_year_summary(team: str, year: int) -> tuple[list[tuple[str, str]], list
             else:
                 results.append((label, f"{stage} 탈락" if stage else "탈락"))
     return ranks, results
+
+
+# ================================================================== 선수 수상 경력
+# 공식 기록 데이터에 없는 수상 (직접 정리)
+HONORS = {
+    "Faker": ["2024 LoL e스포츠 명예의 전당(Hall of Legends) 초대 헌액"],
+}
+
+
+@st.cache_data
+def finals_mvps(player: str) -> list[str]:
+    """그 선수가 결승 MVP로 기록된 대회 목록 (예: '2025 MSI'). Leaguepedia 일정의 MVP 기록 기준."""
+    out = []
+    for ev in events().sort_values("start").itertuples():
+        s = event_schedule(ev.pages)
+        s = s[s["winner"].isin([1, 2])]
+        if s.empty or "mvp" not in s:
+            continue
+        if s.iloc[-1]["mvp"] == player:
+            out.append(ev.name)
+    return out

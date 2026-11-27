@@ -7,6 +7,7 @@ import streamlit as st
 from utils.data_loader import has_data, load_tournaments
 from utils.players import player_games
 from utils.teams import ROLE_KO, display_name, season_aliases, team_games
+from utils.teams import with_logos
 
 st.title("📄 리포트")
 st.caption("팀 시즌 리포트나 선수 커리어 리포트를 만들어 미리 보고, Excel(표 정리용)이나 "
@@ -103,5 +104,7 @@ percent_cols = {"승률", "킬 관여율"}
 for name, df in data["sections"]:
     if isinstance(df, pd.DataFrame) and not df.empty:
         with st.expander(f"{name} ({len(df)}행)", expanded=False):
-            st.dataframe(df, hide_index=True, width="stretch", column_config={
-                c: st.column_config.NumberColumn(format="percent") for c in df.columns if c in percent_cols})
+            dv, logo_cfg = with_logos(df)
+            st.dataframe(dv, hide_index=True, width="stretch", column_config={
+                **{c: st.column_config.NumberColumn(format="percent") for c in dv.columns if c in percent_cols},
+                **logo_cfg})

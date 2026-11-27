@@ -1,951 +1,978 @@
-player,id,name,native_name,country,birthdate,is_retired
-007x,007x,Chayut Suebka,ชยุตม์ สืบค้า,Thailand,1995-09-17,1
-369,369,Bai Jia-Hao,白家浩,China,2001-07-12,0
-3z,3z,Chen Han,陳翰,Taiwan,1996-12-30,1
-4LaN,4LaN,Alanderson Meireles,,Brazil,1998-10-22,1
-5kid,5kid,Park Jeong-hyeon,박정현,South Korea,1999-11-28,0
-957,957,Ke Chang-Yu,柯昌宇,China,1993-09-21,0
-Abbedagge,Abbedagge,Felix&nbsp;Alfred Braun,,Germany,1999-09-10,0
-Absolut,Absolut,Luis&nbsp;Felipe Carvalho,,Brazil,1999-04-26,0
-Acce,Acce,Emmanuel Juárez,,Argentina,1995-10-06,0
-Achie,Achie,Chen Chen-Chi,陳振齊,Taiwan,1992-09-23,0
-Achuu,Achuu,Nicolaj Ellesgaard,,Denmark,1994-06-06,0
-Ackerman (Gabriel Aparicio),Ackerman,Gabriel&nbsp;Agustín Aparicio,,Argentina,2002-11-29,0
-Acorn,Acorn,Choi Cheon-ju,최천주,South Korea,1990-07-13,0
-Adam (Adam Maanane),Adam,Adam Maanane,,France,2001-12-30,0
-ADD,ADD,Kang Geon-mo,강건모,South Korea,1998-10-17,0
-Aegis (Gabriel Lemos),Aegis,Gabriel&nbsp;Vinicius Saes de Lemos,,Brazil,1999-09-09,0
-AHaHaCiK,AHaHaCiK,Kirill Skvortsov,Кирилл Скворцов,Russia,1999-04-01,1
-Aiming,Aiming,Kim Ha-ram,김하람,South Korea,2000-07-20,0
-Aladoric,Aladoric,Ryan Gregory Richardson,,Australia,1999-06-25,0
-Albis,Albis,Kang Chia-Wei,康家維,Taiwan,1993-12-19,1
-Ale,Ale,Hu Jia-Le,胡嘉乐,China,2001-07-23,0
-Alex (Chen Yu-Ming),Alex,Chen Yu-Ming,陳煜明,Taiwan,2000-01-22,1
-Alex Ich,Alex Ich,Alexey Ichetovkin,Алексей Ичетовкин,Russia,1992-01-31,1
-Alive,Alive,Noh Jin-wook,노진욱,South Korea,1998-02-27,0
-Aloned,Aloned,Tomás&nbsp;Antonio Díaz Valiente,,Chile,1999-11-06,0
-Alphari,Alphari,Barney Morris,,United Kingdom,1999-10-20,0
-Alunir,Alunir,Gediminas Navakauskis,,Lithuania,1989-08-24,1
-Alvaro (Álvaro Fernández),Alvaro,Álvaro Fernández del Amo,,Spain,2003-07-15,0
-Amazing (Maurice Stückenschneider),Amazing,Maurice Stückenschneider,,Germany,1994-04-02,0
-AmazingJ,AmazingJ,Shek Wai Ho,石偉豪,Hong Kong,1997-11-08,1
-Ambition,Ambition,Kang Chan-yong,강찬용,South Korea,1992-10-27,0
-An,An,Chou Chun-An,周俊諳,Taiwan,1994-10-20,1
-AnDa,AnDa,Andy Hoang,,Canada,1995-08-03,1
-Andil,Andil,Moon Gwan-bin,문관빈,South Korea,2002-10-05,0
-Angel (Xiang Tao),Angel,Xiang Tao,向涛,China,2000-09-16,0
-APA (Eain Stearns),APA,Eain Stearns,,United States,2002-03-05,0
-Apex (Hsieh Chia-Wei),Apex,Hsieh Chia-Wei,謝家維,Taiwan,1996-01-19,1
-Araneae,Araneae,Alvar Martín Aleñar,,Spain,1989-05-19,0
-Arce,Arce,Diego Arce Chang,,Peru,1993-06-13,0
-Archer (Lee Keun-hee),Archer,Lee Keun-hee,이근희,South Korea,1998-12-17,0
-Archie (Trần Minh Nhựt),Archie,Trần Minh Nhựt,,Vietnam,1992-07-26,0
-Aress,Aress,Hồ Văn Vĩ Đại,,Vietnam,2004-09-24,0
-Aria (Lee Ga-eul),Aria,Lee Ga-eul,이가을,South Korea,2000-10-14,0
-Armut,Armut,İrfan&nbsp;Berk Tükek,,Turkey,1998-12-13,0
-Arrow,Arrow,Noh Dong-hyeon,노동현,South Korea,1994-07-20,0
-Artemis (Trần Quốc Hưng),Artemis,Trần Quốc Hưng,,Vietnam,2001-02-24,0
-Artifact,Artifact,Nguyễn Văn Hậu,,Vietnam,2000-06-23,1
-Asper,Asper,Kim Tae-gi,김태기,South Korea,2000-01-12,1
-Athena,Athena,Kang Ha-woon,강하운,South Korea,1995-10-19,1
-Atlen,Atlen,Sung Ya-Lun,宋亞倫,Taiwan,1999-09-11,1
-Attila,Attila,Amadeu&nbsp;Jesus Dias de Carvalho,,Portugal,1996-02-26,0
-Avenger (Adriano Perassoli),Avenger,Adriano Perassoli,,Brazil,2001-05-14,0
-Avoidless,Avoidless,Fan Jun Wei,范俊偉,Hong Kong,1994-05-13,1
-Axion,Axion,Tai Ngee Shern,,Singapore,,1
-Ayu (Andrey Saraiva),Ayu,Andrey Saraiva,,Brazil,2005-10-06,0
-Azhi,Azhi,Huang Shang-Jhih,黃上鋕,Taiwan,2001-05-09,0
-Babip,Babip,Leo Romer,,Australia,1998-09-04,1
-BaeMe,BaeMe,Kang Yang-hyun,강양현,South Korea,1993-10-27,1
-BalKhan,BalKhan,Choi Hyun-jin,최현진,South Korea,1998-12-01,1
-Balls,BalIs,An Van Le,,United States,1994-06-22,1
-Bang,Bang,Bae Jun-sik,배준식,South Korea,1996-05-18,0
-BAO (Jeong Hyeon-woo),BAO,Jeong Hyeon-woo,정현우,South Korea,2001-09-20,0
-Baolan,Baolan,Wang Liu-Yi,王柳羿,China,1999-07-16,1
-Baut,Baut,Han Jin-sol,한진솔,South Korea,2001-03-30,0
-Bay,Bay,Park Jun-byeong,박준병,South Korea,2002-02-19,1
-Bdd,Bdd,Gwak Bo-seong,곽보성,South Korea,1999-03-01,0
-Bean (Louis Schmitz),Bean,Louis Schmitz,,Germany,2000-08-11,1
-BeanJ,BeanJ,Trần Văn Chính,,Vietnam,2003-01-27,1
-BeBe (Chang Bo-Wei),BeBe,Chang Bo-Wei,張博為,Taiwan,1991-06-27,0
-Beichuan,Beichuan,Yang Ling,杨陵,China,2001-07-21,0
-BOSS (Vladislav Fomin),BOSS,Vladislav Fomin,Владислав Фомин,Russia,1998-07-03,1
-Ben,Ben,Nam Dong-hyun,남동현,South Korea,1995-04-24,0
-Bengi,Bengi,Bae Seong-woong,배성웅,South Korea,1993-11-21,0
-Benny (Lien Hsiu-Chi),Benny,Lien Hsiu-Chi,連修琪,Taiwan,1998-06-14,0
-Berserker (Kim Min-cheol),Berserker,Kim Min-cheol,김민철,South Korea,2003-05-25,0
-BeryL,BeryL,Cho Geon-hee,조건희,South Korea,1997-04-01,0
-Betty,Betty,Lu Yu-Hung,盧禹宏,Taiwan,2000-01-16,0
-Beyond (Kim Kyu-seok),Beyond,Kim Kyu-seok,김규석,South Korea,1997-08-18,1
-Bible,Bible,Yoon Seol,윤설,South Korea,1999-11-24,0
-Bie,Bie,Trần Đức Hiếu,,Vietnam,1999-12-09,1
-Bigkoro,Bigkoro,Đặng Ngọc Tài,,Vietnam,1999-07-05,0
-Bin (Chen Ze-Bin),Bin,Chen Ze-Bin,陈泽彬,China,2003-09-28,0
-Biofrost,Biofrost,Vincent Wang,,China,1996-09-17,1
-BioPanther,BioPanther,Brandon Alexander,,Australia,1999-02-23,0
-Bjergsen,Bjergsen,Søren Bjerg,,Denmark,1996-02-21,1
-Blaber,Blaber,Robert Huang,,United States,2000-01-04,0
-Blanc (Jin Seong-min),Blanc,Jin Seong-min,진성민,South Korea,1995-06-03,1
-Blank (Kang Sun-gu),Blank,Kang Sun-gu,강선구,South Korea,1998-04-30,1
-Blasting,Blasting,Daniel Kudrin,,Latvia,1996-12-05,1
-Bless (Choi Hyeon-woong),Bless,Choi Hyeon-woong,최현웅,South Korea,1996-10-23,1
-BloodWater,BloodWater,Lyubomir Spasov,Любомир Спасов,Bulgaria,,1
-Blossom (Park Beom-chan),Blossom,Park Beom-chan,박범찬,South Korea,1999-10-12,1
-Bluffing,Bluffing,Park Gyu-yong,박규용,South Korea,2008-12-07,0
-Boal,Boal,Felipe Boal,,Brazil,2002-12-04,0
-Bolulu,Bolulu,Onur&nbsp;Can Demirol,,Sweden,1998-11-14,0
-Bong (Cho Bo-woong),Bong,Cho Bo-woong,조보웅,South Korea,2001-08-30,0
-Bonnie,Bonnie,Lee Gwang-su,이광수,South Korea,2001-03-14,0
-Brance,Brance,Diego Amaral,,Brazil,2004-02-25,0
-Breathe,Breathe,Chen Chen,陈晨,China,2001-02-19,0
-Breeze,Breeze,Huang Chien-Yuan,黃建源,Taiwan,1997-09-20,0
-BrokenBlade,BrokenBlade,Sergen Çelik,,Germany,2000-01-19,0
-Broxah,Broxah,Mads Brock-Pedersen,,Denmark,1997-08-12,0
-Bruce,Bruce,Chiu Chih-Chun,邱致鈞,Taiwan,1998-06-16,1
-Brucer,Brucer,Bruno Pereira de Souza,,Brazil,1996-03-07,0
-Bubbling,Bubbling,Park Jun-hyeong,박준형,South Korea,1993-04-13,0
-Buggax,Buggax,Mateo&nbsp;Alejandro Aroztegui Zamora,,Uruguay,1998-06-27,0
-Bugi,Bugi,Lee Seong-yeop,이성엽,South Korea,1998-05-21,0
-Bull,Bull,Song Seon-gyu,송선규,South Korea,2003-05-16,0
-BuLLDoG (Lee Tae-young),BuLLDoG,Lee Tae-young,이태영,South Korea,2005-04-15,0
-Burdol,Burdol,Noh Tae-yoon,노태윤,South Korea,2003-12-25,0
-Busio,Busio,Alan Cwalina,,United States,2003-10-22,0
-Bwipo,Bwipo,Gabriël Rau,,Belgium,1998-12-24,0
-Cabochard,Cabochard,Lucas Simon-Meslet,,France,1997-04-15,0
-CaD,CaD,Cho Seong-yong,조성용,South Korea,2002-02-20,1
-Cain,Cain,Jang Nu-ri,장누리,South Korea,1987-02-06,1
-Caliste,Caliste,Caliste Henry-Hennebert,,France,2006-08-28,0
-Calix (Syun Hyun-bin),Calix,Syun Hyun-bin,선현빈,South Korea,2007-03-22,0
-Callme,Callme,Oh Ji-hoon,오지훈,South Korea,2003-05-30,0
-Candy (Kim Seung-ju),Candy,Kim Seung-ju,김승주,South Korea,1996-01-21,1
-CandyPanda,CandyPanda,Adrian Wübbelmann,,Germany,1993-06-23,1
-Canna,Canna,Kim Chang-dong,김창동,South Korea,2000-02-11,0
-Canyon,Canyon,Kim Geon-bu,김건부,South Korea,2001-06-18,0
-CaoMei,CaoMei,Wei Han-Dong,魏汉冬,China,1991-12-26,1
-Caps,Caps,Rasmus Borregaard Winther,,Denmark,1999-11-17,0
-Career,Career,Oh Hyeong-seok,오형석,South Korea,2004-08-29,0
-CarioK,CarioK,Marcos Santos de Oliveira Junior,,Brazil,2000-01-31,0
-Carzzy,Carzzy,Matyáš Orság,,Czech Republic,2002-01-31,0
-Casting,Casting,Shin Min-je,신민제,South Korea,2003-10-30,0
-Celebrity,Celebrity,Nguyễn Phước Long Hiệp,,Vietnam,1996-12-25,1
-Ceo,ceo,Mauro&nbsp;Lorenzo Tévez,,Argentina,2004-01-13,0
-Ceos,Ceos,Denilson Oliveira Gonçalves,,Brazil,1998-08-08,0
-Cepted,Cepted,Park Wi-rim,박위림,South Korea,1997-08-26,0
-Ceros,Ceros,Kyohei Yoshida,吉田 恭平,Japan,1993-12-07,1
-Chaox,Chaox,Shan Huang,黄山,China,1991-06-14,1
-Chaser,Chaser,Lee Sang-hyun,이상현,South Korea,1995-08-01,1
-Chasy,Chasy,Kim Dong-hyeon,김동현,South Korea,2001-04-20,0
-Chauster,Chauster,Steve Chau,,United States,1989-02-13,1
-Chawy,Chawy,Wong Xing Lei,黃心磊,Singapore,1991-11-28,0
-Chazz,Chazz,Jesse Mahoney,,Australia,1998-10-06,1
-Chei,Chei,Choi Sun-ho,최선호,South Korea,1996-06-30,1
-CheonGo,CheonGo,Choi Hyeon-woo,최현우,South Korea,1999-03-10,1
-Cheoni,Cheoni,Jo Seung-mo,조승모,South Korea,2001-02-02,0
-Chieftain,Chieftain,Lee Jae-yub,이재엽,South Korea,2000-11-16,1
-Chika,Chika,Võ Lê Nhân,,Vietnam,2006-01-26,0
-Chippys,Chippys,Ryan Short,,New Zealand,,1
-Chovy,Chovy,Jeong Ji-hoon,정지훈,South Korea,2001-03-03,0
-Clear (Song Hyeon-min),Clear,Song Hyeon-min,송현민,South Korea,2002-12-19,0
-Clearlove,Clearlove,Ming Kai,明凯,China,1993-07-25,0
-Clever,Clever,Moon Won-hee,문원희,South Korea,2000-12-02,1
-Clid,Clid,Kim Tae-min,김태민,South Korea,1999-07-07,1
-Closer (Can Çelik),Closer,Can Çelik,,Turkey,1998-09-29,0
-CloudTemplar,CloudTemplar,Lee Hyun-woo,이현우,South Korea,1988-11-09,0
-Clozer,Clozer,Lee Ju-hyeon,이주현,South Korea,2003-07-27,0
-Coco,Coco,Shin Jin-yeong,신진영,South Korea,1994-03-14,0
-Cody,cody,Cristian&nbsp;Sebastián Quispe Yampara,,Chile,2001-10-23,0
-Cody Sun,Cody Sun,"Liyu&nbsp;""Cody"" Sun",孙立宇,China,1997-04-25,0
-Cola (Jiang Nan),Cola,Jiang Nan,江南,China,1994-04-18,1
-Comp,Comp,Markos Stamkopoulos,Μάρκος Σταμκόπουλος,Greece,2001-12-20,0
-Condi,Condi,Xiang Ren-Jie,向人杰,China,1996-11-07,0
-Contractz,Contractz,Juan&nbsp;Arturo Garcia,,United States,1999-08-25,0
-Cool,Cool,Yu Jia-Jun,余家俊,China,1994-08-03,1
-CoreJJ,CoreJJ,Jo Yong-in,조용인,South Korea,1994-06-22,0
-Corporal,Corporal,Ian Pearse,,Japan,2001-06-15,1
-Cotopaco,Cotopaco,Sergio Silva Sánchez,,Colombia,1998-12-18,0
-Cover,Cover,Kim Joo-eon,김주언,South Korea,1999-05-29,1
-Cpt Jack,Cpt Jack,Kang Hyung-woo,강형우,South Korea,1993-01-04,0
-Crash,Crash,Lee Dong-woo,이동우,South Korea,1997-01-05,1
-Crazy (Kim Jae-hee),Crazy,Kim Jae-hee,김재희,South Korea,1996-09-20,0
-Creme,Creme,Lin Jian,林坚,China,2003-12-14,0
-Crisp,Crisp,Liu Qing-Song,刘青松,China,1998-08-20,0
-Croc,Croc,Park Jong-hoon,박종훈,South Korea,1998-01-06,1
-Croco,Croco,Kim Dong-beom,김동범,South Korea,2000-02-23,0
-Crow (Kim Seon-gyu),Crow,Kim Seon-gyu,김선규,South Korea,1998-03-21,0
-Crown,Crown,Lee Min-ho,이민호,South Korea,1995-02-28,0
-Crownie,Crownie,Juš Marušič,,Slovenia,1998-04-17,0
-Crush,Crush,Kim Jun-seo,김준서,South Korea,1998-01-03,1
-Cryin,Cryin,Yuan Cheng-Wei,袁成伟,China,2000-11-05,0
-Crystal,Crystal,Atakan Aydın,,Turkey,1993-04-20,0
-Cupcake,Cupcake,Andy van der Vyver,,New Zealand,1994-12-10,1
-Curse (Raí Yamada),Curse,Raí Yamada,,Brazil,2005-05-18,0
-CuVee,CuVee,Lee Seong-jin,이성진,South Korea,1996-09-27,0
-Cuzz,Cuzz,Moon Woo-chan,문우찬,South Korea,1999-10-30,0
-Cyanide,Cyanide,Lauri Happonen,,Finland,1994-11-15,1
-Cyeol,cyeol,Yu Chung-yeol,유충열,South Korea,,1
-Dade,Dade,Bae Eo-jin,배어진,South Korea,1994-11-08,1
-Damonte,Damonte,Tanner Damonte,,United States,1997-12-02,0
-Dan Dinh,Dan Dinh,Daniel Dinh,,Philippines,,0
-Danagorn,Danagorn,Daniel Drummond,,Brazil,1992-02-20,1
-DanDy,DanDy,Choi In-kyu,최인규,South Korea,1994-01-03,0
-Danny (Kyle Sakamaki),Danny,Kyle Sakamaki,,United States,2003-12-04,1
-Dara,Dara,Jeon Jeong-hoon,전정훈,South Korea,1995-05-25,1
-Darien,Darien,Evgeny Mazaev,Евгений Мазаев,Russia,1991-03-22,1
-DARKWINGS,DARKWINGS,Isaac Chou,,,2000-01-11,0
-Darshan,Darshan,Darshan Upadhyaya,,Canada,1994-11-12,1
-DasheR,DasheR,Kim Deok-beom,김덕범,South Korea,1998-05-20,1
-Daystar,Daystar,Yoo Ji-myeong,유지명,South Korea,2003-09-23,0
-DDoiV,DDoiV,Bang Moon-yeong,방문영,South Korea,2003-10-21,0
-DeadlyBrother,DeadlyBrother,Edas Vasiliauskas,,Lithuania,1993-08-03,1
-Decoy,Decoy,Daniel Ealam,,New Zealand,1997-12-13,0
-Dee,Dee,Chen Chun-Dee,陳駿迪,Taiwan,1993-12-01,1
-Deft,Deft,Kim Hyuk-kyu,김혁규,South Korea,1996-10-23,0
-Deftly,Deftly,Matthew Chen,,United States,1997-12-22,0
-Delight,Delight,Yoo Hwan-joong,유환중,South Korea,2002-09-12,0
-Destiny (Mitchell Shaw),destiny,Mitchell Shaw,,Australia,1997-10-27,0
-Destroy (Yoon Jeong-min),Destroy,Yoon Jeong-min,윤정민,South Korea,2000-05-08,0
-DeuL,DeuL,Kim Deul,김들,South Korea,1994-09-25,1
-Dexter,Dexter,Marcel Feldkamp,,Germany,,1
-Dhokla,Dhokla,Niship Doshi,,India,1997-07-17,0
-Diable,Diable,Nam Dae-geun,남대근,South Korea,2007-10-17,0
-Diamondprox,Diamondprox,Danil Reshetnikov,Данил Решетников,Russia,1992-12-24,0
-Dimitry,Dimitry,Juan&nbsp;Dimitry Hernández González,,Dominican Republic,2002-06-11,0
-Dioud,Dioud,Hugo Padioleau,,France,1990-11-03,0
-Dire,Dire,Trần Duy Đức,,Vietnam,2006-11-22,0
-DNK,DNK,Đỗ Ngọc Khải,,Vietnam,2001-03-04,1
-Disamis,Disamis,Pedro&nbsp;Arthur Gonçalves,,Brazil,2003-08-03,0
-DnDn,DnDn,Park Geun-woo,박근우,South Korea,2003-05-18,0
-Doggo,Doggo,Chiu Tzu-Chuan,邱梓銓,Taiwan,2003-01-14,0
-Doinb,Doinb,Kim Tae-sang,김태상,South Korea,1996-12-30,0
-Doran (Choi Hyeon-jun),Doran,Choi Hyeon-jun,최현준,South Korea,2000-07-22,0
-Doublelift,Doublelift,"Yiliang&nbsp;""Peter"" Peng",彭亦亮,United States,1993-07-19,0
-Dove,Dove,Kim Jae-yeon,김재연,South Korea,1998-07-25,0
-Doxy,Doxy,Rafael Adl Zarabi,,Denmark,1998-03-18,0
-Draktharr,Draktharr,Lê Ngọc Toàn,,Vietnam,2003-03-10,0
-Dread (Lee Jin-hyeok),Dread,Lee Jin-hyeok,이진혁,South Korea,2000-06-07,1
-Driver,Driver,Shen Tsung-Hua,沈宗樺,Taiwan,2002-04-04,0
-DuDu (Lee Dong-ju),DuDu,Lee Dong-ju,이동주,South Korea,2001-03-08,0
-Duduhh,Duduhh,Wallyson&nbsp;Francisco Queiroz da Silva,,Brazil,2008-04-18,0
-Duke (Lee Ho-seong),Duke,Lee Ho-seong,이호성,South Korea,1994-12-19,0
-Dumbledoge,Dumbledoge,Mustafa&nbsp;Kemal Gökseloğlu,,Turkey,1994-03-16,1
-Duro,Duro,Joo Min-kyu,주민규,South Korea,2002-02-04,0
-Dyrus,Dyrus,Marcus Hill,,United States,1992-03-30,1
-Easyhoon,Easyhoon,Lee Ji-hoon,이지훈,South Korea,1992-11-23,0
-Easylove,Easylove,Hứa Thành An,,Vietnam,1999-11-26,0
-Eddie,Eddie,Hoàng Công Nghĩa,,Vietnam,2003-06-17,0
-Edge,Edge,Lee Ho-sung,이호성,South Korea,1997-12-03,1
-Edward,Edward,Edward Abgaryan,Եդւարդ Աբգարյան,Armenia,1994-05-01,0
-Effort,Effort,Lee Sang-ho,이상호,South Korea,2000-11-23,0
-Elementz,Elementz,Cody Sigfusson,,Canada,1988-10-11,1
-Elio,Elio,Phạm Thạch Nhân Băng,,Vietnam,2000-11-07,0
-Elk,Elk,Zhao Jia-Hao,赵嘉豪,China,2001-09-29,0
-Ella,Ella,Kwak Na-hoon,곽나훈,South Korea,1995-02-05,0
-Ellim,Ellim,Choi El-lim,최엘림,South Korea,2000-05-25,0
-Elyoya,Elyoya,Javier Prades Batalla,,Spain,2000-03-13,0
-EMENES,EMENES,Jang Min-soo,장민수,South Korea,2001-01-01,1
-Emo,Emo,Nguyễn Thái Vinh,,Vietnam,2005-07-15,0
-Emp,Emp,Benjamín&nbsp;Esteban Ramírez Mercado,,Chile,1996-09-17,1
-Emperor (Kim Jin-hyun),Emperor,Kim Jin-hyun,김진현,South Korea,1993-06-07,1
-Empt2y,Empt2y,"Leung&nbsp;""Anson"" Tsz Ho",梁子皞,Hong Kong,1997-07-15,1
-Energy,Energy,Isak Pettersen Fjell,,Norway,,0
-Enosh,Enosh,Kwak Kyu-jun,곽규준,South Korea,2004-10-01,0
-Envy (Bruno Farias),Envy,Bruno Farias,,Brazil,1998-08-12,0
-Envyy,Envyy,Lee Myeong-joon,이명준,South Korea,2000-04-07,0
-Evi,Evi,Shunsuke Murase,村瀬 俊介,Japan,1995-11-15,1
-Execute,Execute,Lee Jeong-hoon,이정훈,South Korea,2000-02-22,0
-Expect,Expect,Ki Dae-han,기대한,South Korea,1996-07-04,1
-Expession,Expession,Koo Bon-taek,구본택,South Korea,1992-09-16,1
-Eyla,Eyla,Bill Nguyen,,Australia,1999-08-24,0
-Faker,Faker,Lee Sang-hyeok,이상혁,South Korea,1996-05-07,0
-Farfetch,Farfetch,Berk Badur,,Turkey,1998-09-09,0
-FATE (Yoo Su-hyeok),FATE,Yoo Su-hyeok,유수혁,South Korea,2000-08-22,0
-FBI,FBI,Ian&nbsp;Victor Huang,,Australia,1999-02-11,0
-FEBIVEN,FEBIVEN,Fabian Diepstraten,,Netherlands,1996-09-23,0
-Feisty,Feisty,Jeong Seong-hoon,정성훈,South Korea,2003-12-19,0
-Feng (Chen Chun-Feng),Feng,Chen Chun-Feng,陳駿豐,Taiwan,2003-08-13,0
-FenRir (Park Kang-jun),FenRir,Park Kang-jun,박강준,South Korea,2006-06-24,0
-Ferret,Ferret,Hakan Mert Çakmak,,Turkey,2001-11-24,0
-FIESTA (An Hyeon-seo),FIESTA,An Hyeon-seo,안현서,South Korea,2003-05-04,0
-Finn,Finn,Finn Wiestål,,Sweden,1999-06-03,0
-Fisher (Lee Jeong-tae),Fisher,Lee Jeong-tae,이정태,South Korea,2004-07-05,0
-FIX,FIX,Nicolás&nbsp;Raúl Sayago,,Argentina,1996-03-28,0
-Flakked,Flakked,Víctor Lirola Tortosa,,Spain,2001-04-25,0
-Flame,Flame,Lee Ho-jong,이호종,South Korea,1992-08-13,0
-Flandre,Flandre,Li Xuan-Jun,李炫君,China,1998-08-28,0
-Flauren,Flauren,Lo Chak Kin,魯澤堅,Hong Kong,2006-10-30,0
-Flawless,Flawless,Sung Yeon-jun,성연준,South Korea,1998-07-26,1
-Fly (Song Yong-jun),Fly,Song Yong-jun,송용준,South Korea,1996-02-25,1
-FoFo,FoFo,Chu Chun-Lan,朱駿嵐,Taiwan,1999-01-08,0
-Forest (Lee Hyeon-seo),Forest,Lee Hyeon-seo,이현서,South Korea,2002-03-22,0
-FORG1VEN,FORG1VEN,Konstantinos-Napoleon Tzortziou,Κωνσταντίνος-Ναπολέων Τζωρτζίου,Greece,1992-07-23,1
-Fresskowy,Fresskowy,Bartłomiej Przewoźnik,,Poland,1999-11-26,0
-Frog (Lee Min-hoi),Frog,Lee Min-hoi,이민회,South Korea,2005-06-30,0
-Froggen,Froggen,Henrik Hansen,,Denmark,1994-02-21,1
-Froggy,Froggy,Bùi Văn Minh Hải,,Vietnam,2002-12-08,1
-Frozen (Kim Tae-il),Frozen,Kim Tae-il,김태일,South Korea,1994-11-04,0
-Fudge,Fudge,Ibrahim Allami,إبراهيم اللامي,Australia,2002-05-23,0
-Fury (Lee Jin-yong),Fury,Lee Jin-yong,이진용,South Korea,1995-11-11,0
-Fzzf,fzzf,Feng Zhuo-Jun,冯卓君,China,1991-07-24,1
-G4,G4,Nuttapong Menkasikan,นัฐพงษ์ เม้นกะสิการ,Thailand,1997-10-31,0
-GALA,GALA,Chen Wei,陈伟,China,2001-02-14,0
-Gadget,Gadget,Ilya Makavchuk,Илья Макавчук,Belarus,1999-07-12,1
-Gaeng,Gaeng,Yang Gwang-woo,양광우,South Korea,1996-08-10,1
-Gamin,Gamin,Ga Min-joon,가민준,South Korea,2003-12-05,0
-Gango,Gango,Byun Se-hoon,변세훈,South Korea,1997-05-16,1
-GarnetDevil,GarnetDevil,Lai Yi-Meng,賴翊銘,Taiwan,,1
-Gavotto,Gavotto,Omar&nbsp;André Gavotto,,Mexico,2000-03-15,0
-GBM,GBM,Lee Chang-seok,이창석,South Korea,1994-06-23,0
-Gemini,Gemini,Huang Chu-Xuan,黃楚軒,Taiwan,1998-06-09,0
-Genja,Genja,Evgeny Andryushin,Евгений Андрюшин,Russia,1988-09-24,1
-Genthix,Genthix,Mariano Polonsky,,Argentina,1990-12-11,1
-Ggoong,Ggoong,Yu Byeong-jun,유병준,South Korea,1993-06-26,0
-Ghost (Jang Yong-jun),Ghost,Jang Yong-jun,장용준,South Korea,1999-03-18,0
-GIDEON,GIDEON,Kim Min-seong,김민성,South Korea,2003-08-14,0
-Gilius,Gilius,Erberk Demir,,Germany,1997-01-05,0
-GimGoon,GimGoon,Kim Han-saem,김한샘,South Korea,1995-12-31,1
-Gloryy,Gloryy,Lê Ngọc Vinh,,Vietnam,2002-01-12,0
-GodKwai,GodKwai,Cheung Ho Wan,張皓雲,Hong Kong,1997-06-02,1
-GodLike,GodLike,Xiao Wang,肖旺,China,1993-05-12,1
-GodV (Wei Zhen),GodV,Wei Zhen,韦朕,China,1997-07-16,1
-Gogoing,Gogoing,Gao Di-Ping,高地平,China,1991-10-02,1
-Goku,Goku,Bruno Miyaguchi,,Brazil,1996-08-23,0
-Gori,Gori,Kim Tae-woo,김태우,South Korea,2000-08-09,0
-GorillA,GorillA,Kang Beom-hyun,강범현,South Korea,1994-11-18,0
-GreenTea,GreenTea,Tsai Shang-Ching,蔡尚精,Taiwan,1991-04-24,0
-Grell,Grell,Jesús&nbsp;Alberto Loya Trujillo,,Mexico,2001-04-09,0
-Grevthar,Grevthar,Daniel&nbsp;Xavier Ferreira,,Brazil,1999-08-24,0
-Grizzly,Grizzly,Jo Seung-hoon,조승훈,South Korea,2005-05-25,0
-GuGer,GuGer,Kim Do-yeop,김도엽,South Korea,1994-02-07,0
-Guigo,Guigo,Guilherme Araújo Ruiz,,Brazil,2002-01-28,0
-Gumayusi,Gumayusi,Lee Min-hyeong,이민형,South Korea,2002-02-06,0
-Gury,Gury,Lương Hải Long,,Vietnam,2003-10-28,0
-Guwon,Guwon,Koo Kwan-mo,구관모,South Korea,2003-12-19,0
-Hachani,Hachani,Ha Seung-chan,하승찬,South Korea,1994-12-24,0
-Hai,Hai,Hai Du Lam,,United States,1992-09-20,0
-HamBak,HamBak,Ham Yoo-jin,함유진,South Korea,2002-08-28,0
-Hana,Hana,Chen Chih-Hao,陳志豪,Taiwan,1996-10-29,0
-Hanabi (Su Chia-Hsiang),Hanabi,Su Chia-Hsiang,蘇嘉祥,Taiwan,2000-08-12,1
-Hang,Hang,Fu Ming-Hang,付明航,China,2003-02-05,0
-Hani,Hani,Nguyễn Tấn Phát,,Vietnam,2000-08-03,1
-Hans Sama,Hans Sama,Steven Liv,,France,1999-09-02,0
-Harky,Harky,Nguyễn Văn Hữu,,Vietnam,2005-08-21,0
-Haro,Haro,Chen Wen-Lin,陈文林,China,1998-07-21,1
-Harp,Harp,Lee Ji-yoong,이지융,South Korea,2001-06-03,0
-Haru,Haru,Kang Min-seung,강민승,South Korea,1998-06-03,1
-Hasmed,Hasmed,Lâm Huỳnh Gia Huy,,Vietnam,2002-03-25,0
-Hauntzer,Hauntzer,Kevin Yarnell,,United States,1995-05-20,1
-Heart,Heart,Yi Gwan-hyung,이관형,South Korea,1988-12-13,0
-Helper (Kwon Yeong-jae),Helper,Kwon Yeong-jae,권영재,South Korea,1995-03-24,0
-Hena,Hena,Park Jeung-hwan,박증환,South Korea,1999-10-08,1
-Hieu3,Hieu3,Ngô Minh Hiếu,,Vietnam,2000-10-21,0
-Hipo,Hipo,Suk Hyeon-jun,석현준,South Korea,1998-02-02,1
-Hiro02,Hiro02,Trần Lê Trung Hậu,,Vietnam,2002-05-18,0
-Hizto,Hizto,Lê Văn Hoàng Hải,,Vietnam,2007-09-15,0
-Hjarnan,Hjarnan,Petter Freyschuss,,Sweden,1993-11-18,0
-Hoit,Hoit,Ryu Ho-seong,류호성,South Korea,1999-07-06,1
-Hojin,Hojin,Lee Ho-jin,이호진,South Korea,1992-01-04,1
-HolyPhoenix,HolyPhoenix,Anıl Işık,,Turkey,1997-06-02,0
-HongQ,HongQ,Tsai Ming-Hong,蔡明宏,Taiwan,2007-07-02,0
-HongSuo,HongSuo,Guo Bei-Yi,郭貝益,Taiwan,2003-03-18,0
-Hope (Wang Jie),Hope,Wang Jie,王杰,China,2000-09-29,0
-HotshotGG,HotshotGG,George Georgallidis,,Canada,1990-06-23,1
-Howling,Howling,Jeon Ho-bin,전호빈,South Korea,2003-09-17,0
-HOYA,HOYA,Yoon Yong-ho,윤용호,South Korea,2000-08-25,0
-Huhi,huhi,Choi Jae-hyun,최재현,France,1995-04-03,0
-Humanoid,Humanoid,Marek Brázda,,Czech Republic,2000-03-14,0
-Huni,Huni,Heo Seung-hoon,허승훈,South Korea,1997-12-25,0
-Husha,Husha,Huang Tzu-Wei,黃梓維,Taiwan,2001-04-04,0
-Hybrid (Glenn Doornenbal),Hybrid,Glenn Doornenbal,,Netherlands,1994-08-05,1
-HyBriD (Lee Woo-jin),HyBriD,Lee Woo-jin,이우진,South Korea,1999-11-27,1
-Hylissang,Hylissang,Zdravets Iliev Galabov,Здравец Илиев Гълъбов,Bulgaria,1995-04-30,0
-Hype (Byeon Jeong-hyeon),Hype,Byeon Jeong-hyeon,변정현,South Korea,2003-09-09,0
-Ian,Ian,An Jun-hyeong,안준형,South Korea,1998-01-22,0
-Ice (Yoon Sang-hoon),Ice,Yoon Sang-hoon,윤상훈,South Korea,2001-04-09,1
-Ignar,Ignar,Lee Dong-geun,이동근,South Korea,1996-11-20,0
-Imaqtpie,Imaqtpie,Michael Santana,,United States,1992-02-21,1
-Impact,Impact,Jeong Eon-young,정언영,South Korea,1995-03-07,0
-Innaxe,Innaxe,Nihat Aliev,Нихат Алиев,Bulgaria,1999-03-23,0
-Inspired,Inspired,Kacper Słoma,,Poland,2002-01-24,0
-Inspirro,Inspirro,Mykolas Morkūnas,,Lithuania,1991-12-16,1
-InTreso,InTreso,Sanpett Marat,สันเพชร มารัตน์,Thailand,1994-04-17,1
-Isles,Isles,Jonah Rosario,,Australia,2001-03-07,0
-Ivory,Ivory,Jeong Ye-chan,정예찬,South Korea,2003-10-12,0
-Iwandy,Iwandy,Liao Ding-Yang,廖顶洋,China,2000-08-27,0
-JackeyLove,JackeyLove,Yu Wen-Bo,喻文波,China,2000-11-18,0
-Jactroll,Jactroll,Jakub Skurzyński,,Poland,1998-08-05,1
-Jankos,Jankos,Marcin Jankowski,,Poland,1995-07-23,0
-Japone,Japone,Bahadır Çolak,,Turkey,1997-12-23,0
-Jelly (Son Ho-gyeong),Jelly,Son Ho-gyeong,손호경,South Korea,1997-10-18,0
-Jensen,Jensen,Nicolaj Jensen,,Denmark,1995-01-01,1
-Jesiz,Jesiz,Jesse Le,,Denmark,1996-06-17,1
-Jett,Jett,Bae Ho-young,배호영,South Korea,2001-07-23,1
-JiaQi,JiaQi,Zi Jia-Qi,资嘉琪,China,2004-05-31,0
-Jiejie,Jiejie,Zhao Li-Jie,赵礼杰,China,2001-10-27,0
-Jiizuke,Jiizuke,Daniele di Mauro,,Italy,1996-01-14,1
-JimieN,JimieN,Tseng Hao-Chun,曾浩鈞,Taiwan,2002-07-24,0
-Jinjiao,Jinjiao,Xie Jin-Shan,谢金山,China,1998-04-15,1
-Jirall,Jirall,Daniel del Castillo,,Mexico,1996-07-12,0
-Jiwoo,Jiwoo,Jung Ji-woo,정지우,South Korea,2004-03-20,0
-Jjun,Jjun,Kwon Jun-seok,권준석,South Korea,,1
-Jockster,Jockster,Luan Cardoso,,Brazil,1996-02-18,0
-Joey,Joey,Joseph Haslemann,,United States,1998-10-21,0
-JoJo (Gabriel Dzelme),JoJo,Gabriel Dzelme de Oliveira,,Brazil,1998-11-11,0
-Jojopyun,Jojopyun,Joseph&nbsp;Joon Pyun,,Canada,2004-10-01,0
-Joker (Cho Jae-eup),Joker,Cho Jae-eup,조재읍,South Korea,1991-12-11,0
-Josedeodo,Josedeodo,Brandon&nbsp;Joel Villegas,,Argentina,2000-05-22,0
-Juhan,Juhan,Lee Ju-han,이주한,South Korea,2001-08-31,0
-Jun (Yoon Se-jun),Jun,Yoon Se-jun,윤세준,South Korea,2000-08-02,0
-Junie,Junie,Trần Hữu Nhựt Minh,,Vietnam,1991-03-18,1
-JunJia,JunJia,Yu Chun-Chia,余峻嘉,Taiwan,2002-06-10,0
-Justice,Justice,Yoon Seok-joon,윤석준,South Korea,1998-01-04,1
-K,K,Ke Kai-Sheng,柯凱盛,Taiwan,1996-05-20,1
-Kael (Kim Jin-hong),Kael,Kim Jin-hong,김진홍,South Korea,2004-02-11,0
-Kaigu,Kaigu,Jon Lance Hernandez,,Philippines,,1
-Kaiser,Kaiser,Norman Kaiser,,Germany,1998-11-19,0
-Kaiwing,Kaiwing,Ling Kai Wing,凌啟榮,Hong Kong,1996-10-27,0
-KaKAO,KaKAO,Lee Byung-kwon,이병권,South Korea,1995-12-07,0
-Kami (Gabriel Bohm Santos),Kami,Gabriel Bohm Santos,,Brazil,1996-04-02,0
-Kanavi,Kanavi,Seo Jin-hyeok,서진혁,South Korea,2000-11-02,0
-Kaori,Kaori,Muhammed&nbsp;Hasan Şentürk,,Turkey,2001-07-09,0
-Karis,Karis,Kim Hong-jo,김홍조,South Korea,2003-05-21,0
-Karsa,Karsa,Hung Hao-Hsuan,洪浩軒,Taiwan,1997-02-14,1
-Kati,Kati,Đặng Thanh Phê,,Vietnam,1999-11-05,0
-Kazu,Kazu,Kazuta Suzuki,鈴木 和太,France,1994-05-25,1
-Keine,Keine,Kim Joon-cheol,김준철,South Korea,1999-11-08,0
-Kellin,Kellin,Kim Hyeong-gyu,김형규,South Korea,2001-02-01,0
-Keria,Keria,Ryu Min-seok,류민석,South Korea,2002-10-14,0
-Kev1n,Kev1n,Kevin Rubiszewski,,Germany,1993-01-15,0
-Kevy,Kevy,Shane Allen,,Australia,2000-11-22,1
-Key (Kim Han-gi),Key,Kim Han-gi,김한기,South Korea,1997-06-20,0
-Khan,Khan,Kim Dong-ha,김동하,South Korea,1995-12-22,0
-Kiaya,Kiaya,Trần Duy Sang,,Vietnam,2001-05-17,0
-Kid,Kid,Ge Yan,葛炎,China,1997-08-23,1
-Kiin,Kiin,Kim Gi-in,김기인,South Korea,1999-05-28,0
-Kikis,Kikis,Mateusz Szkudlarek,,Poland,1996-03-16,0
-Kindless,Kindless,Benjamin&nbsp;Ignacio Fuenzalida Barrera,,Chile,1998-07-17,0
-Kingen,Kingen,Hwang Seong-hoon,황성훈,South Korea,2000-03-11,0
-Kino,Kino,Chu&nbsp;Wu Hsin-Jung,朱吳欣榮,Taiwan,1998-04-12,0
-Kira,Kira,Mykhailo Harmash,Михайло Гармаш,Ukraine,1993-03-07,1
-Kirei,Kirei,Thomas Yuen,,Netherlands,1997-02-18,0
-Kitties,Kitties,Liu Hong-Jun,刘洪均,China,1992-09-03,1
-Knight (Zhuo Ding),Knight,Zhuo Ding,卓定,China,2000-05-22,0
-Koala (Lin Chih-Chiang),Koala,Lin Chih-Chiang,林志強,Taiwan,1995-08-16,0
-Kobbe,Kobbe,Kasper Kobberup,,Denmark,1996-09-21,0
-Kongyue,Kongyue,Hsiao Jen-Tso,蕭任佐,Taiwan,1999-07-19,0
-Kramer,Kramer,Ha Jong-hun,하종훈,South Korea,1996-03-09,1
-Kratos (Ngô Đức Khánh),Kratos,Ngô Đức Khánh,,Vietnam,2005-04-22,0
-Kreox,Kreox,Ilya Grom,Илья Гром,Russia,1999-08-03,1
-Krepo,Krepo,Mitch Voorspoels,,Belgium,1990-05-08,0
-Kuma (Park Hyeon-gyu),Kuma,Park Hyeon-gyu,박현규,South Korea,2000-11-14,1
-Kuri,Kuri,Choi Won-yeong,최원영,South Korea,2000-08-08,1
-Kuro,Kuro,Lee Seo-haeng,이서행,South Korea,1994-01-04,0
-Kuzan,Kuzan,Lee Seong-hyeok,이성혁,South Korea,1997-01-07,1
-Kyeahoo,kyeahoo,Kang Ye-hoo,강예후,South Korea,2005-08-13,0
-Labrov,Labrov,Lampros Papoutsakis,Λάμπρος Παπουτσάκης,Greece,2002-02-12,0
-Langx,Langx,Xie Zhen-Ying,谢镇营,China,1997-09-19,1
-Larssen,Larssen,Emil Larsson,,Sweden,2000-03-30,0
-Lava,Lava,Kim Tae-hoon,김태훈,South Korea,1999-07-14,0
-LazyFeel,LazyFeel,Trần Bảo Minh,,Vietnam,2007-03-19,0
-Leaper,Leaper,Choi Gi-myeong,최기명,South Korea,2000-05-18,0
-Lehends,Lehends,Son Si-woo,손시우,South Korea,1998-12-24,0
-LemonNation,LemonNation,Daerek Hart,,United States,1989-06-15,1
-Leo (Han Gyeo-re),Leo,Han Gyeo-re,한겨레,South Korea,2000-01-12,0
-Lep,Lep,Pedro&nbsp;Luiz Marcari,,Brazil,1996-02-28,1
-Letme,Letme,Yan Jun-Ze,严君泽,China,1996-05-18,0
-Levi,Levi,Đỗ Duy Khánh,,Vietnam,1997-11-18,0
-Leyan,Leyan,Lu Jue,卢崛,China,2002-07-07,0
-Leza,Leza,Francisco&nbsp;Rubén Jara Barragán,,Mexico,1998-09-28,0
-Liang,Liang,Wu Liang-Te,吳亮德,Taiwan,1998-07-14,0
-Licorice,Licorice,Eric Ritchie,,Canada,1997-09-30,0
-Life,Life,Kim Jeong-min,김정민,South Korea,2000-07-07,0
-Light (Wang Guang-Yu),Light,Wang Guang-Yu,王光宇,China,2001-02-21,0
-Likai,Likai,Liao Li-Kai,廖俐凱,Taiwan,2002-09-11,0
-Likkrit,Likkrit,Kirill Malofeyev,Кирилл Малофеев,Russia,1995-10-03,1
-Lilballz,Lilballz,"Sung&nbsp;""Alex"" Kuan-Po",宋寬柏,Taiwan,1988-06-12,1
-Lilv,Lilv,Chen Chin-Han,陳縉翰,Taiwan,1998-09-20,0
-Linak,Linak,Damien Lorthios,,France,,1
-Lindarang,Lindarang,Heo Man-heung,허만흥,South Korea,1997-08-25,0
-Lira,Lira,Nam Tae-yoo,남태유,South Korea,1995-01-15,0
-Listo,Listo,Kang Woo-seok,강우석,South Korea,2005-03-09,0
-Lloyd,Lloyd,Juckkirsts Kongubon,จักรกฤษณ์ คงอุบล,Thailand,1995-08-07,1
-Lodik,Lodik,Stanislav Kornelyuk,Станислав Корнелюк,Russia,,1
-LokeN,LokeN,Lee Dong-wook,이동욱,South Korea,1998-02-14,1
-Loki (Lee Sang-min),Loki,Lee Sang-min,이상민,South Korea,2005-03-26,0
-Lonely (Han Gyu-joon),Lonely,Han Gyu-joon,한규준,South Korea,2000-08-29,0
-Looper,Looper,Jang Hyeong-seok,장형석,South Korea,1993-02-28,1
-Loopy,Loopy,Kim Dong-hyeon,김동현,South Korea,2004-06-09,0
-Lospa,Lospa,Park Joon-hyeong,박준형,South Korea,2002-09-30,0
-LoveLing,LoveLing,Yin Le,尹乐,China,1993-05-01,1
-Luci,Luci,Han Chang-hoon,한창훈,South Korea,1997-07-08,1
-Lucid (Choi Yong-hyeok),Lucid,Choi Yong-hyeok,최용혁,South Korea,2005-01-28,0
-Lucky (Liu Jun-Jie),Lucky,Liu Jun-Jie,刘君杰,China,,1
-Lustboy,Lustboy,Ham Jang-sik,함장식,South Korea,1994-02-18,1
-LvMao,LvMao,Zuo Ming-Hao,左名豪,China,1996-03-07,0
-Lwx,Lwx,Lin Wei-Xiang,林炜翔,China,1998-10-24,1
-Lyonz,Lyonz,Pedro&nbsp;Luis Peralta,,Argentina,2001-11-29,0
-MadLife,MadLife,Hong Min-gi,홍민기,South Korea,1992-10-05,0
-MaHa,MaHa,Oh Hyun-sik,오현식,South Korea,1995-11-07,1
-MakNooN,MakNooN,Yoon Ha-woon,윤하운,South Korea,1991-11-16,0
-Malrang,Malrang,Kim Geun-seong,김근성,South Korea,2000-02-09,0
-MANTARRAYA,MANTARRAYA,Juan&nbsp;Ignacio Abdón,,Uruguay,1994-05-06,1
-Maple (Huang Yi-Tang),Maple,Huang Yi-Tang,黃熠棠,Taiwan,1997-10-10,0
-MapSSi,MapSSi,Kim Do-yeong,김도영,South Korea,2001-03-14,1
-Marble,Marble,Rei Shimaya,島谷れい,Japan,2002-08-28,0
-MaRin,MaRin,Jang Gyeong-hwan,장경환,South Korea,1991-02-12,0
-Mark (Ling Xu),Mark,Ling Xu,凌旭,China,1999-05-20,0
-Massu,Massu,Fahad Abdulmalek,,Iraq,2004-11-28,0
-Mata,Mata,Cho Se-hyeong,조세형,South Korea,1994-02-27,0
-Max (Jeong Jong-bin),Max,Jeong Jong-bin,정종빈,South Korea,1996-05-30,0
-Maxlore,Maxlore,Nubar Sarafian,,United Kingdom,1996-07-01,0
-Mazzerin,Mazzerin,Džiugas Repčys,,Lithuania,1996-08-10,1
-Meiko,Meiko,Tian Ye,田野,China,1998-06-06,0
-Meliodas (Hoàng Tiến Nhật),Meliodas,Hoàng Tiến Nhật,,Vietnam,2000-09-28,0
-MISSING,MISSING,Lou Yun-Feng,娄运峰,China,2001-05-26,0
-MMD,MMD,Yu Li-Hong,游立宏,Taiwan,1994-12-24,1
-Mellisan,Mellisan,Peter Meisrimel,,Germany,1989-06-07,1
-Meteos,Meteos,William Hartman,,United States,1993-06-13,0
-Mia,Mia,Choi Sang-in,최상인,South Korea,1998-11-03,1
-Mickey (Son Young-min),Mickey,Son Young-min,손영민,South Korea,1997-07-15,1
-Mightybear,Mightybear,Kim Min-su,김민수,South Korea,1995-09-06,1
-Mihile,Mihile,Baek Sang-hwi,백상휘,South Korea,2003-03-01,0
-Mikyx,Mikyx,Mihael Mehle,,Slovenia,1998-11-02,0
-Mills,Mills,Guilherme Uessler Conti,,Brazil,1996-03-28,1
-Mimic (Min Ju-seong),Mimic,Min Ju-seong,민주성,South Korea,,1
-Minerva,Minerva,Gustavo Queiroz Alves,,Brazil,1995-11-09,0
-Ming (Shi Sen-Ming),Ming,Shi Sen-Ming,史森明,China,1998-12-22,0
-Minji,Minji,Lu Po-Wei,呂柏緯,Taiwan,2001-01-17,0
-Minous,Minous,Kang Min-woo,강민우,South Korea,2004-05-03,0
-Mireu,Mireu,Jeong Jo-bin,정조빈,South Korea,2001-09-20,0
-Misaya,Misaya,Yu Jing-Xi,禹景曦,China,1992-10-19,1
-Mission,Mission,Chen Hsiao-Hsien,陳孝銜,Taiwan,1995-09-28,0
-MiSTakE,MiSTakE,Chen Hui-Chung,陳彙中,Taiwan,1989-05-13,1
-Mithy,Mithy,Alfonso Aguirre Rodríguez,,Spain,1994-10-05,0
-Mlxg,Mlxg,Liu Shi-Yu,刘世宇,China,1996-05-01,1
-MnM (Wong Ka Chun),MnM,Wong Ka Chun,王嘉駿,Hong Kong,2000-09-19,0
-Moham,Moham,Jeong Jae-hun,정재훈,South Korea,2002-08-08,0
-Mojito,Mojito,Berk Kocaman,,Turkey,1998-01-12,0
-MoMa,MoMa,Maik Wallus,,Germany,1991-06-01,1
-MooJin,MooJin,Kim Moo-jin,김무진,South Korea,1998-04-09,1
-Mor,Mor,Zhang Hong-Wei,张宏伟,China,1993-01-18,1
-Morgan,Morgan,Park Ru-han,박루한,South Korea,2001-09-26,0
-Morning,Morning,Chen Kuan-Ting,陳冠廷,Taiwan,1995-10-23,1
-Morttheus,Morttheus,Matheus Motta,,Brazil,2002-06-18,0
-Moss (Sorawat Boonphrom),Moss,Sorawat Boonphrom,สรวัชร์ บุญพรม,Thailand,,1
-Motive,Motive,Cho Se-hee,조세희,South Korea,2001-01-08,0
-Mountain (Xue Zhao-Hong),Mountain,Xue Zhao-Hong,薛兆鴻,Taiwan,1995-02-22,0
-Mouse,Mouse,Chen Yu-Hao,陈宇浩,China,1996-10-08,0
-Mowgli,Mowgli,Lee Jae-ha,이재하,South Korea,1998-04-14,0
-Mylon,Mylon,Matheus Borges,,Brazil,1996-11-08,0
-Myrwn,Myrwn,Alex Pastor Villarejo,,Spain,2003-06-13,0
-Mystic,Mystic,Jin Seong-jun,진성준,South Korea,1995-01-08,0
-Naehyun,Naehyun,Yoo Nae-hyun,유내현,South Korea,1996-02-07,0
-Nagne,Nagne,Kim Sang-moon,김상문,South Korea,1994-09-04,0
-NaMei,NaMei,Zhu Jia-Wen,朱佳文,China,1993-05-04,1
-Namgung,Namgung,Namgung Seong-hoon,남궁성훈,South Korea,2003-10-04,0
-Nanaue (Phùng Đức Tài),Nanaue,Phùng Đức Tài,,Vietnam,2006-06-14,0
-Nardeus,Nardeus,Tomáš Maršálek,,Czech Republic,,1
-Naru (Koray Bıçak),Naru,Koray Bıçak,,Turkey,1996-08-27,0
-Nate,Nate,Damián Rea,,Argentina,1999-03-30,0
-Naul,Naul,Võ Thành Luân,,Vietnam,1998-07-27,0
-Naz (Chen Tien-Chih),Naz,Chen Tien-Chih,陳添志,Taiwan,1993-12-01,1
-Nbs,Nbs,Laurynas Kisielius,,Lithuania,1990-08-13,1
-Nemesis,Nemesis,Tim Lipovšek,,Slovenia,1999-07-26,0
-Nevan,Nevan,Phùng Thiện Nhân,,Vietnam,1997-07-29,1
-Newbie,Newbie,Leandro Marcos,,Argentina,1997-01-16,1
-Niksar,Niksar,Valentin Zimakov,Валентин Зимаков,Russia,1994-09-24,1
-Ning,Ning,Gao Zhen-Ning,高振宁,China,1998-03-12,1
-Nisqy,Nisqy,Yasin Dinçer,,Belgium,1998-07-28,0
-Nixwater,Nixwater,Mai Nhật Tân,,Vietnam,1985-06-09,1
-NL (Hsiung Wen-An),NL,Hsiung Wen-An,熊汶銨,Taiwan,1995-04-02,1
-Noah (Oh Hyeon-taek),Noah,Oh Hyeon-taek,오현택,South Korea,2001-10-04,0
-Nomanz,Nomanz,Lev Yakshin,Лев Якшин,Russia,1998-09-21,0
-NONAME (Zhou Qi-Lin),NONAME,Zhou Qi-Lin,周祺琳,China,,0
-Nova (Park Chan-ho),Nova,Park Chan-ho,박찬호,South Korea,1997-11-27,0
-Noway (Nguyễn Vũ Long),Noway,Nguyễn Vũ Long,,Vietnam,1997-03-05,1
-Nuclear,Nuclear,Shin Jeong-hyeon,신정현,South Korea,1997-05-19,0
-Nuguri,Nuguri,Jang Ha-gwon,장하권,South Korea,1999-07-17,1
-Nukeduck,Nukeduck,Erlend Våtevik Holm,,Norway,1996-05-21,0
-Nyph,Nyph,Patrick Funke,,Germany,1990-03-11,1
-Oddie,Oddie,Sebastián Alonso Niño Zavaleta,,Peru,1997-08-28,0
-Odoamne,Odoamne,Andrei Pascu,,Romania,1995-01-18,0
-Olleh,Olleh,Kim Joo-sung,김주성,South Korea,1994-11-27,0
-ON,ON,Luo Wen-Jun,骆文俊,China,2003-05-12,0
-Once,Once,Jang Se-yeong,장세영,South Korea,1998-07-31,0
-Oner,Oner,Mun Hyeon-jun,문현준,South Korea,2002-12-24,0
-OnFleek,OnFleek,Kim Jang-gyeom,김장겸,South Korea,1997-12-20,0
-Only35,Only35,Mehmet Emin Aydın,,Turkey,2000-04-30,0
-Ophelia,Ophelia,Baek Jin-seong,백진성,South Korea,2003-02-05,0
-Orome,Orome,Andrei Popa,,Romania,1998-01-16,1
-Oscarinin,Oscarinin,Óscar Muñoz Jiménez,,Spain,2003-06-11,0
-Pabu,Pabu,Jackson Pavone,,Australia,1999-12-12,0
-Padden,Padden,Ege Acar Koparal,,Turkey,1995-10-27,1
-Paduck,Paduck,Park Seok-hyeon,박석현,South Korea,2005-02-12,0
-Painter,Painter,Kim Eun-hoo,김은후,South Korea,2007-09-16,0
-Palafox,Palafox,Cristian Palafox,,United States,1999-07-08,0
-Palette,Palette,Nguyễn Hải Trung,,Vietnam,1999-11-06,0
-Paranoia,Paranoia,Ivan Tipuhov,Іван Тіпухов,Ukraine,1995-07-03,1
-Part,Part,Jin Jae-seung,진재승,South Korea,1995-02-12,1
-Patoy,Patoy,Jordan Blackburn,,United States,1993-03-04,1
-PawN,PawN,Heo Won-seok,허원석,South Korea,1997-01-26,0
-Paz,Paz,Shirou Sasaki,佐々木 志郎,Japan,1996-12-06,0
-PDD,PDD,Liu Mou,刘谋,China,1991-04-17,0
-Peach,Peach,Lee Min-gyu,이민규,South Korea,2000-03-28,0
-Peanut,Peanut,Han Wang-ho,한왕호,South Korea,1998-02-03,1
-PerfecT (Lee Seung-min),PerfecT,Lee Seung-min,이승민,South Korea,2004-05-17,0
-Perkz,Perkz,Luka Perković,,Croatia,1998-09-30,0
-Peter (Jeong Yoon-su),Peter,Jeong Yoon-su,정윤수,South Korea,2003-04-28,0
-Peyz,Peyz,Kim Su-hwan,김수환,South Korea,2005-12-05,0
-Piccaboo,Piccaboo,Lee Jong-beom,이종범,South Korea,1997-03-25,1
-Piglet,Piglet,Chae Gwang-jin,채광진,South Korea,1994-02-04,0
-Pilot (Na Woo-hyung),Pilot,Na Woo-hyung,나우형,South Korea,1995-12-04,1
-Pirean,Pirean,Choi Jun-sik,최준식,South Korea,1998-04-09,1
-PK,PK,Hsieh Yu-Ting,謝宇庭,Taiwan,1995-11-18,1
-Pleata,Pleata,Son Min-woo,손민우,South Korea,2003-03-28,0
-Plugo,Plugo,Joaquín&nbsp;José Pérez Valdivieso,,Chile,1997-03-07,0
-Pobelter,Pobelter,Eugene Park,,United States,1996-10-14,0
-Poby,Poby,Yoon Sung-won,윤성원,South Korea,2006-02-07,0
-Pollu,Pollu,Oh Dong-gyu,오동규,South Korea,2006-01-07,0
-PoohManDu,PoohManDu,Lee Jeong-hyeon,이정현,South Korea,1991-01-29,0
-Pop,Pop,Ha Min-wook,하민욱,South Korea,1998-09-13,1
-Pop9,Pop9,Wu Yi-Han,吳羿翰,Taiwan,2003-03-24,0
-POUT,Pout,Han In-woong,한인웅,South Korea,2003-10-03,0
-PowerOfEvil,PowerOfEvil,Tristan Schrage,,Germany,1997-10-27,0
-Praedyth,Praedyth,Mark Lewis,,Australia,1999-06-21,0
-PraY,PraY,Kim Jong-in,김종인,South Korea,1994-01-06,0
-Pride (Franco Sanzana),Pride,Franco&nbsp;Jesús Sanzana Villarroel,,Chile,1996-05-19,1
-Prince (Lee Chae-hwan),Prince,Lee Chae-hwan,이채환,South Korea,2000-04-05,0
-Profit,Profit,Kim Jun-hyung,김준형,South Korea,1995-09-15,1
-Proud,Proud,Lee Jeong-jae,이정재,South Korea,1998-10-26,1
-Prove (Son Min-hyeong),Prove,Son Min-hyeong,손민형,South Korea,2002-04-13,1
-Prydz,Prydz,Chen Kuang-Feng,陳廣峰,Taiwan,1988-02-29,0
-Pullbae,Pullbae,Jeong Ji-hoon,정지훈,South Korea,2004-08-28,1
-Puma,Puma,Nathan Puma,,Australia,2002-02-21,1
-Pun,Pun,Nguyễn Đăng Khoa,,Vietnam,2002-07-29,0
-Punch,Punch,Son Min-hyuk,손민혁,South Korea,1998-06-06,0
-Pungyeon,Pungyeon,Lee Jong-hyuk,이종혁,South Korea,2004-06-22,0
-Pure,Pure,Kim Jin-sun,김진선,South Korea,1995-12-29,1
-Puszu,Puszu,Johannes Uibos,,Estonia,,1
-PvPStejos,PvPStejos,Alexander Glazkov,Александр Глазков,Ukraine,1996-12-24,1
-Pyl (Chen Bo),pyl,Chen Bo,陈博,China,1994-11-06,0
-Pyosik,Pyosik,Hong Chang-hyeon,홍창현,South Korea,2000-03-12,0
-QQMore,QQMore,Diego Alonso Apablaza Abarzúa,,Chile,1999-05-03,0
-QTV,QTV,Nguyễn Trần Tường Vũ,,Vietnam,1988-03-07,0
-Quad,Quad,Song Su-hyeong,송수형,South Korea,2002-08-25,0
-Quantum (Son Jeong-hwan),Quantum,Son Jeong-hwan,손정환,South Korea,2004-08-20,0
-Quid,Quid,Lim Hyeon-seung,임현승,South Korea,2004-04-27,0
-Radeon6870,Radeon6870,Tan Jun Shen,,Singapore,,1
-Raes,Raes,Quin Korebrits,,New Zealand,1998-10-27,0
-Rahel,Rahel,Cho Min-seong,조민성,South Korea,2004-02-13,0
-Raina,Raina,Shin Okubo,大久保 慎,Japan,1997-03-04,0
-Rainbow (Kim Soo-gi),Rainbow,Kim Soo-gi,김수기,South Korea,1997-10-31,1
-Raise,Raise,Oh Ji-hwan,오지환,South Korea,1997-10-18,0
-Ramune,Ramune,Osamu Ozawa,小澤 統,Japan,1997-11-26,0
-Ranger,Ranger,Filipe Brombilla de Bairros,,Brazil,1995-11-28,0
-RapidStar,RapidStar,Jung Min-sung,정민성,South Korea,1993-05-05,0
-Raptor (Jeon Eo-jin),Raptor,Jeon Eo-jin,전어진,South Korea,2004-11-15,0
-Rascal,Rascal,Kim Kwang-hee,김광희,South Korea,1997-10-16,0
-Rather,Rather,Shin Hyeong-seop,신형섭,South Korea,1996-11-26,0
-Ray,Ray,Jeon Ji-won,전지원,South Korea,1998-03-15,0
-Razork,Razork,Iván Martín Díaz,,Spain,2000-10-07,0
-RedBert,RedBert,Ygor Freitas,,Brazil,1998-08-26,0
-Reginald,ReginaId,Andy Dinh,,United States,1992-04-19,0
-Reignover,Reignover,Kim Yeu-jin,김의진,South Korea,1995-07-04,0
-Rekkles,Rekkles,Carl&nbsp;Martin&nbsp;Erik Larsson,,Sweden,1996-09-20,0
-Relic,Relic,José Pombo Ribeiro,,Venezuela,1994-10-11,1
-Ren,Ren,Nguyễn Văn Trọng,,Vietnam,1995-04-04,0
-Renyu,Renyu,Renato&nbsp;Josue Gallegos Muñoz,,Peru,1999-12-21,0
-Rest,Rest,Hsu Shih-Chieh,徐士傑,Taiwan,1998-12-11,0
-Revolta,Revolta,Gabriel Henud Cresci,,Brazil,1995-12-27,0
-Reyk,Reyk,Wai Noch Shum,,Germany,,1
-Rhuckz,Rhuckz,Rúben&nbsp;Alexandre Barbosa Neves,,Portugal,1996-08-28,0
-Rich (Lee Jae-won),Rich,Lee Jae-won,이재원,South Korea,1998-02-16,0
-Rich (Warich Kittiwattanawong),Rich,Warich Kittiwattanawong,วริชญ์ กิตติวัฒนาวงศ์,Thailand,,1
-Rikara,Rikara,Richard&nbsp;Samuel Oh,,United States,1997-12-08,1
-Riris,Riris,Baek Seung-min,백승민,South Korea,1994-12-25,1
-River (Kim Dong-woo),River,Kim Dong-woo,김동우,South Korea,1999-07-23,1
-Riyev,Riyev,Marcelo Carrara,,Brazil,1996-09-28,1
-Roach,Roach,Kim Kang-hee,김강희,South Korea,1999-01-31,0
-Road (Yun Han-gil),Road,Yun Han-gil,윤한길,South Korea,1995-09-30,0
-Roamer,Roamer,Jo Woo-jin,조우진,South Korea,2003-08-03,0
-Robo,Robo,Leonardo Souza,,Brazil,1998-04-22,0
-Rockky,Rockky,Atit Phaomuang,อธิศ เผ่าเมือง,Thailand,,0
-Rogue (Jake Sharwood),Rogue,Jake Sharwood,,Australia,1998-10-06,1
-RonOP,RonOP,Lê Thiên Hàn,,Vietnam,1998-11-03,0
-Rookie,Rookie,Song Eui-jin,송의진,South Korea,1997-03-11,0
-Route,Route,Moon Geom-su,문검수,South Korea,1999-01-05,0
-Ruin,Ruin,Kim Hyeong-min,김형민,South Korea,1995-11-16,0
-Ruler,Ruler,Park Jae-hyuk,박재혁,South Korea,1998-12-29,0
-Rush,Rush,Lee Yoon-jae,이윤재,South Korea,1993-04-06,1
-Ryu,Ryu,Ryu Sang-wook,류상욱,South Korea,1994-01-28,0
-Saint (Kang Sung-in),Saint,Kang Sung-in,강성인,South Korea,2005-01-01,0
-Saintvicious,Saintvicious,Brandon DiMarco,,United States,1987-05-23,1
-Salce,Salce,Trevor Salce,,United States,1994-01-19,1
-SamD,SamD,Lee Jae-hoon,이재훈,South Korea,2001-03-14,0
-Samver,Samver,Lee Seung-yong,이승용,South Korea,2001-11-07,1
-San (Guo Jun-Liang),san,Guo Jun-Liang,郭俊良,China,1993-01-16,0
-Sangyoon,Sangyoon,Gwon Sang-yun,권상윤,South Korea,1995-12-20,1
-SanSan,SanSan,Lê Quốc Khánh,,Vietnam,2006-12-10,0
-SaNTaS,SaNTaS,Aleksandr Lifashin,Александр Лифашин,Russia,1996-09-09,1
-Santorin,Santorin,Lucas Tao Kilmer Larsen,,Denmark,1997-05-06,0
-SaSin,SaSin,Oh Seung-ju,오승주,South Korea,1994-02-03,1
-Save,Save,Baek Young-jin,백영진,South Korea,1993-07-06,1
-Score,Score,Go Dong-bin,고동빈,South Korea,1992-07-08,0
-Scout,Scout,Lee Ye-chan,이예찬,South Korea,1998-03-14,0
-Secret (Park Ki-sun),Secret,Park Ki-sun,박기선,South Korea,1997-05-27,1
-Seiya,Seiya,Édgar&nbsp;Ali Bracamontes Munguía,,Mexico,1996-08-06,0
-Seize,Seize,Kim Chan-hee,김찬희,South Korea,2000-12-07,0
-Selfmade,Selfmade,Oskar Boderek,,Poland,1999-12-15,0
-Sencux,Sencux,Chres Laursen,,Denmark,1998-09-17,0
-SeongHwan,SeongHwan,Yoon Seong-hwan,윤성환,South Korea,1997-12-11,1
-Serin,Serin,Tolga Ölmez,,Turkey,2002-04-10,0
-SeTab,SeTab,Song Kyeong-jin,송경진,South Korea,2004-10-13,0
-Shad0w,Shad0w,Zhao Zhi-Qiang,赵志强,Italy,2001-02-25,0
-Shadow (Facundo Cuello),Shadow,Facundo Cuello,,Argentina,1999-10-07,0
-Shanks,Shanks,Cui Xiao-Jun,崔校军,China,2001-05-13,0
-Sharvel,Sharvel,Kim Dan-woo,김단우,South Korea,2007-08-26,0
-Sheo,Sheo,Théo Borile,,France,2001-07-05,0
-Shernfire,Shernfire,Shern Cherng Tai,,Malaysia,1998-05-04,0
-ShiauC,ShiauC,Liu Chia-Hao,劉家豪,Taiwan,1999-07-12,0
-Shini,Shini,Diogo Rogê Moreira,,Brazil,1997-07-14,0
-Shogun (Nguyễn Văn Huy),Shogun,Nguyễn Văn Huy,,Vietnam,2004-03-31,0
-Shook,Shook,Ilyas Hartsema,,Netherlands,1994-11-05,1
-ShowMaker,ShowMaker,Heo Su,허수,South Korea,2000-07-22,0
-Shrimp,Shrimp,Lee Byeong-hoon,이병훈,South Korea,1993-10-14,0
-Shunn,Shunn,Chao Ying-Shun,趙盈舜,Taiwan,2002-06-02,0
-Shushei,Shushei,Maciej Ratuszniak,,Poland,1989-03-16,1
-Shy,Shy,Park Sang-myeon,박상면,South Korea,1991-07-19,0
-Sirt,Sirt,Thúlio Carlos,,Brazil,1992-10-20,1
-SiuLoong,SiuLoong,Nguyễn Hoàng Lam,,Vietnam,2005-09-15,0
-Siwoo,Siwoo,Jeon Si-woo,전시우,South Korea,2007-11-24,0
-SkewMond,SkewMond,Rudy Semaan,,France,2004-08-09,0
-Sky (Kim Ha-neul),Sky,Kim Ha-neul,김하늘,South Korea,1998-07-17,1
-Slay,Slay,Nguyễn Ngọc Hùng,,Vietnam,1997-07-28,1
-Slayder,Slayder,Nguyễn Linh Vương,,Vietnam,2000-11-22,1
-Slayer (Kim Jin-young),Slayer,Kim Jin-young,김진영,South Korea,2003-04-15,0
-Slow,Slow,Eduardo&nbsp;Franco Garcés Cerda,,Chile,1997-02-13,1
-Smash (Shin Geum-jae),Smash,Shin Geum-jae,신금재,South Korea,2006-07-20,0
-Ssol,Ssol,Seo Jin-sol,서진솔,South Korea,1998-03-04,0
-Ssong,Ssong,Kim Sang-soo,김상수,South Korea,1989-10-15,0
-SSUN (Kim Tae-yang),SSUN,Kim Tae-yang,김태양,South Korea,1997-11-20,0
-Smeb,Smeb,Song Kyung-ho,송경호,South Korea,1995-06-30,0
-Smoothie,Smoothie,Andy Ta,,Canada,1997-02-10,1
-Smurf (Dmitri Ivanov),Smurf,Dmitri Ivanov,Дмитрий Иванов,Russia,1994-06-22,0
-Snaker,Snaker,Brian&nbsp;Alejo Distefano,,Argentina,2002-03-28,0
-Sneaky,Sneaky,Zachary Scuderi,,United States,1994-03-19,0
-Sniper,Sniper,Rayan Shoura,,Canada,2006-11-10,0
-Snoopeh,Snoopeh,Stephen Ellis,,United Kingdom,1991-09-15,1
-SnowFlower,SnowFlower,No Hoi-jong,노회종,South Korea,1997-02-24,1
-Snoy,Snoy,Elijah Joshua Guerrero,,Philippines,,1
-SoaR,SoaR,Lee Gang-pyo,이강표,South Korea,1997-05-28,0
-SOAZ,sOAZ,Paul Boyer,,France,1994-01-09,0
-Soboro,Soboro,Lim Seong-min,임성민,South Korea,2004-01-10,0
-SofM,SofM,Lê Quang Duy,,Vietnam,1998-02-05,0
-SoHwan,SoHwan,Kim Jun-yeong,김준영,South Korea,1996-10-24,1
-Solo (Colin Earnest),Solo,Colin Earnest,,United States,1993-05-26,1
-Soul (Seo Hyeon-seok),Soul,Seo Hyeon-seok,서현석,South Korea,1994-11-16,0
-Sparda,Sparda,Nguyễn Võ Anh Hoàng,,Vietnam,2002-07-06,0
-Spica,Spica,Mingyi Lu,卢明义,China,2001-02-17,0
-Spirit,Spirit,Lee Da-yoon,이다윤,South Korea,1996-07-01,1
-Sponge,Sponge,Bae Young-jun,배영준,South Korea,2004-07-25,0
-Ssumday,Ssumday,Kim Chan-ho,김찬호,South Korea,1996-07-03,0
-Stanley,Stanley,Wang June-Tsan,王榮燦,Taiwan,1991-05-06,1
-Stark (Phan Công Minh),Stark,Phan Công Minh,,Vietnam,1997-12-25,0
-StarScreen,StarScreen,Soner Kaya,,Turkey,2001-01-20,0
-Steak,Steak,Chou Lu-Hsi,周律希,Taiwan,1992-08-15,0
-Steal (Mun Geon-yeong),Steal,Mun Geon-yeong,문건영,South Korea,1998-12-15,1
-Steeelback,Steeelback,Pierre Medjaldi,,France,1996-08-16,0
-Stitch,Stitch,Lee Seung-ju,이승주,South Korea,1996-11-02,1
-Stixxay,Stixxay,Trevor Hayes,,United States,1997-03-16,1
-Stomaged,Stomaged,İlyas Furkan Güngör,,Turkey,1997-03-05,1
-Sty1e,Sty1e,Mai Hoàng Sơn,,Vietnam,2002-01-11,0
-Summit,Summit,Park Woo-tae,박우태,South Korea,1998-12-08,0
-Supa,Supa,David Martínez García,,Spain,2000-10-23,0
-Svenskeren,Svenskeren,Dennis Johnsen,,Denmark,1996-01-02,1
-Sw0rd,Sw0rd,Choi Sung-won,최성원,South Korea,1997-06-16,0
-Sweet (Lee Eun-teak),Sweet,Lee Eun-teak,이은택,South Korea,1995-07-11,1
-SwordArt,SwordArt,Hu Shuo-Chieh,胡碩傑,Taiwan,1996-12-21,0
-Sya,Sya,Phan Trung Toàn,,Vietnam,1999-08-13,1
-Sylvie,Sylvie,Lee Seung-bok,이승복,South Korea,2002-12-04,0
-Tabe,Tabe,Wong Pak Kan,王柏勤,Hong Kong,1991-01-18,0
-Tabzz,Tabzz,Erik van Helvert,,Netherlands,1994-03-17,1
-Tactical,Tactical,Edward Ra,나문용,United States,2000-08-18,0
-Taeyoon (Kim Tae-yoon),Taeyoon,Kim Tae-yoon,김태윤,South Korea,2002-06-02,0
-Taki (Đinh Anh Tài),Taki,Đinh Anh Tài,,Vietnam,2003-06-30,0
-Tally,Tally,James Shute,,Australia,1997-08-21,0
-TaNa,TaNa,Lee Sang-wook,이상욱,South Korea,1999-12-11,0
-Tank,Tank,Park Dan-won,박단원,South Korea,1995-11-18,1
-Targamas,Targamas,Raphaël Crabbé,,Belgium,2000-06-30,0
-Tarzan (Lee Seung-yong),Tarzan,Lee Seung-yong,이승용,South Korea,1999-08-23,0
-Tatu (Pedro Seixas),Tatu,Pedro Seixas Brito,,Brazil,2006-06-13,0
-Tay,Tay,Rodrigo Panisa,,Brazil,1996-11-22,0
-Tbq,tbq,Zhu Yong-Quan,朱永权,China,1996-08-27,1
-Teddy,Teddy,Park Jin-seong,박진성,South Korea,1998-03-15,0
-Tempt,Tempt,Kang Myung-gu,강명구,South Korea,1998-05-13,1
-Ten10,Ten10,Kang Joon,강준,South Korea,2001-09-23,1
-Tgee,Tgee,Gerald Gianne Gelacio,,Philippines,,1
-Thal,Thal,Park Kwon-hyuk,박권혁,South Korea,1998-11-13,1
-Thaldrin,Thaldrin,Berke Demir,,Turkey,1994-08-01,1
-TheOddOne,TheOddOne,Brian Wyllie,,Canada,1988-11-25,1
-Theokoles,Theokoles,Muhammed Işık,,Turkey,,1
-TheShy,TheShy,Kang Seung-lok,강승록,South Korea,1999-11-11,0
-Tian,Tian,Gao Tian-Liang,高天亮,China,2000-07-24,0
-Tierwulf,Tierwulf,Sebastián&nbsp;Andrés Mateluna Cibrario,,Chile,1996-11-05,1
-Time (Tang Jing-Tai),Time,Tang Jing-Tai,唐靖泰,China,,1
-Tinowns,tinowns,Thiago Sartori,,Brazil,1997-05-06,0
-TitaN,TitaN,Alexandre Lima dos Santos,,Brazil,2000-07-09,0
-Tolerant,Tolerant,Barış Çepnioğlu,,Germany,1999-08-29,1
-Tomo,Tomo,Frank Lam,,United States,2001-01-19,0
-Topoon,Topoon,Kim Ji-hoon,김지훈,South Korea,,1
-Totoro (Eun Jong-seop),Totoro,Eun Jong-seop,은종섭,South Korea,1996-05-06,1
-Touch,Touch,Omid Rosander,,Norway,,0
-Toyz,Toyz,"Lau&nbsp;""Kurtis"" Wai Kin",劉偉健,Hong Kong,1992-06-09,1
-TrAce,TrAce,Yeo Chang-dong,여창동,South Korea,1989-11-02,1
-Trick,Trick,Kim Gang-yun,김강윤,South Korea,1995-07-11,0
-Trigger (Kim Eui-joo),Trigger,Kim Eui-joo,김의주,South Korea,2000-10-10,0
-Triple,Triple,Stephen Li,,Australia,1999-02-26,1
-Trymbi,Trymbi,Adrian Trybus,,Spain,2000-10-20,0
-TusiN,TusiN,Park Jong-ik,박종익,South Korea,1995-11-12,1
-Tussle,Tussle,Lee Moon-yong,이문용,South Korea,1995-03-29,0
-Tutsz,Tutsz,Arthur Peixoto Machado,,Brazil,2002-12-16,0
-U,U,Zeng Long,曾龙,China,1993-09-04,0
-Ucal,Ucal,Son Woo-hyeon,손우현,South Korea,2001-01-30,0
-Udysof,Udysof,Toby Horne,,Australia,1999-08-10,1
-UmTi,UmTi,Um Sung-hyeon,엄성현,South Korea,1999-06-02,0
-UNF0RGIVEN,UNF0RGIVEN,William Nieminen,,Sweden,2000-08-23,0
-Uniboy,Uniboy,Chen Chang-Chu,陳昌駒,Taiwan,2001-03-03,0
-Unified,Unified,Wong Chun Kit,黃俊杰,Hong Kong,1999-06-28,1
-Untara,Untara,Park Ui-jin,박의진,South Korea,1996-12-31,0
-Upset,Upset,Elias Lipp,,Germany,1999-12-16,0
-Uzi (Jian Zi-Hao),Uzi,Jian Zi-Hao,简自豪,China,1997-04-05,1
-Vampire,Vampire,Zhao Zhe-Can,赵哲灿,China,2005-08-24,0
-Vander,Vander,Oskar&nbsp;Mateusz Bogdan,,Poland,1994-04-18,0
-Vech,Vech,Tan Jun Yi,,Singapore,,1
-Venus,Venus,Bùi Nguyễn Quốc Hoàng,,Vietnam,1999-06-06,1
-VicLa,VicLa,Lee Dae-kwang,이대광,South Korea,2003-11-27,0
-Violet (Ngô Mạnh Quyền),Violet,Ngô Mạnh Quyền,,Vietnam,1987-01-07,1
-Violet (Vincent Wong),Violet,Vincent&nbsp;Chun&nbsp;Him Wong,,Hong Kong,2000-10-31,0
-Viper (Park Do-hyeon),Viper,Park Do-hyeon,박도현,South Korea,2000-10-19,0
-Vital,vital,Ha In-seong,하인성,South Korea,2002-09-16,0
-Vizicsacsi,Vizicsacsi,Tamás Kiss,,Hungary,1993-06-14,0
-Vladi,Vladi,Vladimiros Kourtidis,Βλαδίμηρος Κουρτίδης,Greece,2005-08-12,0
-Voidle,Voidle,Erih Sommermann,,Estonia,,1
-Voyboy,Voyboy,Joedat Esfahani,,United States,1994-12-15,1
-Vsta,Vsta,Oh Hyo-seong,오효성,South Korea,2000-10-03,0
-Vulcan (Philippe Laflamme),Vulcan,Philippe Laflamme,,Canada,1999-04-20,0
-VVvert,VVvert,Alvaro&nbsp;Miguel Martins,,Brazil,1999-02-19,1
-Wadid,Wadid,Kim Bae-in,김배인,South Korea,1997-05-25,0
-Wako,Wako,Tsou Wei-Yang,鄒惟洋,Taiwan,1998-07-31,0
-Warangelus,Warangelus,Fabián&nbsp;Esteban Llanos Bernal,,Chile,1998-04-09,0
-WarL0cK,WarL0cK,Pawat Ampaporn,ภวัต อัมพาภรณ์,Thailand,,0
-Warzone,Warzone,Đoàn Văn Ngọc Sơn,,Vietnam,1994-09-23,1
-Watch,Watch,Cho Jae-geol,조재걸,South Korea,1992-01-02,1
-Way (Han Gil),Way,Han Gil,한길,South Korea,2002-06-29,0
-Wayward,Wayward,Huang Ren-Xing,黄任行,China,2001-06-23,0
-Wei (Yan Yang-Wei),Wei,Yan Yang-Wei,闫扬威,China,2002-11-09,0
-Weiwei,Weiwei,Wei Bo-Han,魏博涵,China,2000-08-14,0
-Westdoor,Westdoor,Liu Shu-Wei,劉書瑋,Taiwan,1993-10-16,1
-Westrice,Westrice,Jonathan Nguyen,,United States,1992-07-13,0
-Wh1t3zZ,Wh1t3zZ,Lo Pun Wai (盧本偉),,Hong Kong,1993-08-11,1
-WhiteLotus,WhiteLotus,Matías Musso,,Argentina,1996-08-27,0
-Wickd,Wickd,Mike Petersen,,Denmark,1994-04-29,1
-WildTurtle,WildTurtle,Jason Tran,,Canada,1995-02-09,1
-Willer,Willer,Kim Jeong-hyeon,김정현,South Korea,2003-04-24,0
-Winds,Winds,Chen Peng-Nien,陳鵬年,Taiwan,1990-10-29,1
-Winged,Winged,Park Tae-jin,박태진,South Korea,1992-08-20,0
-Wizer,Wizer,Choi Eui-seok,최의석,South Korea,1998-11-29,0
-Wolf (Lee Jae-wan),Wolf,Lee Jae-wan,이재완,South Korea,1996-09-09,0
-Woody,Woody,Lin Yu-En,林煜恩,Taiwan,1998-04-11,0
-Woong (Jang Gun-woong),Woong,Jang Gun-woong,장건웅,South Korea,1990-02-27,1
-Wraith,Wraith,Kwon Ji-min,권지민,South Korea,1995-09-28,0
-Wunder,Wunder,Martin Nordahl Hansen,,Denmark,1998-11-09,0
-Wuxx,Wuxx,Wang Cheng,王城,China,1996-01-10,1
-Xerxe,Xerxe,Andrei Dragomir,,Romania,1999-11-05,0
-Xiaobai,Xiaobai,Yang Zhong-He,杨忠贺,China,1999-02-15,0
-Xiaohu,Xiaohu,Li Yuan-Hao,李元浩,China,1998-01-28,0
-Xiaoweixiao,xiaoweixiao,Yu Xian,余显,China,1994-09-15,1
-XiaoXiao,XiaoXiao,Sun Ya-Long,孙亚龙,China,1988-03-24,1
-Xiaoxu,Xiaoxu,Xu Xing-Zu,徐兴祖,China,2003-09-11,0
-Xmithie,Xmithie,Jake&nbsp;Kevin Puchero,,Philippines,1991-05-10,1
-Xpecial,Xpecial,Alex Chu,朱啓恩,United States,1992-08-12,1
-XuHao,XuHao,Bùi&nbsp;Hoàng Sơn Vương,,Vietnam,1999-12-29,0
-Xun,Xun,Peng Li-Xun,彭立勋,China,2002-02-05,0
-Xyno,xyno,Carlos&nbsp;Felipe Ferreira da Silva,,Brazil,2007-03-04,0
-Yagao,Yagao,Zeng Qi,曾奇,China,1998-10-19,1
-ApaMEN,apaMEN,Ryo Odagiri,小田桐 稜,Japan,1991-12-05,0
-Aphromoo,aphromoo,Zaqueri Black,,United States,1992-09-08,1
-Baybay,baybay,Wang You-Chun,王佑軍,Taiwan,1996-11-29,1
-Bigfatlp,bigfatlp,Michael Tang,,Canada,1990-06-06,1
-BrTT,brTT,Felipe Gonçalves da Rocha,,Brazil,1991-02-19,0
-Corn (Lei Wen),Corn,Lei Wen,雷文,China,1997-03-04,1
-Dabe,dabe,Angelo&nbsp;Dave&nbsp;Nada Lopez,,Philippines,,1
-Dans,dans,Daniel Dias,,Brazil,,1
-Deokdam,deokdam,Seo Dae-gil,서대길,South Korea,2000-02-25,0
-DyNquedo,dyNquedo,Matheus Rossini Miranda,,Brazil,1997-10-14,0
-FabFabulous,fabFabulous,Asım&nbsp;Cihat Karakaya,,Turkey,1996-02-15,0
-Fengyue,fengyue,Wang Run-Lai,王润来,China,2005-11-06,0
-Fredy122,fredy122,Simon Payne,,United Kingdom,,0
-Gibo,Gibo,Gilbert&nbsp;Agatep Sales Jr.,,Philippines,1981-06-12,1
-Huanfeng,huanfeng,Tang Huan-Feng,唐焕烽,China,2001-05-20,0
-IBoy,iBoy,Hu Xian-Zhao,胡显昭,China,2000-07-12,1
-ICON,ICON,Xie Tian-Yu,谢天宇,China,1996-05-22,1
-Ikssu,ikssu,Jeon Ik-soo,전익수,South Korea,1996-10-22,1
-INtrigueD,iNtrigueD,Ho Bing Shuan,,Singapore,,1
-Yaharong,Yaharong,Lee Chan-ju,이찬주,South Korea,2000-06-12,1
-Yang (Felipe Zhao),Yang,Felipe Zhao,,Brazil,1996-04-14,1
-YellOwStaR,YellOwStaR,Bora Kim,,France,1992-02-15,0
-Yeon (Sean Sung),Yeon,Sean Sung,성연호,United States,2001-01-07,0
-Yijin,Yijin,Nguyễn Lê Hải Đăng,,Vietnam,2000-10-28,1
-Yike,Yike,Martin Sundelin,,Sweden,2000-11-11,0
-YoDa (Felipe Noronha),YoDa,Felipe Noronha,,Brazil,1995-09-16,0
-Yohan,Yohan,Kim Yo-han,김요한,South Korea,1999-12-17,0
-YoungJae,YoungJae,Ko Yeong-jae,고영재,South Korea,2002-11-16,0
-Ysera,Ysera,Wang Tsung-Chih,汪宗志,Taiwan,1997-03-02,1
-Yume (Danyll Jann Balisi),Yume,Danyll Jann Balisi,,Philippines,,1
-Yutapon,Yutapon,Yuta Sugiura,杉浦 悠太,Japan,1996-09-10,0
-Zantins,Zantins,Luccas Martins Zanqueta Silva,,Brazil,1993-03-05,1
-Zefa,Zefa,Lee Jae-min,이재민,South Korea,1988-02-04,0
-Zeitnot,Zeitnot,Berkay Aşıkuzun,,Turkey,1995-01-02,0
-Zeka (Kim Geon-woo),Zeka,Kim Geon-woo,김건우,South Korea,2002-11-28,0
-Zenit,Zenit,Jeon Tae-gwon,전태권,South Korea,2000-05-08,1
-Zergsting,Zergsting,Onur Ünalan,,Turkey,1998-11-18,1
-Zero (Yoon Kyung-sup),Zero,Yoon Kyung-sup,윤경섭,South Korea,1994-07-16,0
-Zeros,Zeros,Phạm Minh Lộc,,Vietnam,2000-10-06,1
-Zest (Kim Dong-min),Zest,Kim Dong-min,김동민,South Korea,2003-11-05,0
-Zeus,Zeus,Choi Woo-je,최우제,South Korea,2004-01-31,0
-Zeyzal,Zeyzal,Tristan Stidam,,United States,1999-07-07,0
-Zhuo,Zhuo,Wang Xu-Zhuo,王旭卓,China,2001-02-13,0
-Zika,Zika,Tang Hua-Yu,唐华钰,China,2003-07-07,0
-Zin,Zin,Nguyễn Tuấn Thọ,,Vietnam,1999-01-11,0
-Ziv (Chen Yi),Ziv,Chen Yi,陳奕,Taiwan,1994-12-24,0
-Zoom,Zoom,Zhang Xing-Ran,张星冉,China,1997-07-27,0
-Zorozero,Zorozero,Morten Rosenquist,,Denmark,1995-05-10,1
-Zothve,Zothve,Cristóbal Arróspide,,Chile,2003-02-18,0
-ZUIAN,ZUIAN,Cheng Zi-Hao,程子浩,China,2005-05-23,0
-Zuna,Zuna,Christopher Buechter,,United States,1990-12-25,1
-Zven,Zven,Jesper Svenningsen,,Denmark,1997-06-24,0
-Zylor,Zylor,Christian Dietze,,Germany,,1
-Zz1tai,Zz1tai,Liu Zhi-Hao,刘志豪,China,1997-08-25,1
-Zzus,Zzus,Jang Joon-soo,장준수,South Korea,1998-08-30,0
-Illusion (Chen Xin-Lin),illusion,Chen Xin-Lin,陈新霖,China,1990-08-09,1
-Imp,imp,Gu Seung-bin,구승빈,South Korea,1995-06-07,1
-InSec,inSec,Choi In-seok,최인석,South Korea,1993-06-29,1
-K1ng,k1ng,Calvin Truong,,Australia,1998-02-03,1
-Kasing,Kasing,Raymond Tsang,曾家誠,United Kingdom,1993-12-08,0
-Kujaa,Kujaa,Jérôme Negretti,,France,,1
-Loulex,Loulex,Jean-Victor Burgevin,,France,1995-03-27,1
-Mancloud,mancloud,Zachary&nbsp;Allan Hoschar,,United States,1991-07-28,1
-MicaO,micaO,Micael Rodrigues,,Brazil,1996-09-05,0
-Nappon,Nappon,Carlos&nbsp;Henrique Rücker,,Brazil,1994-06-04,1
-NRated,nRated,Christoph Seitz,,Germany,1991-07-17,0
-Nuc,nuc,Ilias Bizriken,,Morocco,2002-10-17,0
-Ocelote,ocelote,Carlos Rodríguez Santiago,,Spain,1990-06-15,1
-Scarra,scarra,William Li,,United States,1989-11-25,1
-Tockers,tockers,Gabriel Claumann,,Brazil,1996-08-21,0
-Tol2,tol2,Haruki Shibata,柴田 晴生,Japan,2002-10-17,0
-ViviD,viviD,Han Gi-hun,한기훈,South Korea,1993-02-08,0
-Wewillfailer,wewillfailer,Bram de Winter,,Belgium,1990-06-16,1
-Wormy,wormy,Jeffrey&nbsp;Tiu Cua,,Philippines,,1
-Xiye,xiye,Su Han-Wei,苏汉伟,China,1997-08-06,0
-XPeke,xPeke,Enrique Cedeño Martínez,,Spain,1992-04-24,0
-Yellowpete,yellowpete,Peter Wüppen,,Germany,1989-10-05,1
-Yuyanjia,yuyanjia,Liang Jia-Yuan,梁家源,China,1997-08-30,0
+player,id,name,native_name,country,birthdate,is_retired,name_x,name_y
+007x,007x,Chayut Suebka,ชยุตม์ สืบค้า,Thailand,1995-09-17,1,,
+369,369,Bai Jia-Hao,白家浩,China,2001-07-12,0,,
+3z,3z,Chen Han,陳翰,Taiwan,1996-12-30,1,,
+4LaN,4LaN,Alanderson Meireles,,Brazil,1998-10-22,1,,
+5kid,5kid,Park Jeong-hyeon,박정현,South Korea,1999-11-28,0,,
+957,957,Ke Chang-Yu,柯昌宇,China,1993-09-21,0,,
+Abbedagge,Abbedagge,Felix&nbsp;Alfred Braun,,Germany,1999-09-10,0,,
+Absolut,Absolut,Luis&nbsp;Felipe Carvalho,,Brazil,1999-04-26,0,,
+Acce,Acce,Emmanuel Juárez,,Argentina,1995-10-06,0,,
+Achie,Achie,Chen Chen-Chi,陳振齊,Taiwan,1992-09-23,0,,
+Achuu,Achuu,Nicolaj Ellesgaard,,Denmark,1994-06-06,0,,
+Ackerman (Gabriel Aparicio),Ackerman,Gabriel&nbsp;Agustín Aparicio,,Argentina,2002-11-29,0,,
+Acorn,Acorn,Choi Cheon-ju,최천주,South Korea,1990-07-13,0,,
+Adam (Adam Maanane),Adam,Adam Maanane,,France,2001-12-30,0,,
+ADD,ADD,Kang Geon-mo,강건모,South Korea,1998-10-17,0,,
+Aegis (Gabriel Lemos),Aegis,Gabriel&nbsp;Vinicius Saes de Lemos,,Brazil,1999-09-09,0,,
+AHaHaCiK,AHaHaCiK,Kirill Skvortsov,Кирилл Скворцов,Russia,1999-04-01,1,,
+Aiming,Aiming,Kim Ha-ram,김하람,South Korea,2000-07-20,0,,
+Aladoric,Aladoric,Ryan Gregory Richardson,,Australia,1999-06-25,0,,
+Albis,Albis,Kang Chia-Wei,康家維,Taiwan,1993-12-19,1,,
+Ale,Ale,Hu Jia-Le,胡嘉乐,China,2001-07-23,0,,
+Alex (Chen Yu-Ming),Alex,Chen Yu-Ming,陳煜明,Taiwan,2000-01-22,1,,
+Alex Ich,Alex Ich,Alexey Ichetovkin,Алексей Ичетовкин,Russia,1992-01-31,1,,
+Alive,Alive,Noh Jin-wook,노진욱,South Korea,1998-02-27,0,,
+Aloned,Aloned,Tomás&nbsp;Antonio Díaz Valiente,,Chile,1999-11-06,0,,
+Alphari,Alphari,Barney Morris,,United Kingdom,1999-10-20,0,,
+Alunir,Alunir,Gediminas Navakauskis,,Lithuania,1989-08-24,1,,
+Alvaro (Álvaro Fernández),Alvaro,Álvaro Fernández del Amo,,Spain,2003-07-15,0,,
+Amazing (Maurice Stückenschneider),Amazing,Maurice Stückenschneider,,Germany,1994-04-02,0,,
+AmazingJ,AmazingJ,Shek Wai Ho,石偉豪,Hong Kong,1997-11-08,1,,
+Ambition,Ambition,Kang Chan-yong,강찬용,South Korea,1992-10-27,0,,
+An,An,Chou Chun-An,周俊諳,Taiwan,1994-10-20,1,,
+AnDa,AnDa,Andy Hoang,,Canada,1995-08-03,1,,
+Andil,Andil,Moon Gwan-bin,문관빈,South Korea,2002-10-05,0,,
+Angel (Xiang Tao),Angel,Xiang Tao,向涛,China,2000-09-16,0,,
+APA (Eain Stearns),APA,Eain Stearns,,United States,2002-03-05,0,,
+Apex (Hsieh Chia-Wei),Apex,Hsieh Chia-Wei,謝家維,Taiwan,1996-01-19,1,,
+Araneae,Araneae,Alvar Martín Aleñar,,Spain,1989-05-19,0,,
+Arce,Arce,Diego Arce Chang,,Peru,1993-06-13,0,,
+Archer (Lee Keun-hee),Archer,Lee Keun-hee,이근희,South Korea,1998-12-17,0,,
+Archie (Trần Minh Nhựt),Archie,Trần Minh Nhựt,,Vietnam,1992-07-26,0,,
+Aress,Aress,Hồ Văn Vĩ Đại,,Vietnam,2004-09-24,0,,
+Aria (Lee Ga-eul),Aria,Lee Ga-eul,이가을,South Korea,2000-10-14,0,,
+Armut,Armut,İrfan&nbsp;Berk Tükek,,Turkey,1998-12-13,0,,
+Arrow,Arrow,Noh Dong-hyeon,노동현,South Korea,1994-07-20,0,,
+Artemis (Trần Quốc Hưng),Artemis,Trần Quốc Hưng,,Vietnam,2001-02-24,0,,
+Artifact,Artifact,Nguyễn Văn Hậu,,Vietnam,2000-06-23,1,,
+Asper,Asper,Kim Tae-gi,김태기,South Korea,2000-01-12,1,,
+Athena,Athena,Kang Ha-woon,강하운,South Korea,1995-10-19,1,,
+Atlen,Atlen,Sung Ya-Lun,宋亞倫,Taiwan,1999-09-11,1,,
+Attila,Attila,Amadeu&nbsp;Jesus Dias de Carvalho,,Portugal,1996-02-26,0,,
+Avenger (Adriano Perassoli),Avenger,Adriano Perassoli,,Brazil,2001-05-14,0,,
+Avoidless,Avoidless,Fan Jun Wei,范俊偉,Hong Kong,1994-05-13,1,,
+Axion,Axion,Tai Ngee Shern,,Singapore,,1,,
+Ayu (Andrey Saraiva),Ayu,Andrey Saraiva,,Brazil,2005-10-06,0,,
+Azhi,Azhi,Huang Shang-Jhih,黃上鋕,Taiwan,2001-05-09,0,,
+Babip,Babip,Leo Romer,,Australia,1998-09-04,1,,
+BaeMe,BaeMe,Kang Yang-hyun,강양현,South Korea,1993-10-27,1,,
+BalKhan,BalKhan,Choi Hyun-jin,최현진,South Korea,1998-12-01,1,,
+Balls,BalIs,An Van Le,,United States,1994-06-22,1,,
+Bang,Bang,Bae Jun-sik,배준식,South Korea,1996-05-18,0,,
+BAO (Jeong Hyeon-woo),BAO,Jeong Hyeon-woo,정현우,South Korea,2001-09-20,0,,
+Baolan,Baolan,Wang Liu-Yi,王柳羿,China,1999-07-16,1,,
+Baut,Baut,Han Jin-sol,한진솔,South Korea,2001-03-30,0,,
+Bay,Bay,Park Jun-byeong,박준병,South Korea,2002-02-19,1,,
+Bdd,Bdd,Gwak Bo-seong,곽보성,South Korea,1999-03-01,0,,
+Bean (Louis Schmitz),Bean,Louis Schmitz,,Germany,2000-08-11,1,,
+BeanJ,BeanJ,Trần Văn Chính,,Vietnam,2003-01-27,1,,
+BeBe (Chang Bo-Wei),BeBe,Chang Bo-Wei,張博為,Taiwan,1991-06-27,0,,
+Beichuan,Beichuan,Yang Ling,杨陵,China,2001-07-21,0,,
+BOSS (Vladislav Fomin),BOSS,Vladislav Fomin,Владислав Фомин,Russia,1998-07-03,1,,
+Ben,Ben,Nam Dong-hyun,남동현,South Korea,1995-04-24,0,,
+Bengi,Bengi,Bae Seong-woong,배성웅,South Korea,1993-11-21,0,,
+Benny (Lien Hsiu-Chi),Benny,Lien Hsiu-Chi,連修琪,Taiwan,1998-06-14,0,,
+Berserker (Kim Min-cheol),Berserker,Kim Min-cheol,김민철,South Korea,2003-05-25,0,,
+BeryL,BeryL,Cho Geon-hee,조건희,South Korea,1997-04-01,0,,
+Betty,Betty,Lu Yu-Hung,盧禹宏,Taiwan,2000-01-16,0,,
+Beyond (Kim Kyu-seok),Beyond,Kim Kyu-seok,김규석,South Korea,1997-08-18,1,,
+Bible,Bible,Yoon Seol,윤설,South Korea,1999-11-24,0,,
+Bie,Bie,Trần Đức Hiếu,,Vietnam,1999-12-09,1,,
+Bigkoro,Bigkoro,Đặng Ngọc Tài,,Vietnam,1999-07-05,0,,
+Bin (Chen Ze-Bin),Bin,Chen Ze-Bin,陈泽彬,China,2003-09-28,0,,
+Biofrost,Biofrost,Vincent Wang,,China,1996-09-17,1,,
+BioPanther,BioPanther,Brandon Alexander,,Australia,1999-02-23,0,,
+Bjergsen,Bjergsen,Søren Bjerg,,Denmark,1996-02-21,1,,
+Blaber,Blaber,Robert Huang,,United States,2000-01-04,0,,
+Blanc (Jin Seong-min),Blanc,Jin Seong-min,진성민,South Korea,1995-06-03,1,,
+Blank (Kang Sun-gu),Blank,Kang Sun-gu,강선구,South Korea,1998-04-30,1,,
+Blasting,Blasting,Daniel Kudrin,,Latvia,1996-12-05,1,,
+Bless (Choi Hyeon-woong),Bless,Choi Hyeon-woong,최현웅,South Korea,1996-10-23,1,,
+BloodWater,BloodWater,Lyubomir Spasov,Любомир Спасов,Bulgaria,,1,,
+Blossom (Park Beom-chan),Blossom,Park Beom-chan,박범찬,South Korea,1999-10-12,1,,
+Bluffing,Bluffing,Park Gyu-yong,박규용,South Korea,2008-12-07,0,,
+Boal,Boal,Felipe Boal,,Brazil,2002-12-04,0,,
+Bolulu,Bolulu,Onur&nbsp;Can Demirol,,Sweden,1998-11-14,0,,
+Bong (Cho Bo-woong),Bong,Cho Bo-woong,조보웅,South Korea,2001-08-30,0,,
+Bonnie,Bonnie,Lee Gwang-su,이광수,South Korea,2001-03-14,0,,
+Brance,Brance,Diego Amaral,,Brazil,2004-02-25,0,,
+Breathe,Breathe,Chen Chen,陈晨,China,2001-02-19,0,,
+Breeze,Breeze,Huang Chien-Yuan,黃建源,Taiwan,1997-09-20,0,,
+BrokenBlade,BrokenBlade,Sergen Çelik,,Germany,2000-01-19,0,,
+Broxah,Broxah,Mads Brock-Pedersen,,Denmark,1997-08-12,0,,
+Bruce,Bruce,Chiu Chih-Chun,邱致鈞,Taiwan,1998-06-16,1,,
+Brucer,Brucer,Bruno Pereira de Souza,,Brazil,1996-03-07,0,,
+Bubbling,Bubbling,Park Jun-hyeong,박준형,South Korea,1993-04-13,0,,
+Buggax,Buggax,Mateo&nbsp;Alejandro Aroztegui Zamora,,Uruguay,1998-06-27,0,,
+Bugi,Bugi,Lee Seong-yeop,이성엽,South Korea,1998-05-21,0,,
+Bull,Bull,Song Seon-gyu,송선규,South Korea,2003-05-16,0,,
+BuLLDoG (Lee Tae-young),BuLLDoG,Lee Tae-young,이태영,South Korea,2005-04-15,0,,
+Burdol,Burdol,Noh Tae-yoon,노태윤,South Korea,2003-12-25,0,,
+Busio,Busio,Alan Cwalina,,United States,2003-10-22,0,,
+Bwipo,Bwipo,Gabriël Rau,,Belgium,1998-12-24,0,,
+Cabochard,Cabochard,Lucas Simon-Meslet,,France,1997-04-15,0,,
+CaD,CaD,Cho Seong-yong,조성용,South Korea,2002-02-20,1,,
+Cain,Cain,Jang Nu-ri,장누리,South Korea,1987-02-06,1,,
+Caliste,Caliste,Caliste Henry-Hennebert,,France,2006-08-28,0,,
+Calix (Syun Hyun-bin),Calix,Syun Hyun-bin,선현빈,South Korea,2007-03-22,0,,
+Callme,Callme,Oh Ji-hoon,오지훈,South Korea,2003-05-30,0,,
+Candy (Kim Seung-ju),Candy,Kim Seung-ju,김승주,South Korea,1996-01-21,1,,
+CandyPanda,CandyPanda,Adrian Wübbelmann,,Germany,1993-06-23,1,,
+Canna,Canna,Kim Chang-dong,김창동,South Korea,2000-02-11,0,,
+Canyon,Canyon,Kim Geon-bu,김건부,South Korea,2001-06-18,0,,
+CaoMei,CaoMei,Wei Han-Dong,魏汉冬,China,1991-12-26,1,,
+Caps,Caps,Rasmus Borregaard Winther,,Denmark,1999-11-17,0,,
+Career,Career,Oh Hyeong-seok,오형석,South Korea,2004-08-29,0,,
+CarioK,CarioK,Marcos Santos de Oliveira Junior,,Brazil,2000-01-31,0,,
+Carzzy,Carzzy,Matyáš Orság,,Czech Republic,2002-01-31,0,,
+Casting,Casting,Shin Min-je,신민제,South Korea,2003-10-30,0,,
+Celebrity,Celebrity,Nguyễn Phước Long Hiệp,,Vietnam,1996-12-25,1,,
+Ceo,ceo,Mauro&nbsp;Lorenzo Tévez,,Argentina,2004-01-13,0,,
+Ceos,Ceos,Denilson Oliveira Gonçalves,,Brazil,1998-08-08,0,,
+Cepted,Cepted,Park Wi-rim,박위림,South Korea,1997-08-26,0,,
+Ceros,Ceros,Kyohei Yoshida,吉田 恭平,Japan,1993-12-07,1,,
+Chaox,Chaox,Shan Huang,黄山,China,1991-06-14,1,,
+Chaser,Chaser,Lee Sang-hyun,이상현,South Korea,1995-08-01,1,,
+Chasy,Chasy,Kim Dong-hyeon,김동현,South Korea,2001-04-20,0,,
+Chauster,Chauster,Steve Chau,,United States,1989-02-13,1,,
+Chawy,Chawy,Wong Xing Lei,黃心磊,Singapore,1991-11-28,0,,
+Chazz,Chazz,Jesse Mahoney,,Australia,1998-10-06,1,,
+Chei,Chei,Choi Sun-ho,최선호,South Korea,1996-06-30,1,,
+CheonGo,CheonGo,Choi Hyeon-woo,최현우,South Korea,1999-03-10,1,,
+Cheoni,Cheoni,Jo Seung-mo,조승모,South Korea,2001-02-02,0,,
+Chieftain,Chieftain,Lee Jae-yub,이재엽,South Korea,2000-11-16,1,,
+Chika,Chika,Võ Lê Nhân,,Vietnam,2006-01-26,0,,
+Chippys,Chippys,Ryan Short,,New Zealand,,1,,
+Chovy,Chovy,Jeong Ji-hoon,정지훈,South Korea,2001-03-03,0,,
+Clear (Song Hyeon-min),Clear,Song Hyeon-min,송현민,South Korea,2002-12-19,0,,
+Clearlove,Clearlove,Ming Kai,明凯,China,1993-07-25,0,,
+Clever,Clever,Moon Won-hee,문원희,South Korea,2000-12-02,1,,
+Clid,Clid,Kim Tae-min,김태민,South Korea,1999-07-07,1,,
+Closer (Can Çelik),Closer,Can Çelik,,Turkey,1998-09-29,0,,
+CloudTemplar,CloudTemplar,Lee Hyun-woo,이현우,South Korea,1988-11-09,0,,
+Clozer,Clozer,Lee Ju-hyeon,이주현,South Korea,2003-07-27,0,,
+Coco,Coco,Shin Jin-yeong,신진영,South Korea,1994-03-14,0,,
+Cody,cody,Cristian&nbsp;Sebastián Quispe Yampara,,Chile,2001-10-23,0,,
+Cody Sun,Cody Sun,"Liyu&nbsp;""Cody"" Sun",孙立宇,China,1997-04-25,0,,
+Cola (Jiang Nan),Cola,Jiang Nan,江南,China,1994-04-18,1,,
+Comp,Comp,Markos Stamkopoulos,Μάρκος Σταμκόπουλος,Greece,2001-12-20,0,,
+Condi,Condi,Xiang Ren-Jie,向人杰,China,1996-11-07,0,,
+Contractz,Contractz,Juan&nbsp;Arturo Garcia,,United States,1999-08-25,0,,
+Cool,Cool,Yu Jia-Jun,余家俊,China,1994-08-03,1,,
+CoreJJ,CoreJJ,Jo Yong-in,조용인,South Korea,1994-06-22,0,,
+Corporal,Corporal,Ian Pearse,,Japan,2001-06-15,1,,
+Cotopaco,Cotopaco,Sergio Silva Sánchez,,Colombia,1998-12-18,0,,
+Cover,Cover,Kim Joo-eon,김주언,South Korea,1999-05-29,1,,
+Cpt Jack,Cpt Jack,Kang Hyung-woo,강형우,South Korea,1993-01-04,0,,
+Crash,Crash,Lee Dong-woo,이동우,South Korea,1997-01-05,1,,
+Crazy (Kim Jae-hee),Crazy,Kim Jae-hee,김재희,South Korea,1996-09-20,0,,
+Creme,Creme,Lin Jian,林坚,China,2003-12-14,0,,
+Crisp,Crisp,Liu Qing-Song,刘青松,China,1998-08-20,0,,
+Croc,Croc,Park Jong-hoon,박종훈,South Korea,1998-01-06,1,,
+Croco,Croco,Kim Dong-beom,김동범,South Korea,2000-02-23,0,,
+Crow (Kim Seon-gyu),Crow,Kim Seon-gyu,김선규,South Korea,1998-03-21,0,,
+Crown,Crown,Lee Min-ho,이민호,South Korea,1995-02-28,0,,
+Crownie,Crownie,Juš Marušič,,Slovenia,1998-04-17,0,,
+Crush,Crush,Kim Jun-seo,김준서,South Korea,1998-01-03,1,,
+Cryin,Cryin,Yuan Cheng-Wei,袁成伟,China,2000-11-05,0,,
+Crystal,Crystal,Atakan Aydın,,Turkey,1993-04-20,0,,
+Cupcake,Cupcake,Andy van der Vyver,,New Zealand,1994-12-10,1,,
+Curse (Raí Yamada),Curse,Raí Yamada,,Brazil,2005-05-18,0,,
+CuVee,CuVee,Lee Seong-jin,이성진,South Korea,1996-09-27,0,,
+Cuzz,Cuzz,Moon Woo-chan,문우찬,South Korea,1999-10-30,0,,
+Cyanide,Cyanide,Lauri Happonen,,Finland,1994-11-15,1,,
+Cyeol,cyeol,Yu Chung-yeol,유충열,South Korea,,1,,
+Dade,Dade,Bae Eo-jin,배어진,South Korea,1994-11-08,1,,
+Damonte,Damonte,Tanner Damonte,,United States,1997-12-02,0,,
+Dan Dinh,Dan Dinh,Daniel Dinh,,Philippines,,0,,
+Danagorn,Danagorn,Daniel Drummond,,Brazil,1992-02-20,1,,
+DanDy,DanDy,Choi In-kyu,최인규,South Korea,1994-01-03,0,,
+Danny (Kyle Sakamaki),Danny,Kyle Sakamaki,,United States,2003-12-04,1,,
+Dara,Dara,Jeon Jeong-hoon,전정훈,South Korea,1995-05-25,1,,
+Darien,Darien,Evgeny Mazaev,Евгений Мазаев,Russia,1991-03-22,1,,
+DARKWINGS,DARKWINGS,Isaac Chou,,,2000-01-11,0,,
+Darshan,Darshan,Darshan Upadhyaya,,Canada,1994-11-12,1,,
+DasheR,DasheR,Kim Deok-beom,김덕범,South Korea,1998-05-20,1,,
+Daystar,Daystar,Yoo Ji-myeong,유지명,South Korea,2003-09-23,0,,
+DDoiV,DDoiV,Bang Moon-yeong,방문영,South Korea,2003-10-21,0,,
+DeadlyBrother,DeadlyBrother,Edas Vasiliauskas,,Lithuania,1993-08-03,1,,
+Decoy,Decoy,Daniel Ealam,,New Zealand,1997-12-13,0,,
+Dee,Dee,Chen Chun-Dee,陳駿迪,Taiwan,1993-12-01,1,,
+Deft,Deft,Kim Hyuk-kyu,김혁규,South Korea,1996-10-23,0,,
+Deftly,Deftly,Matthew Chen,,United States,1997-12-22,0,,
+Delight,Delight,Yoo Hwan-joong,유환중,South Korea,2002-09-12,0,,
+Destiny (Mitchell Shaw),destiny,Mitchell Shaw,,Australia,1997-10-27,0,,
+Destroy (Yoon Jeong-min),Destroy,Yoon Jeong-min,윤정민,South Korea,2000-05-08,0,,
+DeuL,DeuL,Kim Deul,김들,South Korea,1994-09-25,1,,
+Dexter,Dexter,Marcel Feldkamp,,Germany,,1,,
+Dhokla,Dhokla,Niship Doshi,,India,1997-07-17,0,,
+Diable,Diable,Nam Dae-geun,남대근,South Korea,2007-10-17,0,,
+Diamondprox,Diamondprox,Danil Reshetnikov,Данил Решетников,Russia,1992-12-24,0,,
+Dimitry,Dimitry,Juan&nbsp;Dimitry Hernández González,,Dominican Republic,2002-06-11,0,,
+Dioud,Dioud,Hugo Padioleau,,France,1990-11-03,0,,
+Dire,Dire,Trần Duy Đức,,Vietnam,2006-11-22,0,,
+DNK,DNK,Đỗ Ngọc Khải,,Vietnam,2001-03-04,1,,
+Disamis,Disamis,Pedro&nbsp;Arthur Gonçalves,,Brazil,2003-08-03,0,,
+DnDn,DnDn,Park Geun-woo,박근우,South Korea,2003-05-18,0,,
+Doggo,Doggo,Chiu Tzu-Chuan,邱梓銓,Taiwan,2003-01-14,0,,
+Doinb,Doinb,Kim Tae-sang,김태상,South Korea,1996-12-30,0,,
+Doran (Choi Hyeon-jun),Doran,Choi Hyeon-jun,최현준,South Korea,2000-07-22,0,,
+Doublelift,Doublelift,"Yiliang&nbsp;""Peter"" Peng",彭亦亮,United States,1993-07-19,0,,
+Dove,Dove,Kim Jae-yeon,김재연,South Korea,1998-07-25,0,,
+Doxy,Doxy,Rafael Adl Zarabi,,Denmark,1998-03-18,0,,
+Draktharr,Draktharr,Lê Ngọc Toàn,,Vietnam,2003-03-10,0,,
+Dread (Lee Jin-hyeok),Dread,Lee Jin-hyeok,이진혁,South Korea,2000-06-07,1,,
+Driver,Driver,Shen Tsung-Hua,沈宗樺,Taiwan,2002-04-04,0,,
+DuDu (Lee Dong-ju),DuDu,Lee Dong-ju,이동주,South Korea,2001-03-08,0,,
+Duduhh,Duduhh,Wallyson&nbsp;Francisco Queiroz da Silva,,Brazil,2008-04-18,0,,
+Duke (Lee Ho-seong),Duke,Lee Ho-seong,이호성,South Korea,1994-12-19,0,,
+Dumbledoge,Dumbledoge,Mustafa&nbsp;Kemal Gökseloğlu,,Turkey,1994-03-16,1,,
+Duro,Duro,Joo Min-kyu,주민규,South Korea,2002-02-04,0,,
+Dyrus,Dyrus,Marcus Hill,,United States,1992-03-30,1,,
+Easyhoon,Easyhoon,Lee Ji-hoon,이지훈,South Korea,1992-11-23,0,,
+Easylove,Easylove,Hứa Thành An,,Vietnam,1999-11-26,0,,
+Eddie,Eddie,Hoàng Công Nghĩa,,Vietnam,2003-06-17,0,,
+Edge,Edge,Lee Ho-sung,이호성,South Korea,1997-12-03,1,,
+Edward,Edward,Edward Abgaryan,Եդւարդ Աբգարյան,Armenia,1994-05-01,0,,
+Effort,Effort,Lee Sang-ho,이상호,South Korea,2000-11-23,0,,
+Elementz,Elementz,Cody Sigfusson,,Canada,1988-10-11,1,,
+Elio,Elio,Phạm Thạch Nhân Băng,,Vietnam,2000-11-07,0,,
+Elk,Elk,Zhao Jia-Hao,赵嘉豪,China,2001-09-29,0,,
+Ella,Ella,Kwak Na-hoon,곽나훈,South Korea,1995-02-05,0,,
+Ellim,Ellim,Choi El-lim,최엘림,South Korea,2000-05-25,0,,
+Elyoya,Elyoya,Javier Prades Batalla,,Spain,2000-03-13,0,,
+EMENES,EMENES,Jang Min-soo,장민수,South Korea,2001-01-01,1,,
+Emo,Emo,Nguyễn Thái Vinh,,Vietnam,2005-07-15,0,,
+Emp,Emp,Benjamín&nbsp;Esteban Ramírez Mercado,,Chile,1996-09-17,1,,
+Emperor (Kim Jin-hyun),Emperor,Kim Jin-hyun,김진현,South Korea,1993-06-07,1,,
+Empt2y,Empt2y,"Leung&nbsp;""Anson"" Tsz Ho",梁子皞,Hong Kong,1997-07-15,1,,
+Energy,Energy,Isak Pettersen Fjell,,Norway,,0,,
+Enosh,Enosh,Kwak Kyu-jun,곽규준,South Korea,2004-10-01,0,,
+Envy (Bruno Farias),Envy,Bruno Farias,,Brazil,1998-08-12,0,,
+Envyy,Envyy,Lee Myeong-joon,이명준,South Korea,2000-04-07,0,,
+Evi,Evi,Shunsuke Murase,村瀬 俊介,Japan,1995-11-15,1,,
+Execute,Execute,Lee Jeong-hoon,이정훈,South Korea,2000-02-22,0,,
+Expect,Expect,Ki Dae-han,기대한,South Korea,1996-07-04,1,,
+Expession,Expession,Koo Bon-taek,구본택,South Korea,1992-09-16,1,,
+Eyla,Eyla,Bill Nguyen,,Australia,1999-08-24,0,,
+Faker,Faker,Lee Sang-hyeok,이상혁,South Korea,1996-05-07,0,,
+Farfetch,Farfetch,Berk Badur,,Turkey,1998-09-09,0,,
+FATE (Yoo Su-hyeok),FATE,Yoo Su-hyeok,유수혁,South Korea,2000-08-22,0,,
+FBI,FBI,Ian&nbsp;Victor Huang,,Australia,1999-02-11,0,,
+FEBIVEN,FEBIVEN,Fabian Diepstraten,,Netherlands,1996-09-23,0,,
+Feisty,Feisty,Jeong Seong-hoon,정성훈,South Korea,2003-12-19,0,,
+Feng (Chen Chun-Feng),Feng,Chen Chun-Feng,陳駿豐,Taiwan,2003-08-13,0,,
+FenRir (Park Kang-jun),FenRir,Park Kang-jun,박강준,South Korea,2006-06-24,0,,
+Ferret,Ferret,Hakan Mert Çakmak,,Turkey,2001-11-24,0,,
+FIESTA (An Hyeon-seo),FIESTA,An Hyeon-seo,안현서,South Korea,2003-05-04,0,,
+Finn,Finn,Finn Wiestål,,Sweden,1999-06-03,0,,
+Fisher (Lee Jeong-tae),Fisher,Lee Jeong-tae,이정태,South Korea,2004-07-05,0,,
+FIX,FIX,Nicolás&nbsp;Raúl Sayago,,Argentina,1996-03-28,0,,
+Flakked,Flakked,Víctor Lirola Tortosa,,Spain,2001-04-25,0,,
+Flame,Flame,Lee Ho-jong,이호종,South Korea,1992-08-13,0,,
+Flandre,Flandre,Li Xuan-Jun,李炫君,China,1998-08-28,0,,
+Flauren,Flauren,Lo Chak Kin,魯澤堅,Hong Kong,2006-10-30,0,,
+Flawless,Flawless,Sung Yeon-jun,성연준,South Korea,1998-07-26,1,,
+Fly (Song Yong-jun),Fly,Song Yong-jun,송용준,South Korea,1996-02-25,1,,
+FoFo,FoFo,Chu Chun-Lan,朱駿嵐,Taiwan,1999-01-08,0,,
+Forest (Lee Hyeon-seo),Forest,Lee Hyeon-seo,이현서,South Korea,2002-03-22,0,,
+FORG1VEN,FORG1VEN,Konstantinos-Napoleon Tzortziou,Κωνσταντίνος-Ναπολέων Τζωρτζίου,Greece,1992-07-23,1,,
+Fresskowy,Fresskowy,Bartłomiej Przewoźnik,,Poland,1999-11-26,0,,
+Frog (Lee Min-hoi),Frog,Lee Min-hoi,이민회,South Korea,2005-06-30,0,,
+Froggen,Froggen,Henrik Hansen,,Denmark,1994-02-21,1,,
+Froggy,Froggy,Bùi Văn Minh Hải,,Vietnam,2002-12-08,1,,
+Frozen (Kim Tae-il),Frozen,Kim Tae-il,김태일,South Korea,1994-11-04,0,,
+Fudge,Fudge,Ibrahim Allami,إبراهيم اللامي,Australia,2002-05-23,0,,
+Fury (Lee Jin-yong),Fury,Lee Jin-yong,이진용,South Korea,1995-11-11,0,,
+Fzzf,fzzf,Feng Zhuo-Jun,冯卓君,China,1991-07-24,1,,
+G4,G4,Nuttapong Menkasikan,นัฐพงษ์ เม้นกะสิการ,Thailand,1997-10-31,0,,
+GALA,GALA,Chen Wei,陈伟,China,2001-02-14,0,,
+Gadget,Gadget,Ilya Makavchuk,Илья Макавчук,Belarus,1999-07-12,1,,
+Gaeng,Gaeng,Yang Gwang-woo,양광우,South Korea,1996-08-10,1,,
+Gamin,Gamin,Ga Min-joon,가민준,South Korea,2003-12-05,0,,
+Gango,Gango,Byun Se-hoon,변세훈,South Korea,1997-05-16,1,,
+GarnetDevil,GarnetDevil,Lai Yi-Meng,賴翊銘,Taiwan,,1,,
+Gavotto,Gavotto,Omar&nbsp;André Gavotto,,Mexico,2000-03-15,0,,
+GBM,GBM,Lee Chang-seok,이창석,South Korea,1994-06-23,0,,
+Gemini,Gemini,Huang Chu-Xuan,黃楚軒,Taiwan,1998-06-09,0,,
+Genja,Genja,Evgeny Andryushin,Евгений Андрюшин,Russia,1988-09-24,1,,
+Genthix,Genthix,Mariano Polonsky,,Argentina,1990-12-11,1,,
+Ggoong,Ggoong,Yu Byeong-jun,유병준,South Korea,1993-06-26,0,,
+Ghost (Jang Yong-jun),Ghost,Jang Yong-jun,장용준,South Korea,1999-03-18,0,,
+GIDEON,GIDEON,Kim Min-seong,김민성,South Korea,2003-08-14,0,,
+Gilius,Gilius,Erberk Demir,,Germany,1997-01-05,0,,
+GimGoon,GimGoon,Kim Han-saem,김한샘,South Korea,1995-12-31,1,,
+Gloryy,Gloryy,Lê Ngọc Vinh,,Vietnam,2002-01-12,0,,
+GodKwai,GodKwai,Cheung Ho Wan,張皓雲,Hong Kong,1997-06-02,1,,
+GodLike,GodLike,Xiao Wang,肖旺,China,1993-05-12,1,,
+GodV (Wei Zhen),GodV,Wei Zhen,韦朕,China,1997-07-16,1,,
+Gogoing,Gogoing,Gao Di-Ping,高地平,China,1991-10-02,1,,
+Goku,Goku,Bruno Miyaguchi,,Brazil,1996-08-23,0,,
+Gori,Gori,Kim Tae-woo,김태우,South Korea,2000-08-09,0,,
+GorillA,GorillA,Kang Beom-hyun,강범현,South Korea,1994-11-18,0,,
+GreenTea,GreenTea,Tsai Shang-Ching,蔡尚精,Taiwan,1991-04-24,0,,
+Grell,Grell,Jesús&nbsp;Alberto Loya Trujillo,,Mexico,2001-04-09,0,,
+Grevthar,Grevthar,Daniel&nbsp;Xavier Ferreira,,Brazil,1999-08-24,0,,
+Grizzly,Grizzly,Jo Seung-hoon,조승훈,South Korea,2005-05-25,0,,
+GuGer,GuGer,Kim Do-yeop,김도엽,South Korea,1994-02-07,0,,
+Guigo,Guigo,Guilherme Araújo Ruiz,,Brazil,2002-01-28,0,,
+Gumayusi,Gumayusi,Lee Min-hyeong,이민형,South Korea,2002-02-06,0,,
+Gury,Gury,Lương Hải Long,,Vietnam,2003-10-28,0,,
+Guwon,Guwon,Koo Kwan-mo,구관모,South Korea,2003-12-19,0,,
+Hachani,Hachani,Ha Seung-chan,하승찬,South Korea,1994-12-24,0,,
+Hai,Hai,Hai Du Lam,,United States,1992-09-20,0,,
+HamBak,HamBak,Ham Yoo-jin,함유진,South Korea,2002-08-28,0,,
+Hana,Hana,Chen Chih-Hao,陳志豪,Taiwan,1996-10-29,0,,
+Hanabi (Su Chia-Hsiang),Hanabi,Su Chia-Hsiang,蘇嘉祥,Taiwan,2000-08-12,1,,
+Hang,Hang,Fu Ming-Hang,付明航,China,2003-02-05,0,,
+Hani,Hani,Nguyễn Tấn Phát,,Vietnam,2000-08-03,1,,
+Hans Sama,Hans Sama,Steven Liv,,France,1999-09-02,0,,
+Harky,Harky,Nguyễn Văn Hữu,,Vietnam,2005-08-21,0,,
+Haro,Haro,Chen Wen-Lin,陈文林,China,1998-07-21,1,,
+Harp,Harp,Lee Ji-yoong,이지융,South Korea,2001-06-03,0,,
+Haru,Haru,Kang Min-seung,강민승,South Korea,1998-06-03,1,,
+Hasmed,Hasmed,Lâm Huỳnh Gia Huy,,Vietnam,2002-03-25,0,,
+Hauntzer,Hauntzer,Kevin Yarnell,,United States,1995-05-20,1,,
+Heart,Heart,Yi Gwan-hyung,이관형,South Korea,1988-12-13,0,,
+Helper (Kwon Yeong-jae),Helper,Kwon Yeong-jae,권영재,South Korea,1995-03-24,0,,
+Hena,Hena,Park Jeung-hwan,박증환,South Korea,1999-10-08,1,,
+Hieu3,Hieu3,Ngô Minh Hiếu,,Vietnam,2000-10-21,0,,
+Hipo,Hipo,Suk Hyeon-jun,석현준,South Korea,1998-02-02,1,,
+Hiro02,Hiro02,Trần Lê Trung Hậu,,Vietnam,2002-05-18,0,,
+Hizto,Hizto,Lê Văn Hoàng Hải,,Vietnam,2007-09-15,0,,
+Hjarnan,Hjarnan,Petter Freyschuss,,Sweden,1993-11-18,0,,
+Hoit,Hoit,Ryu Ho-seong,류호성,South Korea,1999-07-06,1,,
+Hojin,Hojin,Lee Ho-jin,이호진,South Korea,1992-01-04,1,,
+HolyPhoenix,HolyPhoenix,Anıl Işık,,Turkey,1997-06-02,0,,
+HongQ,HongQ,Tsai Ming-Hong,蔡明宏,Taiwan,2007-07-02,0,,
+HongSuo,HongSuo,Guo Bei-Yi,郭貝益,Taiwan,2003-03-18,0,,
+Hope (Wang Jie),Hope,Wang Jie,王杰,China,2000-09-29,0,,
+HotshotGG,HotshotGG,George Georgallidis,,Canada,1990-06-23,1,,
+Howling,Howling,Jeon Ho-bin,전호빈,South Korea,2003-09-17,0,,
+Huhi,huhi,Choi Jae-hyun,최재현,France,1995-04-03,0,,
+Humanoid,Humanoid,Marek Brázda,,Czech Republic,2000-03-14,0,,
+Huni,Huni,Heo Seung-hoon,허승훈,South Korea,1997-12-25,0,,
+Husha,Husha,Huang Tzu-Wei,黃梓維,Taiwan,2001-04-04,0,,
+Hybrid (Glenn Doornenbal),Hybrid,Glenn Doornenbal,,Netherlands,1994-08-05,1,,
+HyBriD (Lee Woo-jin),HyBriD,Lee Woo-jin,이우진,South Korea,1999-11-27,1,,
+Hylissang,Hylissang,Zdravets Iliev Galabov,Здравец Илиев Гълъбов,Bulgaria,1995-04-30,0,,
+Hype (Byeon Jeong-hyeon),Hype,Byeon Jeong-hyeon,변정현,South Korea,2003-09-09,0,,
+Ian,Ian,An Jun-hyeong,안준형,South Korea,1998-01-22,0,,
+Ice (Yoon Sang-hoon),Ice,Yoon Sang-hoon,윤상훈,South Korea,2001-04-09,1,,
+Imaqtpie,Imaqtpie,Michael Santana,,United States,1992-02-21,1,,
+Impact,Impact,Jeong Eon-young,정언영,South Korea,1995-03-07,0,,
+Innaxe,Innaxe,Nihat Aliev,Нихат Алиев,Bulgaria,1999-03-23,0,,
+Inspired,Inspired,Kacper Słoma,,Poland,2002-01-24,0,,
+Inspirro,Inspirro,Mykolas Morkūnas,,Lithuania,1991-12-16,1,,
+InTreso,InTreso,Sanpett Marat,สันเพชร มารัตน์,Thailand,1994-04-17,1,,
+Isles,Isles,Jonah Rosario,,Australia,2001-03-07,0,,
+Ivory,Ivory,Jeong Ye-chan,정예찬,South Korea,2003-10-12,0,,
+Iwandy,Iwandy,Liao Ding-Yang,廖顶洋,China,2000-08-27,0,,
+JackeyLove,JackeyLove,Yu Wen-Bo,喻文波,China,2000-11-18,0,,
+Jactroll,Jactroll,Jakub Skurzyński,,Poland,1998-08-05,1,,
+Jankos,Jankos,Marcin Jankowski,,Poland,1995-07-23,0,,
+Japone,Japone,Bahadır Çolak,,Turkey,1997-12-23,0,,
+Jelly (Son Ho-gyeong),Jelly,Son Ho-gyeong,손호경,South Korea,1997-10-18,0,,
+Jensen,Jensen,Nicolaj Jensen,,Denmark,1995-01-01,1,,
+Jesiz,Jesiz,Jesse Le,,Denmark,1996-06-17,1,,
+Jett,Jett,Bae Ho-young,배호영,South Korea,2001-07-23,1,,
+JiaQi,JiaQi,Zi Jia-Qi,资嘉琪,China,2004-05-31,0,,
+Jiejie,Jiejie,Zhao Li-Jie,赵礼杰,China,2001-10-27,0,,
+Jiizuke,Jiizuke,Daniele di Mauro,,Italy,1996-01-14,1,,
+JimieN,JimieN,Tseng Hao-Chun,曾浩鈞,Taiwan,2002-07-24,0,,
+Jinjiao,Jinjiao,Xie Jin-Shan,谢金山,China,1998-04-15,1,,
+Jirall,Jirall,Daniel del Castillo,,Mexico,1996-07-12,0,,
+Jiwoo,Jiwoo,Jung Ji-woo,정지우,South Korea,2004-03-20,0,,
+Jjun,Jjun,Kwon Jun-seok,권준석,South Korea,,1,,
+Jockster,Jockster,Luan Cardoso,,Brazil,1996-02-18,0,,
+Joey,Joey,Joseph Haslemann,,United States,1998-10-21,0,,
+JoJo (Gabriel Dzelme),JoJo,Gabriel Dzelme de Oliveira,,Brazil,1998-11-11,0,,
+Jojopyun,Jojopyun,Joseph&nbsp;Joon Pyun,,Canada,2004-10-01,0,,
+Joker (Cho Jae-eup),Joker,Cho Jae-eup,조재읍,South Korea,1991-12-11,0,,
+Josedeodo,Josedeodo,Brandon&nbsp;Joel Villegas,,Argentina,2000-05-22,0,,
+Juhan,Juhan,Lee Ju-han,이주한,South Korea,2001-08-31,0,,
+Jun (Yoon Se-jun),Jun,Yoon Se-jun,윤세준,South Korea,2000-08-02,0,,
+Junie,Junie,Trần Hữu Nhựt Minh,,Vietnam,1991-03-18,1,,
+JunJia,JunJia,Yu Chun-Chia,余峻嘉,Taiwan,2002-06-10,0,,
+Justice,Justice,Yoon Seok-joon,윤석준,South Korea,1998-01-04,1,,
+K,K,Ke Kai-Sheng,柯凱盛,Taiwan,1996-05-20,1,,
+Kael (Kim Jin-hong),Kael,Kim Jin-hong,김진홍,South Korea,2004-02-11,0,,
+Kaigu,Kaigu,Jon Lance Hernandez,,Philippines,,1,,
+Kaiser,Kaiser,Norman Kaiser,,Germany,1998-11-19,0,,
+Kaiwing,Kaiwing,Ling Kai Wing,凌啟榮,Hong Kong,1996-10-27,0,,
+KaKAO,KaKAO,Lee Byung-kwon,이병권,South Korea,1995-12-07,0,,
+Kami (Gabriel Bohm Santos),Kami,Gabriel Bohm Santos,,Brazil,1996-04-02,0,,
+Kanavi,Kanavi,Seo Jin-hyeok,서진혁,South Korea,2000-11-02,0,,
+Kaori,Kaori,Muhammed&nbsp;Hasan Şentürk,,Turkey,2001-07-09,0,,
+Karis,Karis,Kim Hong-jo,김홍조,South Korea,2003-05-21,0,,
+Karsa,Karsa,Hung Hao-Hsuan,洪浩軒,Taiwan,1997-02-14,1,,
+Kati,Kati,Đặng Thanh Phê,,Vietnam,1999-11-05,0,,
+Kazu,Kazu,Kazuta Suzuki,鈴木 和太,France,1994-05-25,1,,
+Keine,Keine,Kim Joon-cheol,김준철,South Korea,1999-11-08,0,,
+Kellin,Kellin,Kim Hyeong-gyu,김형규,South Korea,2001-02-01,0,,
+Keria,Keria,Ryu Min-seok,류민석,South Korea,2002-10-14,0,,
+Kev1n,Kev1n,Kevin Rubiszewski,,Germany,1993-01-15,0,,
+Kevy,Kevy,Shane Allen,,Australia,2000-11-22,1,,
+Khan,Khan,Kim Dong-ha,김동하,South Korea,1995-12-22,0,,
+Kiaya,Kiaya,Trần Duy Sang,,Vietnam,2001-05-17,0,,
+Kid,Kid,Ge Yan,葛炎,China,1997-08-23,1,,
+Kiin,Kiin,Kim Gi-in,김기인,South Korea,1999-05-28,0,,
+Kikis,Kikis,Mateusz Szkudlarek,,Poland,1996-03-16,0,,
+Kindless,Kindless,Benjamin&nbsp;Ignacio Fuenzalida Barrera,,Chile,1998-07-17,0,,
+Kingen,Kingen,Hwang Seong-hoon,황성훈,South Korea,2000-03-11,0,,
+Kino,Kino,Chu&nbsp;Wu Hsin-Jung,朱吳欣榮,Taiwan,1998-04-12,0,,
+Kira,Kira,Mykhailo Harmash,Михайло Гармаш,Ukraine,1993-03-07,1,,
+Kirei,Kirei,Thomas Yuen,,Netherlands,1997-02-18,0,,
+Kitties,Kitties,Liu Hong-Jun,刘洪均,China,1992-09-03,1,,
+Knight (Zhuo Ding),Knight,Zhuo Ding,卓定,China,2000-05-22,0,,
+Koala (Lin Chih-Chiang),Koala,Lin Chih-Chiang,林志強,Taiwan,1995-08-16,0,,
+Kobbe,Kobbe,Kasper Kobberup,,Denmark,1996-09-21,0,,
+Kongyue,Kongyue,Hsiao Jen-Tso,蕭任佐,Taiwan,1999-07-19,0,,
+Kramer,Kramer,Ha Jong-hun,하종훈,South Korea,1996-03-09,1,,
+Kratos (Ngô Đức Khánh),Kratos,Ngô Đức Khánh,,Vietnam,2005-04-22,0,,
+Kreox,Kreox,Ilya Grom,Илья Гром,Russia,1999-08-03,1,,
+Krepo,Krepo,Mitch Voorspoels,,Belgium,1990-05-08,0,,
+Kuma (Park Hyeon-gyu),Kuma,Park Hyeon-gyu,박현규,South Korea,2000-11-14,1,,
+Kuri,Kuri,Choi Won-yeong,최원영,South Korea,2000-08-08,1,,
+Kuro,Kuro,Lee Seo-haeng,이서행,South Korea,1994-01-04,0,,
+Kuzan,Kuzan,Lee Seong-hyeok,이성혁,South Korea,1997-01-07,1,,
+Labrov,Labrov,Lampros Papoutsakis,Λάμπρος Παπουτσάκης,Greece,2002-02-12,0,,
+Langx,Langx,Xie Zhen-Ying,谢镇营,China,1997-09-19,1,,
+Larssen,Larssen,Emil Larsson,,Sweden,2000-03-30,0,,
+Lava,Lava,Kim Tae-hoon,김태훈,South Korea,1999-07-14,0,,
+LazyFeel,LazyFeel,Trần Bảo Minh,,Vietnam,2007-03-19,0,,
+Leaper,Leaper,Choi Gi-myeong,최기명,South Korea,2000-05-18,0,,
+Lehends,Lehends,Son Si-woo,손시우,South Korea,1998-12-24,0,,
+LemonNation,LemonNation,Daerek Hart,,United States,1989-06-15,1,,
+Leo (Han Gyeo-re),Leo,Han Gyeo-re,한겨레,South Korea,2000-01-12,0,,
+Lep,Lep,Pedro&nbsp;Luiz Marcari,,Brazil,1996-02-28,1,,
+Letme,Letme,Yan Jun-Ze,严君泽,China,1996-05-18,0,,
+Levi,Levi,Đỗ Duy Khánh,,Vietnam,1997-11-18,0,,
+Leyan,Leyan,Lu Jue,卢崛,China,2002-07-07,0,,
+Leza,Leza,Francisco&nbsp;Rubén Jara Barragán,,Mexico,1998-09-28,0,,
+Liang,Liang,Wu Liang-Te,吳亮德,Taiwan,1998-07-14,0,,
+Licorice,Licorice,Eric Ritchie,,Canada,1997-09-30,0,,
+Life,Life,Kim Jeong-min,김정민,South Korea,2000-07-07,0,,
+Light (Wang Guang-Yu),Light,Wang Guang-Yu,王光宇,China,2001-02-21,0,,
+Likai,Likai,Liao Li-Kai,廖俐凱,Taiwan,2002-09-11,0,,
+Likkrit,Likkrit,Kirill Malofeyev,Кирилл Малофеев,Russia,1995-10-03,1,,
+Lilballz,Lilballz,"Sung&nbsp;""Alex"" Kuan-Po",宋寬柏,Taiwan,1988-06-12,1,,
+Lilv,Lilv,Chen Chin-Han,陳縉翰,Taiwan,1998-09-20,0,,
+Linak,Linak,Damien Lorthios,,France,,1,,
+Lindarang,Lindarang,Heo Man-heung,허만흥,South Korea,1997-08-25,0,,
+Listo,Listo,Kang Woo-seok,강우석,South Korea,2005-03-09,0,,
+Lloyd,Lloyd,Juckkirsts Kongubon,จักรกฤษณ์ คงอุบล,Thailand,1995-08-07,1,,
+Lodik,Lodik,Stanislav Kornelyuk,Станислав Корнелюк,Russia,,1,,
+LokeN,LokeN,Lee Dong-wook,이동욱,South Korea,1998-02-14,1,,
+Loki (Lee Sang-min),Loki,Lee Sang-min,이상민,South Korea,2005-03-26,0,,
+Lonely (Han Gyu-joon),Lonely,Han Gyu-joon,한규준,South Korea,2000-08-29,0,,
+Looper,Looper,Jang Hyeong-seok,장형석,South Korea,1993-02-28,1,,
+Loopy,Loopy,Kim Dong-hyeon,김동현,South Korea,2004-06-09,0,,
+Lospa,Lospa,Park Joon-hyeong,박준형,South Korea,2002-09-30,0,,
+LoveLing,LoveLing,Yin Le,尹乐,China,1993-05-01,1,,
+Luci,Luci,Han Chang-hoon,한창훈,South Korea,1997-07-08,1,,
+Lucid (Choi Yong-hyeok),Lucid,Choi Yong-hyeok,최용혁,South Korea,2005-01-28,0,,
+Lucky (Liu Jun-Jie),Lucky,Liu Jun-Jie,刘君杰,China,,1,,
+Lustboy,Lustboy,Ham Jang-sik,함장식,South Korea,1994-02-18,1,,
+LvMao,LvMao,Zuo Ming-Hao,左名豪,China,1996-03-07,0,,
+Lwx,Lwx,Lin Wei-Xiang,林炜翔,China,1998-10-24,1,,
+Lyonz,Lyonz,Pedro&nbsp;Luis Peralta,,Argentina,2001-11-29,0,,
+MadLife,MadLife,Hong Min-gi,홍민기,South Korea,1992-10-05,0,,
+MaHa,MaHa,Oh Hyun-sik,오현식,South Korea,1995-11-07,1,,
+MakNooN,MakNooN,Yoon Ha-woon,윤하운,South Korea,1991-11-16,0,,
+Malrang,Malrang,Kim Geun-seong,김근성,South Korea,2000-02-09,0,,
+MANTARRAYA,MANTARRAYA,Juan&nbsp;Ignacio Abdón,,Uruguay,1994-05-06,1,,
+Maple (Huang Yi-Tang),Maple,Huang Yi-Tang,黃熠棠,Taiwan,1997-10-10,0,,
+MapSSi,MapSSi,Kim Do-yeong,김도영,South Korea,2001-03-14,1,,
+Marble,Marble,Rei Shimaya,島谷れい,Japan,2002-08-28,0,,
+MaRin,MaRin,Jang Gyeong-hwan,장경환,South Korea,1991-02-12,0,,
+Mark (Ling Xu),Mark,Ling Xu,凌旭,China,1999-05-20,0,,
+Massu,Massu,Fahad Abdulmalek,,Iraq,2004-11-28,0,,
+Mata,Mata,Cho Se-hyeong,조세형,South Korea,1994-02-27,0,,
+Max (Jeong Jong-bin),Max,Jeong Jong-bin,정종빈,South Korea,1996-05-30,0,,
+Maxlore,Maxlore,Nubar Sarafian,,United Kingdom,1996-07-01,0,,
+Mazzerin,Mazzerin,Džiugas Repčys,,Lithuania,1996-08-10,1,,
+Meiko,Meiko,Tian Ye,田野,China,1998-06-06,0,,
+Meliodas (Hoàng Tiến Nhật),Meliodas,Hoàng Tiến Nhật,,Vietnam,2000-09-28,0,,
+MISSING,MISSING,Lou Yun-Feng,娄运峰,China,2001-05-26,0,,
+MMD,MMD,Yu Li-Hong,游立宏,Taiwan,1994-12-24,1,,
+Mellisan,Mellisan,Peter Meisrimel,,Germany,1989-06-07,1,,
+Meteos,Meteos,William Hartman,,United States,1993-06-13,0,,
+Mia,Mia,Choi Sang-in,최상인,South Korea,1998-11-03,1,,
+Mickey (Son Young-min),Mickey,Son Young-min,손영민,South Korea,1997-07-15,1,,
+Mightybear,Mightybear,Kim Min-su,김민수,South Korea,1995-09-06,1,,
+Mihile,Mihile,Baek Sang-hwi,백상휘,South Korea,2003-03-01,0,,
+Mikyx,Mikyx,Mihael Mehle,,Slovenia,1998-11-02,0,,
+Mills,Mills,Guilherme Uessler Conti,,Brazil,1996-03-28,1,,
+Mimic (Min Ju-seong),Mimic,Min Ju-seong,민주성,South Korea,,1,,
+Minerva,Minerva,Gustavo Queiroz Alves,,Brazil,1995-11-09,0,,
+Ming (Shi Sen-Ming),Ming,Shi Sen-Ming,史森明,China,1998-12-22,0,,
+Minji,Minji,Lu Po-Wei,呂柏緯,Taiwan,2001-01-17,0,,
+Minous,Minous,Kang Min-woo,강민우,South Korea,2004-05-03,0,,
+Mireu,Mireu,Jeong Jo-bin,정조빈,South Korea,2001-09-20,0,,
+Misaya,Misaya,Yu Jing-Xi,禹景曦,China,1992-10-19,1,,
+Mission,Mission,Chen Hsiao-Hsien,陳孝銜,Taiwan,1995-09-28,0,,
+MiSTakE,MiSTakE,Chen Hui-Chung,陳彙中,Taiwan,1989-05-13,1,,
+Mithy,Mithy,Alfonso Aguirre Rodríguez,,Spain,1994-10-05,0,,
+Mlxg,Mlxg,Liu Shi-Yu,刘世宇,China,1996-05-01,1,,
+MnM (Wong Ka Chun),MnM,Wong Ka Chun,王嘉駿,Hong Kong,2000-09-19,0,,
+Moham,Moham,Jeong Jae-hun,정재훈,South Korea,2002-08-08,0,,
+Mojito,Mojito,Berk Kocaman,,Turkey,1998-01-12,0,,
+MoMa,MoMa,Maik Wallus,,Germany,1991-06-01,1,,
+MooJin,MooJin,Kim Moo-jin,김무진,South Korea,1998-04-09,1,,
+Mor,Mor,Zhang Hong-Wei,张宏伟,China,1993-01-18,1,,
+Morgan,Morgan,Park Ru-han,박루한,South Korea,2001-09-26,0,,
+Morning,Morning,Chen Kuan-Ting,陳冠廷,Taiwan,1995-10-23,1,,
+Morttheus,Morttheus,Matheus Motta,,Brazil,2002-06-18,0,,
+Moss (Sorawat Boonphrom),Moss,Sorawat Boonphrom,สรวัชร์ บุญพรม,Thailand,,1,,
+Motive,Motive,Cho Se-hee,조세희,South Korea,2001-01-08,0,,
+Mountain (Xue Zhao-Hong),Mountain,Xue Zhao-Hong,薛兆鴻,Taiwan,1995-02-22,0,,
+Mouse,Mouse,Chen Yu-Hao,陈宇浩,China,1996-10-08,0,,
+Mowgli,Mowgli,Lee Jae-ha,이재하,South Korea,1998-04-14,0,,
+Mylon,Mylon,Matheus Borges,,Brazil,1996-11-08,0,,
+Myrwn,Myrwn,Alex Pastor Villarejo,,Spain,2003-06-13,0,,
+Mystic,Mystic,Jin Seong-jun,진성준,South Korea,1995-01-08,0,,
+Naehyun,Naehyun,Yoo Nae-hyun,유내현,South Korea,1996-02-07,0,,
+Nagne,Nagne,Kim Sang-moon,김상문,South Korea,1994-09-04,0,,
+NaMei,NaMei,Zhu Jia-Wen,朱佳文,China,1993-05-04,1,,
+Namgung,Namgung,Namgung Seong-hoon,남궁성훈,South Korea,2003-10-04,0,,
+Nanaue (Phùng Đức Tài),Nanaue,Phùng Đức Tài,,Vietnam,2006-06-14,0,,
+Nardeus,Nardeus,Tomáš Maršálek,,Czech Republic,,1,,
+Naru (Koray Bıçak),Naru,Koray Bıçak,,Turkey,1996-08-27,0,,
+Nate,Nate,Damián Rea,,Argentina,1999-03-30,0,,
+Naul,Naul,Võ Thành Luân,,Vietnam,1998-07-27,0,,
+Naz (Chen Tien-Chih),Naz,Chen Tien-Chih,陳添志,Taiwan,1993-12-01,1,,
+Nbs,Nbs,Laurynas Kisielius,,Lithuania,1990-08-13,1,,
+Nemesis,Nemesis,Tim Lipovšek,,Slovenia,1999-07-26,0,,
+Nevan,Nevan,Phùng Thiện Nhân,,Vietnam,1997-07-29,1,,
+Newbie,Newbie,Leandro Marcos,,Argentina,1997-01-16,1,,
+Niksar,Niksar,Valentin Zimakov,Валентин Зимаков,Russia,1994-09-24,1,,
+Ning,Ning,Gao Zhen-Ning,高振宁,China,1998-03-12,1,,
+Nisqy,Nisqy,Yasin Dinçer,,Belgium,1998-07-28,0,,
+Nixwater,Nixwater,Mai Nhật Tân,,Vietnam,1985-06-09,1,,
+NL (Hsiung Wen-An),NL,Hsiung Wen-An,熊汶銨,Taiwan,1995-04-02,1,,
+Noah (Oh Hyeon-taek),Noah,Oh Hyeon-taek,오현택,South Korea,2001-10-04,0,,
+Nomanz,Nomanz,Lev Yakshin,Лев Якшин,Russia,1998-09-21,0,,
+NONAME (Zhou Qi-Lin),NONAME,Zhou Qi-Lin,周祺琳,China,,0,,
+Nova (Park Chan-ho),Nova,Park Chan-ho,박찬호,South Korea,1997-11-27,0,,
+Noway (Nguyễn Vũ Long),Noway,Nguyễn Vũ Long,,Vietnam,1997-03-05,1,,
+Nuclear,Nuclear,Shin Jeong-hyeon,신정현,South Korea,1997-05-19,0,,
+Nuguri,Nuguri,Jang Ha-gwon,장하권,South Korea,1999-07-17,1,,
+Nukeduck,Nukeduck,Erlend Våtevik Holm,,Norway,1996-05-21,0,,
+Nyph,Nyph,Patrick Funke,,Germany,1990-03-11,1,,
+Oddie,Oddie,Sebastián Alonso Niño Zavaleta,,Peru,1997-08-28,0,,
+Odoamne,Odoamne,Andrei Pascu,,Romania,1995-01-18,0,,
+Olleh,Olleh,Kim Joo-sung,김주성,South Korea,1994-11-27,0,,
+ON,ON,Luo Wen-Jun,骆文俊,China,2003-05-12,0,,
+Once,Once,Jang Se-yeong,장세영,South Korea,1998-07-31,0,,
+Oner,Oner,Mun Hyeon-jun,문현준,South Korea,2002-12-24,0,,
+OnFleek,OnFleek,Kim Jang-gyeom,김장겸,South Korea,1997-12-20,0,,
+Only35,Only35,Mehmet Emin Aydın,,Turkey,2000-04-30,0,,
+Ophelia,Ophelia,Baek Jin-seong,백진성,South Korea,2003-02-05,0,,
+Orome,Orome,Andrei Popa,,Romania,1998-01-16,1,,
+Oscarinin,Oscarinin,Óscar Muñoz Jiménez,,Spain,2003-06-11,0,,
+Pabu,Pabu,Jackson Pavone,,Australia,1999-12-12,0,,
+Padden,Padden,Ege Acar Koparal,,Turkey,1995-10-27,1,,
+Paduck,Paduck,Park Seok-hyeon,박석현,South Korea,2005-02-12,0,,
+Painter,Painter,Kim Eun-hoo,김은후,South Korea,2007-09-16,0,,
+Palafox,Palafox,Cristian Palafox,,United States,1999-07-08,0,,
+Palette,Palette,Nguyễn Hải Trung,,Vietnam,1999-11-06,0,,
+Paranoia,Paranoia,Ivan Tipuhov,Іван Тіпухов,Ukraine,1995-07-03,1,,
+Part,Part,Jin Jae-seung,진재승,South Korea,1995-02-12,1,,
+Patoy,Patoy,Jordan Blackburn,,United States,1993-03-04,1,,
+PawN,PawN,Heo Won-seok,허원석,South Korea,1997-01-26,0,,
+Paz,Paz,Shirou Sasaki,佐々木 志郎,Japan,1996-12-06,0,,
+PDD,PDD,Liu Mou,刘谋,China,1991-04-17,0,,
+Peach,Peach,Lee Min-gyu,이민규,South Korea,2000-03-28,0,,
+Peanut,Peanut,Han Wang-ho,한왕호,South Korea,1998-02-03,1,,
+PerfecT (Lee Seung-min),PerfecT,Lee Seung-min,이승민,South Korea,2004-05-17,0,,
+Perkz,Perkz,Luka Perković,,Croatia,1998-09-30,0,,
+Peter (Jeong Yoon-su),Peter,Jeong Yoon-su,정윤수,South Korea,2003-04-28,0,,
+Peyz,Peyz,Kim Su-hwan,김수환,South Korea,2005-12-05,0,,
+Piccaboo,Piccaboo,Lee Jong-beom,이종범,South Korea,1997-03-25,1,,
+Piglet,Piglet,Chae Gwang-jin,채광진,South Korea,1994-02-04,0,,
+Pilot (Na Woo-hyung),Pilot,Na Woo-hyung,나우형,South Korea,1995-12-04,1,,
+Pirean,Pirean,Choi Jun-sik,최준식,South Korea,1998-04-09,1,,
+PK,PK,Hsieh Yu-Ting,謝宇庭,Taiwan,1995-11-18,1,,
+Pleata,Pleata,Son Min-woo,손민우,South Korea,2003-03-28,0,,
+Plugo,Plugo,Joaquín&nbsp;José Pérez Valdivieso,,Chile,1997-03-07,0,,
+Pobelter,Pobelter,Eugene Park,,United States,1996-10-14,0,,
+Poby,Poby,Yoon Sung-won,윤성원,South Korea,2006-02-07,0,,
+Pollu,Pollu,Oh Dong-gyu,오동규,South Korea,2006-01-07,0,,
+PoohManDu,PoohManDu,Lee Jeong-hyeon,이정현,South Korea,1991-01-29,0,,
+Pop,Pop,Ha Min-wook,하민욱,South Korea,1998-09-13,1,,
+Pop9,Pop9,Wu Yi-Han,吳羿翰,Taiwan,2003-03-24,0,,
+POUT,Pout,Han In-woong,한인웅,South Korea,2003-10-03,0,,
+PowerOfEvil,PowerOfEvil,Tristan Schrage,,Germany,1997-10-27,0,,
+Praedyth,Praedyth,Mark Lewis,,Australia,1999-06-21,0,,
+PraY,PraY,Kim Jong-in,김종인,South Korea,1994-01-06,0,,
+Pride (Franco Sanzana),Pride,Franco&nbsp;Jesús Sanzana Villarroel,,Chile,1996-05-19,1,,
+Prince (Lee Chae-hwan),Prince,Lee Chae-hwan,이채환,South Korea,2000-04-05,0,,
+Profit,Profit,Kim Jun-hyung,김준형,South Korea,1995-09-15,1,,
+Proud,Proud,Lee Jeong-jae,이정재,South Korea,1998-10-26,1,,
+Prove (Son Min-hyeong),Prove,Son Min-hyeong,손민형,South Korea,2002-04-13,1,,
+Prydz,Prydz,Chen Kuang-Feng,陳廣峰,Taiwan,1988-02-29,0,,
+Pullbae,Pullbae,Jeong Ji-hoon,정지훈,South Korea,2004-08-28,1,,
+Puma,Puma,Nathan Puma,,Australia,2002-02-21,1,,
+Pun,Pun,Nguyễn Đăng Khoa,,Vietnam,2002-07-29,0,,
+Punch,Punch,Son Min-hyuk,손민혁,South Korea,1998-06-06,0,,
+Pungyeon,Pungyeon,Lee Jong-hyuk,이종혁,South Korea,2004-06-22,0,,
+Pure,Pure,Kim Jin-sun,김진선,South Korea,1995-12-29,1,,
+Puszu,Puszu,Johannes Uibos,,Estonia,,1,,
+PvPStejos,PvPStejos,Alexander Glazkov,Александр Глазков,Ukraine,1996-12-24,1,,
+Pyl (Chen Bo),pyl,Chen Bo,陈博,China,1994-11-06,0,,
+Pyosik,Pyosik,Hong Chang-hyeon,홍창현,South Korea,2000-03-12,0,,
+QQMore,QQMore,Diego Alonso Apablaza Abarzúa,,Chile,1999-05-03,0,,
+QTV,QTV,Nguyễn Trần Tường Vũ,,Vietnam,1988-03-07,0,,
+Quad,Quad,Song Su-hyeong,송수형,South Korea,2002-08-25,0,,
+Quantum (Son Jeong-hwan),Quantum,Son Jeong-hwan,손정환,South Korea,2004-08-20,0,,
+Quid,Quid,Lim Hyeon-seung,임현승,South Korea,2004-04-27,0,,
+Radeon6870,Radeon6870,Tan Jun Shen,,Singapore,,1,,
+Raes,Raes,Quin Korebrits,,New Zealand,1998-10-27,0,,
+Rahel,Rahel,Cho Min-seong,조민성,South Korea,2004-02-13,0,,
+Raina,Raina,Shin Okubo,大久保 慎,Japan,1997-03-04,0,,
+Rainbow (Kim Soo-gi),Rainbow,Kim Soo-gi,김수기,South Korea,1997-10-31,1,,
+Raise,Raise,Oh Ji-hwan,오지환,South Korea,1997-10-18,0,,
+Ramune,Ramune,Osamu Ozawa,小澤 統,Japan,1997-11-26,0,,
+Ranger,Ranger,Filipe Brombilla de Bairros,,Brazil,1995-11-28,0,,
+RapidStar,RapidStar,Jung Min-sung,정민성,South Korea,1993-05-05,0,,
+Raptor (Jeon Eo-jin),Raptor,Jeon Eo-jin,전어진,South Korea,2004-11-15,0,,
+Rascal,Rascal,Kim Kwang-hee,김광희,South Korea,1997-10-16,0,,
+Rather,Rather,Shin Hyeong-seop,신형섭,South Korea,1996-11-26,0,,
+Ray,Ray,Jeon Ji-won,전지원,South Korea,1998-03-15,0,,
+Razork,Razork,Iván Martín Díaz,,Spain,2000-10-07,0,,
+RedBert,RedBert,Ygor Freitas,,Brazil,1998-08-26,0,,
+Reginald,ReginaId,Andy Dinh,,United States,1992-04-19,0,,
+Reignover,Reignover,Kim Yeu-jin,김의진,South Korea,1995-07-04,0,,
+Rekkles,Rekkles,Carl&nbsp;Martin&nbsp;Erik Larsson,,Sweden,1996-09-20,0,,
+Relic,Relic,José Pombo Ribeiro,,Venezuela,1994-10-11,1,,
+Ren,Ren,Nguyễn Văn Trọng,,Vietnam,1995-04-04,0,,
+Renyu,Renyu,Renato&nbsp;Josue Gallegos Muñoz,,Peru,1999-12-21,0,,
+Rest,Rest,Hsu Shih-Chieh,徐士傑,Taiwan,1998-12-11,0,,
+Revolta,Revolta,Gabriel Henud Cresci,,Brazil,1995-12-27,0,,
+Reyk,Reyk,Wai Noch Shum,,Germany,,1,,
+Rhuckz,Rhuckz,Rúben&nbsp;Alexandre Barbosa Neves,,Portugal,1996-08-28,0,,
+Rich (Lee Jae-won),Rich,Lee Jae-won,이재원,South Korea,1998-02-16,0,,
+Rich (Warich Kittiwattanawong),Rich,Warich Kittiwattanawong,วริชญ์ กิตติวัฒนาวงศ์,Thailand,,1,,
+Rikara,Rikara,Richard&nbsp;Samuel Oh,,United States,1997-12-08,1,,
+Riris,Riris,Baek Seung-min,백승민,South Korea,1994-12-25,1,,
+River (Kim Dong-woo),River,Kim Dong-woo,김동우,South Korea,1999-07-23,1,,
+Riyev,Riyev,Marcelo Carrara,,Brazil,1996-09-28,1,,
+Roach,Roach,Kim Kang-hee,김강희,South Korea,1999-01-31,0,,
+Road (Yun Han-gil),Road,Yun Han-gil,윤한길,South Korea,1995-09-30,0,,
+Roamer,Roamer,Jo Woo-jin,조우진,South Korea,2003-08-03,0,,
+Robo,Robo,Leonardo Souza,,Brazil,1998-04-22,0,,
+Rockky,Rockky,Atit Phaomuang,อธิศ เผ่าเมือง,Thailand,,0,,
+Rogue (Jake Sharwood),Rogue,Jake Sharwood,,Australia,1998-10-06,1,,
+RonOP,RonOP,Lê Thiên Hàn,,Vietnam,1998-11-03,0,,
+Rookie,Rookie,Song Eui-jin,송의진,South Korea,1997-03-11,0,,
+Route,Route,Moon Geom-su,문검수,South Korea,1999-01-05,0,,
+Ruin,Ruin,Kim Hyeong-min,김형민,South Korea,1995-11-16,0,,
+Ruler,Ruler,Park Jae-hyuk,박재혁,South Korea,1998-12-29,0,,
+Rush,Rush,Lee Yoon-jae,이윤재,South Korea,1993-04-06,1,,
+Ryu,Ryu,Ryu Sang-wook,류상욱,South Korea,1994-01-28,0,,
+Saint (Kang Sung-in),Saint,Kang Sung-in,강성인,South Korea,2005-01-01,0,,
+Saintvicious,Saintvicious,Brandon DiMarco,,United States,1987-05-23,1,,
+Salce,Salce,Trevor Salce,,United States,1994-01-19,1,,
+SamD,SamD,Lee Jae-hoon,이재훈,South Korea,2001-03-14,0,,
+Samver,Samver,Lee Seung-yong,이승용,South Korea,2001-11-07,1,,
+San (Guo Jun-Liang),san,Guo Jun-Liang,郭俊良,China,1993-01-16,0,,
+Sangyoon,Sangyoon,Gwon Sang-yun,권상윤,South Korea,1995-12-20,1,,
+SanSan,SanSan,Lê Quốc Khánh,,Vietnam,2006-12-10,0,,
+SaNTaS,SaNTaS,Aleksandr Lifashin,Александр Лифашин,Russia,1996-09-09,1,,
+Santorin,Santorin,Lucas Tao Kilmer Larsen,,Denmark,1997-05-06,0,,
+SaSin,SaSin,Oh Seung-ju,오승주,South Korea,1994-02-03,1,,
+Save,Save,Baek Young-jin,백영진,South Korea,1993-07-06,1,,
+Score,Score,Go Dong-bin,고동빈,South Korea,1992-07-08,0,,
+Scout,Scout,Lee Ye-chan,이예찬,South Korea,1998-03-14,0,,
+Secret (Park Ki-sun),Secret,Park Ki-sun,박기선,South Korea,1997-05-27,1,,
+Seiya,Seiya,Édgar&nbsp;Ali Bracamontes Munguía,,Mexico,1996-08-06,0,,
+Seize,Seize,Kim Chan-hee,김찬희,South Korea,2000-12-07,0,,
+Selfmade,Selfmade,Oskar Boderek,,Poland,1999-12-15,0,,
+Sencux,Sencux,Chres Laursen,,Denmark,1998-09-17,0,,
+Serin,Serin,Tolga Ölmez,,Turkey,2002-04-10,0,,
+SeTab,SeTab,Song Kyeong-jin,송경진,South Korea,2004-10-13,0,,
+Shad0w,Shad0w,Zhao Zhi-Qiang,赵志强,Italy,2001-02-25,0,,
+Shadow (Facundo Cuello),Shadow,Facundo Cuello,,Argentina,1999-10-07,0,,
+Shanks,Shanks,Cui Xiao-Jun,崔校军,China,2001-05-13,0,,
+Sharvel,Sharvel,Kim Dan-woo,김단우,South Korea,2007-08-26,0,,
+Sheo,Sheo,Théo Borile,,France,2001-07-05,0,,
+Shernfire,Shernfire,Shern Cherng Tai,,Malaysia,1998-05-04,0,,
+ShiauC,ShiauC,Liu Chia-Hao,劉家豪,Taiwan,1999-07-12,0,,
+Shini,Shini,Diogo Rogê Moreira,,Brazil,1997-07-14,0,,
+Shogun (Nguyễn Văn Huy),Shogun,Nguyễn Văn Huy,,Vietnam,2004-03-31,0,,
+Shook,Shook,Ilyas Hartsema,,Netherlands,1994-11-05,1,,
+ShowMaker,ShowMaker,Heo Su,허수,South Korea,2000-07-22,0,,
+Shrimp,Shrimp,Lee Byeong-hoon,이병훈,South Korea,1993-10-14,0,,
+Shunn,Shunn,Chao Ying-Shun,趙盈舜,Taiwan,2002-06-02,0,,
+Shushei,Shushei,Maciej Ratuszniak,,Poland,1989-03-16,1,,
+Shy,Shy,Park Sang-myeon,박상면,South Korea,1991-07-19,0,,
+Sirt,Sirt,Thúlio Carlos,,Brazil,1992-10-20,1,,
+SiuLoong,SiuLoong,Nguyễn Hoàng Lam,,Vietnam,2005-09-15,0,,
+Siwoo,Siwoo,Jeon Si-woo,전시우,South Korea,2007-11-24,0,,
+SkewMond,SkewMond,Rudy Semaan,,France,2004-08-09,0,,
+Sky (Kim Ha-neul),Sky,Kim Ha-neul,김하늘,South Korea,1998-07-17,1,,
+Slay,Slay,Nguyễn Ngọc Hùng,,Vietnam,1997-07-28,1,,
+Slayder,Slayder,Nguyễn Linh Vương,,Vietnam,2000-11-22,1,,
+Slayer (Kim Jin-young),Slayer,Kim Jin-young,김진영,South Korea,2003-04-15,0,,
+Slow,Slow,Eduardo&nbsp;Franco Garcés Cerda,,Chile,1997-02-13,1,,
+Smash (Shin Geum-jae),Smash,Shin Geum-jae,신금재,South Korea,2006-07-20,0,,
+Ssong,Ssong,Kim Sang-soo,김상수,South Korea,1989-10-15,0,,
+SSUN (Kim Tae-yang),SSUN,Kim Tae-yang,김태양,South Korea,1997-11-20,0,,
+Smeb,Smeb,Song Kyung-ho,송경호,South Korea,1995-06-30,0,,
+Smoothie,Smoothie,Andy Ta,,Canada,1997-02-10,1,,
+Smurf (Dmitri Ivanov),Smurf,Dmitri Ivanov,Дмитрий Иванов,Russia,1994-06-22,0,,
+Snaker,Snaker,Brian&nbsp;Alejo Distefano,,Argentina,2002-03-28,0,,
+Sneaky,Sneaky,Zachary Scuderi,,United States,1994-03-19,0,,
+Sniper,Sniper,Rayan Shoura,,Canada,2006-11-10,0,,
+Snoopeh,Snoopeh,Stephen Ellis,,United Kingdom,1991-09-15,1,,
+SnowFlower,SnowFlower,No Hoi-jong,노회종,South Korea,1997-02-24,1,,
+Snoy,Snoy,Elijah Joshua Guerrero,,Philippines,,1,,
+SoaR,SoaR,Lee Gang-pyo,이강표,South Korea,1997-05-28,0,,
+SOAZ,sOAZ,Paul Boyer,,France,1994-01-09,0,,
+Soboro,Soboro,Lim Seong-min,임성민,South Korea,2004-01-10,0,,
+SofM,SofM,Lê Quang Duy,,Vietnam,1998-02-05,0,,
+SoHwan,SoHwan,Kim Jun-yeong,김준영,South Korea,1996-10-24,1,,
+Solo (Colin Earnest),Solo,Colin Earnest,,United States,1993-05-26,1,,
+Soul (Seo Hyeon-seok),Soul,Seo Hyeon-seok,서현석,South Korea,1994-11-16,0,,
+Sparda,Sparda,Nguyễn Võ Anh Hoàng,,Vietnam,2002-07-06,0,,
+Spica,Spica,Mingyi Lu,卢明义,China,2001-02-17,0,,
+Spirit,Spirit,Lee Da-yoon,이다윤,South Korea,1996-07-01,1,,
+Sponge,Sponge,Bae Young-jun,배영준,South Korea,2004-07-25,0,,
+Ssumday,Ssumday,Kim Chan-ho,김찬호,South Korea,1996-07-03,0,,
+Stanley,Stanley,Wang June-Tsan,王榮燦,Taiwan,1991-05-06,1,,
+Stark (Phan Công Minh),Stark,Phan Công Minh,,Vietnam,1997-12-25,0,,
+StarScreen,StarScreen,Soner Kaya,,Turkey,2001-01-20,0,,
+Steak,Steak,Chou Lu-Hsi,周律希,Taiwan,1992-08-15,0,,
+Steal (Mun Geon-yeong),Steal,Mun Geon-yeong,문건영,South Korea,1998-12-15,1,,
+Steeelback,Steeelback,Pierre Medjaldi,,France,1996-08-16,0,,
+Stitch,Stitch,Lee Seung-ju,이승주,South Korea,1996-11-02,1,,
+Stixxay,Stixxay,Trevor Hayes,,United States,1997-03-16,1,,
+Stomaged,Stomaged,İlyas Furkan Güngör,,Turkey,1997-03-05,1,,
+Sty1e,Sty1e,Mai Hoàng Sơn,,Vietnam,2002-01-11,0,,
+Summit,Summit,Park Woo-tae,박우태,South Korea,1998-12-08,0,,
+Supa,Supa,David Martínez García,,Spain,2000-10-23,0,,
+Svenskeren,Svenskeren,Dennis Johnsen,,Denmark,1996-01-02,1,,
+Sw0rd,Sw0rd,Choi Sung-won,최성원,South Korea,1997-06-16,0,,
+Sweet (Lee Eun-teak),Sweet,Lee Eun-teak,이은택,South Korea,1995-07-11,1,,
+SwordArt,SwordArt,Hu Shuo-Chieh,胡碩傑,Taiwan,1996-12-21,0,,
+Sya,Sya,Phan Trung Toàn,,Vietnam,1999-08-13,1,,
+Sylvie,Sylvie,Lee Seung-bok,이승복,South Korea,2002-12-04,0,,
+Tabe,Tabe,Wong Pak Kan,王柏勤,Hong Kong,1991-01-18,0,,
+Tabzz,Tabzz,Erik van Helvert,,Netherlands,1994-03-17,1,,
+Tactical,Tactical,Edward Ra,나문용,United States,2000-08-18,0,,
+Taeyoon (Kim Tae-yoon),Taeyoon,Kim Tae-yoon,김태윤,South Korea,2002-06-02,0,,
+Taki (Đinh Anh Tài),Taki,Đinh Anh Tài,,Vietnam,2003-06-30,0,,
+Tally,Tally,James Shute,,Australia,1997-08-21,0,,
+TaNa,TaNa,Lee Sang-wook,이상욱,South Korea,1999-12-11,0,,
+Tank,Tank,Park Dan-won,박단원,South Korea,1995-11-18,1,,
+Targamas,Targamas,Raphaël Crabbé,,Belgium,2000-06-30,0,,
+Tarzan (Lee Seung-yong),Tarzan,Lee Seung-yong,이승용,South Korea,1999-08-23,0,,
+Tatu (Pedro Seixas),Tatu,Pedro Seixas Brito,,Brazil,2006-06-13,0,,
+Tay,Tay,Rodrigo Panisa,,Brazil,1996-11-22,0,,
+Tbq,tbq,Zhu Yong-Quan,朱永权,China,1996-08-27,1,,
+Teddy,Teddy,Park Jin-seong,박진성,South Korea,1998-03-15,0,,
+Tempt,Tempt,Kang Myung-gu,강명구,South Korea,1998-05-13,1,,
+Ten10,Ten10,Kang Joon,강준,South Korea,2001-09-23,1,,
+Tgee,Tgee,Gerald Gianne Gelacio,,Philippines,,1,,
+Thal,Thal,Park Kwon-hyuk,박권혁,South Korea,1998-11-13,1,,
+Thaldrin,Thaldrin,Berke Demir,,Turkey,1994-08-01,1,,
+TheOddOne,TheOddOne,Brian Wyllie,,Canada,1988-11-25,1,,
+Theokoles,Theokoles,Muhammed Işık,,Turkey,,1,,
+TheShy,TheShy,Kang Seung-lok,강승록,South Korea,1999-11-11,0,,
+Tian,Tian,Gao Tian-Liang,高天亮,China,2000-07-24,0,,
+Tierwulf,Tierwulf,Sebastián&nbsp;Andrés Mateluna Cibrario,,Chile,1996-11-05,1,,
+Time (Tang Jing-Tai),Time,Tang Jing-Tai,唐靖泰,China,,1,,
+Tinowns,tinowns,Thiago Sartori,,Brazil,1997-05-06,0,,
+TitaN,TitaN,Alexandre Lima dos Santos,,Brazil,2000-07-09,0,,
+Tolerant,Tolerant,Barış Çepnioğlu,,Germany,1999-08-29,1,,
+Tomo,Tomo,Frank Lam,,United States,2001-01-19,0,,
+Topoon,Topoon,Kim Ji-hoon,김지훈,South Korea,,1,,
+Totoro (Eun Jong-seop),Totoro,Eun Jong-seop,은종섭,South Korea,1996-05-06,1,,
+Touch,Touch,Omid Rosander,,Norway,,0,,
+Toyz,Toyz,"Lau&nbsp;""Kurtis"" Wai Kin",劉偉健,Hong Kong,1992-06-09,1,,
+TrAce,TrAce,Yeo Chang-dong,여창동,South Korea,1989-11-02,1,,
+Trick,Trick,Kim Gang-yun,김강윤,South Korea,1995-07-11,0,,
+Trigger (Kim Eui-joo),Trigger,Kim Eui-joo,김의주,South Korea,2000-10-10,0,,
+Triple,Triple,Stephen Li,,Australia,1999-02-26,1,,
+Trymbi,Trymbi,Adrian Trybus,,Spain,2000-10-20,0,,
+TusiN,TusiN,Park Jong-ik,박종익,South Korea,1995-11-12,1,,
+Tussle,Tussle,Lee Moon-yong,이문용,South Korea,1995-03-29,0,,
+Tutsz,Tutsz,Arthur Peixoto Machado,,Brazil,2002-12-16,0,,
+U,U,Zeng Long,曾龙,China,1993-09-04,0,,
+Ucal,Ucal,Son Woo-hyeon,손우현,South Korea,2001-01-30,0,,
+Udysof,Udysof,Toby Horne,,Australia,1999-08-10,1,,
+UmTi,UmTi,Um Sung-hyeon,엄성현,South Korea,1999-06-02,0,,
+UNF0RGIVEN,UNF0RGIVEN,William Nieminen,,Sweden,2000-08-23,0,,
+Uniboy,Uniboy,Chen Chang-Chu,陳昌駒,Taiwan,2001-03-03,0,,
+Unified,Unified,Wong Chun Kit,黃俊杰,Hong Kong,1999-06-28,1,,
+Untara,Untara,Park Ui-jin,박의진,South Korea,1996-12-31,0,,
+Upset,Upset,Elias Lipp,,Germany,1999-12-16,0,,
+Uzi (Jian Zi-Hao),Uzi,Jian Zi-Hao,简自豪,China,1997-04-05,1,,
+Vampire,Vampire,Zhao Zhe-Can,赵哲灿,China,2005-08-24,0,,
+Vander,Vander,Oskar&nbsp;Mateusz Bogdan,,Poland,1994-04-18,0,,
+Vech,Vech,Tan Jun Yi,,Singapore,,1,,
+Venus,Venus,Bùi Nguyễn Quốc Hoàng,,Vietnam,1999-06-06,1,,
+VicLa,VicLa,Lee Dae-kwang,이대광,South Korea,2003-11-27,0,,
+Violet (Ngô Mạnh Quyền),Violet,Ngô Mạnh Quyền,,Vietnam,1987-01-07,1,,
+Violet (Vincent Wong),Violet,Vincent&nbsp;Chun&nbsp;Him Wong,,Hong Kong,2000-10-31,0,,
+Viper (Park Do-hyeon),Viper,Park Do-hyeon,박도현,South Korea,2000-10-19,0,,
+Vizicsacsi,Vizicsacsi,Tamás Kiss,,Hungary,1993-06-14,0,,
+Vladi,Vladi,Vladimiros Kourtidis,Βλαδίμηρος Κουρτίδης,Greece,2005-08-12,0,,
+Voidle,Voidle,Erih Sommermann,,Estonia,,1,,
+Voyboy,Voyboy,Joedat Esfahani,,United States,1994-12-15,1,,
+Vsta,Vsta,Oh Hyo-seong,오효성,South Korea,2000-10-03,0,,
+Vulcan (Philippe Laflamme),Vulcan,Philippe Laflamme,,Canada,1999-04-20,0,,
+VVvert,VVvert,Alvaro&nbsp;Miguel Martins,,Brazil,1999-02-19,1,,
+Wadid,Wadid,Kim Bae-in,김배인,South Korea,1997-05-25,0,,
+Wako,Wako,Tsou Wei-Yang,鄒惟洋,Taiwan,1998-07-31,0,,
+Warangelus,Warangelus,Fabián&nbsp;Esteban Llanos Bernal,,Chile,1998-04-09,0,,
+WarL0cK,WarL0cK,Pawat Ampaporn,ภวัต อัมพาภรณ์,Thailand,,0,,
+Warzone,Warzone,Đoàn Văn Ngọc Sơn,,Vietnam,1994-09-23,1,,
+Watch,Watch,Cho Jae-geol,조재걸,South Korea,1992-01-02,1,,
+Way (Han Gil),Way,Han Gil,한길,South Korea,2002-06-29,0,,
+Wayward,Wayward,Huang Ren-Xing,黄任行,China,2001-06-23,0,,
+Wei (Yan Yang-Wei),Wei,Yan Yang-Wei,闫扬威,China,2002-11-09,0,,
+Weiwei,Weiwei,Wei Bo-Han,魏博涵,China,2000-08-14,0,,
+Westdoor,Westdoor,Liu Shu-Wei,劉書瑋,Taiwan,1993-10-16,1,,
+Westrice,Westrice,Jonathan Nguyen,,United States,1992-07-13,0,,
+Wh1t3zZ,Wh1t3zZ,Lo Pun Wai (盧本偉),,Hong Kong,1993-08-11,1,,
+WhiteLotus,WhiteLotus,Matías Musso,,Argentina,1996-08-27,0,,
+Wickd,Wickd,Mike Petersen,,Denmark,1994-04-29,1,,
+WildTurtle,WildTurtle,Jason Tran,,Canada,1995-02-09,1,,
+Willer,Willer,Kim Jeong-hyeon,김정현,South Korea,2003-04-24,0,,
+Winds,Winds,Chen Peng-Nien,陳鵬年,Taiwan,1990-10-29,1,,
+Winged,Winged,Park Tae-jin,박태진,South Korea,1992-08-20,0,,
+Wizer,Wizer,Choi Eui-seok,최의석,South Korea,1998-11-29,0,,
+Wolf (Lee Jae-wan),Wolf,Lee Jae-wan,이재완,South Korea,1996-09-09,0,,
+Woody,Woody,Lin Yu-En,林煜恩,Taiwan,1998-04-11,0,,
+Woong (Jang Gun-woong),Woong,Jang Gun-woong,장건웅,South Korea,1990-02-27,1,,
+Wraith,Wraith,Kwon Ji-min,권지민,South Korea,1995-09-28,0,,
+Wunder,Wunder,Martin Nordahl Hansen,,Denmark,1998-11-09,0,,
+Wuxx,Wuxx,Wang Cheng,王城,China,1996-01-10,1,,
+Xerxe,Xerxe,Andrei Dragomir,,Romania,1999-11-05,0,,
+Xiaobai,Xiaobai,Yang Zhong-He,杨忠贺,China,1999-02-15,0,,
+Xiaohu,Xiaohu,Li Yuan-Hao,李元浩,China,1998-01-28,0,,
+Xiaoweixiao,xiaoweixiao,Yu Xian,余显,China,1994-09-15,1,,
+XiaoXiao,XiaoXiao,Sun Ya-Long,孙亚龙,China,1988-03-24,1,,
+Xiaoxu,Xiaoxu,Xu Xing-Zu,徐兴祖,China,2003-09-11,0,,
+Xmithie,Xmithie,Jake&nbsp;Kevin Puchero,,Philippines,1991-05-10,1,,
+Xpecial,Xpecial,Alex Chu,朱啓恩,United States,1992-08-12,1,,
+XuHao,XuHao,Bùi&nbsp;Hoàng Sơn Vương,,Vietnam,1999-12-29,0,,
+Xun,Xun,Peng Li-Xun,彭立勋,China,2002-02-05,0,,
+Xyno,xyno,Carlos&nbsp;Felipe Ferreira da Silva,,Brazil,2007-03-04,0,,
+Yagao,Yagao,Zeng Qi,曾奇,China,1998-10-19,1,,
+ApaMEN,apaMEN,Ryo Odagiri,小田桐 稜,Japan,1991-12-05,0,,
+Aphromoo,aphromoo,Zaqueri Black,,United States,1992-09-08,1,,
+Baybay,baybay,Wang You-Chun,王佑軍,Taiwan,1996-11-29,1,,
+Bigfatlp,bigfatlp,Michael Tang,,Canada,1990-06-06,1,,
+BrTT,brTT,Felipe Gonçalves da Rocha,,Brazil,1991-02-19,0,,
+Corn (Lei Wen),Corn,Lei Wen,雷文,China,1997-03-04,1,,
+Dabe,dabe,Angelo&nbsp;Dave&nbsp;Nada Lopez,,Philippines,,1,,
+Dans,dans,Daniel Dias,,Brazil,,1,,
+DyNquedo,dyNquedo,Matheus Rossini Miranda,,Brazil,1997-10-14,0,,
+FabFabulous,fabFabulous,Asım&nbsp;Cihat Karakaya,,Turkey,1996-02-15,0,,
+Fengyue,fengyue,Wang Run-Lai,王润来,China,2005-11-06,0,,
+Fredy122,fredy122,Simon Payne,,United Kingdom,,0,,
+Gibo,Gibo,Gilbert&nbsp;Agatep Sales Jr.,,Philippines,1981-06-12,1,,
+Huanfeng,huanfeng,Tang Huan-Feng,唐焕烽,China,2001-05-20,0,,
+IBoy,iBoy,Hu Xian-Zhao,胡显昭,China,2000-07-12,1,,
+ICON,ICON,Xie Tian-Yu,谢天宇,China,1996-05-22,1,,
+INtrigueD,iNtrigueD,Ho Bing Shuan,,Singapore,,1,,
+Yaharong,Yaharong,Lee Chan-ju,이찬주,South Korea,2000-06-12,1,,
+Yang (Felipe Zhao),Yang,Felipe Zhao,,Brazil,1996-04-14,1,,
+YellOwStaR,YellOwStaR,Bora Kim,,France,1992-02-15,0,,
+Yeon (Sean Sung),Yeon,Sean Sung,성연호,United States,2001-01-07,0,,
+Yijin,Yijin,Nguyễn Lê Hải Đăng,,Vietnam,2000-10-28,1,,
+Yike,Yike,Martin Sundelin,,Sweden,2000-11-11,0,,
+YoDa (Felipe Noronha),YoDa,Felipe Noronha,,Brazil,1995-09-16,0,,
+YoungJae,YoungJae,Ko Yeong-jae,고영재,South Korea,2002-11-16,0,,
+Ysera,Ysera,Wang Tsung-Chih,汪宗志,Taiwan,1997-03-02,1,,
+Yume (Danyll Jann Balisi),Yume,Danyll Jann Balisi,,Philippines,,1,,
+Yutapon,Yutapon,Yuta Sugiura,杉浦 悠太,Japan,1996-09-10,0,,
+Zantins,Zantins,Luccas Martins Zanqueta Silva,,Brazil,1993-03-05,1,,
+Zefa,Zefa,Lee Jae-min,이재민,South Korea,1988-02-04,0,,
+Zeitnot,Zeitnot,Berkay Aşıkuzun,,Turkey,1995-01-02,0,,
+Zenit,Zenit,Jeon Tae-gwon,전태권,South Korea,2000-05-08,1,,
+Zergsting,Zergsting,Onur Ünalan,,Turkey,1998-11-18,1,,
+Zero (Yoon Kyung-sup),Zero,Yoon Kyung-sup,윤경섭,South Korea,1994-07-16,0,,
+Zeros,Zeros,Phạm Minh Lộc,,Vietnam,2000-10-06,1,,
+Zest (Kim Dong-min),Zest,Kim Dong-min,김동민,South Korea,2003-11-05,0,,
+Zeus,Zeus,Choi Woo-je,최우제,South Korea,2004-01-31,0,,
+Zeyzal,Zeyzal,Tristan Stidam,,United States,1999-07-07,0,,
+Zhuo,Zhuo,Wang Xu-Zhuo,王旭卓,China,2001-02-13,0,,
+Zika,Zika,Tang Hua-Yu,唐华钰,China,2003-07-07,0,,
+Zin,Zin,Nguyễn Tuấn Thọ,,Vietnam,1999-01-11,0,,
+Ziv (Chen Yi),Ziv,Chen Yi,陳奕,Taiwan,1994-12-24,0,,
+Zoom,Zoom,Zhang Xing-Ran,张星冉,China,1997-07-27,0,,
+Zorozero,Zorozero,Morten Rosenquist,,Denmark,1995-05-10,1,,
+Zothve,Zothve,Cristóbal Arróspide,,Chile,2003-02-18,0,,
+ZUIAN,ZUIAN,Cheng Zi-Hao,程子浩,China,2005-05-23,0,,
+Zuna,Zuna,Christopher Buechter,,United States,1990-12-25,1,,
+Zven,Zven,Jesper Svenningsen,,Denmark,1997-06-24,0,,
+Zylor,Zylor,Christian Dietze,,Germany,,1,,
+Zz1tai,Zz1tai,Liu Zhi-Hao,刘志豪,China,1997-08-25,1,,
+Zzus,Zzus,Jang Joon-soo,장준수,South Korea,1998-08-30,0,,
+Illusion (Chen Xin-Lin),illusion,Chen Xin-Lin,陈新霖,China,1990-08-09,1,,
+Imp,imp,Gu Seung-bin,구승빈,South Korea,1995-06-07,1,,
+InSec,inSec,Choi In-seok,최인석,South Korea,1993-06-29,1,,
+K1ng,k1ng,Calvin Truong,,Australia,1998-02-03,1,,
+Kasing,Kasing,Raymond Tsang,曾家誠,United Kingdom,1993-12-08,0,,
+Kujaa,Kujaa,Jérôme Negretti,,France,,1,,
+Loulex,Loulex,Jean-Victor Burgevin,,France,1995-03-27,1,,
+Mancloud,mancloud,Zachary&nbsp;Allan Hoschar,,United States,1991-07-28,1,,
+MicaO,micaO,Micael Rodrigues,,Brazil,1996-09-05,0,,
+Nappon,Nappon,Carlos&nbsp;Henrique Rücker,,Brazil,1994-06-04,1,,
+NRated,nRated,Christoph Seitz,,Germany,1991-07-17,0,,
+Nuc,nuc,Ilias Bizriken,,Morocco,2002-10-17,0,,
+Ocelote,ocelote,Carlos Rodríguez Santiago,,Spain,1990-06-15,1,,
+Scarra,scarra,William Li,,United States,1989-11-25,1,,
+Tockers,tockers,Gabriel Claumann,,Brazil,1996-08-21,0,,
+Tol2,tol2,Haruki Shibata,柴田 晴生,Japan,2002-10-17,0,,
+ViviD,viviD,Han Gi-hun,한기훈,South Korea,1993-02-08,0,,
+Wewillfailer,wewillfailer,Bram de Winter,,Belgium,1990-06-16,1,,
+Wormy,wormy,Jeffrey&nbsp;Tiu Cua,,Philippines,,1,,
+Xiye,xiye,Su Han-Wei,苏汉伟,China,1997-08-06,0,,
+XPeke,xPeke,Enrique Cedeño Martínez,,Spain,1992-04-24,0,,
+Yellowpete,yellowpete,Peter Wüppen,,Germany,1989-10-05,1,,
+Yuyanjia,yuyanjia,Liang Jia-Yuan,梁家源,China,1997-08-30,0,,
+Deokdam,deokdam,Seo Dae-gil,서대길,South Korea,2000-02-25,0,,
+HOYA,HOYA,Yoon Yong-ho,윤용호,South Korea,2000-08-25,0,,
+Ignar,Ignar,Lee Dong-geun,이동근,South Korea,1996-11-20,0,,
+Ikssu,ikssu,Jeon Ik-soo,전익수,South Korea,1996-10-22,1,,
+Key (Kim Han-gi),Key,Kim Han-gi,김한기,South Korea,1997-06-20,0,,
+Kyeahoo,kyeahoo,Kang Ye-hoo,강예후,South Korea,2005-08-13,0,,
+Lira,Lira,Nam Tae-yoo,남태유,South Korea,1995-01-15,0,,
+SeongHwan,SeongHwan,Yoon Seong-hwan,윤성환,South Korea,1997-12-11,1,,
+Ssol,Ssol,Seo Jin-sol,서진솔,South Korea,1998-03-04,0,,
+Vital,vital,Ha In-seong,하인성,South Korea,2002-09-16,0,,
+Yohan,Yohan,Kim Yo-han,김요한,South Korea,1999-12-17,0,,
+Zeka (Kim Geon-woo),Zeka,Kim Geon-woo,김건우,South Korea,2002-11-28,0,,
+Yondu,Beyond,Kim Kyu-seok,김규석,South Korea,1997-08-18,1,,
+deokdam,deokdam,Seo Dae-gil,서대길,South Korea,2000-02-25,0,,
+Comeback (Ha Seung-chan),Hachani,Ha Seung-chan,하승찬,South Korea,1994-12-24,0,,
+Hoya,HOYA,Yoon Yong-ho,윤용호,South Korea,2000-08-25,0,,
+IgNar,Ignar,Lee Dong-geun,이동근,South Korea,1996-11-20,0,,
+ikssu,ikssu,Jeon Ik-soo,전익수,South Korea,1996-10-22,1,,
+key (Kim Han-gi),Key,Kim Han-gi,김한기,South Korea,1997-06-20,0,,
+kyeahoo,kyeahoo,Kang Ye-hoo,강예후,South Korea,2005-08-13,0,,
+LirA,Lira,Nam Tae-yoo,남태유,South Korea,1995-01-15,0,,
+Arthur (Park Mi-reu),Mir,Park Mi-reu,박미르,South Korea,2000-05-24,1,,
+Becca (Son Min-woo),Pleata,Son Min-woo,손민우,South Korea,2003-03-28,0,,
+SOLKA,Quad,Song Su-hyeong,송수형,South Korea,2002-08-25,0,,
+Irove,sanghyeon,Jeong Sang-hyeon,정상현,South Korea,2001-12-17,0,,
+Seonghwan,SeongHwan,Yoon Seong-hwan,윤성환,South Korea,1997-12-11,1,,
+SSol,Ssol,Seo Jin-sol,서진솔,South Korea,1998-03-04,0,,
+ALL IN,SSUN,Kim Tae-yang,김태양,South Korea,1997-11-20,0,,
+Sword (Choi Sung-won),Sw0rd,Choi Sung-won,최성원,South Korea,1997-06-16,0,,
+Senan,Test Sup,Park Hee-seok,박희석,South Korea,2001-09-18,1,,
+vital,vital,Ha In-seong,하인성,South Korea,2002-09-16,0,,
+Grace,Yaharong,Lee Chan-ju,이찬주,South Korea,2000-06-12,1,,
+yoHan,Yohan,Kim Yo-han,김요한,South Korea,1999-12-17,0,,
+Yeongjae (Ko Yeong-jae),YoungJae,Ko Yeong-jae,고영재,South Korea,2002-11-16,0,,
+ZEKA (Kim Geon-woo),Zeka,Kim Geon-woo,김건우,South Korea,2002-11-28,0,,
+Cry,Zet,Hae Sung-min,해성민,South Korea,1997-08-21,1,,
+,bon0,,김기범,South Korea,1995-02-27,0,Kim Gi-beom,bonO (Kim Gi-beom)
+Bono (Kim Gi-beom),bon0,Kim Gi-beom,김기범,South Korea,1995-02-27,0,,
+bonO (Kim Gi-beom),bon0,Kim Gi-beom,김기범,South Korea,1995-02-27,0,,

@@ -7,6 +7,7 @@ from utils.bracket import render_stage, split_stages
 from utils.data_loader import has_data, load_players, load_tournaments
 from utils.meta import champion_table
 from utils.teams import display_name, season_aliases, team_games, team_info
+from utils.teams import with_logos
 from utils.tournaments import (INTL_ORDER, cup_group_table, event_schedule, events, official_results,
                                standings_from_series)
 
@@ -39,7 +40,7 @@ def tab_ko(tab: str) -> str:
 
 # ------------------------------------------------------------------ 선택
 c1, c2, c3 = st.columns([2, 1, 2])
-leagues = ["LCK", "LCK Cup"] + INTL_ORDER
+leagues = ["LCK Cup", "LCK", "First Stand", "MSI", "EWC", "Worlds"]   # 한 해 안에서 열리는 순서
 league = c1.pills("대회 종류", leagues, default="LCK", selection_mode="single") or "LCK"
 if league == "LCK Cup":
     sub = ev[ev["split"] == "LCK Cup"]
@@ -313,5 +314,6 @@ with tab_matches:
         스코어=lambda d: d["team1_score"].astype(int).astype(str) + " : " + d["team2_score"].astype(int).astype(str),
         승리=lambda d: d.apply(lambda r: r["team1"] if r["winner"] == 1 else r["team2"], axis=1),
         MVP=lambda d: d["mvp"].map(lambda m: display_name(m) if isinstance(m, str) else "") if "mvp" in d else "")
-    st.dataframe(rows[["날짜", "단계", "team1", "스코어", "team2", "승리", "MVP"]]
-                 .rename(columns={"team1": "팀 1", "team2": "팀 2"}), hide_index=True, width="stretch", height=420)
+    rv, logo_cfg = with_logos(rows[["날짜", "단계", "team1", "스코어", "team2", "승리", "MVP"]]
+                              .rename(columns={"team1": "팀 1", "team2": "팀 2"}))
+    st.dataframe(rv, hide_index=True, width="stretch", height=420, column_config=logo_cfg)

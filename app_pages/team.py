@@ -7,6 +7,7 @@ from utils import champions as champ
 from utils.data_loader import has_data, load_players, load_rosters, load_schedule, load_tournaments
 from utils.tournaments import standings_from_series, team_year_summary
 from utils.teams import (ROLE_KO, ROLE_ORDER, current_status, display_name, lineage_of, season_aliases,
+                         history_for, history_html, team_label, team_logo,
                          player_photo, rename_history, team_games, team_info, team_series)
 
 TAB_KO = {"Finals": "결승", "Semifinals": "준결승", "Quarterfinals": "8강",
@@ -19,6 +20,12 @@ def tab_ko(tab: str) -> str:
     if isinstance(tab, str) and tab.startswith("Round "):
         return tab.replace("Round ", "") + "라운드"
     return tab
+
+def open_player(player: str) -> None:
+    """선수 분석 페이지로 이동하면서 그 선수를 선택해 둔다."""
+    st.session_state["player_pick"] = player
+    st.switch_page("app_pages/player.py")
+
 
 st.title("🛡️ 팀 분석")
 st.caption("시즌과 팀을 고르면 그 시즌의 로스터와 성적, 같은 해 국제전 기록, 팀의 역사를 보여줍니다. "
@@ -70,7 +77,7 @@ def standings(pages_sel) -> pd.DataFrame:
 
 table = standings(pages)
 team_list = list(table.index) + sorted(set(sel_games["team"]) - set(table.index))
-team = c3.selectbox("팀", team_list, index=None, placeholder="팀을 선택하세요",
+team = c3.selectbox("팀", team_list, index=None, placeholder="팀을 선택하세요", format_func=team_label,
                     help="정규 시즌 순위 순서로 정렬되어 있습니다.")
 
 if team is None:
@@ -94,10 +101,10 @@ if len(used) > 1:
     sub += f" · 이 기간 중 이름 변경: {' → '.join(sorted(used, key=first.get))}"
 latest, disbanded = current_status(team)
 if latest != team:
-    sub += f" · 현재 팀 이름: **{latest}**"
+    sub += f" · 현재 팀 이름: **{team_label(latest)}**"
 elif disbanded:
     sub += " · 해체된 팀"
-h2.markdown(f"## {team}\n{sub}")
+h2.markdown(f"## {team_label(team)}\n{sub}")
 
 tab_overview, tab_roster, tab_matches, tab_champs, tab_intl, tab_history = st.tabs(
     ["📋 개요", "👥 로스터", "📈 경기 기록", "🏆 챔피언", "🌏 국제전", "🕰️ 팀 역사"])
@@ -148,6 +155,7 @@ with tab_overview:
                      text=[f"{v:.0%} ({int(n) if pd.notna(n) else 0}경기)" for v, n in
                            zip(side["mean"].fillna(0), side["size"])],
                      color=["블루", "레드"], color_discrete_map={"블루": "#3B82F6", "레드": "#EF4444"})
+        fig.update_traces(width=0.32)          # 막대를 얇게
         fig.update_layout(showlegend=False, yaxis_tickformat=".0%", yaxis_range=[0, 1],
                           xaxis_title=None, yaxis_title="승률", height=300, margin=dict(t=10, b=10))
         st.plotly_chart(fig, width="stretch")
@@ -167,9 +175,13 @@ with tab_overview:
 
     if not table.empty:
         st.markdown("**정규 시즌 순위표**")
-        st.dataframe(table.style.apply(
-            lambda r: ["background-color: rgba(200,155,60,0.25)" if r.name == team else "" for _ in r],
-            axis=1), width="stretch")
+        tview = table.reset_index().rename(columns={"team": "팀"})
+        tview.insert(1, "로고", tview["팀"].map(team_logo))
+        tview["팀"] = tview["팀"].map(team_label)
+        st.dataframe(tview.style.apply(
+            lambda r: ["background-color: rgba(200,155,60,0.25)" if r["팀"] == team_label(team) else "" for _ in r],
+            axis=1), width="stretch", hide_index=True,
+            column_config={"로고": st.column_config.ImageColumn(width="small")})
         st.caption("정규 시즌 시리즈 결과 기준 (매치 승수 → 세트 득실 → 동률 팀 간 맞대결 → 세트 승수).")
 
 # ------------------------------------------------------------------ 로스터
@@ -204,17 +216,22 @@ with tab_roster:
                             f"<small>{ROLE_KO.get(p['role'], p['role'])}</small>",
                             unsafe_allow_html=True)
                 st.caption(f"{p['경기']}경기 · KDA {p['KDA']:.2f} · 승률 {p['승률']:.0%}")
+                if st.button("선수 분석 →", key=f"go_{p['player']}", width="stretch"):
+                    open_player(p["player"])
 
         subs = stat[~stat.index.isin(starters.index)]
         if not subs.empty:
-            st.markdown("**교체 출전 선수**")
-            st.dataframe(subs.assign(포지션=subs["role"].map(lambda r: ROLE_KO.get(r, r)),
-                                     player=subs["player"].map(display_name))
-                         [["player", "포지션", "경기", "KDA", "승률"]]
-                         .rename(columns={"player": "선수"}),
-                         hide_index=True, width="stretch",
-                         column_config={"KDA": st.column_config.NumberColumn(format="%.2f"),
-                                        "승률": st.column_config.NumberColumn(format="percent")})
+            st.markdown("**교체 출전 선수** (줄을 누르면 선수 분석으로 이동)")
+            subs = subs.reset_index(drop=True)
+            picked_sub = st.dataframe(subs.assign(포지션=subs["role"].map(lambda r: ROLE_KO.get(r, r)),
+                                                  선수=subs["player"].map(display_name))
+                                      [["선수", "포지션", "경기", "KDA", "승률"]],
+                                      hide_index=True, width="stretch", on_select="rerun",
+                                      selection_mode="single-row", key=f"subs_{team}_{year}_{split}",
+                                      column_config={"KDA": st.column_config.NumberColumn(format="%.2f"),
+                                                     "승률": st.column_config.NumberColumn(format="percent")})
+            if picked_sub and picked_sub.selection.rows:
+                open_player(subs.loc[picked_sub.selection.rows[0], "player"])
 
     staff = roster[~roster["role"].isin(ROLE_ORDER)]
     if not staff.empty:
@@ -246,16 +263,23 @@ with tab_matches:
                 결과=lambda d: d["win"].map({True: "✅ 승", False: "❌ 패"}),
                 스코어=lambda d: d["score"].astype(int).astype(str) + " : " + d["opp_score"].astype(int).astype(str),
                 단계=lambda d: d["tab"].map(tab_ko))
-            st.dataframe(view[["날짜", "opponent", "스코어", "결과", "단계"]].rename(columns={"opponent": "상대"}),
-                         hide_index=True, width="stretch", height=400)
+            view = view.assign(로고=view["opponent"].map(team_logo), 상대=view["opponent"].map(team_label))
+            st.dataframe(view[["날짜", "로고", "상대", "스코어", "결과", "단계"]],
+                         hide_index=True, width="stretch", height=400,
+                         column_config={"로고": st.column_config.ImageColumn(width="small")})
         with right:
             st.markdown("**상대 전적**")
             h2h = ts.groupby("opponent").agg(매치승=("win", "sum"), 매치=("win", "size"),
                                              세트승=("score", "sum"), 세트패=("opp_score", "sum"))
             h2h["매치패"] = h2h["매치"] - h2h["매치승"]
-            st.dataframe(h2h[["매치승", "매치패", "세트승", "세트패"]].astype(int)
-                         .sort_values("매치승", ascending=False).rename_axis("상대"),
-                         width="stretch", height=400)
+            h2h["승률"] = h2h["세트승"] / (h2h["세트승"] + h2h["세트패"])     # 세트 기준 승률
+            h2h = h2h.sort_values(["매치승", "승률"], ascending=False).reset_index()
+            h2h.insert(0, "로고", h2h["opponent"].map(team_logo))
+            h2h["상대"] = h2h["opponent"].map(team_label)
+            st.dataframe(h2h[["로고", "상대", "매치승", "매치패", "세트승", "세트패", "승률"]],
+                         hide_index=True, width="stretch", height=400, column_config={
+                             "로고": st.column_config.ImageColumn(width="small"),
+                             "승률": st.column_config.NumberColumn(format="percent", help="세트 기준 승률")})
 
 # ------------------------------------------------------------------ 챔피언
 with tab_champs:
@@ -293,18 +317,21 @@ with tab_intl:
         st.info(f"{year}년에는 이 팀의 국제 대회(Worlds, MSI, First Stand, EWC) 출전 기록이 없습니다.")
     else:
         rows = []
-        for tour, g in intl.groupby("league_short"):
-            s = intl_s[intl_s["league_short"] == tour]
-            all_s = series[(series["league_short"] == tour) & (series["year"] == year)]
-            last = s.iloc[-1] if not s.empty else None
-            if last is not None and not all_s.empty and last["match_id"] == all_s.iloc[-1]["match_id"]:
-                result = "🏆 우승" if last["win"] else "🥈 준우승"
-            elif last is not None:
-                result = f"{tab_ko(last['tab'])}에서 종료"
-            else:
-                result = "-"
+        year_results = dict(team_year_summary(team, int(year))[1])
+        medal = {"우승": "🏆 ", "준우승": "🥈 ", "3위": "🥉 "}
+        tour_order = intl.groupby("league_short")["datetime_kst"].min().sort_values().index   # 열린 순서대로
+        for tour in tour_order:
+            g = intl[intl["league_short"] == tour]
+            s = intl_s[intl_s["league_short"] == tour].sort_values("datetime_kst")
+            result = year_results.get(tour, "-")
+            last_opp = ""
+            if not s.empty and result not in ("우승", "-"):
+                last = s.iloc[-1]                      # 탈락(또는 준우승)이면 마지막 상대
+                last_opp = (f"{team_label(last['opponent'])} "
+                            f"({int(last['score'])}:{int(last['opp_score'])} {'승' if last['win'] else '패'})")
             rows.append({"대회": tour, "세트 전적": f"{int(g['win'].sum())}승 {int((~g['win']).sum())}패",
-                         "세트 승률": g["win"].mean(), "최종 결과": result})
+                         "세트 승률": g["win"].mean(), "최종 결과": medal.get(result, "") + result,
+                         "마지막 상대": last_opp})
         st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch",
                      column_config={"세트 승률": st.column_config.ProgressColumn(
                          format="percent", min_value=0, max_value=1)})
@@ -313,8 +340,10 @@ with tab_intl:
         opp = intl.groupby("opponent").agg(세트=("win", "size"), 승=("win", "sum")).reset_index()
         opp["지역"] = opp["opponent"].map(lambda t: info.at[t, "region"] if t in info.index else "")
         opp["패"] = opp["세트"] - opp["승"]
-        st.dataframe(opp[["opponent", "지역", "승", "패"]].rename(columns={"opponent": "상대"})
-                     .sort_values("승", ascending=False), hide_index=True, width="stretch")
+        opp = opp.assign(로고=opp["opponent"].map(team_logo), 상대=opp["opponent"].map(team_label))
+        st.dataframe(opp[["로고", "상대", "지역", "승", "패"]].sort_values("승", ascending=False),
+                     hide_index=True, width="stretch",
+                     column_config={"로고": st.column_config.ImageColumn(width="small")})
 
 # ------------------------------------------------------------------ 팀 역사
 with tab_history:
@@ -331,7 +360,12 @@ with tab_history:
             starts[n] = min(candidates)
     flow = sorted(starts.items(), key=lambda kv: kv[1])
     st.markdown("**팀 이름 변화**")
-    if len(flow) > 1:
+    curated = history_for(team)
+    if curated:
+        st.markdown(history_html(curated), unsafe_allow_html=True)
+        st.caption("팀 이름 변천사는 직접 정리한 자료(data/team_history.json) 기준입니다. "
+                   "여러 줄이 하나로 모이는 곳은 두 팀이 합쳐진 시점입니다.")
+    elif len(flow) > 1:
         chips = []
         for i, (n, d) in enumerate(flow):
             last = i == len(flow) - 1
@@ -339,8 +373,8 @@ with tab_history:
                 f"<div style='display:inline-flex;flex-direction:column;align-items:center;padding:8px 14px;"
                 f"border-radius:10px;border:1px solid {'#C89B3C' if last else 'rgba(128,128,128,0.35)'};"
                 f"background:{'rgba(200,155,60,0.12)' if last else 'transparent'}'>"
-                f"<span style='font-weight:700'>{n}</span>"
-                f"<span style='font-size:0.78rem;opacity:0.7'>{d:%Y.%m.%d}~</span></div>")
+                f"<span style='font-weight:700'>{team_label(n)}</span>"
+                f"<span style='font-size:0.78rem;opacity:0.7'>{d:%Y.%m.%d}&#126;</span></div>")
         arrow = "<span style='font-size:1.3rem;opacity:0.5;margin:0 6px'>→</span>"
         st.markdown(f"<div style='display:flex;flex-wrap:wrap;align-items:center;gap:4px'>"
                     f"{arrow.join(chips)}</div>", unsafe_allow_html=True)

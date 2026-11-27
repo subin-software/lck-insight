@@ -288,13 +288,42 @@ def fetch_team_info(team_names: list[str]) -> tuple[pd.DataFrame, pd.DataFrame, 
     return teams, redirects, renames
 
 
+def resolve_player_pages(names) -> dict[str, str]:
+    """경기 기록 속 선수 이름 → 현재 선수 페이지 이름 (페이지가 개명된 경우, PlayerRedirects 사용)."""
+    out = {}
+    for batch in batched(names):
+        red = cargo_query("PlayerRedirects=PR", {"PR.AllName": "alias", "PR.OverviewPage": "page"},
+                          where=f"PR.AllName IN {_in(batch)}")
+        lower: dict[str, list[str]] = {}
+        for n in batch:                      # 대소문자만 다른 표기(예: Bono / bonO)도 모두 연결
+            lower.setdefault(n.lower(), []).append(n)
+        for alias, page in red[["alias", "page"]].dropna().itertuples(index=False):
+            for n in lower.get(alias.lower(), []):
+                out[n] = page
+    return out
+
+
 def fetch_player_info(player_names) -> pd.DataFrame:
-    """선수 프로필: 한글 본명, 영문 이름, 국적, 생년월일, 은퇴 여부 (선수 페이지 이름 기준)."""
-    frames = [cargo_query("Players=P", PLAYER_INFO_FIELDS, where=f"P.OverviewPage IN {_in(names)}",
+    """선수 프로필: 한글 본명, 영문 이름, 국적, 생년월일, 은퇴 여부 (선수 페이지 이름 기준).
+
+    선수 페이지가 개명돼 바로 찾지 못한 선수는 PlayerRedirects로 현재 페이지를 찾아 다시 조회한다.
+    """
+    names = set(player_names)
+    frames = [cargo_query("Players=P", PLAYER_INFO_FIELDS, where=f"P.OverviewPage IN {_in(batch)}",
                           label=f"선수 프로필 {i}번째 묶음")
-              for i, names in enumerate(batched(player_names), 1)]
-    return pd.concat(frames, ignore_index=True).drop_duplicates("player") if frames \
-        else pd.DataFrame(columns=PLAYER_INFO_FIELDS.values())
+              for i, batch in enumerate(batched(names), 1)]
+    found = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=PLAYER_INFO_FIELDS.values())
+    missing = names - set(found["player"])
+    if missing:
+        pages = resolve_player_pages(missing)
+        if pages:
+            extra = pd.concat([cargo_query("Players=P", PLAYER_INFO_FIELDS, where=f"P.OverviewPage IN {_in(b)}")
+                               for b in batched(set(pages.values()))], ignore_index=True)
+            # 경기 기록 속 이름으로 되돌려 저장 (한 페이지를 여러 표기가 가리킬 수 있음)
+            back = pd.DataFrame(list(pages.items()), columns=["orig", "page"])
+            extra = extra.rename(columns={"player": "page"}).merge(back, on="page")                 .drop(columns="page").rename(columns={"orig": "player"})
+            found = pd.concat([found, extra], ignore_index=True)
+    return found.drop_duplicates("player")
 
 
 def fetch_tournament_results(pages) -> pd.DataFrame:
@@ -326,7 +355,17 @@ def fetch_player_images(player_names) -> pd.DataFrame:
                                   label=f"선수 사진 {i}번째 묶음"))
     if not frames:
         return pd.DataFrame(columns=[*PLAYER_IMAGE_FIELDS.values(), "url"])
-    df = pd.concat(frames, ignore_index=True).dropna(subset=["file"])
+    df = pd.concat(frames, ignore_index=True)
+    missing = set(player_names) - set(df["player"])
+    if missing:                                    # 개명된 선수 페이지는 현재 페이지 이름으로 다시 찾기
+        pages = resolve_player_pages(missing)
+        if pages:
+            extra = pd.concat([cargo_query("PlayerImages=PI", PLAYER_IMAGE_FIELDS, where=f"PI.Link IN {_in(b)}")
+                               for b in batched(set(pages.values()))], ignore_index=True)
+            back = pd.DataFrame(list(pages.items()), columns=["orig", "link"])
+            extra = extra.rename(columns={"player": "link"}).merge(back, on="link")                 .drop(columns="link").rename(columns={"orig": "player"})
+            df = pd.concat([df, extra], ignore_index=True)
+    df = df.dropna(subset=["file"])
     df = df[df["file"].astype(str) != ""]
     df["url"] = df["file"].map(image_url)
     return df

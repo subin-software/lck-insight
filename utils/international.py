@@ -73,7 +73,7 @@ def tournament_results() -> pd.DataFrame:
         rows.append({"연도": int(year), "대회": tour, "우승": winner["team"], "우승 리그": winner["league"],
                      "준우승": winner["opponent"], "준우승 리그": winner["opp_league"],
                      "결승 스코어": f"{int(winner['score'])}:{int(winner['opp_score'])}",
-                     "LCK 최고 성적": lck_best})
+                     "LCK 최고 성적": lck_best, "_start": g["datetime_kst"].min()})
     return pd.DataFrame(rows)
 
 

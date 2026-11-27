@@ -1,0 +1,89 @@
+{
+  "_설명": "직접 정리한 팀 이름 변천사. branches = 합쳐지기 전의 갈래(여러 줄이면 하나로 합쳐짐), main = 합쳐진 뒤 이어지는 이름. aliases = 경기 데이터(Leaguepedia)에 나오는 이 팀의 이름들.",
+  "HANJIN BRION": {
+    "aliases": ["e-mFire", "Kongdoo Monster", "Fredit BRION", "BRION", "OKSavingsBank BRION", "HANJIN BRION"],
+    "branches": [],
+    "main": [
+      ["NaJin e-mFire", "2014.12", "2016.1"],
+      ["e-mFire", "2016.1", "2016.2"],
+      ["KONGDOO MONSTER", "2016.2", "2018.11"],
+      ["BRION Blade", "2018.11", "2020.6"],
+      ["hyFresh BLADE", "2020.6", "2020.12"],
+      ["Fredit BRION", "2020.12", "2023.1"],
+      ["BRION", "2023.1", "2023.5"],
+      ["OKSavingsBank BRION", "2023.5", "2026.1"],
+      ["BRION", "2026.1", "2026.3"],
+      ["HANJIN BRION", "2026.3", ""]
+    ]
+  },
+  "DN SOOPers": {
+    "aliases": ["Afreeca Freecs", "Kwangdong Freecs", "DN Freecs", "DN SOOPers"],
+    "branches": [],
+    "main": [
+      ["Anarchy", "2014.4", "2015.7"],
+      ["Rebels Anarchy", "2015.7", "2015.12"],
+      ["Afreeca Freecs", "2015.12", "2021.12"],
+      ["KWANGDONG FREECS", "2021.12", "2024.12"],
+      ["DN FREECS", "2024.12", "2025.12"],
+      ["DN SOOPers", "2025.12", ""]
+    ]
+  },
+  "Gen.G": {
+    "aliases": ["Samsung Blue", "Samsung Ozone", "Samsung White", "Samsung Galaxy", "KSV eSports", "Gen.G"],
+    "branches": [
+      [["Samsung Galaxy Blue", "2013.9", "2014.11"]],
+      [["Samsung Galaxy Ozone", "2013.9", "2014.6"], ["Samsung Galaxy White", "2014.6", "2014.11"]]
+    ],
+    "main": [
+      ["Samsung Galaxy", "2014.11", "2017.11"],
+      ["KSV Esports", "2017.11", "2018.5"],
+      ["Gen.G Esports", "2018.5", ""]
+    ]
+  },
+  "Hanwha Life Esports": {
+    "aliases": ["KOO Tigers", "ROX Tigers", "Hanwha Life Esports"],
+    "branches": [],
+    "main": [
+      ["HUYA Tigers", "2014.11", "2015.1"],
+      ["GE Tigers", "2015.1", "2015.5"],
+      ["KOO Tigers", "2015.5", "2015.11"],
+      ["Tigers", "2015.11", "2016.1"],
+      ["ROX Tigers", "2016.1", "2018.4"],
+      ["Hanwha Life Esports", "2018.4", ""]
+    ]
+  },
+  "T1": {
+    "aliases": ["SK Telecom T1", "T1"],
+    "branches": [
+      [["SK telecom T1 #1", "2012.12", "2013.11"], ["SK telecom T1 S", "2013.11", "2014.12"]],
+      [["SK telecom T1 #2", "2013.2", "2013.11"], ["SK telecom T1 K", "2013.11", "2014.12"]]
+    ],
+    "main": [
+      ["SK telecom T1", "2015.1", "2019.12"],
+      ["T1", "2020.1", ""]
+    ]
+  },
+  "Nongshim RedForce": {
+    "aliases": ["Team Dynamics", "Nongshim RedForce"],
+    "branches": [],
+    "main": [
+      ["I Gaming Star", "2016.5", "2018.1"],
+      ["ES Sharks", "2018.1", "2019.5"],
+      ["Team Dynamics", "2019.5", "2020.12"],
+      ["Nongshim RedForce", "2020.12", ""]
+    ]
+  },
+  "Kiwoom DRX": {
+    "aliases": ["Longzhu Gaming", "Kingzone DragonX", "DragonX", "DRX", "Kiwoom DRX"],
+    "branches": [],
+    "main": [
+      ["Incredible Miracle", "2014.11", "2015.5"],
+      ["Longzhu IM", "2015.5", "2016.1"],
+      ["Longzhu Gaming", "2016.1", "2018.1"],
+      ["KING-ZONE DragonX", "2018.1", "2019.10"],
+      ["DragonX", "2019.10", "2020.6"],
+      ["DRX", "2020.6", "2026.3"],
+      ["KIWOOM DRX", "2026.3", ""]
+    ]
+  }
+}

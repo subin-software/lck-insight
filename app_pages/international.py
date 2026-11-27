@@ -9,6 +9,7 @@ from utils.international import (LEAGUE_COLOR, MAJOR, intl_games, intl_series, l
                                  team_league, tournament_results)
 from utils.meta import champion_table
 from utils.teams import lineage_of, team_games
+from utils.teams import with_logos
 
 STAGE_KO = {"Finals": "결승", "Semifinals": "4강", "Quarterfinals": "8강"}
 TOURNAMENTS = ["Worlds", "MSI", "First Stand", "EWC"]
@@ -88,12 +89,12 @@ with tab_league:
 with tab_titles:
     left, right = st.columns([3, 2])
     with left:
-        view = results.sort_values(["연도", "대회"], ascending=[False, True]).assign(
+        view = results.sort_values("_start", ascending=False).assign(   # 가장 최근 대회가 위
             **{"LCK 최고 성적": lambda d: d["LCK 최고 성적"].map(
                 lambda s: {"우승": "🏆 우승", "준우승": "🥈 준우승"}.get(s, STAGE_KO.get(s, s)))})
-        st.dataframe(view[["연도", "대회", "우승", "우승 리그", "결승 스코어", "준우승", "LCK 최고 성적"]],
-                     hide_index=True, width="stretch", height=480,
-                     column_config={"연도": st.column_config.NumberColumn(format="%d")})
+        tv, logo_cfg = with_logos(view[["연도", "대회", "우승", "우승 리그", "결승 스코어", "준우승", "LCK 최고 성적"]])
+        st.dataframe(tv, hide_index=True, width="stretch", height=480,
+                     column_config={"연도": st.column_config.NumberColumn(format="%d"), **logo_cfg})
     with right:
         tc = results.groupby(["우승 리그", "대회"]).size().reset_index(name="우승")
         fig = px.bar(tc, x="우승 리그", y="우승", color="대회", text_auto=True,
